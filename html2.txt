@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>MCMC Complaints Dashboard</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <!-- Leaflet -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css"/>
+
+    <!-- Chart.js -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <style>
+        body{
+            margin:0;
+            background:#f4f6f9;
+            font-family:'Inter','Segoe UI',Roboto,sans-serif;
+            color:#1f2937;
+        }
+
+        /* ===== CONTAINER 75% ===== */
+        .container{
+            width:75%;
+            margin:0 auto;
+            padding:24px 20px 40px;
+        }
+
+        h1{
+            font-size:22px;
+            font-weight:700;
+            color:#1e3a8a;
+            margin-bottom:18px;
+        }
+
+        /* ===== SUMMARY CARDS ===== */
+        .summary{
+            display:grid;
+            grid-template-columns:repeat(3,1fr);
+            gap:18px;
+            margin-bottom:18px;
+        }
+
+        .card{
+            background:#fff;
+            border-radius:10px;
+            padding:16px 18px;
+            box-shadow:0 4px 10px rgba(0,0,0,.06);
+        }
+
+        .card small{
+            color:#6b7280;
+            font-size:13px;
+        }
+
+        .card h2{
+            margin:6px 0 0;
+            font-size:22px;
+            color:#1e3a8a;
+        }
+
+        /* ===== CHART GRID ===== */
+        .grid{
+            display:grid;
+            grid-template-columns:repeat(3,1fr);
+            gap:18px;
+            margin-bottom:18px;
+        }
+
+        .chart-title{
+            font-size:13px;
+            text-align:center;
+            margin-bottom:6px;
+            font-weight:600;
+        }
+
+        canvas{
+            width:100%!important;
+            height:260px!important;
+        }
+
+        /* ===== MAP ===== */
+        .map-card{
+            background:#fff;
+            border-radius:12px;
+            padding:12px;
+            box-shadow:0 4px 10px rgba(0,0,0,.06);
+        }
+
+        #map{
+            height:360px;
+            border-radius:10px;
+        }
+
+        .map-title{
+            font-size:13px;
+            font-weight:600;
+            text-align:center;
+            margin-bottom:8px;
+        }
+
+        @media(max-width:1200px){
+            .container{width:90%;}
+        }
+        @media(max-width:900px){
+            .summary,.grid{grid-template-columns:1fr;}
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>MCMC Complaints Dashboard</h1>
+
+    <!-- SUMMARY -->
+    <div class="summary">
+        <div class="card">
+            <small>Total Complaints</small>
+            <h2>{{ total_complaints }}</h2>
+        </div>
+        <div class="card">
+            <small>Total States</small>
+            <h2>{{ total_states }}</h2>
+        </div>
+        <div class="card">
+            <small>Total Districts</small>
+            <h2>{{ total_districts }}</h2>
+        </div>
+    </div>
+
+    <!-- ROW 1 -->
+    <div class="grid">
+        <div class="card">
+            <div class="chart-title">State</div>
+            <canvas id="stateChart"></canvas>
+        </div>
+        <div class="card">
+            <div class="chart-title">District</div>
+            <canvas id="districtChart"></canvas>
+        </div>
+        <div class="card">
+            <div class="chart-title">Coverage Status</div>
+            <canvas id="coverageChart"></canvas>
+        </div>
+    </div>
+
+    <!-- ROW 2 -->
+    <div class="grid">
+        <div class="card">
+            <div class="chart-title">Network Type</div>
+            <canvas id="networkChart"></canvas>
+        </div>
+        <div class="card">
+            <div class="chart-title">Issue Type</div>
+            <canvas id="issueChart"></canvas>
+        </div>
+        <div class="card">
+            <div class="chart-title">Status</div>
+            <canvas id="statusChart"></canvas>
+        </div>
+    </div>
+
+    <!-- MAP -->
+    <div class="map-card">
+        <div class="map-title">Complaints Heatmap by State</div>
+        <div id="map"></div>
+    </div>
+
+</div>
+
+<!-- ================= JS ================= -->
+
+<script>
+const chartOptions = {
+    responsive:true,
+    plugins:{
+        legend:{display:false},
+        tooltip:{enabled:true}
+    },
+    scales:{
+        y:{beginAtZero:true}
+    }
+};
+
+/* STATE */
+new Chart(stateChart,{
+    type:'bar',
+    data:{
+        labels:{{ state_labels|safe }},
+        datasets:[{
+            data:{{ state_values|safe }},
+            backgroundColor:'#1e40af'
+        }]
+    },
+    options:chartOptions
+});
+
+/* DISTRICT */
+new Chart(districtChart,{
+    type:'bar',
+    data:{
+        labels:{{ district_labels|safe }},
+        datasets:[{
+            data:{{ district_values|safe }},
+            backgroundColor:'#0ea5e9'
+        }]
+    },
+    options:chartOptions
+});
+
+/* COVERAGE */
+new Chart(coverageChart,{
+    type:'bar',
+    data:{
+        labels:{{ coverage_labels|safe }},
+        datasets:[{
+            data:{{ coverage_values|safe }},
+            backgroundColor:'#38bdf8'
+        }]
+    },
+    options:chartOptions
+});
+
+/* NETWORK */
+new Chart(networkChart,{
+    type:'bar',
+    data:{
+        labels:{{ network_labels|safe }},
+        datasets:[{
+            data:{{ network_values|safe }},
+            backgroundColor:'#f59e0b'
+        }]
+    },
+    options:chartOptions
+});
+
+/* ISSUE */
+new Chart(issueChart,{
+    type:'bar',
+    data:{
+        labels:{{ issue_labels|safe }},
+        datasets:[{
+            data:{{ issue_values|safe }},
+            backgroundColor:'#22c55e'
+        }]
+    },
+    options:chartOptions
+});
+
+/* STATUS PIE */
+new Chart(statusChart,{
+    type:'pie',
+    data:{
+        labels:{{ status_labels|safe }},
+        datasets:[{
+            data:{{ status_values|safe }},
+            backgroundColor:['#16a34a','#f59e0b','#dc2626']
+        }]
+    },
+    options:{
+        responsive:true,
+        plugins:{
+            tooltip:{
+                callbacks:{
+                    label:function(ctx){
+                        let total = ctx.dataset.data.reduce((a,b)=>a+b,0);
+                        let pct = ((ctx.raw/total)*100).toFixed(1);
+                        return `${ctx.label}: ${pct}%`;
+                    }
+                }
+            }
+        }
+    }
+});
+</script>
+
+<!-- MAP -->
+<script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+<script>
+var map = L.map('map').setView([4.2,102.0],6);
+
+L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{
+    attribution:'© OpenStreetMap'
+}).addTo(map);
+
+var geoData = {{ geojson|safe }};
+var counts = {{ state_counts|safe }};
+
+function color(v){
+    return v>140?'#dc2626':
+           v>120?'#f59e0b':
+           v>100?'#22c55e':'#86efac';
+}
+
+L.geoJSON(geoData,{
+    style:f=>({
+        fillColor:color(counts[f.properties.state]||0),
+        weight:1,
+        color:'#fff',
+        fillOpacity:.85
+    }),
+    onEachFeature:(f,l)=>{
+        let v = counts[f.properties.state]||0;
+        l.bindPopup(`<b>${f.properties.state}</b><br>Total Complaints: ${v}`);
+    }
+}).addTo(map);
+</script>
+
+</body>
+</html>

@@ -1,0 +1,695 @@
+<!DOCTYPE html>
+<!-- saved from url=(0022)http://127.0.0.1:5000/ -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<title>Network Analysis Dashboard</title>
+
+<link href="./Network Analysis Dashboard_files/css2" rel="stylesheet">
+
+<script src="./Network Analysis Dashboard_files/chart.js.download"></script>
+<script src="./Network Analysis Dashboard_files/chartjs-plugin-datalabels@2"></script>
+
+<link rel="stylesheet" href="./Network Analysis Dashboard_files/leaflet.css">
+<script src="./Network Analysis Dashboard_files/leaflet.js.download"></script>
+
+<style>
+:root {
+    --primary: #1e3a8a;
+    --secondary: #0ea5e9;
+    --success: #16a34a;
+    --warning: #f59e0b;
+    --danger: #dc2626;
+    --bg: #f4f6f9;
+    --card: #ffffff;
+    --text: #1f2937;
+}
+* { box-sizing: border-box; }
+body {
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    overflow-x: hidden;
+}
+.dashboard { max-width: 1300px; margin: auto; padding: 24px; }
+.header { margin-bottom: 25px; }
+.header h1 { font-size: 26px; font-weight: 700; margin: 0; color: var(--primary); }
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 20px;
+    margin-bottom: 30px;
+}
+.card {
+    background: var(--card);
+    border-radius: 14px;
+    padding: 22px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.04);
+}
+.card h3 { font-size: 13px; font-weight: 600; color: #6b7280; margin: 0; }
+.card p {
+    font-size: 30px;
+    font-weight: 700;
+    margin-top: 8px;
+    color: var(--primary);
+    display: flex;
+    align-items: baseline;
+    gap: 10px;
+}
+.card .pct {
+    font-size: 13px;
+    font-weight: 800;
+    padding: 4px 8px;
+    border-radius: 999px;
+    border: 1px solid transparent;
+}
+.card .pct-inprogress { color:#065f46; background:#d1fae5; border-color:#a7f3d0; }
+.card .pct-resolved { color:#7f1d1d; background:#fee2e2; border-color:#fecaca; }
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0,1fr));
+    gap: 20px;
+}
+.chart-box {
+    position: relative;
+    background: var(--card);
+    border-radius: 14px;
+    padding: 16px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.04);
+    height: 300px;
+}
+.chart-title { font-size: 13px; font-weight: 600; margin-bottom: 6px; color: #374151; }
+canvas { display: block; width: 100% !important; height: auto !important; }
+#map { width: 100%; height: 100%; border-radius: 12px; }
+
+.insight-btn {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    border: 1px solid #e5e7eb;
+    background: #fff;
+    color: #374151;
+    font-size: 12px;
+    font-weight: 600;
+    padding: 6px 10px;
+    border-radius: 999px;
+    cursor: pointer;
+    box-shadow: 0 6px 16px rgba(0,0,0,0.06);
+}
+.insight-btn:hover { background: #f9fafb; }
+
+/* Modal (unchanged, kept minimal) */
+.modal-overlay {
+    position: fixed; inset: 0;
+    background: rgba(17,24,39,0.55);
+    display: none; align-items: center; justify-content: center;
+    padding: 20px; z-index: 9999;
+}
+.modal { width: min(720px, 96vw); background:#fff; border-radius:16px; box-shadow:0 20px 60px rgba(0,0,0,0.25); overflow:hidden; }
+.modal-header { display:flex; justify-content:space-between; gap:12px; padding:16px 18px; border-bottom:1px solid #e5e7eb; }
+.modal-title { font-size:14px; font-weight:700; margin:0; color:#111827; }
+.modal-close { border:none; background:#f3f4f6; border-radius:10px; padding:8px 10px; cursor:pointer; font-weight:700; }
+.modal-body { padding:16px 18px 18px; font-size:13px; line-height:1.55; color:#111827; }
+.badge { display:inline-block; padding:2px 8px; border-radius:999px; font-size:11px; font-weight:700; background:#eef2ff; color:#1e3a8a; margin-left:8px; }
+
+/* Small formatting for insight body */
+.modal-body h4 { margin: 10px 0 6px; font-size: 13px; }
+.modal-body ul { margin: 6px 0 0 18px; padding: 0; }
+.modal-body li { margin: 4px 0; }
+.modal-body .muted { color:#6b7280; font-size:12px; }
+</style>
+</head>
+
+<body>
+<div class="dashboard">
+
+  <div class="header">
+      <h1>Network Analysis Dashboard</h1>
+  </div>
+
+  <!-- Cards order: State, District, Total Complaints, Total Submitted, In Progress, Resolved -->
+  <div class="cards">
+      <div class="card">
+          <h3>Total States</h3>
+          <p id="totalStates">8</p>
+      </div>
+
+      <div class="card">
+          <h3>Total Districts</h3>
+          <p id="totalDistricts">18</p>
+      </div>
+
+      <div class="card">
+          <h3>Total Complaints</h3>
+          <p id="totalComplaints">1,000</p>
+      </div>
+
+      <div class="card">
+          <h3>Total Submitted</h3>
+          <p id="totalSubmitted">356</p>
+      </div>
+
+      <div class="card">
+          <h3>Total In Progress</h3>
+          <p><span id="totalInProgress">333</span><span class="pct pct-inprogress" id="pctInProgress">(93.54%)</span></p>
+      </div>
+
+      <div class="card">
+          <h3>Total Resolved</h3>
+          <p><span id="totalResolved">311</span><span class="pct pct-resolved" id="pctResolved">(87.36%)</span></p>
+      </div>
+  </div>
+
+  <!-- Chart order per request -->
+  <div class="grid">
+      <!-- Row 1 -->
+      <div class="chart-box">
+          <button class="insight-btn" data-insight="state">Insight</button>
+          <canvas id="stateChart" width="297" height="214" style="display: block; box-sizing: border-box; height: 268px; width: 372px;"></canvas>
+      </div>
+
+      <div class="chart-box">
+          <button class="insight-btn" data-insight="district">Insight</button>
+          <canvas id="districtChart" width="297" height="214" style="display: block; box-sizing: border-box; height: 268px; width: 372px;"></canvas>
+      </div>
+
+      <div class="chart-box">
+          <button class="insight-btn" data-insight="issue_type">Insight</button>
+          <canvas id="issueChart" width="297" height="214" style="display: block; box-sizing: border-box; height: 268px; width: 372px;"></canvas>
+      </div>
+
+      <!-- Row 2 -->
+      <div class="chart-box">
+          <button class="insight-btn" data-insight="signal_strength_by_state">Insight</button>
+          <div class="chart-title" id="signalByStateTitle">Signal Strength by State</div>
+          <canvas id="coverageChart" width="297" height="214" style="display: block; box-sizing: border-box; height: 268px; width: 372px;"></canvas>
+      </div>
+
+      <div class="chart-box">
+          <button class="insight-btn" data-insight="issue_by_state">Insight</button>
+          <div class="chart-title" id="issueByStateTitle">Issue Type by State</div>
+          <canvas id="issueByStateChart" width="297" height="214" style="display: block; box-sizing: border-box; height: 268px; width: 372px;"></canvas>
+      </div>
+
+      <div class="chart-box">
+          <button class="insight-btn" data-insight="status_by_state">Insight</button>
+          <div class="chart-title" id="statusByStateTitle">Status Report by State</div>
+          <canvas id="statusByStateChart" width="297" height="214" style="display: block; box-sizing: border-box; height: 268px; width: 372px;"></canvas>
+      </div>
+
+      <!-- Row 3 -->
+      <div class="chart-box" style="grid-column: span 3; height: 320px;">
+          <button class="insight-btn" data-insight="reported_months">Insight</button>
+          <div class="chart-title">Complaints Reported</div>
+          <canvas id="reportedMonthsChart" width="976" height="230" style="display: block; box-sizing: border-box; height: 288px; width: 1220px;"></canvas>
+      </div>
+
+      <!-- Map -->
+      <div class="chart-box" style="grid-column: span 3; height: 420px;">
+          <div class="chart-title" id="mapTitle">Heatmap: Total Complaints by District</div>
+          <div id="map" class="leaflet-container leaflet-touch leaflet-fade-anim leaflet-grab leaflet-touch-drag leaflet-touch-zoom" tabindex="0" style="position: relative;"><div class="leaflet-pane leaflet-map-pane" style="transform: translate3d(0px, 0px, 0px);"><div class="leaflet-pane leaflet-tile-pane"><div class="leaflet-layer " style="z-index: 1; opacity: 1;"><div class="leaflet-tile-container leaflet-zoom-animated" style="z-index: 18; transform: translate3d(0px, 0px, 0px) scale(1);"><img alt="" src="./Network Analysis Dashboard_files/31.png" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(306px, 129px, 0px); opacity: 1;"><img alt="" src="./Network Analysis Dashboard_files/31(1).png" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(562px, 129px, 0px); opacity: 1;"><img alt="" src="./Network Analysis Dashboard_files/30.png" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(306px, -127px, 0px); opacity: 1;"><img alt="" src="./Network Analysis Dashboard_files/30(1).png" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(562px, -127px, 0px); opacity: 1;"><img alt="" src="./Network Analysis Dashboard_files/32.png" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(306px, 385px, 0px); opacity: 1;"><img alt="" src="./Network Analysis Dashboard_files/32(1).png" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(562px, 385px, 0px); opacity: 1;"><img alt="" src="./Network Analysis Dashboard_files/31(2).png" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(50px, 129px, 0px); opacity: 1;"><img alt="" src="./Network Analysis Dashboard_files/31(3).png" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(818px, 129px, 0px); opacity: 1;"><img alt="" src="./Network Analysis Dashboard_files/30(2).png" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(50px, -127px, 0px); opacity: 1;"><img alt="" src="./Network Analysis Dashboard_files/30(3).png" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(818px, -127px, 0px); opacity: 1;"><img alt="" src="./Network Analysis Dashboard_files/32(2).png" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(50px, 385px, 0px); opacity: 1;"><img alt="" src="./Network Analysis Dashboard_files/32(3).png" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(818px, 385px, 0px); opacity: 1;"><img alt="" src="./Network Analysis Dashboard_files/31(4).png" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(-206px, 129px, 0px); opacity: 1;"><img alt="" src="./Network Analysis Dashboard_files/31(5).png" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(1074px, 129px, 0px); opacity: 1;"><img alt="" src="./Network Analysis Dashboard_files/30(4).png" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(-206px, -127px, 0px); opacity: 1;"><img alt="" src="./Network Analysis Dashboard_files/30(5).png" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(1074px, -127px, 0px); opacity: 1;"><img alt="" src="./Network Analysis Dashboard_files/32(4).png" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(-206px, 385px, 0px); opacity: 1;"><img alt="" src="./Network Analysis Dashboard_files/32(5).png" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(1074px, 385px, 0px); opacity: 1;"></div></div></div><div class="leaflet-pane leaflet-overlay-pane"><svg pointer-events="none" class="leaflet-zoom-animated" width="1464" height="466" viewBox="-122 -39 1464 466" style="transform: translate3d(-122px, -39px, 0px);"><g><path class="leaflet-interactive" stroke="#374151" stroke-opacity="1" stroke-width="0.8" stroke-linecap="round" stroke-linejoin="round" fill="#9ca3af" fill-opacity="0.7" fill-rule="evenodd" d="M607 102L601 100L600 101L600 103L606 107L607 102z"></path><path class="leaflet-interactive" stroke="#374151" stroke-opacity="1" stroke-width="0.8" stroke-linecap="round" stroke-linejoin="round" fill="#9ca3af" fill-opacity="0.7" fill-rule="evenodd" d="M606 107L606 109L603 109L606 113L605 116L609 116L608 115L612 111L610 107L611 104L608 102L606 107z"></path><path class="leaflet-interactive" stroke="#374151" stroke-opacity="1" stroke-width="0.8" stroke-linecap="round" stroke-linejoin="round" fill="#9ca3af" fill-opacity="0.7" fill-rule="evenodd" d="M608 116L611 123L617 122L620 118L618 116L614 117L611 114L609 114L608 116z"></path><path class="leaflet-interactive" stroke="#374151" stroke-opacity="1" stroke-width="0.8" stroke-linecap="round" stroke-linejoin="round" fill="#9ca3af" fill-opacity="0.7" fill-rule="evenodd" d="M600 104L600 106L593 113L593 115L604 117L606 113L603 110L606 109L606 107L600 104z"></path><path class="leaflet-interactive" stroke="#374151" stroke-opacity="1" stroke-width="0.8" stroke-linecap="round" stroke-linejoin="round" fill="#9ca3af" fill-opacity="0.7" fill-rule="evenodd" d="M605 115L603 125L601 127L612 127L616 123L610 123L609 118L605 115z"></path><path class="leaflet-interactive" stroke="#374151" stroke-opacity="1" stroke-width="0.8" stroke-linecap="round" stroke-linejoin="round" fill="#9ca3af" fill-opacity="0.7" fill-rule="evenodd" d="M593 116L594 117L591 120L591 122L594 125L595 124L594 129L597 134L598 131L601 130L601 126L603 126L604 117L596 115L593 116z"></path><path class="leaflet-interactive" stroke="#374151" stroke-opacity="1" stroke-width="0.8" stroke-linecap="round" stroke-linejoin="round" fill="#9ca3af" fill-opacity="0.7" fill-rule="evenodd" d="M591 120L588 122L588 124L585 121L583 121L581 127L582 130L580 133L585 134L584 138L586 141L592 141L596 135L594 129L595 124L594 125L591 122L591 120z"></path><path class="leaflet-interactive" stroke="#374151" stroke-opacity="1" stroke-width="0.8" stroke-linecap="round" stroke-linejoin="round" fill="#9ca3af" fill-opacity="0.7" fill-rule="evenodd" d="M601 128L601 130L596 134L595 138L592 141L586 141L588 144L597 149L602 149L602 145L615 144L616 142L614 138L614 126L601 128z"></path><path class="leaflet-interactive" stroke="#374151" stroke-opacity="1" stroke-width="0.8" stroke-linecap="round" stroke-linejoin="round" fill="#9ca3af" fill-opacity="0.7" fill-rule="evenodd" d="M582 123L581 118L577 114L573 117L569 117L566 120L562 121L562 125L557 129L553 123L549 122L548 123L550 125L547 129L548 132L545 136L545 138L548 141L548 145L546 147L547 154L545 158L552 159L552 157L555 154L563 154L566 155L568 159L572 155L574 146L579 141L582 142L585 140L585 135L580 133L582 131L582 123z"></path><path class="leaflet-interactive" stroke="#374151" stroke-opacity="1" stroke-width="0.8" stroke-linecap="round" stroke-linejoin="round" fill="#9ca3af" fill-opacity="0.7" fill-rule="evenodd" d="M545 138L543 142L538 143L534 151L539 153L547 153L546 148L548 146L548 141L545 138z"></path><path class="leaflet-interactive" stroke="#374151" stroke-opacity="1" stroke-width="0.8" stroke-linecap="round" stroke-linejoin="round" fill="#9ca3af" fill-opacity="0.7" fill-rule="evenodd" d="M539 143L536 142L537 143L535 145L534 144L534 146L531 145L530 150L527 151L530 154L539 143z"></path><path class="leaflet-interactive" stroke="#374151" stroke-opacity="1" stroke-width="0.8" stroke-linecap="round" stroke-linejoin="round" fill="#9ca3af" fill-opacity="0.7" fill-rule="evenodd" d="M530 146L529 144L525 144L525 148L523 151L530 151L530 146z"></path><path class="leaflet-interactive" stroke="#374151" stroke-opacity="1" stroke-width="0.8" stroke-linecap="round" stroke-linejoin="round" fill="#dc2626" fill-opacity="0.7" fill-rule="evenodd" d="M529 144L529 138L525 136L523 138L524 139L522 139L522 141L525 145L529 144z"></path><path class="leaflet-interactive" stroke="#374151" stroke-opacity="1" stroke-width="0.8" stroke-linecap="round" stroke-linejoin="round" fill="#9ca3af" fill-opacity="0.7" fill-rule="evenodd" d="M529 138L528 131L523 130L521 132L522 139L524 139L523 138L525 136L527 138L529 137z"></path><path class="leaflet-interactive" stroke="#374151" stroke-opacity="1" stroke-width="0.8" stroke-linecap="round" stroke-linejoin="round" fill="#9ca3af" fill-opacity="0.7" fill-rule="evenodd" d="M545 138L540 139L534 131L530 133L531 132L529 132L530 146L534 146L534 144L535 145L537 143L536 142L541 143L544 140L544 138z"></path><path class="leaflet-interactive" stroke="#374151" stroke-opacity="1" stroke-width="0.8" stroke-linecap="round" stroke-linejoin="round" fill="#9ca3af" fill-opacity="0.7" fill-rule="evenodd" d="M519 142L517 142L516 137L514 135L513 144L518 145L519 143z"></path><path class="leaflet-interactive" stroke="#374151" stroke-opacity="1" stroke-width="0.8" stroke-linecap="round" stroke-linejoin="round" fill="#facc15" fill-opacity="0.7" fill-rule="evenodd" d="M519 143L520 142L519 143zM519 142L521 138L518 135L516 136L516 140L519 142z"></path><path class="leaflet-interactive" stroke="#374151" stroke-opacity="1" stroke-width="0.8" stroke-linecap="round" stroke-linejoin="round" fill="#9ca3af" fill-opacity="0.7" fill-rule="evenodd" d="M551 122L552 123L550 121L551 117L556 113L555 109L550 109L545 112L545 125L540 124L537 126L535 122L536 127L533 130L533 132L534 131L540 139L545 138L546 134L547 135L548 133L548 127L549 128L550 126L548 123L550 122z"></path><path class="leaflet-interactive" stroke="#374151" stroke-opacity="1" stroke-width="0.8" stroke-linecap="round" stroke-linejoin="round" fill="#dc2626" fill-opacity="0.7" fill-rule="evenodd" d="M529 132L533 132L533 130L536 127L534 119L527 117L521 125L523 127L521 127L521 131L522 130L529 132z"></path><path class="leaflet-interactive" stroke="#374151" stroke-opacity="1" stroke-width="0.8" stroke-linecap="round" stroke-linejoin="round" fill="#9ca3af" fill-opacity="0.7" fill-rule="evenodd" d="M518 123L518 123zM519 120L519 120zM520 117L520 117zM526 118L525 113L521 113L522 124L526 118z"></path><path class="leaflet-interactive" stroke="#374151" stroke-opacity="1" stroke-width="0.8" stroke-linecap="round" stroke-linejoin="round" fill="#9ca3af" fill-opacity="0.7" fill-rule="evenodd" d="M533 119L534 114L537 111L534 109L534 107L531 106L525 110L524 109L523 112L526 115L526 117L533 119z"></path><path class="leaflet-interactive" stroke="#374151" stroke-opacity="1" stroke-width="0.8" stroke-linecap="round" stroke-linejoin="round" fill="#9ca3af" fill-opacity="0.7" fill-rule="evenodd" d="M555 109L555 100L551 100L549 98L546 101L545 100L541 109L539 109L539 111L537 113L536 112L533 117L537 126L539 124L545 124L545 112L552 109z"></path><path class="leaflet-interactive" stroke="#374151" stroke-opacity="1" stroke-width="0.8" stroke-linecap="round" stroke-linejoin="round" fill="#22c55e" fill-opacity="0.7" fill-rule="evenodd" d="M524 113L523 109L524 110L526 108L525 105L527 103L525 101L518 101L517 103L520 111L521 113L524 113z"></path><path class="leaflet-interactive" stroke="#374151" stroke-opacity="1" stroke-width="0.8" stroke-linecap="round" stroke-linejoin="round" fill="#9ca3af" fill-opacity="0.7" fill-rule="evenodd" d="M534 106L532 101L530 103L529 100L526 101L527 102L525 106L527 108L534 106z"></path><path class="leaflet-interactive" stroke="#374151" stroke-opacity="1" stroke-width="0.8" stroke-linecap="round" stroke-linejoin="round" fill="#9ca3af" fill-opacity="0.7" fill-rule="evenodd" d="M536 112L537 113L539 111L538 110L541 109L542 104L544 104L544 98L542 95L543 94L542 91L539 90L539 88L536 91L533 90L528 95L528 100L533 103L532 104L534 105L534 109L536 112z"></path><path class="leaflet-interactive" stroke="#374151" stroke-opacity="1" stroke-width="0.8" stroke-linecap="round" stroke-linejoin="round" fill="#9ca3af" fill-opacity="0.7" fill-rule="evenodd" d="M526 102L529 99L528 96L532 91L531 89L527 87L524 88L521 85L522 91L514 98L514 100L517 103L521 101L526 102z"></path><path class="leaflet-interactive" stroke="#374151" stroke-opacity="1" stroke-width="0.8" stroke-linecap="round" stroke-linejoin="round" fill="#9ca3af" fill-opacity="0.7" fill-rule="evenodd" d="M521 85L519 83L519 79L513 79L511 93L514 100L514 98L522 91L521 85z"></path><path class="leaflet-interactive" stroke="#374151" stroke-opacity="1" stroke-width="0.8" stroke-linecap="round" stroke-linejoin="round" fill="#9ca3af" fill-opacity="0.7" fill-rule="evenodd" d="M493 101L493 103L493 101zM497 100L497 98L495 103L499 101L498 99L497 100zM502 97L500 97L502 97zM500 92L498 92L498 90L496 92L489 91L489 95L491 95L492 98L495 99L501 96L500 92z"></path><path class="leaflet-interactive" stroke="#374151" stroke-opacity="1" stroke-width="0.8" stroke-linecap="round" stroke-linejoin="round" fill="#9ca3af" fill-opacity="0.7" fill-rule="evenodd" d="M534 151L532 151L532 153L530 154L527 151L522 152L524 159L528 161L528 163L533 164L538 159L538 152L534 151z"></path><path class="leaflet-interactive" stroke="#374151" stroke-opacity="1" stroke-width="0.8" stroke-linecap="round" stroke-linejoin="round" fill="#9ca3af" fill-opacity="0.7" fill-rule="evenodd" d="M539 179L542 174L542 163L544 163L546 157L545 156L547 154L539 152L538 159L533 164L530 165L534 167L531 168L531 170L535 172L532 175L533 178L535 176L534 179z"></path><path class="leaflet-interactive" stroke="#374151" stroke-opacity="1" stroke-width="0.8" stroke-linecap="round" stroke-linejoin="round" fill="#9ca3af" fill-opacity="0.7" fill-rule="evenodd" d="M539 179L539 179zM545 159L545 161L542 164L542 173L539 179L550 177L552 169L556 167L563 169L566 172L571 163L571 159L567 159L567 155L564 154L554 154L554 156L551 159L545 159z"></path><path class="leaflet-interactive" stroke="#374151" stroke-opacity="1" stroke-width="0.8" stroke-linecap="round" stroke-linejoin="round" fill="#9ca3af" fill-opacity="0.7" fill-rule="evenodd" d="M615 144L615 148L618 151L620 151L619 161L626 164L626 168L630 172L634 172L635 169L637 169L637 165L642 165L646 162L646 160L651 159L647 152L646 153L644 151L643 146L638 149L635 145L631 147L627 139L623 135L623 139L620 142L617 141L615 143z"></path><path class="leaflet-interactive" stroke="#374151" stroke-opacity="1" stroke-width="0.8" stroke-linecap="round" stroke-linejoin="round" fill="#9ca3af" fill-opacity="0.7" fill-rule="evenodd" d="M641 147L637 143L638 138L642 134L638 133L626 124L626 129L623 134L626 137L629 145L631 147L635 145L638 148L640 148z"></path><path class="leaflet-interactive" stroke="#374151" stroke-opacity="1" stroke-width="0.8" stroke-linecap="round" stroke-linejoin="round" fill="#9ca3af" fill-opacity="0.7" fill-rule="evenodd" d="M644 147L646 145L648 147L647 148L650 145L649 143L645 141L641 143L641 147L644 147z"></path><path class="leaflet-interactive" stroke="#374151" stroke-opacity="1" stroke-width="0.8" stroke-linecap="round" stroke-linejoin="round" fill="#9ca3af" fill-opacity="0.7" fill-rule="evenodd" d="M570 158L571 163L566 172L571 177L573 175L577 177L581 177L584 174L585 175L586 168L589 167L587 161L588 158L586 158L587 161L574 160L570 158z"></path><path class="leaflet-interactive" stroke="#374151" stroke-opacity="1" stroke-width="0.8" stroke-linecap="round" stroke-linejoin="round" fill="#9ca3af" fill-opacity="0.7" fill-rule="evenodd" d="M568 175L566 183L569 184L571 188L576 186L577 187L577 177L575 175L571 177L568 175z"></path><path class="leaflet-interactive" stroke="#374151" stroke-opacity="1" stroke-width="0.8" stroke-linecap="round" stroke-linejoin="round" fill="#9ca3af" fill-opacity="0.7" fill-rule="evenodd" d="M584 139L585 140L583 142L578 141L577 144L574 145L572 152L573 153L570 158L574 160L586 161L587 158L587 161L589 163L588 170L591 173L591 175L594 172L594 168L598 170L601 168L602 171L606 174L612 174L614 170L619 172L621 170L624 171L623 170L625 167L626 168L626 164L619 161L620 152L615 148L615 144L602 145L602 149L597 149L584 139z"></path><path class="leaflet-interactive" stroke="#374151" stroke-opacity="1" stroke-width="0.8" stroke-linecap="round" stroke-linejoin="round" fill="#9ca3af" fill-opacity="0.7" fill-rule="evenodd" d="M635 172L636 177L634 177L636 182L641 181L642 184L648 184L651 181L654 182L656 176L662 176L662 167L659 163L658 164L652 161L652 159L650 161L647 160L645 162L646 163L643 165L638 165L635 172z"></path><path class="leaflet-interactive" stroke="#374151" stroke-opacity="1" stroke-width="0.8" stroke-linecap="round" stroke-linejoin="round" fill="#9ca3af" fill-opacity="0.7" fill-rule="evenodd" d="M567 178L557 180L554 183L553 182L554 191L556 192L560 189L560 187L564 187L567 182L567 178z"></path><path class="leaflet-interactive" stroke="#374151" stroke-opacity="1" stroke-width="0.8" stroke-linecap="round" stroke-linejoin="round" fill="#22c55e" fill-opacity="0.7" fill-rule="evenodd" d="M550 177L548 184L551 187L550 190L554 191L553 182L554 183L557 180L567 178L568 175L567 172L565 172L561 168L556 167L552 169L550 177z"></path><path class="leaflet-interactive" stroke="#374151" stroke-opacity="1" stroke-width="0.8" stroke-linecap="round" stroke-linejoin="round" fill="#9ca3af" fill-opacity="0.7" fill-rule="evenodd" d="M544 178L541 186L543 190L541 192L540 197L545 202L545 204L545 202L546 203L547 200L551 200L551 198L554 195L554 191L552 191L548 185L550 178L546 177z"></path><path class="leaflet-interactive" stroke="#374151" stroke-opacity="1" stroke-width="0.8" stroke-linecap="round" stroke-linejoin="round" fill="#9ca3af" fill-opacity="0.7" fill-rule="evenodd" d="M546 203L548 203L551 207L561 209L561 201L557 198L558 197L556 194L551 198L551 200L547 200L547 202L545 202L546 203z"></path><path class="leaflet-interactive" stroke="#374151" stroke-opacity="1" stroke-width="0.8" stroke-linecap="round" stroke-linejoin="round" fill="#9ca3af" fill-opacity="0.7" fill-rule="evenodd" d="M566 216L566 212L568 212L573 217L575 217L579 213L577 210L577 200L575 197L571 204L572 205L570 205L567 208L568 211L562 210L562 217L566 217z"></path><path class="leaflet-interactive" stroke="#374151" stroke-opacity="1" stroke-width="0.8" stroke-linecap="round" stroke-linejoin="round" fill="#9ca3af" fill-opacity="0.7" fill-rule="evenodd" d="M566 183L564 187L560 187L558 191L554 191L555 195L556 194L558 197L557 198L561 201L562 209L564 211L567 211L567 207L572 205L571 204L574 198L574 194L571 193L571 185L567 185L566 183z"></path><path class="leaflet-interactive" stroke="#374151" stroke-opacity="1" stroke-width="0.8" stroke-linecap="round" stroke-linejoin="round" fill="#9ca3af" fill-opacity="0.7" fill-rule="evenodd" d="M543 201L537 204L537 208L540 210L547 209L550 212L549 213L552 212L554 214L555 213L555 215L558 214L558 216L562 216L561 209L551 207L547 203L545 204L544 201z"></path><path class="leaflet-interactive" stroke="#374151" stroke-opacity="1" stroke-width="0.8" stroke-linecap="round" stroke-linejoin="round" fill="#9ca3af" fill-opacity="0.7" fill-rule="evenodd" d="M562 216L558 216L558 214L555 215L555 213L554 214L552 212L549 213L550 212L547 209L543 209L542 211L542 213L551 218L555 226L567 221L566 217L563 218L562 216z"></path><path class="leaflet-interactive" stroke="#374151" stroke-opacity="1" stroke-width="0.8" stroke-linecap="round" stroke-linejoin="round" fill="#9ca3af" fill-opacity="0.7" fill-rule="evenodd" d="M555 226L564 236L565 241L572 240L573 236L570 235L572 226L567 221L556 226z"></path><path class="leaflet-interactive" stroke="#374151" stroke-opacity="1" stroke-width="0.8" stroke-linecap="round" stroke-linejoin="round" fill="#9ca3af" fill-opacity="0.7" fill-rule="evenodd" d="M566 217L567 221L572 226L572 230L574 233L575 232L579 234L586 229L585 226L588 222L586 218L581 216L579 213L575 217L573 217L568 212L566 212L566 216z"></path><path class="leaflet-interactive" stroke="#374151" stroke-opacity="1" stroke-width="0.8" stroke-linecap="round" stroke-linejoin="round" fill="#9ca3af" fill-opacity="0.7" fill-rule="evenodd" d="M577 177L578 184L576 187L571 189L571 193L573 193L573 195L577 199L582 200L586 198L589 201L592 198L595 203L593 205L596 206L597 203L600 204L602 202L600 201L600 199L602 199L605 202L611 198L607 197L608 192L606 184L608 180L602 168L598 170L594 168L594 172L591 175L588 168L586 168L586 174L584 174L581 177L578 177z"></path><path class="leaflet-interactive" stroke="#374151" stroke-opacity="1" stroke-width="0.8" stroke-linecap="round" stroke-linejoin="round" fill="#9ca3af" fill-opacity="0.7" fill-rule="evenodd" d="M643 184L638 191L639 192L637 198L644 197L648 201L653 202L655 208L657 206L657 202L655 199L657 195L656 194L662 195L664 189L662 185L663 177L656 176L654 182L651 181L648 184L643 184z"></path><path class="leaflet-interactive" stroke="#374151" stroke-opacity="1" stroke-width="0.8" stroke-linecap="round" stroke-linejoin="round" fill="#9ca3af" fill-opacity="0.7" fill-rule="evenodd" d="M626 168L625 167L623 171L621 170L619 172L617 170L613 170L611 174L608 173L606 175L608 179L606 184L608 192L607 197L610 198L605 202L602 199L600 199L602 203L599 204L601 210L607 208L608 211L613 211L615 215L618 209L617 208L619 208L620 211L624 209L628 210L633 204L634 206L635 203L638 202L638 190L642 187L643 184L640 181L636 182L634 178L636 174L634 172L630 172L626 168z"></path><path class="leaflet-interactive" stroke="#374151" stroke-opacity="1" stroke-width="0.8" stroke-linecap="round" stroke-linejoin="round" fill="#9ca3af" fill-opacity="0.7" fill-rule="evenodd" d="M579 213L582 216L584 216L587 220L590 219L590 217L593 218L596 223L601 212L601 207L597 203L596 206L594 206L593 205L595 203L592 198L589 201L584 197L582 199L579 198L576 201L578 209L577 210L579 213z"></path><path class="leaflet-interactive" stroke="#374151" stroke-opacity="1" stroke-width="0.8" stroke-linecap="round" stroke-linejoin="round" fill="#dc2626" fill-opacity="0.7" fill-rule="evenodd" d="M638 198L638 202L635 203L634 206L631 205L628 210L631 214L633 214L633 216L637 218L660 221L657 217L657 213L659 211L658 206L660 204L661 205L659 199L660 195L662 195L656 194L656 208L654 204L646 198L639 198z"></path><path class="leaflet-interactive" stroke="#374151" stroke-opacity="1" stroke-width="0.8" stroke-linecap="round" stroke-linejoin="round" fill="#22c55e" fill-opacity="0.7" fill-rule="evenodd" d="M601 210L597 222L601 227L602 233L607 230L609 232L618 232L618 217L613 211L608 211L607 208L602 210z"></path><path class="leaflet-interactive" stroke="#374151" stroke-opacity="1" stroke-width="0.8" stroke-linecap="round" stroke-linejoin="round" fill="#9ca3af" fill-opacity="0.7" fill-rule="evenodd" d="M616 215L618 217L618 225L621 228L623 228L623 230L625 230L629 234L630 231L634 231L631 228L637 224L638 219L635 216L634 217L633 214L631 214L625 209L620 211L619 208L617 208L618 209L616 215z"></path><path class="leaflet-interactive" stroke="#374151" stroke-opacity="1" stroke-width="0.8" stroke-linecap="round" stroke-linejoin="round" fill="#9ca3af" fill-opacity="0.7" fill-rule="evenodd" d="M638 218L638 222L634 227L631 228L634 231L634 233L637 236L639 234L641 236L644 234L647 237L647 243L645 243L645 245L648 248L647 249L661 251L661 229L663 224L660 221L638 218z"></path><path class="leaflet-interactive" stroke="#374151" stroke-opacity="1" stroke-width="0.8" stroke-linecap="round" stroke-linejoin="round" fill="#9ca3af" fill-opacity="0.7" fill-rule="evenodd" d="M585 231L590 236L593 235L596 238L598 238L599 241L601 239L609 242L610 241L610 232L602 232L601 227L597 223L595 223L591 217L591 219L589 219L585 225L585 231z"></path><path class="leaflet-interactive" stroke="#374151" stroke-opacity="1" stroke-width="0.8" stroke-linecap="round" stroke-linejoin="round" fill="#9ca3af" fill-opacity="0.7" fill-rule="evenodd" d="M610 232L612 234L609 237L609 242L614 243L617 248L631 257L632 247L630 245L630 241L631 242L633 240L620 227L618 232L611 232z"></path><path class="leaflet-interactive" stroke="#374151" stroke-opacity="1" stroke-width="0.8" stroke-linecap="round" stroke-linejoin="round" fill="#9ca3af" fill-opacity="0.7" fill-rule="evenodd" d="M592 237L595 242L593 250L597 256L612 250L611 244L609 242L602 239L600 241L593 235L592 236z"></path><path class="leaflet-interactive" stroke="#374151" stroke-opacity="1" stroke-width="0.8" stroke-linecap="round" stroke-linejoin="round" fill="#9ca3af" fill-opacity="0.7" fill-rule="evenodd" d="M609 242L611 244L612 249L607 252L610 255L610 257L614 259L611 265L612 267L616 263L624 264L628 256L627 253L617 248L614 243z"></path><path class="leaflet-interactive" stroke="#374151" stroke-opacity="1" stroke-width="0.8" stroke-linecap="round" stroke-linejoin="round" fill="#9ca3af" fill-opacity="0.7" fill-rule="evenodd" d="M599 256L599 263L602 262L601 265L606 269L610 269L612 267L614 259L612 259L610 255L605 252L599 256z"></path><path class="leaflet-interactive" stroke="#374151" stroke-opacity="1" stroke-width="0.8" stroke-linecap="round" stroke-linejoin="round" fill="#9ca3af" fill-opacity="0.7" fill-rule="evenodd" d="M599 263L597 265L598 274L606 271L601 264L602 263L599 263z"></path><path class="leaflet-interactive" stroke="#374151" stroke-opacity="1" stroke-width="0.8" stroke-linecap="round" stroke-linejoin="round" fill="#9ca3af" fill-opacity="0.7" fill-rule="evenodd" d="M612 267L610 269L606 269L605 272L613 272L622 275L624 273L625 264L616 263z"></path><path class="leaflet-interactive" stroke="#374151" stroke-opacity="1" stroke-width="0.8" stroke-linecap="round" stroke-linejoin="round" fill="#9ca3af" fill-opacity="0.7" fill-rule="evenodd" d="M593 250L591 254L585 254L585 260L587 264L591 264L590 265L593 267L593 269L595 269L598 266L597 265L599 263L599 257L593 250z"></path><path class="leaflet-interactive" stroke="#374151" stroke-opacity="1" stroke-width="0.8" stroke-linecap="round" stroke-linejoin="round" fill="#9ca3af" fill-opacity="0.7" fill-rule="evenodd" d="M597 268L593 269L593 267L590 265L591 264L587 264L586 261L583 266L587 268L590 275L595 276L597 274L597 269z"></path><path class="leaflet-interactive" stroke="#374151" stroke-opacity="1" stroke-width="0.8" stroke-linecap="round" stroke-linejoin="round" fill="#9ca3af" fill-opacity="0.7" fill-rule="evenodd" d="M628 256L624 267L624 271L627 276L629 274L633 277L635 275L638 276L643 280L640 284L643 286L659 277L655 268L649 270L640 267L631 257z"></path><path class="leaflet-interactive" stroke="#374151" stroke-opacity="1" stroke-width="0.8" stroke-linecap="round" stroke-linejoin="round" fill="#9ca3af" fill-opacity="0.7" fill-rule="evenodd" d="M598 274L595 277L602 281L608 279L608 281L610 281L612 279L613 272L607 273L605 271L603 273L598 274z"></path><path class="leaflet-interactive" stroke="#374151" stroke-opacity="1" stroke-width="0.8" stroke-linecap="round" stroke-linejoin="round" fill="#9ca3af" fill-opacity="0.7" fill-rule="evenodd" d="M600 281L603 284L605 284L604 285L611 287L614 284L610 284L612 280L608 282L607 279L602 281z"></path><path class="leaflet-interactive" stroke="#374151" stroke-opacity="1" stroke-width="0.8" stroke-linecap="round" stroke-linejoin="round" fill="#9ca3af" fill-opacity="0.7" fill-rule="evenodd" d="M613 272L610 284L614 284L611 287L620 289L621 288L618 285L620 279L619 278L623 275L616 273z"></path><path class="leaflet-interactive" stroke="#374151" stroke-opacity="1" stroke-width="0.8" stroke-linecap="round" stroke-linejoin="round" fill="#9ca3af" fill-opacity="0.7" fill-rule="evenodd" d="M623 275L620 276L618 286L621 287L619 289L618 288L618 290L622 290L623 287L625 288L624 289L632 284L631 283L633 283L632 280L634 278L631 275L627 275L625 274L625 272L623 275z"></path><path class="leaflet-interactive" stroke="#374151" stroke-opacity="1" stroke-width="0.8" stroke-linecap="round" stroke-linejoin="round" fill="#9ca3af" fill-opacity="0.7" fill-rule="evenodd" d="M634 277L632 280L633 283L631 283L632 284L629 287L623 287L623 289L620 291L622 291L621 292L629 301L632 299L632 296L643 280L638 276L635 275L634 277z"></path><path class="leaflet-interactive" stroke="#374151" stroke-opacity="1" stroke-width="0.8" stroke-linecap="round" stroke-linejoin="round" fill="#22c55e" fill-opacity="0.7" fill-rule="evenodd" d="M640 285L632 296L631 300L636 302L637 305L643 306L650 311L652 305L650 304L650 301L651 296L653 294L649 287L643 286z"></path><path class="leaflet-interactive" stroke="#374151" stroke-opacity="1" stroke-width="0.8" stroke-linecap="round" stroke-linejoin="round" fill="#9ca3af" fill-opacity="0.7" fill-rule="evenodd" d="M646 286L650 288L649 289L653 294L650 298L650 304L658 307L661 304L670 303L667 299L670 278L666 279L663 276L659 277L647 284z"></path><path class="leaflet-interactive" stroke="#374151" stroke-opacity="1" stroke-width="0.8" stroke-linecap="round" stroke-linejoin="round" fill="#22c55e" fill-opacity="0.7" fill-rule="evenodd" d="M658 307L666 315L673 311L674 312L675 310L670 303L664 303L658 307z"></path><path class="leaflet-interactive" stroke="#374151" stroke-opacity="1" stroke-width="0.8" stroke-linecap="round" stroke-linejoin="round" fill="#9ca3af" fill-opacity="0.7" fill-rule="evenodd" d="M650 311L659 316L661 323L665 327L668 315L666 316L667 315L665 315L665 313L654 305L651 306L650 311z"></path><path class="leaflet-interactive" stroke="#374151" stroke-opacity="1" stroke-width="0.8" stroke-linecap="round" stroke-linejoin="round" fill="#9ca3af" fill-opacity="0.7" fill-rule="evenodd" d="M667 315L666 316L668 315L668 317L666 323L669 328L671 322L674 319L688 319L688 314L686 310L683 309L681 312L679 312L676 309L672 313L669 313L667 315z"></path><path class="leaflet-interactive" stroke="#374151" stroke-opacity="1" stroke-width="0.8" stroke-linecap="round" stroke-linejoin="round" fill="#9ca3af" fill-opacity="0.7" fill-rule="evenodd" d="M671 303L674 309L676 309L679 312L681 312L683 309L686 310L688 314L688 319L691 320L693 324L700 323L700 315L698 311L699 310L692 300L693 297L690 292L667 292L667 298L671 303z"></path><path class="leaflet-interactive" stroke="#374151" stroke-opacity="1" stroke-width="0.8" stroke-linecap="round" stroke-linejoin="round" fill="#9ca3af" fill-opacity="0.7" fill-rule="evenodd" d="M587 254L584 249L577 249L582 257L578 261L577 265L583 267L584 266L585 254z"></path><path class="leaflet-interactive" stroke="#374151" stroke-opacity="1" stroke-width="0.8" stroke-linecap="round" stroke-linejoin="round" fill="#9ca3af" fill-opacity="0.7" fill-rule="evenodd" d="M562 252L562 250L561 253zM567 249L565 249L563 253L564 254L567 251L567 249zM563 248L561 248L560 251L563 248zM561 248L563 246L561 246L560 248zM563 252L566 249L566 245L563 248L563 252zM565 241L569 249L567 253L570 249L570 251L574 251L577 249L573 247L573 245L572 246L572 242L570 240L565 241z"></path><path class="leaflet-interactive" stroke="#374151" stroke-opacity="1" stroke-width="0.8" stroke-linecap="round" stroke-linejoin="round" fill="#9ca3af" fill-opacity="0.7" fill-rule="evenodd" d="M577 265L577 265zM577 249L574 251L570 250L564 254L564 256L569 257L571 261L577 265L578 261L582 257L577 250z"></path><path class="leaflet-interactive" stroke="#374151" stroke-opacity="1" stroke-width="0.8" stroke-linecap="round" stroke-linejoin="round" fill="#22c55e" fill-opacity="0.7" fill-rule="evenodd" d="M570 240L572 241L571 244L574 247L576 247L576 249L584 248L583 246L580 245L581 244L578 239L574 238L572 240z"></path><path class="leaflet-interactive" stroke="#374151" stroke-opacity="1" stroke-width="0.8" stroke-linecap="round" stroke-linejoin="round" fill="#9ca3af" fill-opacity="0.7" fill-rule="evenodd" d="M584 247L585 240L581 238L579 242L581 244L580 245L584 247z"></path><path class="leaflet-interactive" stroke="#374151" stroke-opacity="1" stroke-width="0.8" stroke-linecap="round" stroke-linejoin="round" fill="#22c55e" fill-opacity="0.7" fill-rule="evenodd" d="M573 238L579 239L581 237L583 239L584 238L586 242L590 236L585 231L579 234L575 232L574 233L571 230L570 235L573 236z"></path><path class="leaflet-interactive" stroke="#374151" stroke-opacity="1" stroke-width="0.8" stroke-linecap="round" stroke-linejoin="round" fill="#22c55e" fill-opacity="0.7" fill-rule="evenodd" d="M590 236L587 239L587 241L584 242L585 246L583 248L587 254L591 254L595 246L594 239L590 236z"></path><path class="leaflet-interactive" stroke="#374151" stroke-opacity="1" stroke-width="0.8" stroke-linecap="round" stroke-linejoin="round" fill="#9ca3af" fill-opacity="0.7" fill-rule="evenodd" d="M966 308L958 308L952 303L946 301L944 293L939 298L940 301L946 304L944 310L952 318L953 317L953 320L956 321L962 315L965 316L969 311L967 308z"></path><path class="leaflet-interactive" stroke="#374151" stroke-opacity="1" stroke-width="0.8" stroke-linecap="round" stroke-linejoin="round" fill="#9ca3af" fill-opacity="0.7" fill-rule="evenodd" d="M957 320L959 322L959 326L961 326L963 328L962 329L965 331L971 325L973 318L969 315L969 313L967 313L965 316L962 315L957 320z"></path><path class="leaflet-interactive" stroke="#374151" stroke-opacity="1" stroke-width="0.8" stroke-linecap="round" stroke-linejoin="round" fill="#facc15" fill-opacity="0.7" fill-rule="evenodd" d="M967 313L969 313L969 315L973 319L971 325L968 328L972 337L974 335L975 327L978 321L975 320L975 318L982 315L984 311L982 311L982 309L984 307L981 306L977 308L976 303L973 308L966 308L969 311L967 313z"></path><path class="leaflet-interactive" stroke="#374151" stroke-opacity="1" stroke-width="0.8" stroke-linecap="round" stroke-linejoin="round" fill="#9ca3af" fill-opacity="0.7" fill-rule="evenodd" d="M979 321L982 323L986 322L990 318L990 316L978 316L977 318L975 318L975 320L978 320z"></path><path class="leaflet-interactive" stroke="#374151" stroke-opacity="1" stroke-width="0.8" stroke-linecap="round" stroke-linejoin="round" fill="#9ca3af" fill-opacity="0.7" fill-rule="evenodd" d="M982 316L989 316L990 319L994 317L993 314L988 312L984 312L982 313L982 315z"></path><path class="leaflet-interactive" stroke="#374151" stroke-opacity="1" stroke-width="0.8" stroke-linecap="round" stroke-linejoin="round" fill="#9ca3af" fill-opacity="0.7" fill-rule="evenodd" d="M973 337L974 340L978 340L982 345L987 346L989 344L989 340L984 340L984 338L975 329L973 337z"></path><path class="leaflet-interactive" stroke="#374151" stroke-opacity="1" stroke-width="0.8" stroke-linecap="round" stroke-linejoin="round" fill="#9ca3af" fill-opacity="0.7" fill-rule="evenodd" d="M975 329L984 338L984 340L989 340L990 345L996 343L997 344L997 342L999 342L1000 340L999 336L985 322L983 323L978 321L975 329z"></path><path class="leaflet-interactive" stroke="#374151" stroke-opacity="1" stroke-width="0.8" stroke-linecap="round" stroke-linejoin="round" fill="#9ca3af" fill-opacity="0.7" fill-rule="evenodd" d="M985 322L1000 337L1000 340L1005 337L1005 333L1003 331L1009 329L1011 326L1011 322L1006 317L997 313L994 315L992 319L985 322z"></path><path class="leaflet-interactive" stroke="#374151" stroke-opacity="1" stroke-width="0.8" stroke-linecap="round" stroke-linejoin="round" fill="#9ca3af" fill-opacity="0.7" fill-rule="evenodd" d="M1005 338L1017 336L1024 339L1029 338L1031 342L1031 340L1033 340L1036 337L1029 330L1028 322L1018 319L1016 317L1014 323L1011 322L1010 329L1004 331L1005 337z"></path><path class="leaflet-interactive" stroke="#374151" stroke-opacity="1" stroke-width="0.8" stroke-linecap="round" stroke-linejoin="round" fill="#9ca3af" fill-opacity="0.7" fill-rule="evenodd" d="M1029 326L1033 325L1036 322L1037 318L1040 317L1042 313L1039 309L1036 310L1028 308L1024 310L1023 308L1020 310L1022 314L1015 315L1018 319L1027 321L1029 326z"></path><path class="leaflet-interactive" stroke="#374151" stroke-opacity="1" stroke-width="0.8" stroke-linecap="round" stroke-linejoin="round" fill="#9ca3af" fill-opacity="0.7" fill-rule="evenodd" d="M1011 322L1014 323L1016 319L1016 314L1022 314L1020 310L1023 308L1008 307L1005 314L1006 315L1003 316L1008 321L1011 322z"></path><path class="leaflet-interactive" stroke="#374151" stroke-opacity="1" stroke-width="0.8" stroke-linecap="round" stroke-linejoin="round" fill="#9ca3af" fill-opacity="0.7" fill-rule="evenodd" d="M1035 310L1035 306L1029 301L1030 300L1028 298L1021 300L1014 307L1023 308L1025 310L1028 308L1035 309z"></path><path class="leaflet-interactive" stroke="#374151" stroke-opacity="1" stroke-width="0.8" stroke-linecap="round" stroke-linejoin="round" fill="#9ca3af" fill-opacity="0.7" fill-rule="evenodd" d="M1014 307L1014 305L1025 298L1025 296L1022 293L1018 291L1018 293L1015 290L1013 295L1014 296L1008 307L1013 307z"></path><path class="leaflet-interactive" stroke="#374151" stroke-opacity="1" stroke-width="0.8" stroke-linecap="round" stroke-linejoin="round" fill="#9ca3af" fill-opacity="0.7" fill-rule="evenodd" d="M1028 298L1034 293L1032 285L1033 286L1031 286L1027 282L1027 284L1025 284L1024 286L1023 285L1021 289L1017 288L1017 290L1015 290L1018 293L1018 291L1022 293L1025 296L1025 298L1028 298z"></path><path class="leaflet-interactive" stroke="#374151" stroke-opacity="1" stroke-width="0.8" stroke-linecap="round" stroke-linejoin="round" fill="#9ca3af" fill-opacity="0.7" fill-rule="evenodd" d="M1042 312L1045 313L1047 311L1046 308L1041 304L1040 295L1033 294L1029 298L1029 300L1035 306L1035 310L1040 309L1041 312z"></path><path class="leaflet-interactive" stroke="#374151" stroke-opacity="1" stroke-width="0.8" stroke-linecap="round" stroke-linejoin="round" fill="#9ca3af" fill-opacity="0.7" fill-rule="evenodd" d="M1036 337L1039 339L1045 339L1049 334L1058 333L1058 328L1061 323L1061 319L1053 318L1052 313L1042 313L1040 317L1036 319L1035 323L1028 328L1036 337z"></path><path class="leaflet-interactive" stroke="#374151" stroke-opacity="1" stroke-width="0.8" stroke-linecap="round" stroke-linejoin="round" fill="#9ca3af" fill-opacity="0.7" fill-rule="evenodd" d="M1046 313L1052 313L1054 311L1059 310L1060 307L1060 305L1056 304L1053 301L1053 298L1050 296L1050 290L1042 291L1039 294L1041 298L1041 304L1046 308L1046 313z"></path><path class="leaflet-interactive" stroke="#374151" stroke-opacity="1" stroke-width="0.8" stroke-linecap="round" stroke-linejoin="round" fill="#9ca3af" fill-opacity="0.7" fill-rule="evenodd" d="M1034 294L1037 295L1040 293L1042 291L1042 287L1036 281L1033 281L1031 277L1027 279L1027 283L1029 285L1033 285L1032 286L1034 293z"></path><path class="leaflet-interactive" stroke="#374151" stroke-opacity="1" stroke-width="0.8" stroke-linecap="round" stroke-linejoin="round" fill="#9ca3af" fill-opacity="0.7" fill-rule="evenodd" d="M1059 307L1062 308L1066 305L1070 305L1072 303L1069 300L1072 299L1073 295L1069 291L1070 288L1068 286L1057 284L1054 290L1050 291L1050 295L1054 299L1053 302L1058 304L1060 306L1059 307z"></path><path class="leaflet-interactive" stroke="#374151" stroke-opacity="1" stroke-width="0.8" stroke-linecap="round" stroke-linejoin="round" fill="#9ca3af" fill-opacity="0.7" fill-rule="evenodd" d="M1050 290L1054 290L1058 282L1056 278L1057 277L1051 272L1050 269L1033 274L1033 281L1038 282L1042 291L1050 290z"></path><path class="leaflet-interactive" stroke="#374151" stroke-opacity="1" stroke-width="0.8" stroke-linecap="round" stroke-linejoin="round" fill="#9ca3af" fill-opacity="0.7" fill-rule="evenodd" d="M1061 319L1064 317L1071 316L1071 314L1074 313L1089 315L1094 310L1091 307L1090 308L1093 307L1094 304L1091 302L1087 295L1081 295L1081 285L1073 285L1070 287L1069 292L1074 295L1070 300L1068 300L1072 303L1070 305L1066 305L1063 308L1060 307L1059 310L1054 311L1052 313L1053 318L1060 319z"></path><path class="leaflet-interactive" stroke="#374151" stroke-opacity="1" stroke-width="0.8" stroke-linecap="round" stroke-linejoin="round" fill="#9ca3af" fill-opacity="0.7" fill-rule="evenodd" d="M1070 287L1088 282L1088 280L1082 280L1081 278L1085 270L1084 263L1086 265L1090 264L1084 260L1086 258L1087 259L1084 255L1077 255L1078 258L1076 260L1074 260L1067 267L1061 268L1061 270L1051 270L1051 272L1057 277L1056 278L1058 282L1056 284L1070 287z"></path><path class="leaflet-interactive" stroke="#374151" stroke-opacity="1" stroke-width="0.8" stroke-linecap="round" stroke-linejoin="round" fill="#9ca3af" fill-opacity="0.7" fill-rule="evenodd" d="M1051 270L1061 270L1061 268L1053 259L1051 253L1042 255L1045 263L1048 264L1051 270z"></path><path class="leaflet-interactive" stroke="#374151" stroke-opacity="1" stroke-width="0.8" stroke-linecap="round" stroke-linejoin="round" fill="#9ca3af" fill-opacity="0.7" fill-rule="evenodd" d="M1094 305L1099 303L1101 300L1109 299L1102 293L1104 286L1109 287L1110 284L1115 284L1121 280L1129 280L1127 274L1128 273L1127 272L1122 275L1118 274L1114 276L1112 272L1115 269L1119 268L1111 268L1098 274L1098 278L1092 282L1091 286L1090 285L1086 287L1081 285L1081 295L1087 295L1094 304z"></path><path class="leaflet-interactive" stroke="#374151" stroke-opacity="1" stroke-width="0.8" stroke-linecap="round" stroke-linejoin="round" fill="#9ca3af" fill-opacity="0.7" fill-rule="evenodd" d="M1081 285L1086 287L1090 285L1091 286L1093 281L1097 280L1096 279L1100 272L1102 273L1111 268L1116 267L1118 267L1118 269L1122 267L1124 264L1125 265L1129 258L1128 257L1127 259L1126 258L1123 260L1110 261L1108 259L1110 257L1106 252L1097 250L1093 252L1094 249L1090 244L1084 245L1085 251L1083 255L1085 255L1085 257L1087 258L1084 261L1090 263L1089 265L1085 263L1084 264L1085 269L1084 273L1081 276L1082 279L1088 281L1086 283L1083 282L1084 283L1080 285z"></path><path class="leaflet-interactive" stroke="#374151" stroke-opacity="1" stroke-width="0.8" stroke-linecap="round" stroke-linejoin="round" fill="#9ca3af" fill-opacity="0.7" fill-rule="evenodd" d="M1083 255L1085 251L1084 245L1051 253L1053 259L1059 265L1060 268L1067 267L1076 259L1077 260L1078 256z"></path><path class="leaflet-interactive" stroke="#374151" stroke-opacity="1" stroke-width="0.8" stroke-linecap="round" stroke-linejoin="round" fill="#9ca3af" fill-opacity="0.7" fill-rule="evenodd" d="M1051 270L1049 266L1044 262L1044 258L1041 255L1035 255L1025 263L1032 269L1033 274L1050 269z"></path><path class="leaflet-interactive" stroke="#374151" stroke-opacity="1" stroke-width="0.8" stroke-linecap="round" stroke-linejoin="round" fill="#9ca3af" fill-opacity="0.7" fill-rule="evenodd" d="M1032 279L1034 277L1032 269L1025 263L1024 259L1021 258L1018 264L1020 269L1019 276L1021 276L1022 279L1024 277L1031 277L1032 279z"></path><path class="leaflet-interactive" stroke="#374151" stroke-opacity="1" stroke-width="0.8" stroke-linecap="round" stroke-linejoin="round" fill="#9ca3af" fill-opacity="0.7" fill-rule="evenodd" d="M1097 250L1106 245L1106 240L1111 238L1120 228L1120 220L1118 217L1116 216L1110 224L1110 226L1100 236L1100 238L1091 244L1094 248L1093 251L1094 252L1096 250z"></path><path class="leaflet-interactive" stroke="#374151" stroke-opacity="1" stroke-width="0.8" stroke-linecap="round" stroke-linejoin="round" fill="#9ca3af" fill-opacity="0.7" fill-rule="evenodd" d="M1128 257L1132 249L1137 244L1139 240L1138 239L1145 231L1141 229L1143 226L1140 223L1132 234L1129 231L1127 232L1127 230L1124 227L1119 229L1110 239L1106 239L1105 245L1097 250L1107 252L1107 254L1110 256L1110 258L1108 259L1110 261L1123 260L1125 258L1128 258z"></path><path class="leaflet-interactive" stroke="#374151" stroke-opacity="1" stroke-width="0.8" stroke-linecap="round" stroke-linejoin="round" fill="#9ca3af" fill-opacity="0.7" fill-rule="evenodd" d="M1092 313L1100 315L1095 320L1096 321L1101 320L1103 322L1111 322L1115 326L1123 325L1126 329L1134 325L1134 323L1140 319L1148 318L1151 321L1161 316L1167 320L1170 317L1170 313L1175 307L1174 302L1176 300L1177 301L1181 299L1183 293L1179 292L1180 289L1178 289L1168 291L1162 294L1145 295L1137 290L1131 281L1121 280L1115 284L1110 284L1109 287L1103 287L1104 288L1102 293L1109 299L1102 300L1093 307L1091 307L1090 308L1091 307L1094 310L1092 312z"></path><path class="leaflet-interactive" stroke="#374151" stroke-opacity="1" stroke-width="0.8" stroke-linecap="round" stroke-linejoin="round" fill="#9ca3af" fill-opacity="0.7" fill-rule="evenodd" d="M1129 280L1142 294L1162 294L1168 291L1178 289L1178 285L1181 282L1185 281L1187 277L1188 278L1192 276L1194 272L1199 271L1195 266L1194 267L1192 265L1195 257L1192 256L1192 258L1186 262L1177 261L1173 258L1173 256L1170 253L1168 254L1165 251L1165 249L1163 249L1156 243L1158 239L1157 237L1155 237L1151 232L1149 234L1145 234L1145 232L1138 238L1139 239L1137 244L1128 255L1129 260L1126 264L1124 264L1119 269L1115 269L1112 272L1114 276L1118 274L1121 275L1126 272L1128 273L1127 274L1129 279z"></path><path class="leaflet-interactive" stroke="#374151" stroke-opacity="1" stroke-width="0.8" stroke-linecap="round" stroke-linejoin="round" fill="#9ca3af" fill-opacity="0.7" fill-rule="evenodd" d="M1144 232L1144 234L1148 234L1150 232L1158 238L1156 242L1158 245L1161 246L1161 248L1165 249L1167 253L1167 246L1174 245L1174 243L1171 241L1168 235L1154 223L1153 221L1156 222L1160 216L1158 213L1160 211L1161 205L1156 202L1156 205L1154 207L1155 205L1152 199L1152 195L1146 192L1141 195L1142 202L1144 205L1142 209L1143 216L1140 223L1143 226L1141 228L1145 231z"></path><path class="leaflet-interactive" stroke="#374151" stroke-opacity="1" stroke-width="0.8" stroke-linecap="round" stroke-linejoin="round" fill="#9ca3af" fill-opacity="0.7" fill-rule="evenodd" d="M1121 228L1124 227L1127 230L1126 231L1130 231L1131 234L1135 231L1136 227L1140 223L1143 216L1143 214L1141 213L1143 212L1142 209L1144 206L1141 197L1142 194L1136 196L1128 205L1116 214L1116 216L1120 220L1120 228z"></path><path class="leaflet-interactive" stroke="#374151" stroke-opacity="1" stroke-width="0.8" stroke-linecap="round" stroke-linejoin="round" fill="#dc2626" fill-opacity="0.7" fill-rule="evenodd" d="M1212 205L1209 211L1205 211L1193 199L1190 202L1190 205L1199 212L1194 220L1193 230L1204 249L1212 245L1214 241L1212 239L1214 228L1218 228L1214 220L1216 209L1212 205zM1146 192L1145 191L1150 188L1152 183L1150 181L1150 177L1141 175L1141 187L1134 198L1139 194L1145 193z"></path><path class="leaflet-interactive" stroke="#374151" stroke-opacity="1" stroke-width="0.8" stroke-linecap="round" stroke-linejoin="round" fill="#9ca3af" fill-opacity="0.7" fill-rule="evenodd" d="M1192 256L1194 256L1196 251L1198 251L1201 248L1201 244L1193 230L1193 224L1195 218L1199 213L1198 211L1191 205L1187 208L1184 206L1180 206L1175 209L1170 208L1169 211L1163 211L1164 208L1162 204L1161 209L1158 213L1160 216L1157 222L1154 221L1154 223L1162 229L1174 244L1173 246L1171 245L1167 247L1167 253L1173 256L1173 258L1176 261L1186 262L1192 257z"></path><path class="leaflet-interactive" stroke="#374151" stroke-opacity="1" stroke-width="0.8" stroke-linecap="round" stroke-linejoin="round" fill="#9ca3af" fill-opacity="0.7" fill-rule="evenodd" d="M1161 204L1164 208L1163 211L1169 211L1170 208L1175 209L1180 206L1184 206L1186 208L1190 205L1190 202L1193 198L1180 195L1172 203L1170 203L1171 202L1164 195L1162 190L1157 191L1157 185L1155 180L1152 178L1151 179L1150 177L1152 185L1149 189L1145 191L1152 195L1152 199L1155 205L1154 206L1156 203L1160 204z"></path><path class="leaflet-interactive" stroke="#374151" stroke-opacity="1" stroke-width="0.8" stroke-linecap="round" stroke-linejoin="round" fill="#9ca3af" fill-opacity="0.7" fill-rule="evenodd" d="M1214 206L1217 205L1219 201L1219 197L1217 195L1217 191L1219 189L1215 185L1215 179L1213 175L1218 167L1217 158L1207 158L1204 162L1197 158L1197 160L1194 162L1199 167L1199 173L1201 175L1200 182L1201 185L1204 186L1204 188L1201 191L1211 198L1210 201L1213 206z"></path><path class="leaflet-interactive" stroke="#374151" stroke-opacity="1" stroke-width="0.8" stroke-linecap="round" stroke-linejoin="round" fill="#9ca3af" fill-opacity="0.7" fill-rule="evenodd" d="M1212 206L1210 202L1211 198L1206 193L1202 192L1199 186L1192 185L1192 178L1190 176L1189 171L1190 163L1188 161L1186 166L1182 166L1180 169L1178 169L1180 173L1179 180L1182 184L1182 188L1179 191L1181 191L1179 195L1191 197L1204 211L1209 211L1211 206z"></path><path class="leaflet-interactive" stroke="#374151" stroke-opacity="1" stroke-width="0.8" stroke-linecap="round" stroke-linejoin="round" fill="#9ca3af" fill-opacity="0.7" fill-rule="evenodd" d="M1218 197L1223 192L1225 193L1228 189L1227 176L1225 174L1227 164L1225 162L1226 156L1223 154L1219 154L1217 151L1213 150L1213 154L1208 158L1217 158L1218 166L1213 174L1215 179L1215 185L1219 188L1217 191L1218 196z"></path><path class="leaflet-interactive" stroke="#374151" stroke-opacity="1" stroke-width="0.8" stroke-linecap="round" stroke-linejoin="round" fill="#9ca3af" fill-opacity="0.7" fill-rule="evenodd" d="M1228 185L1234 178L1238 169L1238 166L1233 159L1235 149L1233 139L1231 143L1229 143L1225 147L1223 152L1223 154L1226 157L1225 163L1227 164L1225 174L1227 176L1227 185z"></path><path class="leaflet-interactive" stroke="#374151" stroke-opacity="1" stroke-width="0.8" stroke-linecap="round" stroke-linejoin="round" fill="#9ca3af" fill-opacity="0.7" fill-rule="evenodd" d="M1223 155L1225 146L1226 147L1229 143L1230 144L1232 140L1229 139L1224 132L1218 132L1215 133L1207 145L1211 148L1214 147L1214 149L1219 154L1223 154z"></path><path class="leaflet-interactive" stroke="#374151" stroke-opacity="1" stroke-width="0.8" stroke-linecap="round" stroke-linejoin="round" fill="#9ca3af" fill-opacity="0.7" fill-rule="evenodd" d="M1218 132L1216 132L1215 129L1213 133L1211 133L1207 138L1204 139L1205 140L1203 144L1205 143L1207 145L1215 133L1218 133z"></path><path class="leaflet-interactive" stroke="#374151" stroke-opacity="1" stroke-width="0.8" stroke-linecap="round" stroke-linejoin="round" fill="#9ca3af" fill-opacity="0.7" fill-rule="evenodd" d="M1194 147L1193 146L1194 147zM1202 144L1203 144zM1200 144L1199 139L1195 145L1198 144L1198 146L1200 144z"></path><path class="leaflet-interactive" stroke="#374151" stroke-opacity="1" stroke-width="0.8" stroke-linecap="round" stroke-linejoin="round" fill="#9ca3af" fill-opacity="0.7" fill-rule="evenodd" d="M1228 185L1235 188L1235 190L1241 187L1241 185L1249 185L1253 188L1253 190L1256 187L1257 188L1259 184L1262 188L1268 185L1271 188L1280 185L1282 181L1271 174L1273 170L1271 170L1268 166L1262 169L1259 168L1257 162L1258 154L1255 151L1245 156L1241 164L1237 164L1237 174L1234 176L1233 179L1231 179L1229 183z"></path><path class="leaflet-interactive" stroke="#374151" stroke-opacity="1" stroke-width="0.8" stroke-linecap="round" stroke-linejoin="round" fill="#9ca3af" fill-opacity="0.7" fill-rule="evenodd" d="M1237 164L1241 164L1245 156L1249 155L1250 153L1254 153L1254 147L1260 144L1259 141L1260 137L1263 136L1263 132L1258 131L1249 135L1241 128L1238 129L1236 133L1237 134L1232 139L1234 140L1235 145L1232 159L1236 163z"></path><path class="leaflet-interactive" stroke="#374151" stroke-opacity="1" stroke-width="0.8" stroke-linecap="round" stroke-linejoin="round" fill="#9ca3af" fill-opacity="0.7" fill-rule="evenodd" d="M1233 139L1233 137L1236 136L1238 129L1240 129L1242 125L1245 126L1247 123L1243 123L1236 118L1229 123L1228 131L1225 132L1225 134L1228 137L1228 139L1232 141L1233 139z"></path><path class="leaflet-interactive" stroke="#374151" stroke-opacity="1" stroke-width="0.8" stroke-linecap="round" stroke-linejoin="round" fill="#9ca3af" fill-opacity="0.7" fill-rule="evenodd" d="M1237 119L1235 115L1235 117L1237 118z"></path><path class="leaflet-interactive" stroke="#374151" stroke-opacity="1" stroke-width="0.8" stroke-linecap="round" stroke-linejoin="round" fill="#9ca3af" fill-opacity="0.7" fill-rule="evenodd" d="M1258 131L1261 125L1258 121L1259 118L1256 115L1252 116L1251 119L1249 119L1247 123L1241 128L1248 135L1258 131z"></path><path class="leaflet-interactive" stroke="#374151" stroke-opacity="1" stroke-width="0.8" stroke-linecap="round" stroke-linejoin="round" fill="#9ca3af" fill-opacity="0.7" fill-rule="evenodd" d="M1247 123L1249 120L1248 118L1246 118L1241 113L1238 113L1236 115L1238 117L1237 118L1243 123L1246 123z"></path><path class="leaflet-interactive" stroke="#374151" stroke-opacity="1" stroke-width="0.8" stroke-linecap="round" stroke-linejoin="round" fill="#facc15" fill-opacity="0.7" fill-rule="evenodd" d="M1233 113L1233 113zM1234 113L1234 113zM1234 112L1233 113L1234 112zM1234 111L1234 111zM1234 110L1236 112L1236 110L1234 110zM1237 108L1236 109L1237 108zM1236 115L1240 113L1246 118L1244 114L1247 109L1245 110L1242 106L1241 107L1239 105L1237 107L1239 107L1238 112L1235 113L1236 115z"></path><path class="leaflet-interactive" stroke="#374151" stroke-opacity="1" stroke-width="0.8" stroke-linecap="round" stroke-linejoin="round" fill="#9ca3af" fill-opacity="0.7" fill-rule="evenodd" d="M1252 116L1256 111L1252 106L1253 105L1250 97L1246 97L1239 105L1241 107L1242 106L1244 110L1247 109L1244 114L1246 118L1250 120L1252 116z"></path><path class="leaflet-interactive" stroke="#374151" stroke-opacity="1" stroke-width="0.8" stroke-linecap="round" stroke-linejoin="round" fill="#9ca3af" fill-opacity="0.7" fill-rule="evenodd" d="M1249 93L1248 94L1249 93zM1256 111L1260 103L1263 101L1261 99L1263 97L1260 92L1263 83L1262 81L1259 82L1256 89L1249 93L1249 95L1247 95L1248 98L1246 98L1250 97L1253 104L1253 109L1255 111z"></path><path class="leaflet-interactive" stroke="#374151" stroke-opacity="1" stroke-width="0.8" stroke-linecap="round" stroke-linejoin="round" fill="#9ca3af" fill-opacity="0.7" fill-rule="evenodd" d="M1263 132L1271 135L1275 127L1279 125L1278 121L1273 117L1276 114L1278 114L1280 110L1283 109L1284 104L1278 99L1277 100L1275 98L1269 101L1263 101L1259 104L1252 116L1255 115L1259 117L1258 121L1261 124L1259 131L1263 132z"></path><path class="leaflet-interactive" stroke="#374151" stroke-opacity="1" stroke-width="0.8" stroke-linecap="round" stroke-linejoin="round" fill="#9ca3af" fill-opacity="0.7" fill-rule="evenodd" d="M1263 101L1269 101L1277 96L1283 96L1284 94L1274 82L1270 86L1268 84L1268 80L1262 80L1263 82L1260 91L1261 96L1263 96L1262 101z"></path><path class="leaflet-interactive" stroke="#374151" stroke-opacity="1" stroke-width="0.8" stroke-linecap="round" stroke-linejoin="round" fill="#9ca3af" fill-opacity="0.7" fill-rule="evenodd" d="M1263 80L1268 81L1273 74L1269 72L1272 71L1272 69L1267 64L1262 75L1263 80zM1291 62L1291 62zM1293 62L1291 62L1292 65L1295 64L1293 62zM1292 61L1292 62zM1281 61L1281 61zM1283 61L1283 61zM1284 59L1283 60L1284 59zM1286 58L1284 60L1286 59zM1286 58L1286 58zM1288 58L1286 58L1288 58zM1294 56L1293 57L1294 56zM1294 55L1293 56L1294 55zM1293 55L1292 56L1293 55zM1292 53L1292 53zM1280 52L1279 49L1276 52L1274 52L1272 56L1273 57L1273 55L1278 55L1277 52L1280 52zM1291 50L1286 49L1282 53L1282 61L1286 57L1290 55L1290 57L1292 55L1292 49L1291 50z"></path><path class="leaflet-interactive" stroke="#374151" stroke-opacity="1" stroke-width="0.8" stroke-linecap="round" stroke-linejoin="round" fill="#9ca3af" fill-opacity="0.7" fill-rule="evenodd" d="M1305 193L1303 193L1307 195L1305 193zM1311 191L1307 193L1309 195L1320 195L1311 191zM1309 185L1307 185L1309 185zM1308 184L1308 184zM1276 187L1287 188L1291 186L1296 191L1298 191L1300 195L1302 195L1309 190L1306 185L1310 183L1311 186L1310 183L1311 184L1311 182L1316 178L1315 171L1311 167L1307 169L1304 167L1300 167L1301 169L1299 172L1297 172L1294 168L1292 168L1291 171L1283 171L1281 174L1285 178L1280 182L1281 184L1276 187z"></path><path class="leaflet-interactive" stroke="#374151" stroke-opacity="1" stroke-width="0.8" stroke-linecap="round" stroke-linejoin="round" fill="#9ca3af" fill-opacity="0.7" fill-rule="evenodd" d="M1311 184L1312 187L1314 187L1319 192L1324 193L1329 190L1340 187L1335 183L1334 176L1326 174L1322 175L1322 173L1317 176L1317 174L1314 180L1312 180L1311 182z"></path><path class="leaflet-interactive" stroke="#374151" stroke-opacity="1" stroke-width="0.8" stroke-linecap="round" stroke-linejoin="round" fill="#9ca3af" fill-opacity="0.7" fill-rule="evenodd" d="M1338 168L1339 167L1338 168zM1338 167L1338 167zM1338 167L1338 167zM1339 166L1339 166zM1337 165L1338 166L1337 165zM1316 174L1318 176L1321 173L1323 175L1332 175L1335 178L1335 180L1336 177L1339 175L1329 162L1326 162L1321 167L1315 169L1314 168L1313 169L1316 174z"></path><path class="leaflet-interactive" stroke="#374151" stroke-opacity="1" stroke-width="0.8" stroke-linecap="round" stroke-linejoin="round" fill="#9ca3af" fill-opacity="0.7" fill-rule="evenodd" d="M1340 187L1343 188L1343 176L1341 174L1339 174L1335 181L1335 183L1340 186zM1343 172L1340 173L1343 174zM1343 170L1343 171z"></path><path class="leaflet-interactive" stroke="#374151" stroke-opacity="1" stroke-width="0.8" stroke-linecap="round" stroke-linejoin="round" fill="#9ca3af" fill-opacity="0.7" fill-rule="evenodd" d="M1342 168L1342 168zM1341 166L1343 166L1341 166zM1340 158L1339 159L1342 158L1340 158zM1313 168L1316 169L1321 167L1326 162L1330 163L1334 159L1338 159L1339 156L1343 156L1343 144L1324 149L1315 147L1311 150L1309 156L1302 160L1303 162L1300 167L1304 167L1306 169L1311 167L1312 168z"></path><path class="leaflet-interactive" stroke="#374151" stroke-opacity="1" stroke-width="0.8" stroke-linecap="round" stroke-linejoin="round" fill="#9ca3af" fill-opacity="0.7" fill-rule="evenodd" d="M1282 180L1285 177L1281 175L1284 171L1290 171L1293 168L1298 172L1301 170L1301 131L1297 127L1293 129L1291 132L1287 133L1277 129L1273 131L1273 133L1271 134L1272 135L1263 132L1263 136L1260 137L1259 140L1260 143L1254 148L1254 150L1258 154L1257 159L1258 166L1260 169L1262 169L1265 166L1269 166L1273 171L1271 175L1281 180z"></path><path class="leaflet-interactive" stroke="#374151" stroke-opacity="1" stroke-width="0.8" stroke-linecap="round" stroke-linejoin="round" fill="#9ca3af" fill-opacity="0.7" fill-rule="evenodd" d="M1343 121L1340 119L1340 123L1332 131L1329 131L1329 134L1326 134L1326 132L1319 130L1321 127L1317 128L1316 125L1312 126L1311 124L1307 124L1298 127L1301 131L1301 165L1303 163L1302 161L1310 155L1312 149L1315 147L1324 149L1343 144z"></path><path class="leaflet-interactive" stroke="#374151" stroke-opacity="1" stroke-width="0.8" stroke-linecap="round" stroke-linejoin="round" fill="#dc2626" fill-opacity="0.7" fill-rule="evenodd" d="M1321 123L1321 123zM1330 123L1331 123zM1322 122L1322 122zM1329 121L1328 122L1330 122L1329 121zM1323 121L1323 121zM1321 121L1325 123L1322 121zM1331 120L1331 120zM1331 118L1331 118zM1340 121L1333 118L1331 120L1332 123L1330 123L1330 127L1326 124L1322 126L1320 122L1323 121L1322 120L1327 121L1330 118L1327 115L1326 110L1324 108L1320 112L1320 114L1313 114L1313 116L1307 116L1312 126L1316 125L1317 128L1321 127L1319 130L1326 132L1326 134L1329 134L1329 131L1336 128L1340 123z"></path><path class="leaflet-interactive" stroke="#374151" stroke-opacity="1" stroke-width="0.8" stroke-linecap="round" stroke-linejoin="round" fill="#9ca3af" fill-opacity="0.7" fill-rule="evenodd" d="M1275 129L1282 130L1282 132L1287 133L1291 132L1294 128L1298 127L1294 119L1294 111L1288 113L1287 118L1285 117L1284 113L1285 109L1280 110L1280 112L1273 117L1279 122L1279 126L1275 128z"></path><path class="leaflet-interactive" stroke="#374151" stroke-opacity="1" stroke-width="0.8" stroke-linecap="round" stroke-linejoin="round" fill="#9ca3af" fill-opacity="0.7" fill-rule="evenodd" d="M1312 110L1309 113L1310 114L1312 110zM1283 110L1285 110L1284 114L1286 118L1288 118L1288 114L1293 111L1294 120L1296 121L1298 127L1310 124L1307 116L1302 117L1310 113L1310 111L1307 110L1309 108L1306 107L1308 106L1305 103L1308 100L1312 100L1311 99L1313 92L1305 87L1303 83L1300 87L1297 86L1296 83L1292 83L1289 86L1285 86L1283 88L1285 90L1282 91L1284 94L1282 96L1280 95L1275 98L1282 103L1283 102L1285 106L1283 109zM1300 77L1296 77L1299 80L1294 81L1296 83L1301 82L1302 81L1300 77z"></path><path class="leaflet-interactive" stroke="#374151" stroke-opacity="1" stroke-width="0.8" stroke-linecap="round" stroke-linejoin="round" fill="#9ca3af" fill-opacity="0.7" fill-rule="evenodd" d="M1291 74L1292 73L1291 74zM1282 91L1285 90L1283 88L1285 86L1289 86L1292 83L1292 79L1289 74L1291 70L1286 65L1283 66L1282 69L1280 69L1280 75L1278 79L1274 82L1277 85L1277 87L1282 91z"></path><path class="leaflet-interactive" stroke="#374151" stroke-opacity="1" stroke-width="0.8" stroke-linecap="round" stroke-linejoin="round" fill="#9ca3af" fill-opacity="0.7" fill-rule="evenodd" d="M624 119L624 119zM616 123L613 126L615 132L614 139L619 142L623 139L622 138L624 130L626 128L626 123L620 118L616 123zM631 116L630 115L630 117L631 116zM629 115L630 116L629 115zM627 114L627 114zM627 114L627 114zM627 113L627 113zM626 113L626 113zM627 113L627 113zM627 113L627 113zM626 113L626 113z"></path><path class="leaflet-interactive" stroke="#374151" stroke-opacity="1" stroke-width="0.8" stroke-linecap="round" stroke-linejoin="round" fill="#9ca3af" fill-opacity="0.7" fill-rule="evenodd" d="M641 147L641 143L645 141L647 143L648 142L642 134L638 138L637 143L639 145zM645 130L645 130zM645 128L644 129L645 128zM645 127L645 127zM645 127L645 127zM645 127L645 127zM643 124L643 124zM643 123L643 124zM642 123L642 123zM644 122L644 122zM644 122L644 122zM637 121L637 121zM642 120L641 123L643 123L642 120z"></path><path class="leaflet-interactive" stroke="#374151" stroke-opacity="1" stroke-width="0.8" stroke-linecap="round" stroke-linejoin="round" fill="#9ca3af" fill-opacity="0.7" fill-rule="evenodd" d="M654 147L654 147zM654 146L654 146zM652 159L652 161L655 163L659 163L650 145L647 148L648 147L646 145L644 147L644 151L646 153L647 152L652 159z"></path><path class="leaflet-interactive" stroke="#374151" stroke-opacity="1" stroke-width="0.8" stroke-linecap="round" stroke-linejoin="round" fill="#9ca3af" fill-opacity="0.7" fill-rule="evenodd" d="M683 262L684 263L683 262zM682 262L682 262zM695 253L692 258L693 261L697 261L695 253zM692 252L692 252zM628 234L628 236L633 241L630 241L630 245L632 247L631 256L640 267L649 270L658 267L669 273L670 272L670 264L668 264L670 264L661 252L658 250L647 249L648 248L645 245L645 243L647 243L647 237L644 233L643 235L640 234L638 236L634 233L634 231L630 231L628 234z"></path><path class="leaflet-interactive" stroke="#374151" stroke-opacity="1" stroke-width="0.8" stroke-linecap="round" stroke-linejoin="round" fill="#9ca3af" fill-opacity="0.7" fill-rule="evenodd" d="M692 286L692 286zM690 283L690 285L690 283zM691 279L693 281L694 280L691 280zM686 273L687 274L686 273zM711 273L710 272L711 275L711 273zM685 272L685 272zM710 272L710 272zM680 272L680 272zM685 271L685 271zM702 267L703 268L702 267zM659 277L663 276L666 279L670 277L667 292L690 292L685 284L685 279L681 276L679 268L676 265L669 264L669 270L671 272L670 273L661 268L655 268z"></path><path class="leaflet-interactive" stroke="#374151" stroke-opacity="1" stroke-width="0.8" stroke-linecap="round" stroke-linejoin="round" fill="#9ca3af" fill-opacity="0.7" fill-rule="evenodd" d="M530 194L530 194zM533 193L532 194L533 193zM530 191L529 192L531 194L530 191zM539 179L533 180L533 184L532 183L530 189L531 188L532 191L535 192L532 193L534 196L535 195L540 199L540 203L543 200L540 197L540 195L543 190L543 187L541 187L544 178L539 179z"></path><path class="leaflet-interactive" stroke="#374151" stroke-opacity="1" stroke-width="0.8" stroke-linecap="round" stroke-linejoin="round" fill="#9ca3af" fill-opacity="0.7" fill-rule="evenodd" d="M609 114L611 114L614 117L618 115L612 104L610 106L612 108L611 113L609 114z"></path><path class="leaflet-interactive" stroke="#374151" stroke-opacity="1" stroke-width="0.8" stroke-linecap="round" stroke-linejoin="round" fill="#9ca3af" fill-opacity="0.7" fill-rule="evenodd" d="M1027 282L1028 279L1026 277L1022 279L1021 276L1017 274L1014 276L1013 287L1021 289L1021 287L1023 287L1023 285L1024 286L1027 283z"></path></g></svg></div><div class="leaflet-pane leaflet-shadow-pane"></div><div class="leaflet-pane leaflet-marker-pane"></div><div class="leaflet-pane leaflet-tooltip-pane"></div><div class="leaflet-pane leaflet-popup-pane"></div><div class="leaflet-proxy leaflet-zoom-animated" style="transform: translate3d(12847.8px, 8000.68px, 0px) scale(32);"></div></div><div class="leaflet-control-container"><div class="leaflet-top leaflet-left"><div class="leaflet-control-zoom leaflet-bar leaflet-control"><a class="leaflet-control-zoom-in" href="http://127.0.0.1:5000/#" title="Zoom in" role="button" aria-label="Zoom in" aria-disabled="false"><span aria-hidden="true">+</span></a><a class="leaflet-control-zoom-out" href="http://127.0.0.1:5000/#" title="Zoom out" role="button" aria-label="Zoom out" aria-disabled="false"><span aria-hidden="true">−</span></a></div></div><div class="leaflet-top leaflet-right"></div><div class="leaflet-bottom leaflet-left"></div><div class="leaflet-bottom leaflet-right"><div class="leaflet-control-attribution leaflet-control"><a href="https://leafletjs.com/" title="A JavaScript library for interactive maps"><svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="12" height="8" viewBox="0 0 12 8" class="leaflet-attribution-flag"><path fill="#4C7BE1" d="M0 0h12v4H0z"></path><path fill="#FFD500" d="M0 4h12v3H0z"></path><path fill="#E0BC00" d="M0 7h12v1H0z"></path></svg> Leaflet</a> <span aria-hidden="true">|</span> © OpenStreetMap</div></div></div></div>
+      </div>
+  </div>
+</div>
+
+<!-- Modal -->
+<div class="modal-overlay" id="insightOverlay" role="dialog" aria-modal="true" aria-hidden="true">
+  <div class="modal">
+    <div class="modal-header">
+      <div><p class="modal-title" id="insightTitle">Insight</p></div>
+      <button class="modal-close" id="insightClose" type="button">Close</button>
+    </div>
+    <div class="modal-body" id="insightBody"></div>
+  </div>
+</div>
+
+<script>
+Chart.register(ChartDataLabels);
+
+/* ---------- helpers ---------- */
+function fmtInt(n){ return (Number(n)||0).toLocaleString(); }
+function pct(part,total){ part=Number(part)||0; total=Number(total)||0; if(!total) return 0; return (part/total)*100; }
+function fmtPct(x){ return `${(Number(x)||0).toFixed(2)}%`; }
+
+/* ---------- base chart options ---------- */
+const barOptions = {
+  responsive: true,
+  maintainAspectRatio: false,
+  plugins: {
+    legend: { display: true, position: "top" },
+    datalabels: { color:"#374151", anchor:"end", align:"end", font:{ size:10 } }
+  },
+  scales: {
+    x: { ticks: { font:{ size:10 }, maxRotation:45, minRotation:30 } },
+    y: { ticks: { font:{ size:10 } } }
+  }
+};
+
+/* =========================================================
+   MAP (District Heatmap)
+========================================================= */
+
+/* Normalize district name for matching (dataset vs geojson) */
+function normalizeDistrictName(name){
+  return (name || "")
+    .toString()
+    .toLowerCase()
+    .replace(/\bdistrict\b/g, "")
+    .replace(/\bdaerah\b/g, "")
+    .replace(/&/g, "and")
+    .replace(/[^\p{L}\p{N}\s-]/gu, "")  // remove punctuation (unicode safe)
+    .replace(/\s+/g, " ")
+    .trim();
+}
+
+/* GeoBoundaries ADM2 uses `shapeName` (most common). Keep fallbacks. */
+function getGeoDistrictName(p){
+  return p.shapeName || p.ADM2_NAME || p.NAME_2 || p.district || p.name || "";
+}
+
+/* Color thresholds (same palette as before) */
+// Color thresholds (fixed for district counts)
+function getHeatColor(v){
+  v = Number(v) || 0;
+
+  // grey = 0-36
+  if (v <= 36) return "#9ca3af";
+
+  // hijau = 37-56
+  if (v <= 56) return "#22c55e";
+
+  // kuning = 57-63
+  if (v <= 63) return "#facc15";
+
+  // merah = 64-85 (and above)
+  return "#dc2626";
+}
+
+
+/* District map init */
+function initDistrictMap(districtData){
+  // Create map once
+  const map = L.map("map").setView([4.2, 102.3], 6);
+  L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", { attribution: "&copy; OpenStreetMap" }).addTo(map);
+
+  // Build lookup: normalized district -> value
+  const lookup = {};
+  for (const key in districtData){
+    lookup[normalizeDistrictName(key)] = Number(districtData[key]) || 0;
+  }
+
+  fetch("/static/malaysia.district.geojson")
+    .then(r=>r.json())
+    .then(geo=>{
+      L.geoJSON(geo,{
+        style: feature => {
+          const rawName = getGeoDistrictName(feature.properties || {});
+          const k = normalizeDistrictName(rawName);
+          const value = lookup[k] ?? 0;
+
+          return {
+            fillColor: getHeatColor(value),
+            weight: 0.8,
+            color: "#374151",
+            fillOpacity: 0.70
+          };
+        },
+        onEachFeature: (feature, layer) => {
+  const rawName = getGeoDistrictName(feature.properties || {});
+  const k = normalizeDistrictName(rawName);
+
+  const hasData = Object.prototype.hasOwnProperty.call(lookup, k);
+  const value = hasData ? (lookup[k] ?? 0) : null;
+
+  layer.bindTooltip(
+    hasData
+      ? `<b>${rawName}</b><br>Total Complaints: ${value}`
+      : `<b>${rawName}</b><br><span style="color:#6b7280">0</span>`,
+    { sticky:true }
+  );
+}
+
+      }).addTo(map);
+    })
+    .catch(err=>{
+      console.error("Failed to load district geojson:", err);
+    });
+}
+
+/* ---------- modal wiring (keep) ---------- */
+const overlay = document.getElementById("insightOverlay");
+const closeBtn = document.getElementById("insightClose");
+closeBtn.addEventListener("click", ()=>{ overlay.style.display="none"; overlay.setAttribute("aria-hidden","true"); });
+overlay.addEventListener("click", (e)=>{ if(e.target===overlay){ overlay.style.display="none"; overlay.setAttribute("aria-hidden","true"); } });
+
+/* =========================================================
+   INSIGHT CONTENT (ENGLISH) - static text (no app.py change)
+========================================================= */
+const INSIGHTS = {
+  state: {
+    title: "Total Complaints by State",
+    body: `
+      <h4>Interpretation</h4>
+      <ul>
+        <li>Complaints are distributed across states with a clear top state, but no extreme outlier.</li>
+        <li>This suggests issues are broad-based, with certain states requiring priority attention.</li>
+      </ul>
+      <h4>Suggestions</h4>
+      <ul>
+        <li>Prioritize the top 1–3 states for deeper drilldown by <b>district</b> and <b>issue type</b>.</li>
+        <li>Allocate field resources and monitoring focus based on the state ranking.</li>
+      </ul>
+    `
+  },
+  district: {
+    title: "Total Complaints by District",
+    body: `
+      <h4>Interpretation</h4>
+      <ul>
+        <li>District-level distribution is more localized, where a few districts can contribute disproportionately.</li>
+        <li>This often indicates site-level problems or localized coverage gaps.</li>
+      </ul>
+      <h4>Suggestions</h4>
+      <ul>
+        <li>Create a Top 5 district action list: site checks, drive tests, rapid ticket triage.</li>
+        <li>If available, normalize by subscribers/population to remove density bias.</li>
+      </ul>
+    `
+  },
+  issue_type: {
+    title: "Total Complaints by Issue Type",
+    body: `
+      <h4>Interpretation</h4>
+      <ul>
+        <li>Leading issue types such as <b>Service Outage</b> / <b>No Signal</b> indicate availability and coverage continuity are the main drivers.</li>
+        <li>Lower “Slow Speed” suggests performance tuning is secondary to restoring stable access.</li>
+      </ul>
+      <h4>Suggestions</h4>
+      <ul>
+        <li>Use triage order: <b>Outage/No Signal → Call Drop → Poor Coverage → Slow Speed</b>.</li>
+        <li>Track MTTR for Outage/No Signal as a primary operational KPI.</li>
+      </ul>
+    `
+  },
+  signal_strength_by_state: {
+    title: "Signal Strength by State",
+    body: `
+      <h4>Interpretation</h4>
+      <ul>
+        <li>States show mixed signal distributions, indicating inconsistent user experience within each state.</li>
+        <li>Large weak/no-signal segments typically align with No Signal and Poor Coverage complaint patterns.</li>
+      </ul>
+      <h4>Suggestions</h4>
+      <ul>
+        <li>Prioritize states with the highest <b>Weak + No Signal</b> share for RF optimization.</li>
+        <li>Use this to justify coverage expansion (tilt optimization, new sites, indoor solutions).</li>
+      </ul>
+    `
+  },
+  issue_by_state: {
+    title: "Issue Type by State",
+    body: `
+      <h4>Interpretation</h4>
+      <ul>
+        <li>This chart explains <b>why</b> each state has complaints by showing the dominant issue types per state.</li>
+        <li>Outage-heavy states require different actions than coverage-heavy or drop-heavy states.</li>
+      </ul>
+      <h4>Suggestions</h4>
+      <ul>
+        <li>Identify the <b>Top 1 issue type</b> per state and treat it as the primary fix path.</li>
+        <li>Use a playbook approach: Outage-heavy (reliability), Coverage-heavy (RF expansion), Drop-heavy (handover/interference).</li>
+      </ul>
+    `
+  },
+  status_by_state: {
+    title: "Status Report by State",
+    body: `
+      <h4>Interpretation</h4>
+      <ul>
+        <li>States where <b>In Progress</b> is close to or higher than <b>Resolved</b> indicate backlog risk.</li>
+        <li>Differences by state suggest uneven closure capacity or case complexity.</li>
+      </ul>
+      <h4>Suggestions</h4>
+      <ul>
+        <li>Add backlog indicators per state (In Progress / Total, Resolved rate).</li>
+        <li>For high-backlog states: add manpower, enforce aging SLAs, and escalate Outage/No Signal first.</li>
+      </ul>
+    `
+  },
+  reported_months: {
+    title: "Complaints Reported (Monthly Trend)",
+    body: `
+      <h4>Interpretation</h4>
+      <ul>
+        <li>A sudden spike and sustained elevated level typically indicates a major incident period or a reporting/data scope change.</li>
+        <li>Elevated post-peak levels may suggest incomplete recovery or continued reporting volume.</li>
+      </ul>
+      <h4>Suggestions</h4>
+      <ul>
+        <li>Investigate what changed at the spike start point (rollout, outages, reporting changes, ingestion changes).</li>
+        <li>Drill down spike months by <b>state</b> and <b>issue type</b> to identify main contributors.</li>
+      </ul>
+    `
+  }
+};
+
+function showInsight(key){
+  const cfg = INSIGHTS[key];
+  const titleEl = document.getElementById("insightTitle");
+  const bodyEl  = document.getElementById("insightBody");
+
+  if(!cfg){
+    titleEl.textContent = "Insight";
+    bodyEl.innerHTML = `<div class="muted">No insight content configured for key: <b>${key}</b>.</div>`;
+  } else {
+    titleEl.textContent = cfg.title || "Insight";
+    bodyEl.innerHTML = cfg.body || "";
+  }
+  overlay.style.display = "flex";
+  overlay.setAttribute("aria-hidden","false");
+}
+
+document.querySelectorAll(".insight-btn").forEach(btn=>{
+  btn.addEventListener("click", ()=>{
+    const key = btn.getAttribute("data-insight");
+    showInsight(key);
+  });
+});
+
+/* ---------- main loader ---------- */
+async function loadDashboard(){
+  // 1) summary
+  const summary = await fetch("/api/summary").then(r=>r.json());
+  const totalComplaints = Number(summary.total_complaints||0);
+  const totalSubmitted  = Number(summary.total_submitted||0);
+  const totalInProgress = Number(summary.total_in_progress||0);
+  const totalResolved   = Number(summary.total_resolved||0);
+
+  document.getElementById("totalStates").innerText = fmtInt(summary.total_states);
+  document.getElementById("totalDistricts").innerText = fmtInt(summary.total_districts);
+  document.getElementById("totalComplaints").innerText = fmtInt(totalComplaints);
+  document.getElementById("totalSubmitted").innerText = fmtInt(totalSubmitted);
+
+  document.getElementById("totalInProgress").innerText = fmtInt(totalInProgress);
+  document.getElementById("pctInProgress").innerText = `(${fmtPct(pct(totalInProgress, totalSubmitted))})`;
+
+  document.getElementById("totalResolved").innerText = fmtInt(totalResolved);
+  document.getElementById("pctResolved").innerText = `(${fmtPct(pct(totalResolved, totalSubmitted))})`;
+
+  // 2) fetch all chart data (parallel)
+  const [
+    state, district, issue,
+    signalMatrix, issueMatrix, statusMatrix,
+    reported
+  ] = await Promise.all([
+    fetch("/api/state").then(r=>r.json()),
+    fetch("/api/district").then(r=>r.json()),
+    fetch("/api/issue_type").then(r=>r.json()),
+    fetch("/api/state_signal_strength_matrix").then(r=>r.json()),
+    fetch("/api/state_issue_matrix").then(r=>r.json()),
+    fetch("/api/state_status_matrix").then(r=>r.json()),
+    fetch("/api/reported_months").then(r=>r.json())
+  ]);
+
+  // Row 1 charts
+  new Chart(stateChart, {
+    type:"bar",
+    data:{ labels:Object.keys(state), datasets:[{ label:"Total Complaints by State", data:Object.values(state), backgroundColor:"#3b82f6" }] },
+    options: barOptions
+  });
+
+  new Chart(districtChart, {
+    type:"bar",
+    data:{ labels:Object.keys(district), datasets:[{ label:"Total Complaints by District", data:Object.values(district), backgroundColor:"#34d399" }] },
+    options: barOptions
+  });
+
+  new Chart(issueChart, {
+    type:"bar",
+    data:{ labels:Object.keys(issue), datasets:[{ label:"Total Complaints by Issue Type", data:Object.values(issue), backgroundColor:"#22c55e" }] },
+    options: barOptions
+  });
+
+  // Row 2 left: Signal Strength by State (stacked horizontal + numbers)
+  const signalOptions = {
+    responsive:true,
+    maintainAspectRatio:false,
+    indexAxis:"y",
+    plugins:{
+      legend:{ display:true, position:"top" },
+      datalabels:{
+        color:"#111827",
+        font:{ size:10, weight:"700" },
+        anchor:"center",
+        align:"center",
+        clamp:true,
+        formatter:(value)=>{ const v=Number(value)||0; return v>0 ? v : ""; }
+      }
+    },
+    scales:{
+      x:{ stacked:true, ticks:{ font:{ size:10 } } },
+      y:{ stacked:true, ticks:{ font:{ size:10 } } }
+    }
+  };
+
+  if (signalMatrix && signalMatrix.error) {
+    new Chart(coverageChart, {
+      type:"bar",
+      data:{ labels:["No data"], datasets:[{ label:"Signal Strength", data:[0] }] },
+      options:{
+        ...signalOptions,
+        plugins:{
+          ...signalOptions.plugins,
+          datalabels:{ display:false },
+          legend:{ display:false },
+          title:{ display:true, text: signalMatrix.error, color:"#6b7280", font:{ size:12 } }
+        }
+      }
+    });
+  } else {
+    const sStates = signalMatrix.states || [];
+    const strengths = signalMatrix.signal_strengths || [];
+    const sMatrix = signalMatrix.matrix || {};
+
+    const SIGNAL_COLORS = [
+      "#8b5cf6","#06b6d4","#f97316","#22c55e",
+      "#a855f7","#0ea5e9","#f43f5e","#84cc16"
+    ];
+
+    const signalDatasets = strengths.map((ss, idx) => ({
+      label: ss,
+      data: sMatrix[ss] || [],
+      backgroundColor: SIGNAL_COLORS[idx % SIGNAL_COLORS.length],
+      borderColor: SIGNAL_COLORS[idx % SIGNAL_COLORS.length],
+      borderWidth: 1
+    }));
+
+    new Chart(coverageChart, {
+      type: "bar",
+      data: { labels: sStates, datasets: signalDatasets },
+      options: signalOptions
+    });
+  }
+
+  // Row 2 middle: Issue Type by State (stacked horizontal + numbers)
+  const iStates = issueMatrix.states || [];
+  const issueTypes = issueMatrix.issue_types || [];
+  const iMatrix = issueMatrix.matrix || {};
+
+  const issueByStateOptions = {
+    responsive:true,
+    maintainAspectRatio:false,
+    indexAxis:"y",
+    plugins:{
+      legend:{ display:true, position:"top" },
+      datalabels:{
+        color:"#111827",
+        font:{ size:10, weight:"700" },
+        anchor:"center",
+        align:"center",
+        clamp:true,
+        formatter:(value)=>{ const v=Number(value)||0; return v>0 ? v : ""; }
+      }
+    },
+    scales:{ x:{ stacked:true, ticks:{ font:{ size:10 } } }, y:{ stacked:true, ticks:{ font:{ size:10 } } } }
+  };
+
+  new Chart(issueByStateChart, {
+    type:"bar",
+    data:{ labels:iStates, datasets: issueTypes.map(it=>({ label:it, data:iMatrix[it] || [] })) },
+    options: issueByStateOptions
+  });
+
+  // Row 2 right: Status Report by State (stacked horizontal + numbers)
+  const stStates = statusMatrix.states || [];
+  const statuses = statusMatrix.statuses || [];
+  const stMatrix = statusMatrix.matrix || {};
+  const statusColors = { "Submitted":"#3b82f6", "In Progress":"#f59e0b", "Resolved":"#16a34a" };
+
+  const statusOptions = {
+    responsive:true,
+    maintainAspectRatio:false,
+    indexAxis:"y",
+    plugins:{
+      legend:{ display:true, position:"top" },
+      datalabels:{
+        color:"#111827",
+        font:{ size:10, weight:"700" },
+        anchor:"center",
+        align:"center",
+        clamp:true,
+        formatter:(value)=>{ const v=Number(value)||0; return v>0 ? v : ""; }
+      }
+    },
+    scales:{ x:{ stacked:true, ticks:{ font:{ size:10 } } }, y:{ stacked:true, ticks:{ font:{ size:10 } } } }
+  };
+
+  new Chart(statusByStateChart, {
+    type:"bar",
+    data:{ labels:stStates, datasets: statuses.map(st=>({ label:st, data:stMatrix[st] || [], backgroundColor: statusColors[st] || "#9ca3af" })) },
+    options: statusOptions
+  });
+
+  // Row 3: Complaints reported (total)
+  const monthOrder = ["January","February","March","April","May","June","July","August","September","October","November","December"];
+  const counts = monthOrder.map(m => reported[m] ?? 0);
+
+  new Chart(reportedMonthsChart, {
+    type:"line",
+    data:{ labels:monthOrder, datasets:[{ label:"Total Complaints by Month", data:counts, tension:0.25 }] },
+    options: {
+      responsive: true,
+      maintainAspectRatio: false,
+      plugins: {
+        legend: { display: false },
+        datalabels: {
+          display: true,
+          color: "#374151",
+          font: { size: 10, weight: "700" },
+          anchor: "end",
+          align: "top",
+          offset: 4,
+          clamp: true,
+          formatter: (value) => {
+            const v = Number(value) || 0;
+            return v > 0 ? v : "";
+          }
+        }
+      },
+      scales: {
+        x: { ticks: { font: { size: 10 } } },
+        y: { ticks: { font: { size: 10 } } }
+      }
+    }
+  });
+
+  // MAP: District heatmap using /api/district + district geojson
+  initDistrictMap(district);
+}
+
+loadDashboard();
+</script>
+
+</body></html>

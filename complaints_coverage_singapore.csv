@@ -1,0 +1,1001 @@
+complaint_id,area_id,state,district,latitude,longitude,technology,coverage_status,last_updated,issue_type,network_type,status,reported_date,call_duration,signal_strength,dropped_call
+465838,3773,North-East,Ang Mo Kio,1.36115,103.800625,4G,Poor,2025-01-01,Call Drop,Fixed Wireless,Open,2024-01-01,3171,2,0
+818315,2434,East,Changi,1.249093,103.682532,5G,Moderate,2025-01-01,Slow Internet,Mobile,Open,2024-01-01,474,2,0
+748143,1807,North-East,Punggol,1.323139,103.953329,4G,Poor,2025-01-01,No Signal,Mobile,Open,2024-01-01,646,4,0
+370936,2364,East,Changi,1.352088,103.773437,5G,Good,2025-01-01,Slow Internet,Fixed Wireless,In Progress,2024-01-01,3003,3,0
+922352,1956,North,Sembawang,1.249204,103.939913,5G,Moderate,2025-01-01,Slow Internet,Fixed Wireless,Closed,2024-01-01,1500,1,0
+323165,996,East,Pasir Ris,1.361433,104.014843,5G,Moderate,2025-01-01,Call Drop,Fixed Wireless,Open,2024-01-01,2343,4,0
+633556,4888,East,Bedok,1.296323,103.726421,5G,Good,2025-01-01,No Signal,Mobile,In Progress,2024-01-01,64,0,1
+233767,1496,Central,River Valley,1.203802,103.689479,5G,Poor,2025-01-01,Call Drop,Mobile,In Progress,2024-01-01,1796,1,0
+384806,201,Central,River Valley,1.36829,103.748904,5G,Poor,2025-01-01,Call Drop,Fixed Wireless,Open,2024-01-01,2146,3,0
+301664,2691,North,Yishun,1.405412,103.852575,4G,Moderate,2025-01-01,Call Drop,Mobile,Open,2024-01-01,206,1,0
+869598,864,West,Bukit Batok,1.371831,103.74146,5G,Moderate,2025-01-01,No Signal,Mobile,In Progress,2024-01-01,2796,2,0
+961882,3315,West,Clementi,1.24353,104.018364,4G,Moderate,2025-01-01,No Signal,Mobile,Closed,2024-01-01,795,3,0
+252906,1664,North-East,Hougang,1.418009,104.003241,4G,Moderate,2025-01-01,No Signal,Mobile,Open,2024-01-01,1306,5,0
+502690,710,West,Jurong East,1.337902,103.787835,4G,Good,2025-01-01,Call Drop,Fixed Wireless,In Progress,2024-01-01,3445,0,0
+293075,1292,Central,Queenstown,1.267981,103.823762,4G,Good,2025-01-01,No Signal,Fixed Wireless,Open,2024-01-01,698,0,1
+494070,3475,North-East,Hougang,1.38379,103.838921,5G,Moderate,2025-01-01,Call Drop,Fixed Wireless,In Progress,2024-01-01,202,2,0
+206081,198,West,Clementi,1.307683,103.967394,5G,Good,2025-01-01,No Signal,Fixed Wireless,In Progress,2024-01-01,3397,4,1
+212547,1370,North-East,Sengkang,1.338265,103.701923,5G,Poor,2025-01-01,No Signal,Mobile,In Progress,2024-01-01,2385,0,0
+474705,4062,Central,Bukit Merah,1.387862,103.702848,5G,Moderate,2025-01-01,No Signal,Fixed Wireless,Open,2024-01-01,2049,0,0
+217796,4091,North-East,Ang Mo Kio,1.250951,103.725492,4G,Poor,2025-01-01,Slow Internet,Fixed Wireless,Open,2024-01-01,627,2,1
+284423,3924,North-East,Hougang,1.356785,103.767527,4G,Poor,2025-01-01,No Signal,Mobile,Closed,2024-01-01,1919,5,0
+736584,4068,North,Woodlands,1.392288,103.706762,4G,Poor,2025-01-01,Call Drop,Mobile,Open,2024-01-01,2735,3,0
+962645,3355,West,Bukit Batok,1.317286,103.757535,4G,Poor,2025-01-01,No Signal,Mobile,Open,2024-01-01,815,2,0
+811851,1244,Central,Bukit Merah,1.326885,103.725802,5G,Poor,2025-01-01,No Signal,Mobile,Open,2024-01-01,2544,5,1
+748307,191,North,Woodlands,1.282538,103.68591,4G,Poor,2025-01-01,Slow Internet,Mobile,Closed,2024-01-01,1758,5,0
+104014,2902,East,Changi,1.296835,103.714374,5G,Moderate,2025-01-01,Slow Internet,Mobile,Open,2024-01-01,3464,2,0
+250262,538,West,Jurong West,1.418731,103.990183,4G,Moderate,2025-01-01,Call Drop,Mobile,Open,2024-01-01,19,0,0
+548982,1167,North-East,Sengkang,1.301407,103.642292,4G,Poor,2025-01-01,Slow Internet,Mobile,Open,2024-01-01,574,5,0
+131024,1716,East,Pasir Ris,1.210485,103.736469,4G,Good,2025-01-01,No Signal,Fixed Wireless,Open,2024-01-01,1595,3,1
+821772,992,North-East,Hougang,1.343466,103.843286,4G,Good,2025-01-01,Slow Internet,Fixed Wireless,Closed,2024-01-01,1693,2,0
+474710,1370,North,Sembawang,1.206845,104.033192,4G,Poor,2025-01-01,No Signal,Fixed Wireless,Open,2024-01-01,1664,1,1
+763165,560,East,Changi,1.249374,104.020576,4G,Good,2025-01-01,Call Drop,Fixed Wireless,In Progress,2024-01-01,580,5,0
+167215,3507,North,Sembawang,1.404618,103.606477,5G,Good,2025-01-01,Call Drop,Mobile,Closed,2024-01-01,1773,5,0
+864121,2480,North-East,Punggol,1.417867,103.755837,5G,Moderate,2025-01-01,No Signal,Mobile,Closed,2024-01-01,2569,5,0
+533374,3731,East,Changi,1.335847,103.98542,4G,Good,2025-01-01,Call Drop,Fixed Wireless,Open,2024-01-01,895,2,1
+636226,2428,North-East,Hougang,1.234695,103.965042,4G,Good,2025-01-01,Call Drop,Mobile,Open,2024-01-01,1191,1,0
+924926,3374,West,Jurong East,1.20492,103.642499,4G,Poor,2025-01-01,No Signal,Fixed Wireless,Open,2024-01-01,3017,1,0
+906790,3268,North,Woodlands,1.38708,103.756751,4G,Good,2025-01-01,No Signal,Mobile,Open,2024-01-01,2808,3,0
+214352,1123,Central,Outram,1.311407,103.767408,4G,Poor,2025-01-01,Slow Internet,Fixed Wireless,Open,2024-01-01,3440,4,0
+286141,3953,North,Woodlands,1.336418,103.971906,5G,Good,2025-01-01,Call Drop,Mobile,Open,2024-01-01,1635,3,1
+159163,718,North,Woodlands,1.382728,103.817134,5G,Poor,2025-01-01,No Signal,Mobile,In Progress,2024-01-01,395,0,0
+742612,3223,West,Clementi,1.41095,103.651059,4G,Moderate,2025-01-01,Slow Internet,Mobile,Closed,2024-01-01,3294,1,0
+189930,4847,West,Bukit Batok,1.238608,103.94268,5G,Good,2025-01-01,No Signal,Fixed Wireless,In Progress,2024-01-01,1197,4,0
+319930,2682,Central,Queenstown,1.239583,103.830997,5G,Poor,2025-01-01,No Signal,Mobile,Closed,2024-01-01,499,0,1
+977699,1828,Central,Orchard,1.30159,103.637575,4G,Moderate,2025-01-01,Call Drop,Mobile,Closed,2024-01-01,1881,2,0
+629036,4850,North,Woodlands,1.326538,103.625336,5G,Good,2025-01-01,Call Drop,Mobile,In Progress,2024-01-01,3072,2,0
+390160,824,Central,River Valley,1.34266,103.796351,5G,Good,2025-01-01,No Signal,Mobile,In Progress,2024-01-01,1172,5,1
+359747,1251,North-East,Ang Mo Kio,1.387761,103.633946,4G,Good,2025-01-01,No Signal,Fixed Wireless,In Progress,2024-01-01,3486,0,0
+255576,1354,North,Yishun,1.456611,104.000619,5G,Good,2025-01-01,Slow Internet,Fixed Wireless,Closed,2024-01-01,2745,3,0
+227016,4836,North-East,Ang Mo Kio,1.466277,103.914173,4G,Good,2025-01-01,No Signal,Mobile,Open,2024-01-01,2779,4,0
+538661,256,North,Woodlands,1.356914,104.013629,5G,Moderate,2025-01-01,Slow Internet,Mobile,Open,2024-01-01,1028,0,0
+867214,4949,East,Changi,1.402386,103.776845,4G,Poor,2025-01-01,No Signal,Mobile,Open,2024-01-01,1633,0,0
+803286,4614,Central,Orchard,1.386763,103.840456,4G,Moderate,2025-01-01,Call Drop,Mobile,In Progress,2024-01-01,3044,4,1
+244528,2049,East,Bedok,1.457594,103.872779,5G,Good,2025-01-01,No Signal,Fixed Wireless,Closed,2024-01-01,3419,1,0
+787409,4364,North,Yishun,1.420424,104.035588,5G,Moderate,2025-01-01,Call Drop,Mobile,Open,2024-01-01,623,4,0
+415826,2151,East,Bedok,1.23682,103.606545,5G,Moderate,2025-01-01,Slow Internet,Fixed Wireless,Closed,2024-01-01,1358,2,0
+456600,4262,East,Changi,1.321746,104.009712,5G,Poor,2025-01-01,Slow Internet,Mobile,Open,2024-01-01,2180,4,0
+610736,3580,Central,Queenstown,1.217884,103.620638,5G,Good,2025-01-01,Slow Internet,Mobile,Closed,2024-01-01,42,2,0
+766997,900,Central,Outram,1.249108,103.75555,4G,Poor,2025-01-01,Call Drop,Mobile,Closed,2024-01-01,60,1,0
+580721,4700,West,Jurong East,1.293857,103.614312,5G,Good,2025-01-01,No Signal,Mobile,Closed,2024-01-01,3117,1,0
+312890,2297,East,Tampines,1.329909,103.909503,5G,Moderate,2025-01-01,Call Drop,Mobile,Open,2024-01-01,336,1,1
+936860,2767,Central,Outram,1.344879,104.015819,5G,Moderate,2025-01-01,Call Drop,Fixed Wireless,Closed,2024-01-01,364,1,0
+760482,1647,North,Yishun,1.427999,103.937327,5G,Good,2025-01-01,Slow Internet,Fixed Wireless,Closed,2024-01-01,2786,2,0
+765627,714,Central,Orchard,1.352271,103.978319,5G,Moderate,2025-01-01,Slow Internet,Fixed Wireless,Open,2024-01-01,2192,4,0
+567010,233,North-East,Hougang,1.334579,103.639114,4G,Moderate,2025-01-01,Slow Internet,Mobile,Open,2024-01-01,2795,2,0
+809913,1762,West,Jurong West,1.265975,103.824211,5G,Good,2025-01-01,No Signal,Mobile,Open,2024-01-01,2709,4,0
+287210,3518,North-East,Hougang,1.276976,103.678018,4G,Good,2025-01-01,Call Drop,Mobile,In Progress,2024-01-01,2590,4,1
+784106,4,East,Changi,1.201431,104.03878,5G,Moderate,2025-01-01,Call Drop,Fixed Wireless,Open,2024-01-01,193,2,0
+984011,1142,North,Woodlands,1.391957,103.689778,5G,Good,2025-01-01,Call Drop,Mobile,Closed,2024-01-01,653,5,0
+886275,2027,North,Yishun,1.360348,103.766154,5G,Moderate,2025-01-01,No Signal,Mobile,Closed,2024-01-01,2219,1,0
+108512,1343,East,Changi,1.384006,103.942103,4G,Poor,2025-01-01,Slow Internet,Mobile,In Progress,2024-01-01,1118,0,1
+405073,4430,North-East,Punggol,1.451893,104.045918,5G,Poor,2025-01-01,Call Drop,Mobile,Closed,2024-01-01,1855,4,0
+451005,1315,Central,Orchard,1.244352,103.966559,4G,Moderate,2025-01-01,Slow Internet,Fixed Wireless,Open,2024-01-01,1772,1,0
+565317,4671,North,Woodlands,1.335735,103.704496,4G,Poor,2025-01-01,Call Drop,Fixed Wireless,Closed,2024-01-01,820,2,0
+445266,2036,North,Yishun,1.400194,103.857918,4G,Moderate,2025-01-01,No Signal,Mobile,Open,2024-01-01,3044,2,0
+945633,4613,North-East,Hougang,1.436727,103.753937,5G,Good,2025-01-01,Call Drop,Mobile,Open,2024-01-01,2263,3,0
+164772,3229,West,Clementi,1.261898,103.925014,5G,Poor,2025-01-01,Call Drop,Mobile,In Progress,2024-01-01,1955,3,0
+695603,4107,North,Woodlands,1.45895,103.754136,5G,Poor,2025-01-01,Call Drop,Fixed Wireless,Closed,2024-01-01,362,3,1
+770688,1640,East,Tampines,1.435473,104.019453,5G,Good,2025-01-01,No Signal,Fixed Wireless,In Progress,2024-01-01,3177,0,0
+350869,4147,East,Tampines,1.39884,104.020465,5G,Poor,2025-01-01,Call Drop,Mobile,Closed,2024-01-01,1636,4,0
+479862,2873,North-East,Hougang,1.28968,103.74015,4G,Poor,2025-01-01,No Signal,Mobile,Open,2024-01-01,1332,0,0
+984377,575,Central,Orchard,1.311916,103.988583,5G,Moderate,2025-01-01,Call Drop,Fixed Wireless,In Progress,2024-01-01,417,2,0
+301579,4859,North,Yishun,1.238031,103.679374,4G,Moderate,2025-01-01,No Signal,Fixed Wireless,Open,2024-01-01,2224,4,0
+247313,3121,East,Changi,1.24807,104.032482,4G,Moderate,2025-01-01,Slow Internet,Fixed Wireless,In Progress,2024-01-01,1724,0,0
+978806,2483,West,Jurong West,1.256675,104.004124,5G,Moderate,2025-01-01,No Signal,Mobile,Open,2024-01-01,1500,5,1
+526752,3058,North,Sembawang,1.341585,103.798343,5G,Moderate,2025-01-01,Slow Internet,Mobile,In Progress,2024-01-01,1920,4,0
+962061,3452,North,Sembawang,1.416202,104.040519,5G,Moderate,2025-01-01,Call Drop,Mobile,Open,2024-01-01,312,2,0
+870044,328,North,Yishun,1.228109,103.959962,4G,Poor,2025-01-01,No Signal,Fixed Wireless,In Progress,2024-01-01,1287,1,1
+745588,823,North,Woodlands,1.442011,103.605851,4G,Good,2025-01-01,Call Drop,Mobile,In Progress,2024-01-01,3452,2,0
+501921,1921,North-East,Hougang,1.42071,103.753818,5G,Poor,2025-01-01,Slow Internet,Mobile,In Progress,2024-01-01,3190,3,1
+756639,3578,West,Jurong West,1.406174,103.663051,5G,Moderate,2025-01-01,Call Drop,Fixed Wireless,In Progress,2024-01-01,127,0,0
+659655,4034,Central,Bukit Merah,1.371039,103.716049,5G,Moderate,2025-01-01,Call Drop,Fixed Wireless,Closed,2024-01-01,441,4,0
+418277,2176,West,Bukit Batok,1.231793,103.859432,5G,Moderate,2025-01-01,No Signal,Mobile,Open,2024-01-01,3045,1,0
+641013,4053,West,Jurong West,1.271195,103.719924,4G,Moderate,2025-01-01,No Signal,Mobile,Open,2024-01-01,454,1,1
+451707,4798,East,Tampines,1.340108,103.621135,5G,Moderate,2025-01-01,Call Drop,Mobile,In Progress,2024-01-01,692,3,0
+808362,2059,West,Jurong East,1.296032,103.923571,4G,Poor,2025-01-01,Slow Internet,Fixed Wireless,In Progress,2024-01-01,2670,5,0
+861379,751,Central,Queenstown,1.270811,103.867785,4G,Good,2025-01-01,Slow Internet,Mobile,Open,2024-01-01,2026,1,0
+724712,2344,East,Tampines,1.396611,103.822971,4G,Moderate,2025-01-01,No Signal,Mobile,In Progress,2024-01-01,130,1,0
+840829,4198,North-East,Sengkang,1.359362,103.762438,5G,Poor,2025-01-01,Call Drop,Mobile,Open,2024-01-01,1040,1,0
+756701,3664,Central,River Valley,1.435695,103.929501,4G,Good,2025-01-01,Call Drop,Mobile,Closed,2024-01-01,3023,5,1
+875435,3727,East,Tampines,1.387157,103.623218,5G,Poor,2025-01-01,Slow Internet,Fixed Wireless,In Progress,2024-01-01,400,1,0
+144813,4431,East,Bedok,1.388303,103.733807,5G,Moderate,2025-01-01,Call Drop,Mobile,Open,2024-01-01,2641,5,0
+349321,615,North,Sembawang,1.209992,103.868321,4G,Good,2025-01-01,Slow Internet,Mobile,Open,2024-01-01,1194,1,0
+550062,3960,North-East,Sengkang,1.345663,103.955825,4G,Good,2025-01-01,Slow Internet,Mobile,Open,2024-01-01,1449,3,0
+559297,2462,North,Sembawang,1.200064,103.683463,5G,Poor,2025-01-01,Call Drop,Mobile,Closed,2024-01-01,28,5,0
+375128,272,West,Clementi,1.435893,104.042838,5G,Moderate,2025-01-01,No Signal,Mobile,In Progress,2024-01-01,339,4,0
+209996,1166,Central,Outram,1.280191,103.98377,5G,Moderate,2025-01-01,No Signal,Mobile,Open,2024-01-01,2996,5,0
+975863,964,Central,Bukit Merah,1.258929,104.027483,4G,Good,2025-01-01,Call Drop,Fixed Wireless,Closed,2024-01-01,806,5,0
+279352,4868,West,Jurong West,1.262551,104.024229,4G,Moderate,2025-01-01,No Signal,Mobile,Open,2024-01-01,1389,1,0
+576072,2801,Central,Queenstown,1.458463,103.971793,4G,Good,2025-01-01,Slow Internet,Mobile,In Progress,2024-01-01,2736,0,1
+388316,1915,East,Tampines,1.306985,103.941207,5G,Good,2025-01-01,Call Drop,Fixed Wireless,In Progress,2024-01-01,780,4,0
+134701,1381,Central,River Valley,1.224701,103.994857,4G,Poor,2025-01-01,No Signal,Mobile,In Progress,2024-01-01,920,1,1
+426916,1419,Central,Bukit Merah,1.223486,103.783804,4G,Moderate,2025-01-01,Call Drop,Mobile,Closed,2024-01-01,913,5,1
+972388,4689,West,Clementi,1.21661,103.997308,5G,Good,2025-01-01,Call Drop,Fixed Wireless,In Progress,2024-01-01,1591,1,0
+199616,1286,West,Jurong East,1.34074,103.990672,5G,Good,2025-01-01,Call Drop,Mobile,Open,2024-01-01,2828,2,0
+620547,4287,West,Jurong West,1.388727,103.68515,4G,Poor,2025-01-01,No Signal,Fixed Wireless,Open,2024-01-01,1054,1,0
+529725,1575,North,Woodlands,1.243405,103.968085,5G,Good,2025-01-01,No Signal,Fixed Wireless,In Progress,2024-01-01,1985,4,0
+620551,4796,Central,Bukit Merah,1.20245,103.968406,5G,Moderate,2025-01-01,Call Drop,Fixed Wireless,In Progress,2024-01-01,585,0,1
+331758,1246,North-East,Punggol,1.403499,103.954963,5G,Moderate,2025-01-01,Call Drop,Fixed Wireless,Open,2024-01-01,2571,5,0
+476826,2354,Central,Queenstown,1.46734,103.904224,5G,Poor,2025-01-01,Call Drop,Fixed Wireless,Open,2024-01-01,2507,4,0
+915673,3610,North,Yishun,1.242913,103.810843,5G,Good,2025-01-01,Call Drop,Mobile,Open,2024-01-01,38,4,0
+553761,3156,North-East,Punggol,1.376718,103.722967,4G,Moderate,2025-01-01,No Signal,Mobile,In Progress,2024-01-01,868,2,1
+787556,4666,North,Woodlands,1.441407,103.70348,4G,Poor,2025-01-01,No Signal,Mobile,Closed,2024-01-01,1294,3,0
+477816,3677,North-East,Hougang,1.409681,103.946915,5G,Moderate,2025-01-01,Call Drop,Mobile,Open,2024-01-01,959,3,0
+938530,527,North-East,Hougang,1.330011,103.652789,4G,Moderate,2025-01-01,No Signal,Fixed Wireless,Open,2024-01-01,3003,5,0
+941047,584,West,Jurong West,1.283798,103.804849,5G,Good,2025-01-01,Slow Internet,Fixed Wireless,Closed,2024-01-01,1389,5,0
+164288,2044,West,Jurong East,1.41056,103.617828,5G,Poor,2025-01-01,No Signal,Mobile,Open,2024-01-01,3117,5,0
+436585,936,North-East,Ang Mo Kio,1.202638,103.746908,5G,Good,2025-01-01,No Signal,Mobile,Open,2024-01-01,1949,0,1
+414470,2242,East,Pasir Ris,1.463916,103.690387,5G,Moderate,2025-01-01,Call Drop,Fixed Wireless,Closed,2024-01-01,886,3,0
+859746,635,North,Woodlands,1.208528,104.021296,4G,Poor,2025-01-01,No Signal,Fixed Wireless,Closed,2024-01-01,1883,5,0
+257702,459,North,Yishun,1.4416,103.846417,5G,Moderate,2025-01-01,Slow Internet,Mobile,In Progress,2024-01-01,3198,0,0
+311957,2135,North,Sembawang,1.375579,103.815676,4G,Moderate,2025-01-01,Call Drop,Mobile,Closed,2024-01-01,3427,4,0
+978879,307,West,Bukit Batok,1.243652,103.609388,4G,Moderate,2025-01-01,No Signal,Fixed Wireless,Open,2024-01-01,1082,2,0
+538716,353,North,Yishun,1.426922,103.678387,4G,Poor,2025-01-01,Slow Internet,Mobile,Open,2024-01-01,515,3,0
+401207,1713,North-East,Punggol,1.338779,103.864626,5G,Good,2025-01-01,Slow Internet,Fixed Wireless,Closed,2024-01-01,2382,1,0
+379922,4282,East,Bedok,1.446338,103.694798,4G,Moderate,2025-01-01,No Signal,Mobile,Open,2024-01-01,2914,1,0
+297133,2,East,Changi,1.248864,103.984473,4G,Good,2025-01-01,Slow Internet,Fixed Wireless,Open,2024-01-01,1646,5,0
+861985,3815,Central,River Valley,1.244151,103.775987,4G,Moderate,2025-01-01,Call Drop,Mobile,Open,2024-01-01,2046,0,0
+857038,3467,North-East,Ang Mo Kio,1.438602,103.798911,5G,Moderate,2025-01-01,No Signal,Fixed Wireless,Closed,2024-01-01,3432,0,0
+471000,576,North,Woodlands,1.296998,103.770711,4G,Good,2025-01-01,Call Drop,Mobile,Open,2024-01-01,2352,0,0
+560494,1926,North-East,Sengkang,1.255577,103.650364,5G,Moderate,2025-01-01,Slow Internet,Mobile,In Progress,2024-01-01,1316,3,0
+317285,2533,Central,Outram,1.452146,103.74227,4G,Poor,2025-01-01,Slow Internet,Fixed Wireless,Closed,2024-01-01,275,4,0
+296733,4066,North,Yishun,1.287245,104.037894,4G,Poor,2025-01-01,Call Drop,Mobile,Closed,2024-01-01,918,3,0
+490479,1970,West,Clementi,1.2545,103.903045,5G,Good,2025-01-01,No Signal,Mobile,Open,2024-01-01,3423,5,1
+596758,2475,East,Tampines,1.384477,103.823729,4G,Moderate,2025-01-01,Call Drop,Fixed Wireless,Open,2024-01-01,587,2,1
+201376,3125,North-East,Ang Mo Kio,1.380082,103.859733,5G,Moderate,2025-01-01,Slow Internet,Fixed Wireless,Closed,2024-01-01,574,0,1
+782568,3829,Central,Orchard,1.353094,103.932302,5G,Moderate,2025-01-01,No Signal,Fixed Wireless,Closed,2024-01-01,1667,5,0
+983084,1001,East,Pasir Ris,1.285643,103.991005,4G,Moderate,2025-01-01,Slow Internet,Mobile,Open,2024-01-01,2772,0,0
+659931,1441,West,Bukit Batok,1.264137,103.767963,5G,Moderate,2025-01-01,Slow Internet,Mobile,In Progress,2024-01-01,3015,5,0
+964008,1027,East,Pasir Ris,1.346438,104.028165,5G,Moderate,2025-01-01,No Signal,Mobile,Closed,2024-01-01,664,3,0
+766923,2831,West,Bukit Batok,1.306479,103.847236,5G,Moderate,2025-01-01,Call Drop,Mobile,Open,2024-01-01,20,2,0
+401454,715,West,Clementi,1.30262,103.688719,4G,Moderate,2025-01-01,Call Drop,Fixed Wireless,Closed,2024-01-01,1916,3,0
+791738,1693,North-East,Hougang,1.416817,103.842623,5G,Moderate,2025-01-01,Slow Internet,Fixed Wireless,Closed,2024-01-01,2636,3,1
+275211,3655,North,Yishun,1.279725,103.957033,4G,Moderate,2025-01-01,Slow Internet,Mobile,Closed,2024-01-01,1408,3,0
+712492,1301,East,Bedok,1.438736,103.702636,4G,Poor,2025-01-01,Slow Internet,Fixed Wireless,Closed,2024-01-01,1656,4,1
+227834,1317,Central,Queenstown,1.281556,103.929381,5G,Poor,2025-01-01,Slow Internet,Mobile,Closed,2024-01-01,914,3,0
+295246,1585,East,Tampines,1.398956,103.988259,4G,Good,2025-01-01,No Signal,Fixed Wireless,Open,2024-01-01,2466,3,0
+305768,2638,North,Sembawang,1.370644,103.626305,4G,Moderate,2025-01-01,Call Drop,Mobile,Open,2024-01-01,1577,5,0
+942186,3352,Central,Bukit Merah,1.234666,103.646849,5G,Moderate,2025-01-01,Slow Internet,Fixed Wireless,In Progress,2024-01-01,2668,5,0
+304451,73,West,Jurong East,1.28731,103.701995,4G,Poor,2025-01-01,No Signal,Mobile,Closed,2024-01-01,955,4,0
+942981,1736,West,Clementi,1.375737,103.839831,4G,Moderate,2025-01-01,Call Drop,Fixed Wireless,Closed,2024-01-01,1153,3,0
+880641,1495,Central,Outram,1.325606,103.627064,5G,Moderate,2025-01-01,No Signal,Mobile,Open,2024-01-01,2334,0,0
+450877,633,East,Pasir Ris,1.421888,103.600557,5G,Poor,2025-01-01,Slow Internet,Mobile,In Progress,2024-01-01,347,2,0
+293783,364,West,Clementi,1.265787,103.902201,5G,Moderate,2025-01-01,Slow Internet,Fixed Wireless,In Progress,2024-01-01,799,0,0
+634003,2786,North-East,Hougang,1.217039,103.652942,4G,Moderate,2025-01-01,No Signal,Fixed Wireless,Open,2024-01-01,340,1,1
+548330,4931,Central,Bukit Merah,1.307185,103.801241,5G,Moderate,2025-01-01,Call Drop,Fixed Wireless,In Progress,2024-01-01,405,2,0
+845715,4586,North-East,Ang Mo Kio,1.335311,103.77873,5G,Moderate,2025-01-01,No Signal,Mobile,Closed,2024-01-01,3287,1,1
+664749,73,North,Yishun,1.287083,103.610302,4G,Moderate,2025-01-01,Call Drop,Fixed Wireless,Closed,2024-01-01,1811,1,0
+960952,4260,Central,Queenstown,1.36372,103.662639,5G,Moderate,2025-01-01,Slow Internet,Mobile,In Progress,2024-01-01,2530,0,1
+872577,2965,West,Jurong East,1.206969,103.660825,5G,Good,2025-01-01,No Signal,Mobile,Closed,2024-01-01,1681,4,0
+972701,3202,West,Bukit Batok,1.375554,103.668411,4G,Good,2025-01-01,Call Drop,Fixed Wireless,Closed,2024-01-01,2392,1,0
+585278,457,East,Tampines,1.316191,103.676799,4G,Good,2025-01-01,Slow Internet,Fixed Wireless,In Progress,2024-01-01,2310,3,0
+679111,2149,North-East,Sengkang,1.366109,103.737814,5G,Moderate,2025-01-01,Call Drop,Fixed Wireless,In Progress,2024-01-01,1508,3,0
+458918,2140,West,Bukit Batok,1.330041,103.679599,4G,Moderate,2025-01-01,No Signal,Fixed Wireless,In Progress,2024-01-01,385,5,0
+386166,901,West,Jurong West,1.258105,103.605454,5G,Good,2025-01-01,No Signal,Mobile,Closed,2024-01-01,2020,4,0
+563547,2443,Central,Outram,1.322682,103.979961,4G,Good,2025-01-01,Slow Internet,Fixed Wireless,Closed,2024-01-01,1587,3,0
+390524,1460,North,Woodlands,1.432083,103.776577,5G,Good,2025-01-01,No Signal,Mobile,Open,2024-01-01,3191,0,1
+103631,1121,East,Changi,1.427035,103.617292,5G,Good,2025-01-01,Call Drop,Mobile,Closed,2024-01-01,775,2,0
+107099,3927,Central,Bukit Merah,1.33997,103.667576,5G,Good,2025-01-01,Call Drop,Mobile,Open,2024-01-01,3271,0,0
+652370,408,Central,Orchard,1.228449,103.616007,5G,Good,2025-01-01,Slow Internet,Mobile,Closed,2024-01-01,3299,2,1
+749714,563,North,Yishun,1.24701,103.644278,5G,Moderate,2025-01-01,Slow Internet,Fixed Wireless,In Progress,2024-01-01,991,3,1
+545377,2994,Central,Bukit Merah,1.202815,103.714936,5G,Moderate,2025-01-01,No Signal,Mobile,Open,2024-01-01,377,5,1
+518443,770,East,Tampines,1.362508,103.86209,4G,Moderate,2025-01-01,Call Drop,Fixed Wireless,In Progress,2024-01-01,2320,1,0
+285165,3698,Central,Outram,1.45463,103.708312,4G,Poor,2025-01-01,Slow Internet,Mobile,Open,2024-01-01,2169,5,1
+406094,2197,Central,River Valley,1.403861,103.807243,5G,Moderate,2025-01-01,Slow Internet,Mobile,In Progress,2024-01-01,2283,2,0
+667829,3869,North,Woodlands,1.396546,103.648575,4G,Poor,2025-01-01,Call Drop,Fixed Wireless,In Progress,2024-01-01,1486,2,0
+470965,3755,North-East,Ang Mo Kio,1.40471,103.934541,4G,Poor,2025-01-01,Slow Internet,Mobile,In Progress,2024-01-01,2460,5,1
+785166,362,Central,Orchard,1.350671,103.965288,5G,Good,2025-01-01,Call Drop,Mobile,In Progress,2024-01-01,1247,1,0
+789556,3968,Central,Queenstown,1.420082,103.87674,5G,Good,2025-01-01,No Signal,Mobile,Closed,2024-01-01,2281,1,1
+294509,1038,North-East,Ang Mo Kio,1.402377,103.941404,5G,Poor,2025-01-01,Call Drop,Mobile,In Progress,2024-01-01,1093,2,1
+633884,1044,North-East,Sengkang,1.410708,103.697744,5G,Good,2025-01-01,Slow Internet,Mobile,Closed,2024-01-01,2023,4,0
+133848,2321,North-East,Punggol,1.358815,103.816438,5G,Poor,2025-01-01,No Signal,Fixed Wireless,Closed,2024-01-01,1078,3,0
+346353,3260,East,Pasir Ris,1.422763,103.824215,5G,Poor,2025-01-01,Slow Internet,Fixed Wireless,Open,2024-01-01,1099,5,1
+870915,2067,West,Bukit Batok,1.318854,103.666354,4G,Good,2025-01-01,Call Drop,Mobile,Closed,2024-01-01,830,3,0
+342634,1020,North-East,Sengkang,1.28085,103.678066,5G,Poor,2025-01-01,Call Drop,Mobile,Closed,2024-01-01,1582,5,0
+627759,837,Central,Queenstown,1.249809,103.763006,5G,Poor,2025-01-01,No Signal,Mobile,Open,2024-01-01,1885,5,0
+708108,2611,Central,Outram,1.453983,103.716684,5G,Moderate,2025-01-01,Call Drop,Mobile,Open,2024-01-01,1956,3,1
+352164,2404,East,Changi,1.23604,103.636271,4G,Poor,2025-01-01,Slow Internet,Mobile,Open,2024-01-01,2839,0,0
+107531,4284,Central,River Valley,1.307686,104.01518,4G,Good,2025-01-01,Slow Internet,Fixed Wireless,Closed,2024-01-01,2461,5,0
+119675,270,North,Yishun,1.267377,103.722377,5G,Poor,2025-01-01,Slow Internet,Mobile,Open,2024-01-01,581,3,0
+589066,2644,North-East,Punggol,1.367319,103.852897,4G,Moderate,2025-01-01,No Signal,Mobile,In Progress,2024-01-01,3141,1,0
+338511,1450,North,Yishun,1.423524,103.954471,5G,Good,2025-01-01,No Signal,Fixed Wireless,Open,2024-01-01,1105,4,0
+721527,2353,East,Tampines,1.325262,104.037402,5G,Good,2025-01-01,No Signal,Mobile,Open,2024-01-01,3249,4,0
+229350,598,East,Tampines,1.35153,103.835526,4G,Good,2025-01-01,Slow Internet,Fixed Wireless,Closed,2024-01-01,2090,0,0
+560385,1518,Central,Bukit Merah,1.323741,103.818113,4G,Good,2025-01-01,Slow Internet,Fixed Wireless,Open,2024-01-01,3137,1,0
+169286,3158,North,Woodlands,1.278459,103.954137,5G,Poor,2025-01-01,Slow Internet,Mobile,In Progress,2024-01-01,1854,0,0
+830265,1092,West,Clementi,1.404323,103.833724,5G,Good,2025-01-01,Call Drop,Fixed Wireless,Closed,2024-01-01,3452,0,0
+612880,4543,North-East,Hougang,1.349179,103.642368,4G,Good,2025-01-01,Slow Internet,Fixed Wireless,In Progress,2024-01-01,773,3,0
+728138,4403,North,Sembawang,1.252815,103.684025,5G,Good,2025-01-01,No Signal,Mobile,In Progress,2024-01-01,904,5,0
+522355,3526,East,Changi,1.414181,103.742543,4G,Good,2025-01-01,Call Drop,Mobile,Closed,2024-01-01,1898,5,0
+379215,3691,Central,Orchard,1.284554,103.959367,5G,Moderate,2025-01-01,Call Drop,Fixed Wireless,Open,2024-01-01,1547,2,0
+613012,3605,Central,Orchard,1.3958,103.745355,5G,Moderate,2025-01-01,Slow Internet,Mobile,In Progress,2024-01-01,246,2,0
+388963,3865,North,Woodlands,1.422199,103.694389,5G,Good,2025-01-01,Call Drop,Mobile,Open,2024-01-01,264,3,1
+842849,2991,North,Woodlands,1.37595,103.741327,5G,Moderate,2025-01-01,Slow Internet,Mobile,Closed,2024-01-01,985,4,0
+457792,981,East,Pasir Ris,1.313432,104.007412,4G,Poor,2025-01-01,Slow Internet,Fixed Wireless,In Progress,2024-01-01,3000,5,0
+533934,931,North-East,Sengkang,1.208401,103.932683,5G,Moderate,2025-01-01,Call Drop,Fixed Wireless,In Progress,2024-01-01,1958,5,1
+645735,3831,North-East,Ang Mo Kio,1.275405,103.889297,5G,Moderate,2025-01-01,No Signal,Mobile,Closed,2024-01-01,2190,4,0
+472013,460,West,Jurong East,1.262846,103.963328,5G,Good,2025-01-01,Call Drop,Fixed Wireless,In Progress,2024-01-01,645,2,0
+576513,2598,North,Yishun,1.261217,103.771725,5G,Poor,2025-01-01,Call Drop,Fixed Wireless,In Progress,2024-01-01,1530,3,0
+134518,4758,East,Pasir Ris,1.431752,103.731498,4G,Poor,2025-01-01,Slow Internet,Mobile,Open,2024-01-01,2331,3,1
+376091,4729,Central,Outram,1.276011,103.992739,5G,Moderate,2025-01-01,No Signal,Mobile,Open,2024-01-01,285,0,0
+408877,4917,North-East,Ang Mo Kio,1.280254,103.734964,5G,Good,2025-01-01,Call Drop,Fixed Wireless,Closed,2024-01-01,1621,0,1
+721424,2480,West,Jurong West,1.209361,103.862263,5G,Moderate,2025-01-01,Slow Internet,Mobile,In Progress,2024-01-01,660,4,0
+501067,2045,West,Bukit Batok,1.341815,103.614691,4G,Good,2025-01-01,Slow Internet,Fixed Wireless,Open,2024-01-01,1031,4,0
+210155,527,North-East,Hougang,1.362519,104.001635,4G,Moderate,2025-01-01,No Signal,Mobile,Closed,2024-01-01,1811,0,0
+773222,2396,North-East,Sengkang,1.228141,103.77303,4G,Poor,2025-01-01,Slow Internet,Fixed Wireless,Closed,2024-01-01,2007,1,0
+787687,1111,Central,Bukit Merah,1.309882,104.001166,5G,Good,2025-01-01,No Signal,Fixed Wireless,Closed,2024-01-01,729,2,0
+517216,4537,North-East,Hougang,1.289464,103.816918,5G,Moderate,2025-01-01,Call Drop,Fixed Wireless,Open,2024-01-01,1875,0,0
+420701,1160,Central,Bukit Merah,1.209915,103.648612,5G,Poor,2025-01-01,No Signal,Mobile,Open,2024-01-01,703,5,0
+236535,4913,Central,Bukit Merah,1.366608,103.651227,4G,Poor,2025-01-01,Call Drop,Mobile,Open,2024-01-01,1574,4,0
+707564,2175,North,Yishun,1.274178,103.777559,5G,Poor,2025-01-01,No Signal,Mobile,Open,2024-01-01,3339,4,0
+854651,3322,West,Jurong West,1.394776,103.988296,5G,Poor,2025-01-01,Slow Internet,Mobile,In Progress,2024-01-01,726,0,0
+138211,990,East,Pasir Ris,1.416096,103.898199,4G,Poor,2025-01-01,Call Drop,Fixed Wireless,Open,2024-01-01,331,1,0
+596574,3869,Central,Queenstown,1.383241,103.762864,4G,Good,2025-01-01,Slow Internet,Fixed Wireless,Closed,2024-01-01,562,5,0
+512755,2502,North-East,Sengkang,1.232551,104.006104,5G,Poor,2025-01-01,Slow Internet,Fixed Wireless,Closed,2024-01-01,1104,0,0
+789984,1999,North,Yishun,1.21181,103.655351,4G,Poor,2025-01-01,Call Drop,Mobile,In Progress,2024-01-01,1431,0,0
+248586,2659,West,Jurong West,1.220956,103.84414,5G,Moderate,2025-01-01,Slow Internet,Fixed Wireless,Closed,2024-01-01,1823,2,0
+416456,3135,North-East,Sengkang,1.226696,104.000343,5G,Moderate,2025-01-01,Call Drop,Mobile,Closed,2024-01-01,1635,3,0
+533819,2981,East,Changi,1.37435,103.62015,4G,Good,2025-01-01,Call Drop,Fixed Wireless,In Progress,2024-01-01,3273,3,0
+668302,3547,North,Yishun,1.3106,103.740048,5G,Good,2025-01-01,Slow Internet,Fixed Wireless,Closed,2024-01-01,832,3,0
+928791,3416,East,Tampines,1.336473,104.033808,5G,Moderate,2025-01-01,Call Drop,Fixed Wireless,Closed,2024-01-01,362,2,0
+572890,911,East,Pasir Ris,1.33172,103.658522,5G,Good,2025-01-01,No Signal,Fixed Wireless,Open,2024-01-01,3106,5,0
+643088,797,North-East,Ang Mo Kio,1.277869,104.032511,5G,Good,2025-01-01,No Signal,Fixed Wireless,Closed,2024-01-01,67,4,0
+962881,365,Central,Orchard,1.405713,103.975142,4G,Poor,2025-01-01,Slow Internet,Fixed Wireless,Open,2024-01-01,761,0,0
+567243,139,North-East,Ang Mo Kio,1.350581,103.756275,5G,Poor,2025-01-01,No Signal,Mobile,Open,2024-01-01,1134,1,0
+942000,3171,North,Woodlands,1.437685,103.880533,4G,Moderate,2025-01-01,Call Drop,Mobile,In Progress,2024-01-01,2567,3,1
+978453,3731,West,Clementi,1.235741,103.866857,5G,Poor,2025-01-01,Slow Internet,Mobile,In Progress,2024-01-01,3211,5,0
+379003,977,North,Yishun,1.383804,103.810052,5G,Moderate,2025-01-01,No Signal,Mobile,In Progress,2024-01-01,665,3,0
+697093,1611,East,Changi,1.25487,103.942809,4G,Poor,2025-01-01,Call Drop,Fixed Wireless,Open,2024-01-01,2546,1,0
+824698,4178,West,Jurong West,1.319733,103.870953,4G,Poor,2025-01-01,No Signal,Mobile,In Progress,2024-01-01,3400,3,0
+508288,3936,Central,Bukit Merah,1.264903,103.740355,4G,Poor,2025-01-01,No Signal,Mobile,In Progress,2024-01-01,3565,4,1
+349877,3421,East,Changi,1.208248,103.992422,5G,Moderate,2025-01-01,Slow Internet,Mobile,Closed,2024-01-01,695,5,1
+372647,2842,North,Yishun,1.423687,103.732579,4G,Poor,2025-01-01,No Signal,Fixed Wireless,Open,2024-01-01,1572,0,0
+440615,2236,West,Clementi,1.377806,103.944752,5G,Poor,2025-01-01,Slow Internet,Mobile,In Progress,2024-01-01,3336,1,0
+462462,1382,North-East,Hougang,1.282657,103.847109,5G,Good,2025-01-01,No Signal,Fixed Wireless,Closed,2024-01-01,2092,4,0
+695600,2423,East,Changi,1.42736,103.709004,5G,Moderate,2025-01-01,Slow Internet,Fixed Wireless,Open,2024-01-01,2231,3,1
+223853,4728,North,Yishun,1.309378,104.00775,4G,Poor,2025-01-01,No Signal,Mobile,Open,2024-01-01,2960,0,0
+222258,3859,West,Jurong East,1.374911,103.655314,4G,Poor,2025-01-01,Call Drop,Fixed Wireless,Closed,2024-01-01,3145,1,1
+100159,3954,North-East,Punggol,1.265322,103.921279,5G,Good,2025-01-01,Call Drop,Fixed Wireless,Closed,2024-01-01,2750,3,0
+587030,4046,East,Changi,1.438138,103.9707,4G,Poor,2025-01-01,No Signal,Fixed Wireless,Open,2024-01-01,1464,0,0
+299775,3798,East,Pasir Ris,1.390884,103.62821,5G,Good,2025-01-01,Slow Internet,Mobile,Open,2024-01-01,1855,4,1
+302346,4233,Central,Bukit Merah,1.427532,103.741007,5G,Moderate,2025-01-01,Call Drop,Mobile,Open,2024-01-01,1106,0,0
+865348,2449,North-East,Sengkang,1.385495,103.822216,4G,Poor,2025-01-01,No Signal,Fixed Wireless,In Progress,2024-01-01,905,4,0
+611511,523,West,Jurong East,1.456709,103.916143,5G,Good,2025-01-01,No Signal,Fixed Wireless,In Progress,2024-01-01,1746,3,1
+253077,2588,Central,Orchard,1.433771,103.814185,5G,Moderate,2025-01-01,Slow Internet,Mobile,Open,2024-01-01,891,0,0
+211715,2079,West,Jurong East,1.394307,103.767023,5G,Poor,2025-01-01,Slow Internet,Fixed Wireless,Closed,2024-01-01,2016,3,0
+681793,3977,West,Jurong East,1.236882,103.893238,5G,Poor,2025-01-01,Slow Internet,Fixed Wireless,Open,2024-01-01,539,5,0
+340891,235,North-East,Ang Mo Kio,1.299302,103.626141,5G,Moderate,2025-01-01,Slow Internet,Mobile,In Progress,2024-01-01,2100,1,0
+904631,3842,West,Jurong West,1.205218,103.655966,5G,Poor,2025-01-01,No Signal,Mobile,In Progress,2024-01-01,2661,0,1
+112828,4267,North-East,Punggol,1.436965,103.618746,5G,Moderate,2025-01-01,No Signal,Fixed Wireless,In Progress,2024-01-01,3227,0,0
+366010,3765,East,Changi,1.220624,103.772161,4G,Moderate,2025-01-01,No Signal,Fixed Wireless,In Progress,2024-01-01,1759,4,0
+938387,3897,East,Bedok,1.30037,103.600609,4G,Good,2025-01-01,No Signal,Mobile,In Progress,2024-01-01,306,0,0
+652439,3117,Central,Bukit Merah,1.307461,103.736312,4G,Good,2025-01-01,No Signal,Mobile,Closed,2024-01-01,1249,3,0
+149067,1242,North-East,Sengkang,1.357196,104.045594,4G,Good,2025-01-01,Slow Internet,Mobile,In Progress,2024-01-01,2587,5,0
+238731,3271,North,Sembawang,1.238017,103.880086,5G,Poor,2025-01-01,No Signal,Mobile,In Progress,2024-01-01,460,4,0
+369150,3484,North-East,Sengkang,1.373561,103.964437,4G,Moderate,2025-01-01,Slow Internet,Fixed Wireless,Open,2024-01-01,2606,0,0
+902673,2053,East,Tampines,1.334274,103.703613,5G,Moderate,2025-01-01,No Signal,Fixed Wireless,Closed,2024-01-01,1946,1,0
+860084,2501,West,Jurong West,1.367645,104.017897,5G,Moderate,2025-01-01,Slow Internet,Fixed Wireless,Closed,2024-01-01,1932,5,0
+963659,493,West,Clementi,1.213494,103.979642,5G,Poor,2025-01-01,No Signal,Fixed Wireless,In Progress,2024-01-01,862,3,0
+159234,1276,Central,River Valley,1.468601,103.920275,5G,Moderate,2025-01-01,No Signal,Fixed Wireless,In Progress,2024-01-01,356,0,1
+228389,1284,East,Pasir Ris,1.423936,103.929455,4G,Moderate,2025-01-01,No Signal,Mobile,In Progress,2024-01-01,244,1,1
+501415,2526,West,Jurong West,1.393949,103.711303,4G,Poor,2025-01-01,Call Drop,Mobile,In Progress,2024-01-01,2801,5,1
+970820,3620,North-East,Ang Mo Kio,1.296398,104.016787,5G,Poor,2025-01-01,Call Drop,Mobile,Closed,2024-01-01,1787,1,0
+967482,2937,North,Sembawang,1.308746,104.002589,4G,Moderate,2025-01-01,No Signal,Fixed Wireless,In Progress,2024-01-01,666,1,1
+546790,3825,Central,Orchard,1.37157,103.640825,5G,Poor,2025-01-01,Call Drop,Mobile,In Progress,2024-01-01,2765,0,0
+568947,693,North-East,Ang Mo Kio,1.296816,103.895484,5G,Good,2025-01-01,Slow Internet,Fixed Wireless,Open,2024-01-01,1427,3,0
+371400,4201,North,Yishun,1.261747,104.030344,5G,Moderate,2025-01-01,No Signal,Mobile,Open,2024-01-01,1603,4,0
+515842,2636,North,Woodlands,1.40487,103.727123,5G,Poor,2025-01-01,Call Drop,Mobile,In Progress,2024-01-01,2201,4,0
+174601,84,North-East,Sengkang,1.334336,103.692106,4G,Good,2025-01-01,Call Drop,Fixed Wireless,In Progress,2024-01-01,1581,3,0
+575406,4067,North,Sembawang,1.336869,103.784235,5G,Poor,2025-01-01,Call Drop,Mobile,Closed,2024-01-01,2012,1,1
+782416,3253,East,Tampines,1.276268,103.791353,4G,Poor,2025-01-01,Slow Internet,Mobile,Closed,2024-01-01,680,0,0
+596965,1381,North-East,Hougang,1.395245,103.690252,4G,Moderate,2025-01-01,No Signal,Mobile,In Progress,2024-01-01,383,2,0
+211435,3110,North-East,Punggol,1.397566,103.888286,4G,Good,2025-01-01,No Signal,Mobile,Closed,2024-01-01,305,5,0
+951890,206,Central,Outram,1.233846,103.751634,4G,Moderate,2025-01-01,Call Drop,Fixed Wireless,Closed,2024-01-01,212,5,0
+800406,1823,Central,Outram,1.403534,103.609302,5G,Poor,2025-01-01,Slow Internet,Mobile,Open,2024-01-01,3551,1,0
+843859,153,Central,River Valley,1.235084,103.852041,4G,Good,2025-01-01,Call Drop,Mobile,In Progress,2024-01-01,1104,0,0
+185774,3495,East,Changi,1.324663,104.014448,4G,Moderate,2025-01-01,Call Drop,Mobile,Closed,2024-01-01,2360,0,0
+446184,4678,Central,Orchard,1.290615,104.040336,4G,Good,2025-01-01,Call Drop,Mobile,In Progress,2024-01-01,2156,0,0
+447235,1568,East,Bedok,1.304554,104.007957,4G,Poor,2025-01-01,Call Drop,Fixed Wireless,In Progress,2024-01-01,2535,5,0
+539030,3387,East,Tampines,1.335294,103.917787,4G,Good,2025-01-01,Call Drop,Mobile,Open,2024-01-01,1476,2,0
+953823,659,West,Clementi,1.307069,103.659272,5G,Good,2025-01-01,Call Drop,Fixed Wireless,In Progress,2024-01-01,1537,5,0
+611181,375,West,Clementi,1.354371,103.974774,4G,Poor,2025-01-01,Slow Internet,Fixed Wireless,Open,2024-01-01,112,3,0
+852922,140,North,Woodlands,1.367749,103.750322,4G,Moderate,2025-01-01,No Signal,Fixed Wireless,In Progress,2024-01-01,3104,5,0
+317813,1474,Central,Outram,1.255458,103.771648,4G,Good,2025-01-01,Slow Internet,Mobile,In Progress,2024-01-01,214,5,0
+647219,2762,West,Clementi,1.446977,103.605166,5G,Good,2025-01-01,Slow Internet,Mobile,Closed,2024-01-01,517,1,0
+606961,3546,Central,Orchard,1.357189,103.691998,4G,Poor,2025-01-01,Call Drop,Mobile,Closed,2024-01-01,2145,0,0
+296375,2634,East,Changi,1.38624,103.664774,4G,Poor,2025-01-01,Call Drop,Mobile,In Progress,2024-01-01,2277,3,0
+161842,4692,North-East,Punggol,1.224866,103.849021,4G,Moderate,2025-01-01,Slow Internet,Mobile,Closed,2024-01-01,1742,2,0
+621658,4196,Central,Bukit Merah,1.267372,103.600908,5G,Good,2025-01-01,Call Drop,Fixed Wireless,Open,2024-01-01,2313,4,1
+461719,1814,North,Woodlands,1.368805,103.7681,4G,Good,2025-01-01,No Signal,Mobile,In Progress,2024-01-01,816,0,0
+570435,3145,Central,Queenstown,1.426746,103.684843,5G,Moderate,2025-01-01,Slow Internet,Mobile,Closed,2024-01-01,369,2,0
+412660,4463,North,Yishun,1.269852,103.795481,4G,Poor,2025-01-01,Slow Internet,Mobile,Open,2024-01-01,42,0,0
+818316,3752,East,Changi,1.376578,103.968266,4G,Poor,2025-01-01,Call Drop,Mobile,Open,2024-01-01,1389,4,0
+634730,61,East,Changi,1.314688,103.696905,4G,Poor,2025-01-01,Slow Internet,Fixed Wireless,In Progress,2024-01-01,1673,1,1
+536542,3758,North,Yishun,1.307311,103.831125,4G,Poor,2025-01-01,Slow Internet,Fixed Wireless,In Progress,2024-01-01,493,1,0
+779530,295,West,Jurong West,1.27259,103.765802,5G,Good,2025-01-01,No Signal,Fixed Wireless,In Progress,2024-01-01,2900,1,0
+695131,742,North,Yishun,1.315452,103.799145,5G,Poor,2025-01-01,No Signal,Mobile,Closed,2024-01-01,62,5,0
+834412,4352,East,Tampines,1.310061,103.811286,5G,Poor,2025-01-01,No Signal,Mobile,In Progress,2024-01-01,973,5,0
+367247,925,Central,Orchard,1.219033,103.683541,4G,Moderate,2025-01-01,Call Drop,Mobile,Open,2024-01-01,2350,3,0
+752416,196,North-East,Ang Mo Kio,1.449631,103.799488,5G,Poor,2025-01-01,No Signal,Mobile,Open,2024-01-01,3390,1,1
+867286,2592,Central,Orchard,1.418518,103.953861,5G,Moderate,2025-01-01,No Signal,Fixed Wireless,Closed,2024-01-01,2854,0,0
+117413,2157,West,Jurong East,1.335846,103.687238,5G,Good,2025-01-01,Slow Internet,Mobile,Open,2024-01-01,2123,2,0
+979854,1701,Central,Orchard,1.310995,103.924868,5G,Poor,2025-01-01,Call Drop,Mobile,Open,2024-01-01,3318,4,0
+769277,4758,North-East,Hougang,1.34617,103.755353,5G,Poor,2025-01-01,Slow Internet,Mobile,Closed,2024-01-01,633,1,0
+879976,3612,North,Sembawang,1.283971,103.675119,4G,Moderate,2025-01-01,Call Drop,Mobile,Closed,2024-01-01,3453,3,0
+894760,3361,North,Woodlands,1.315815,103.843407,5G,Poor,2025-01-01,Slow Internet,Mobile,Open,2024-01-01,945,1,0
+825084,4016,Central,Queenstown,1.455181,103.913482,4G,Good,2025-01-01,No Signal,Mobile,Closed,2024-01-01,2064,4,0
+261081,817,Central,Outram,1.456889,103.94942,5G,Good,2025-01-01,Call Drop,Mobile,In Progress,2024-01-01,1788,2,0
+766015,1168,West,Bukit Batok,1.202694,103.92555,5G,Good,2025-01-01,No Signal,Mobile,Closed,2024-01-01,2383,0,0
+333192,718,North,Sembawang,1.337852,103.969269,4G,Good,2025-01-01,Call Drop,Mobile,In Progress,2024-01-01,2989,5,0
+616479,2608,East,Bedok,1.256148,103.618893,5G,Poor,2025-01-01,No Signal,Fixed Wireless,In Progress,2024-01-01,731,3,0
+892908,2605,West,Jurong West,1.467089,103.704197,4G,Poor,2025-01-01,Slow Internet,Mobile,In Progress,2024-01-01,1874,2,0
+913629,4740,North,Yishun,1.325344,103.925232,5G,Poor,2025-01-01,Call Drop,Fixed Wireless,In Progress,2024-01-01,3485,2,1
+901115,671,Central,Bukit Merah,1.417214,103.947764,4G,Good,2025-01-01,No Signal,Fixed Wireless,Closed,2024-01-01,1892,4,0
+906608,3427,East,Changi,1.381213,103.879213,4G,Poor,2025-01-01,Call Drop,Fixed Wireless,Open,2024-01-01,2942,3,0
+848943,2775,East,Tampines,1.363461,103.794923,5G,Moderate,2025-01-01,No Signal,Mobile,Closed,2024-01-01,2985,3,0
+919253,2576,West,Bukit Batok,1.254609,103.741222,5G,Good,2025-01-01,Call Drop,Fixed Wireless,Closed,2024-01-01,2781,3,0
+383983,2641,North,Yishun,1.35786,103.660143,4G,Moderate,2025-01-01,Call Drop,Fixed Wireless,Closed,2024-01-01,2783,0,0
+545093,4035,Central,Outram,1.371821,103.74603,4G,Good,2025-01-01,Slow Internet,Fixed Wireless,Open,2024-01-01,922,3,1
+869460,975,East,Bedok,1.421845,103.807685,4G,Moderate,2025-01-01,Slow Internet,Mobile,Open,2024-01-01,391,0,0
+256255,1541,West,Jurong East,1.370111,103.986154,5G,Moderate,2025-01-01,No Signal,Fixed Wireless,Closed,2024-01-01,1722,4,0
+482865,2379,West,Jurong West,1.419433,103.918077,5G,Poor,2025-01-01,Call Drop,Mobile,In Progress,2024-01-01,1114,4,1
+277826,4447,West,Bukit Batok,1.210895,103.785036,4G,Poor,2025-01-01,Call Drop,Mobile,Open,2024-01-01,498,5,0
+893076,2851,North-East,Punggol,1.204251,103.607717,5G,Moderate,2025-01-01,No Signal,Fixed Wireless,In Progress,2024-01-01,2254,2,0
+853492,3197,North,Woodlands,1.358473,103.861428,4G,Good,2025-01-01,Call Drop,Mobile,In Progress,2024-01-01,3521,1,0
+737999,2259,Central,River Valley,1.434471,103.770607,5G,Poor,2025-01-01,No Signal,Mobile,In Progress,2024-01-01,900,2,0
+982421,2218,East,Changi,1.393077,103.866921,4G,Poor,2025-01-01,No Signal,Fixed Wireless,In Progress,2024-01-01,1590,5,0
+322123,3717,North,Woodlands,1.214686,103.889916,4G,Good,2025-01-01,Slow Internet,Fixed Wireless,Closed,2024-01-01,1874,0,0
+773422,616,North-East,Ang Mo Kio,1.390388,103.804827,4G,Good,2025-01-01,No Signal,Fixed Wireless,Closed,2024-01-01,3505,3,0
+858826,207,Central,Outram,1.426302,103.961265,5G,Moderate,2025-01-01,Call Drop,Fixed Wireless,Closed,2024-01-01,1117,4,0
+774533,3876,West,Jurong East,1.221211,103.933254,5G,Poor,2025-01-01,Slow Internet,Fixed Wireless,Open,2024-01-01,295,1,0
+925782,942,North-East,Punggol,1.377942,103.695054,4G,Poor,2025-01-01,Call Drop,Fixed Wireless,In Progress,2024-01-01,1204,0,1
+740233,465,North-East,Ang Mo Kio,1.36811,104.038022,5G,Poor,2025-01-01,Call Drop,Mobile,Closed,2024-01-01,2413,3,0
+440912,3857,West,Bukit Batok,1.430188,104.022084,4G,Moderate,2025-01-01,Call Drop,Fixed Wireless,Closed,2024-01-01,1094,3,0
+132101,2776,North,Sembawang,1.227264,103.675371,4G,Poor,2025-01-01,No Signal,Fixed Wireless,Open,2024-01-01,1831,3,0
+387623,862,North,Sembawang,1.205541,103.971978,5G,Good,2025-01-01,No Signal,Mobile,Open,2024-01-01,3157,3,0
+844822,4107,East,Bedok,1.35212,103.961712,4G,Moderate,2025-01-01,Slow Internet,Fixed Wireless,Closed,2024-01-01,1943,2,0
+793590,3217,North-East,Hougang,1.319272,104.042906,5G,Good,2025-01-01,Call Drop,Fixed Wireless,Open,2024-01-01,2231,1,0
+395599,530,West,Jurong East,1.380147,103.949672,4G,Moderate,2025-01-01,Call Drop,Mobile,In Progress,2024-01-01,1526,4,1
+951161,3803,Central,River Valley,1.341145,103.81189,4G,Poor,2025-01-01,Slow Internet,Mobile,In Progress,2024-01-01,2808,2,0
+868223,2878,North-East,Sengkang,1.44389,104.000448,4G,Good,2025-01-01,Slow Internet,Mobile,Open,2024-01-01,1016,3,0
+838854,2893,North-East,Punggol,1.37865,103.663551,5G,Good,2025-01-01,Slow Internet,Mobile,In Progress,2024-01-01,1260,5,1
+958823,2295,West,Jurong West,1.35424,103.664351,5G,Poor,2025-01-01,Slow Internet,Mobile,In Progress,2024-01-01,3147,0,0
+112100,308,West,Bukit Batok,1.381646,103.699227,5G,Good,2025-01-01,Slow Internet,Fixed Wireless,In Progress,2024-01-01,382,5,0
+889417,276,West,Bukit Batok,1.301663,103.704425,5G,Good,2025-01-01,No Signal,Mobile,Open,2024-01-01,3344,1,0
+467894,3758,North,Woodlands,1.364684,104.016035,4G,Poor,2025-01-01,No Signal,Mobile,Open,2024-01-01,1520,3,0
+330097,913,East,Pasir Ris,1.390102,104.020827,5G,Good,2025-01-01,Slow Internet,Fixed Wireless,Closed,2024-01-01,2828,2,0
+441558,2984,West,Clementi,1.26122,103.901515,5G,Moderate,2025-01-01,Call Drop,Mobile,In Progress,2024-01-01,2431,3,0
+790824,1718,Central,River Valley,1.469028,103.958203,4G,Moderate,2025-01-01,No Signal,Fixed Wireless,In Progress,2024-01-01,2187,0,0
+848423,72,Central,Bukit Merah,1.449039,103.913031,4G,Moderate,2025-01-01,Slow Internet,Mobile,In Progress,2024-01-01,2662,2,0
+731516,1749,Central,Queenstown,1.352761,104.018115,5G,Moderate,2025-01-01,Slow Internet,Fixed Wireless,Open,2024-01-01,492,2,0
+317314,2187,Central,Bukit Merah,1.278979,103.749493,5G,Poor,2025-01-01,Call Drop,Mobile,In Progress,2024-01-01,272,5,0
+701206,4389,North-East,Hougang,1.438911,103.93258,5G,Good,2025-01-01,Call Drop,Fixed Wireless,Closed,2024-01-01,1292,3,0
+985987,2748,Central,Bukit Merah,1.467329,103.740346,4G,Moderate,2025-01-01,Call Drop,Fixed Wireless,Open,2024-01-01,1961,1,1
+899687,4568,Central,River Valley,1.300577,104.017884,5G,Poor,2025-01-01,No Signal,Mobile,In Progress,2024-01-01,2519,5,0
+428953,2968,East,Bedok,1.327159,103.897861,5G,Moderate,2025-01-01,Call Drop,Mobile,Open,2024-01-01,1218,1,1
+292971,4201,Central,Outram,1.379151,103.785039,5G,Poor,2025-01-01,Call Drop,Fixed Wireless,In Progress,2024-01-01,3203,0,0
+251426,4245,East,Pasir Ris,1.316089,103.973927,5G,Good,2025-01-01,Slow Internet,Mobile,Open,2024-01-01,883,5,0
+643597,975,East,Pasir Ris,1.317138,103.673982,4G,Moderate,2025-01-01,No Signal,Fixed Wireless,Open,2024-01-01,874,3,0
+780465,4757,North-East,Sengkang,1.421665,103.854972,4G,Poor,2025-01-01,Slow Internet,Fixed Wireless,Open,2024-01-01,3251,0,0
+972639,2053,North,Woodlands,1.226659,103.634047,4G,Poor,2025-01-01,No Signal,Fixed Wireless,Open,2024-01-01,3268,0,1
+102866,2012,East,Tampines,1.260227,103.992899,4G,Poor,2025-01-01,Call Drop,Fixed Wireless,Open,2024-01-01,2940,5,0
+450164,1720,Central,Queenstown,1.29383,103.622657,5G,Good,2025-01-01,No Signal,Mobile,Closed,2024-01-01,551,4,0
+279689,1450,Central,Bukit Merah,1.422359,103.969313,5G,Poor,2025-01-01,No Signal,Fixed Wireless,Closed,2024-01-01,1808,0,0
+608069,4945,West,Jurong East,1.29675,104.010802,4G,Moderate,2025-01-01,Slow Internet,Mobile,Open,2024-01-01,654,5,0
+626750,1269,West,Jurong East,1.255147,103.60754,4G,Moderate,2025-01-01,Slow Internet,Mobile,In Progress,2024-01-01,3288,1,0
+242867,4486,West,Jurong West,1.243529,103.895384,5G,Good,2025-01-01,No Signal,Fixed Wireless,Closed,2024-01-01,2060,3,0
+124042,1004,North,Yishun,1.3872,103.891706,5G,Poor,2025-01-01,Slow Internet,Fixed Wireless,Open,2024-01-01,2428,0,1
+200706,4896,East,Tampines,1.402508,103.839247,5G,Moderate,2025-01-01,No Signal,Fixed Wireless,In Progress,2024-01-01,1774,5,0
+244771,4525,North,Sembawang,1.259424,103.833224,5G,Poor,2025-01-01,Call Drop,Fixed Wireless,In Progress,2024-01-01,170,0,0
+811238,3576,East,Changi,1.325446,103.770828,4G,Good,2025-01-01,Call Drop,Fixed Wireless,Closed,2024-01-01,3301,1,0
+247878,3682,West,Jurong East,1.422607,103.665896,4G,Moderate,2025-01-01,Slow Internet,Fixed Wireless,Closed,2024-01-01,2541,3,0
+674887,608,East,Pasir Ris,1.274084,104.005712,5G,Poor,2025-01-01,Call Drop,Mobile,Closed,2024-01-01,810,0,0
+526792,979,North-East,Ang Mo Kio,1.293368,103.901992,5G,Poor,2025-01-01,Slow Internet,Mobile,Closed,2024-01-01,1903,2,0
+375848,2124,East,Bedok,1.378067,103.909621,4G,Poor,2025-01-01,No Signal,Mobile,In Progress,2024-01-01,713,2,1
+397843,4126,West,Bukit Batok,1.409598,103.658726,5G,Poor,2025-01-01,No Signal,Fixed Wireless,Closed,2024-01-01,3561,0,0
+519149,3427,Central,Bukit Merah,1.362661,103.673359,4G,Poor,2025-01-01,Call Drop,Mobile,Open,2024-01-01,3285,4,0
+934379,4906,Central,Queenstown,1.450267,103.696164,5G,Good,2025-01-01,Call Drop,Fixed Wireless,In Progress,2024-01-01,1012,2,0
+256078,239,Central,River Valley,1.21087,103.864758,4G,Poor,2025-01-01,Slow Internet,Fixed Wireless,Closed,2024-01-01,826,2,0
+509740,1790,North-East,Punggol,1.244101,103.699802,4G,Good,2025-01-01,No Signal,Fixed Wireless,Closed,2024-01-01,1884,3,0
+204428,3196,East,Bedok,1.404953,103.927388,4G,Poor,2025-01-01,Slow Internet,Fixed Wireless,In Progress,2024-01-01,460,1,0
+779222,285,West,Bukit Batok,1.240297,103.720678,5G,Moderate,2025-01-01,Slow Internet,Fixed Wireless,Closed,2024-01-01,3012,5,0
+710774,2082,West,Bukit Batok,1.252228,103.888677,4G,Moderate,2025-01-01,Call Drop,Fixed Wireless,Open,2024-01-01,3058,2,0
+688216,148,North-East,Sengkang,1.381735,103.970958,5G,Good,2025-01-01,Call Drop,Fixed Wireless,In Progress,2024-01-01,277,1,0
+744905,4714,North-East,Hougang,1.336247,103.652776,5G,Moderate,2025-01-01,Call Drop,Fixed Wireless,In Progress,2024-01-01,2488,4,1
+752468,288,North,Yishun,1.367235,103.785036,5G,Moderate,2025-01-01,No Signal,Fixed Wireless,Closed,2024-01-01,2470,4,0
+264726,341,Central,Outram,1.41047,103.60729,5G,Poor,2025-01-01,No Signal,Mobile,In Progress,2024-01-01,1371,0,0
+975206,1132,West,Jurong West,1.216472,103.729524,5G,Poor,2025-01-01,Call Drop,Mobile,In Progress,2024-01-01,11,2,0
+976336,4752,Central,Queenstown,1.201459,103.600606,5G,Moderate,2025-01-01,No Signal,Fixed Wireless,Open,2024-01-01,777,3,1
+133783,1385,Central,Orchard,1.376104,103.712986,5G,Good,2025-01-01,Slow Internet,Mobile,Closed,2024-01-01,2410,2,0
+154745,3673,East,Changi,1.450792,103.749387,5G,Moderate,2025-01-01,No Signal,Fixed Wireless,Open,2024-01-01,1711,3,0
+312603,3480,East,Tampines,1.333002,103.885035,4G,Moderate,2025-01-01,Slow Internet,Mobile,In Progress,2024-01-01,2571,4,0
+247735,2965,West,Bukit Batok,1.218736,103.640445,5G,Moderate,2025-01-01,Slow Internet,Fixed Wireless,Closed,2024-01-01,331,5,0
+703555,2687,North-East,Ang Mo Kio,1.388415,104.005119,4G,Good,2025-01-01,No Signal,Fixed Wireless,Closed,2024-01-01,2341,2,0
+633903,2709,West,Bukit Batok,1.371102,103.867058,4G,Moderate,2025-01-01,Slow Internet,Fixed Wireless,Open,2024-01-01,3052,5,0
+893070,4652,North-East,Ang Mo Kio,1.375443,103.646545,5G,Poor,2025-01-01,Call Drop,Fixed Wireless,In Progress,2024-01-01,42,0,0
+776315,4179,North,Woodlands,1.240019,103.641444,5G,Good,2025-01-01,Call Drop,Fixed Wireless,In Progress,2024-01-01,1668,0,0
+966220,4933,Central,Queenstown,1.304956,103.708135,4G,Good,2025-01-01,Call Drop,Fixed Wireless,In Progress,2024-01-01,1958,5,0
+458105,2576,West,Jurong West,1.468804,103.862222,4G,Poor,2025-01-01,Slow Internet,Mobile,In Progress,2024-01-01,128,0,0
+169639,2077,North-East,Hougang,1.387557,103.764102,5G,Poor,2025-01-01,No Signal,Mobile,Open,2024-01-01,275,0,1
+337330,171,North,Sembawang,1.250393,103.61156,5G,Poor,2025-01-01,No Signal,Mobile,Closed,2024-01-01,1066,2,0
+677263,1050,East,Pasir Ris,1.28048,103.72503,4G,Poor,2025-01-01,Call Drop,Mobile,In Progress,2024-01-01,2486,5,0
+836778,2854,East,Bedok,1.341268,103.722304,5G,Moderate,2025-01-01,Slow Internet,Mobile,Closed,2024-01-01,1243,0,1
+446030,376,North,Sembawang,1.220152,104.008481,5G,Good,2025-01-01,Slow Internet,Fixed Wireless,Closed,2024-01-01,2699,2,1
+526583,4816,West,Jurong West,1.215358,103.944937,5G,Moderate,2025-01-01,No Signal,Fixed Wireless,Closed,2024-01-01,259,2,1
+750587,2477,East,Bedok,1.232521,103.863044,4G,Good,2025-01-01,Slow Internet,Mobile,Closed,2024-01-01,1490,0,0
+251899,273,North,Sembawang,1.228711,103.651363,5G,Good,2025-01-01,No Signal,Mobile,Closed,2024-01-01,2039,0,0
+195790,244,East,Bedok,1.307176,103.804922,4G,Moderate,2025-01-01,Call Drop,Fixed Wireless,Open,2024-01-01,3056,0,0
+635857,4838,Central,Orchard,1.434406,103.733813,5G,Good,2025-01-01,Slow Internet,Fixed Wireless,Open,2024-01-01,643,2,0
+163965,4553,North-East,Ang Mo Kio,1.22662,103.652415,5G,Poor,2025-01-01,Slow Internet,Fixed Wireless,In Progress,2024-01-01,1834,2,0
+886939,1437,Central,Queenstown,1.238737,103.66815,4G,Poor,2025-01-01,No Signal,Mobile,In Progress,2024-01-01,303,5,0
+475325,1302,Central,River Valley,1.328746,103.883542,5G,Moderate,2025-01-01,Slow Internet,Mobile,In Progress,2024-01-01,1478,4,0
+105209,3821,East,Pasir Ris,1.306417,103.8715,5G,Moderate,2025-01-01,Call Drop,Mobile,Closed,2024-01-01,2654,5,1
+429760,1548,Central,Queenstown,1.456644,103.60993,4G,Moderate,2025-01-01,No Signal,Fixed Wireless,In Progress,2024-01-01,1564,0,0
+211361,3957,West,Bukit Batok,1.231444,103.657193,4G,Poor,2025-01-01,Slow Internet,Fixed Wireless,Closed,2024-01-01,1444,1,0
+851993,4676,North,Yishun,1.253841,103.719012,5G,Good,2025-01-01,Slow Internet,Fixed Wireless,In Progress,2024-01-01,2181,1,0
+437462,4240,Central,Orchard,1.433899,103.674083,5G,Poor,2025-01-01,Call Drop,Mobile,Open,2024-01-01,953,4,1
+720740,3125,West,Bukit Batok,1.341318,103.702048,4G,Moderate,2025-01-01,Call Drop,Mobile,Open,2024-01-01,2170,2,0
+566978,3590,North-East,Ang Mo Kio,1.303978,103.984663,4G,Poor,2025-01-01,Call Drop,Fixed Wireless,In Progress,2024-01-01,2169,3,0
+850018,557,North,Woodlands,1.349388,103.834202,4G,Good,2025-01-01,Slow Internet,Mobile,Open,2024-01-01,1016,5,1
+191563,2314,Central,Orchard,1.455412,103.978974,5G,Good,2025-01-01,No Signal,Fixed Wireless,Open,2024-01-01,3536,3,0
+202166,4230,Central,River Valley,1.384765,104.027041,5G,Moderate,2025-01-01,No Signal,Mobile,Closed,2024-01-01,1819,1,0
+494295,4207,Central,River Valley,1.311693,103.893838,5G,Good,2025-01-01,Slow Internet,Mobile,Closed,2024-01-01,2031,2,1
+402788,4244,West,Jurong East,1.248339,103.958881,5G,Moderate,2025-01-01,Call Drop,Mobile,Closed,2024-01-01,174,3,0
+462232,3511,East,Bedok,1.411255,104.046632,4G,Moderate,2025-01-01,Slow Internet,Fixed Wireless,Closed,2024-01-01,2604,3,0
+877130,2935,Central,Outram,1.365314,103.607504,4G,Moderate,2025-01-01,Call Drop,Fixed Wireless,In Progress,2024-01-01,1312,2,0
+414493,127,North-East,Ang Mo Kio,1.312271,103.846865,4G,Moderate,2025-01-01,Call Drop,Fixed Wireless,Closed,2024-01-01,2709,3,0
+947405,2888,North-East,Ang Mo Kio,1.242859,104.027173,4G,Moderate,2025-01-01,No Signal,Mobile,Open,2024-01-01,2112,5,0
+858678,1376,North,Yishun,1.296609,103.867201,4G,Poor,2025-01-01,No Signal,Mobile,Open,2024-01-01,2662,2,0
+460306,4776,East,Changi,1.268726,103.812862,5G,Poor,2025-01-01,Slow Internet,Mobile,Open,2024-01-01,244,4,0
+102159,3249,West,Jurong West,1.235959,103.7176,4G,Good,2025-01-01,No Signal,Fixed Wireless,Open,2024-01-01,57,1,0
+729756,2598,North,Woodlands,1.224653,103.74341,5G,Poor,2025-01-01,Call Drop,Mobile,In Progress,2024-01-01,1248,2,0
+696860,1059,Central,River Valley,1.442075,103.688332,4G,Good,2025-01-01,Slow Internet,Mobile,Closed,2024-01-01,344,1,0
+546991,2889,North,Woodlands,1.354473,103.681353,5G,Poor,2025-01-01,Slow Internet,Fixed Wireless,Open,2024-01-01,44,5,0
+708806,1002,Central,Outram,1.408621,103.921705,5G,Good,2025-01-01,No Signal,Mobile,In Progress,2024-01-01,515,0,0
+652144,272,East,Changi,1.289851,103.850832,4G,Poor,2025-01-01,No Signal,Fixed Wireless,In Progress,2024-01-01,1681,1,1
+435468,3261,North-East,Hougang,1.27755,103.995889,5G,Poor,2025-01-01,Slow Internet,Fixed Wireless,Open,2024-01-01,989,4,0
+975817,1188,West,Jurong East,1.335016,103.903702,5G,Good,2025-01-01,Call Drop,Fixed Wireless,Closed,2024-01-01,571,4,1
+348004,4087,East,Bedok,1.24087,103.668349,5G,Poor,2025-01-01,No Signal,Mobile,Closed,2024-01-01,2712,4,0
+259094,1606,North-East,Hougang,1.29908,103.666252,4G,Moderate,2025-01-01,No Signal,Mobile,Closed,2024-01-01,1850,3,0
+684718,4313,Central,River Valley,1.287407,103.944337,5G,Good,2025-01-01,Call Drop,Fixed Wireless,In Progress,2024-01-01,2514,0,0
+306555,1578,North,Sembawang,1.347399,104.016792,4G,Poor,2025-01-01,Slow Internet,Fixed Wireless,Open,2024-01-01,517,1,1
+417336,1463,West,Jurong West,1.335156,103.890576,5G,Poor,2025-01-01,Call Drop,Fixed Wireless,Closed,2024-01-01,1307,2,0
+516690,688,West,Jurong West,1.288782,103.898041,5G,Poor,2025-01-01,Call Drop,Fixed Wireless,Closed,2024-01-01,1082,0,1
+867175,1336,West,Bukit Batok,1.374646,103.881241,4G,Moderate,2025-01-01,No Signal,Fixed Wireless,In Progress,2024-01-01,2330,0,0
+382152,4939,North-East,Sengkang,1.382694,103.886221,4G,Good,2025-01-01,No Signal,Mobile,In Progress,2024-01-01,2256,2,0
+859229,611,North,Yishun,1.426491,103.901956,4G,Good,2025-01-01,Call Drop,Mobile,Open,2024-01-01,2939,3,0
+743789,3570,East,Pasir Ris,1.212743,104.032637,4G,Moderate,2025-01-01,Call Drop,Fixed Wireless,In Progress,2024-01-01,386,5,1
+592503,352,Central,Queenstown,1.35731,104.047963,5G,Good,2025-01-01,No Signal,Mobile,Closed,2024-01-01,1469,3,0
+921190,3999,West,Jurong West,1.23291,103.787138,5G,Poor,2025-01-01,Slow Internet,Fixed Wireless,Open,2024-01-01,1380,5,1
+413940,4853,West,Clementi,1.420758,104.002775,5G,Moderate,2025-01-01,No Signal,Mobile,Open,2024-01-01,847,1,0
+761414,1506,North-East,Ang Mo Kio,1.401518,103.740207,4G,Good,2025-01-01,No Signal,Fixed Wireless,In Progress,2024-01-01,1640,4,0
+755032,265,West,Jurong West,1.349532,103.830841,5G,Moderate,2025-01-01,Slow Internet,Mobile,Open,2024-01-01,1445,2,0
+516704,4991,East,Bedok,1.316245,103.653613,5G,Good,2025-01-01,Slow Internet,Mobile,In Progress,2024-01-01,2106,0,0
+599387,3654,Central,River Valley,1.229168,103.704686,5G,Moderate,2025-01-01,No Signal,Mobile,Closed,2024-01-01,2741,4,0
+661340,426,North,Yishun,1.436912,103.947933,5G,Poor,2025-01-01,Slow Internet,Fixed Wireless,Closed,2024-01-01,825,3,1
+845222,4566,East,Pasir Ris,1.411275,103.998926,4G,Moderate,2025-01-01,Call Drop,Mobile,Open,2024-01-01,2521,5,1
+681042,2739,North-East,Hougang,1.204934,104.006861,4G,Moderate,2025-01-01,No Signal,Fixed Wireless,Open,2024-01-01,3440,2,0
+780546,4670,Central,River Valley,1.301754,103.994157,5G,Moderate,2025-01-01,No Signal,Mobile,Open,2024-01-01,2601,1,1
+665369,4369,East,Bedok,1.28495,103.903308,4G,Moderate,2025-01-01,Slow Internet,Mobile,In Progress,2024-01-01,2616,3,0
+164384,4916,East,Tampines,1.433456,103.653397,4G,Poor,2025-01-01,No Signal,Mobile,Open,2024-01-01,1972,3,0
+443003,4161,East,Changi,1.425834,103.82611,4G,Good,2025-01-01,Call Drop,Mobile,In Progress,2024-01-01,2740,3,0
+711533,327,West,Clementi,1.3599,103.915421,5G,Good,2025-01-01,No Signal,Mobile,Closed,2024-01-01,1173,0,0
+289637,902,West,Jurong West,1.311649,103.617915,5G,Good,2025-01-01,Call Drop,Mobile,In Progress,2024-01-01,2841,0,0
+649567,4281,West,Bukit Batok,1.390608,103.82666,5G,Good,2025-01-01,Call Drop,Fixed Wireless,In Progress,2024-01-01,1357,4,0
+987196,546,North,Yishun,1.321576,103.838999,4G,Poor,2025-01-01,Slow Internet,Fixed Wireless,In Progress,2024-01-01,2641,2,0
+183123,1760,Central,Orchard,1.450103,103.878626,5G,Moderate,2025-01-01,Slow Internet,Fixed Wireless,Open,2024-01-01,2173,3,0
+867166,4079,East,Bedok,1.280972,103.889258,5G,Good,2025-01-01,Call Drop,Fixed Wireless,In Progress,2024-01-01,283,0,0
+543833,130,North,Sembawang,1.302121,103.832782,4G,Poor,2025-01-01,No Signal,Mobile,Closed,2024-01-01,3583,1,0
+931588,2224,East,Tampines,1.265017,103.774063,4G,Moderate,2025-01-01,No Signal,Mobile,Open,2024-01-01,824,1,0
+402039,3721,North-East,Hougang,1.292567,103.650169,5G,Moderate,2025-01-01,Slow Internet,Mobile,Open,2024-01-01,2708,1,1
+739888,2322,East,Tampines,1.396795,103.735658,4G,Moderate,2025-01-01,No Signal,Mobile,Closed,2024-01-01,3504,4,0
+678963,4655,East,Bedok,1.437842,103.622323,4G,Poor,2025-01-01,Call Drop,Fixed Wireless,Open,2024-01-01,2294,2,0
+142137,154,East,Tampines,1.270673,103.880908,5G,Good,2025-01-01,Call Drop,Fixed Wireless,Open,2024-01-01,2857,2,0
+268112,3768,Central,River Valley,1.292299,103.795162,4G,Moderate,2025-01-01,Call Drop,Fixed Wireless,Open,2024-01-01,1798,5,0
+245213,1153,West,Jurong West,1.213841,103.780844,5G,Moderate,2025-01-01,No Signal,Mobile,Closed,2024-01-01,1935,3,0
+315705,4186,Central,Outram,1.361037,103.81811,4G,Good,2025-01-01,Call Drop,Mobile,Open,2024-01-01,2506,1,0
+907641,556,Central,River Valley,1.344621,103.878231,5G,Moderate,2025-01-01,Slow Internet,Mobile,Closed,2024-01-01,2793,0,0
+892879,1300,West,Bukit Batok,1.396591,103.870113,5G,Moderate,2025-01-01,Slow Internet,Fixed Wireless,In Progress,2024-01-01,2721,3,0
+930819,278,West,Clementi,1.229202,103.978948,5G,Moderate,2025-01-01,No Signal,Mobile,In Progress,2024-01-01,479,2,0
+253956,816,North,Woodlands,1.296145,103.906173,4G,Poor,2025-01-01,Slow Internet,Mobile,In Progress,2024-01-01,1716,4,0
+515685,4501,North,Woodlands,1.401964,103.976439,5G,Moderate,2025-01-01,No Signal,Mobile,In Progress,2024-01-01,3597,5,0
+594829,546,North-East,Sengkang,1.214263,103.926738,4G,Poor,2025-01-01,Slow Internet,Mobile,In Progress,2024-01-01,2827,3,0
+563956,4310,East,Pasir Ris,1.442556,103.862209,4G,Moderate,2025-01-01,No Signal,Fixed Wireless,Closed,2024-01-01,773,4,0
+270824,2568,Central,River Valley,1.275502,103.661367,5G,Moderate,2025-01-01,No Signal,Fixed Wireless,Open,2024-01-01,873,3,0
+895477,3733,East,Tampines,1.236948,103.631374,5G,Poor,2025-01-01,Call Drop,Mobile,Open,2024-01-01,409,5,1
+440053,2604,West,Clementi,1.430097,103.61842,5G,Good,2025-01-01,Call Drop,Fixed Wireless,Closed,2024-01-01,919,2,0
+771813,3925,West,Clementi,1.275965,103.805909,4G,Poor,2025-01-01,Slow Internet,Fixed Wireless,Open,2024-01-01,755,3,0
+222989,1017,North,Sembawang,1.407562,103.627876,5G,Good,2025-01-01,Call Drop,Mobile,Closed,2024-01-01,2104,3,0
+764006,4385,West,Bukit Batok,1.427878,103.718084,4G,Good,2025-01-01,Slow Internet,Fixed Wireless,In Progress,2024-01-01,434,1,0
+533917,2136,East,Pasir Ris,1.366649,103.998164,4G,Moderate,2025-01-01,Call Drop,Fixed Wireless,Open,2024-01-01,138,1,1
+985678,4621,North-East,Ang Mo Kio,1.389234,103.728343,4G,Moderate,2025-01-01,No Signal,Fixed Wireless,In Progress,2024-01-01,953,2,0
+448951,546,Central,River Valley,1.215181,103.818535,4G,Good,2025-01-01,Slow Internet,Fixed Wireless,Closed,2024-01-01,3084,2,0
+684570,1274,East,Changi,1.402978,104.007805,5G,Moderate,2025-01-01,No Signal,Mobile,Closed,2024-01-01,3019,1,0
+768875,254,East,Pasir Ris,1.406914,103.782887,4G,Good,2025-01-01,No Signal,Mobile,Closed,2024-01-01,2892,0,0
+678921,760,East,Bedok,1.445383,103.94218,5G,Poor,2025-01-01,Call Drop,Mobile,Open,2024-01-01,2757,0,0
+602716,4517,North-East,Hougang,1.468788,103.802625,4G,Good,2025-01-01,No Signal,Mobile,In Progress,2024-01-01,1959,4,0
+156116,4970,West,Bukit Batok,1.209296,103.800621,4G,Good,2025-01-01,No Signal,Fixed Wireless,Open,2024-01-01,2997,3,0
+782465,878,North,Woodlands,1.250471,103.800373,4G,Moderate,2025-01-01,Slow Internet,Mobile,Closed,2024-01-01,421,3,0
+977311,3658,Central,Orchard,1.208762,103.706015,4G,Good,2025-01-01,No Signal,Mobile,Closed,2024-01-01,306,1,0
+955953,4944,North-East,Sengkang,1.393773,104.039478,5G,Moderate,2025-01-01,No Signal,Mobile,Open,2024-01-01,572,4,0
+193246,4087,North,Sembawang,1.273977,103.866875,4G,Good,2025-01-01,Call Drop,Mobile,Closed,2024-01-01,1230,3,0
+635620,866,North-East,Punggol,1.328063,103.675609,5G,Good,2025-01-01,Call Drop,Mobile,In Progress,2024-01-01,1193,5,0
+829520,836,Central,River Valley,1.336252,103.603309,5G,Poor,2025-01-01,Slow Internet,Mobile,In Progress,2024-01-01,926,2,0
+532601,3152,Central,River Valley,1.344762,103.922813,4G,Moderate,2025-01-01,Slow Internet,Fixed Wireless,In Progress,2024-01-01,3285,0,0
+491670,588,Central,Queenstown,1.348424,103.787724,4G,Poor,2025-01-01,Slow Internet,Mobile,Closed,2024-01-01,3155,3,0
+377648,3058,West,Bukit Batok,1.426652,103.892875,4G,Moderate,2025-01-01,Slow Internet,Fixed Wireless,In Progress,2024-01-01,364,3,0
+615578,546,North-East,Ang Mo Kio,1.421547,103.603214,5G,Moderate,2025-01-01,No Signal,Mobile,In Progress,2024-01-01,452,1,0
+386100,1217,North,Yishun,1.394523,103.726821,4G,Moderate,2025-01-01,No Signal,Mobile,Open,2024-01-01,1168,4,0
+250823,2195,North-East,Ang Mo Kio,1.411545,103.604731,5G,Good,2025-01-01,Slow Internet,Mobile,In Progress,2024-01-01,1401,3,0
+244454,4026,Central,Bukit Merah,1.3316,104.025417,5G,Moderate,2025-01-01,Call Drop,Fixed Wireless,Closed,2024-01-01,693,0,1
+573006,4115,West,Jurong West,1.309342,104.049457,4G,Moderate,2025-01-01,No Signal,Mobile,Open,2024-01-01,551,2,0
+874124,2732,West,Jurong West,1.223481,103.736449,4G,Poor,2025-01-01,Slow Internet,Mobile,Open,2024-01-01,3020,0,1
+687073,2323,Central,Orchard,1.45606,103.641097,4G,Moderate,2025-01-01,Slow Internet,Mobile,Open,2024-01-01,1040,2,0
+126128,4519,North-East,Sengkang,1.434138,104.030129,4G,Good,2025-01-01,Call Drop,Fixed Wireless,Open,2024-01-01,3459,5,0
+872291,307,North-East,Punggol,1.228014,103.73294,5G,Good,2025-01-01,Call Drop,Fixed Wireless,Closed,2024-01-01,528,5,0
+250862,1312,North,Yishun,1.316588,103.951801,5G,Good,2025-01-01,Call Drop,Fixed Wireless,In Progress,2024-01-01,3282,4,1
+176208,1546,Central,Orchard,1.270429,103.604089,5G,Poor,2025-01-01,Slow Internet,Fixed Wireless,Closed,2024-01-01,3098,3,1
+129777,2476,Central,Orchard,1.32153,104.016622,5G,Poor,2025-01-01,Slow Internet,Fixed Wireless,Closed,2024-01-01,1978,0,1
+350449,2437,North,Yishun,1.338768,103.910555,4G,Good,2025-01-01,Slow Internet,Mobile,Closed,2024-01-01,1173,3,0
+345847,1159,North-East,Sengkang,1.285221,103.820959,4G,Moderate,2025-01-01,Slow Internet,Fixed Wireless,In Progress,2024-01-01,2705,1,0
+954032,2375,North-East,Hougang,1.383946,103.922193,5G,Poor,2025-01-01,Call Drop,Mobile,In Progress,2024-01-01,709,1,0
+239133,418,East,Bedok,1.427238,103.613659,5G,Good,2025-01-01,Slow Internet,Fixed Wireless,In Progress,2024-01-01,2562,5,0
+444572,2380,North,Yishun,1.330558,103.699041,4G,Moderate,2025-01-01,Slow Internet,Mobile,Open,2024-01-01,1075,5,0
+820602,4813,East,Tampines,1.299003,103.775913,5G,Poor,2025-01-01,Call Drop,Mobile,Open,2024-01-01,868,5,0
+701383,3396,North-East,Ang Mo Kio,1.401583,103.605668,5G,Good,2025-01-01,No Signal,Mobile,Open,2024-01-01,2024,1,0
+244179,4267,North-East,Hougang,1.433883,103.799883,4G,Poor,2025-01-01,Call Drop,Mobile,Closed,2024-01-01,2443,4,0
+818648,2741,West,Jurong East,1.353625,103.839166,5G,Good,2025-01-01,No Signal,Fixed Wireless,Closed,2024-01-01,3407,4,0
+306717,2887,West,Jurong West,1.247022,103.846097,5G,Moderate,2025-01-01,Call Drop,Fixed Wireless,In Progress,2024-01-01,3308,4,0
+340056,2786,Central,River Valley,1.269689,103.808793,4G,Poor,2025-01-01,No Signal,Mobile,In Progress,2024-01-01,2373,4,0
+900981,1876,East,Changi,1.230771,103.889759,4G,Good,2025-01-01,No Signal,Fixed Wireless,Open,2024-01-01,1649,4,0
+959613,3827,West,Jurong East,1.279017,103.845443,5G,Poor,2025-01-01,Slow Internet,Mobile,Open,2024-01-01,2063,5,0
+213153,2398,East,Changi,1.380073,103.720215,4G,Poor,2025-01-01,No Signal,Mobile,Open,2024-01-01,2707,4,0
+681529,2176,East,Tampines,1.320107,104.004736,4G,Moderate,2025-01-01,No Signal,Mobile,Closed,2024-01-01,1934,1,0
+944124,4278,North,Woodlands,1.372559,103.753433,5G,Moderate,2025-01-01,Call Drop,Fixed Wireless,Open,2024-01-01,2419,2,0
+569984,2069,East,Bedok,1.310132,103.756502,5G,Poor,2025-01-01,Call Drop,Mobile,Closed,2024-01-01,2170,0,0
+360710,2945,North,Yishun,1.446191,103.797609,4G,Poor,2025-01-01,Call Drop,Fixed Wireless,Closed,2024-01-01,125,3,0
+856488,4002,East,Tampines,1.326637,104.01785,5G,Moderate,2025-01-01,Slow Internet,Mobile,Open,2024-01-01,3566,5,1
+914468,1006,North,Sembawang,1.42056,103.937296,5G,Moderate,2025-01-01,Call Drop,Fixed Wireless,Closed,2024-01-01,1607,4,0
+955695,259,North,Woodlands,1.434818,104.000874,5G,Poor,2025-01-01,Call Drop,Mobile,Closed,2024-01-01,437,2,1
+779930,4454,East,Pasir Ris,1.426487,103.994704,5G,Good,2025-01-01,No Signal,Mobile,Closed,2024-01-01,2580,2,0
+194455,4884,West,Clementi,1.338786,103.872589,5G,Good,2025-01-01,No Signal,Fixed Wireless,Open,2024-01-01,3342,5,0
+386287,3876,West,Jurong West,1.250823,103.682912,5G,Poor,2025-01-01,Call Drop,Mobile,Open,2024-01-01,847,5,0
+541848,3321,West,Jurong East,1.361014,103.723396,5G,Good,2025-01-01,Call Drop,Mobile,In Progress,2024-01-01,3035,3,0
+303305,3719,West,Jurong East,1.386143,103.727709,5G,Moderate,2025-01-01,Slow Internet,Mobile,Open,2024-01-01,1908,2,1
+182867,4761,East,Pasir Ris,1.228526,103.965783,4G,Moderate,2025-01-01,Slow Internet,Mobile,Closed,2024-01-01,825,1,0
+985540,2452,East,Changi,1.42973,103.728761,4G,Good,2025-01-01,No Signal,Mobile,Open,2024-01-01,2164,3,1
+366285,1355,Central,Outram,1.258787,103.879552,4G,Moderate,2025-01-01,No Signal,Mobile,In Progress,2024-01-01,1481,2,1
+521863,2064,North-East,Punggol,1.403504,103.714021,4G,Poor,2025-01-01,No Signal,Fixed Wireless,In Progress,2024-01-01,2752,1,0
+951426,2442,North,Woodlands,1.200627,104.042769,4G,Moderate,2025-01-01,Slow Internet,Mobile,In Progress,2024-01-01,2362,2,0
+675648,176,Central,Queenstown,1.377272,104.008143,4G,Moderate,2025-01-01,No Signal,Fixed Wireless,Open,2024-01-01,3072,3,0
+612438,1753,North-East,Ang Mo Kio,1.338992,103.830967,4G,Poor,2025-01-01,Slow Internet,Fixed Wireless,In Progress,2024-01-01,1132,3,1
+585443,2340,North-East,Punggol,1.263949,103.67422,5G,Good,2025-01-01,Slow Internet,Fixed Wireless,Closed,2024-01-01,1044,3,0
+436473,1621,West,Jurong West,1.316366,103.829734,4G,Good,2025-01-01,Call Drop,Fixed Wireless,Open,2024-01-01,100,1,0
+121602,4026,North,Woodlands,1.385403,103.709627,5G,Moderate,2025-01-01,Call Drop,Mobile,In Progress,2024-01-01,1146,4,1
+189846,3461,North-East,Punggol,1.405775,104.021279,5G,Poor,2025-01-01,No Signal,Mobile,Open,2024-01-01,361,0,0
+945457,1053,North-East,Punggol,1.370958,103.924475,4G,Moderate,2025-01-01,Slow Internet,Mobile,In Progress,2024-01-01,2307,1,0
+947078,720,Central,River Valley,1.452565,104.040912,5G,Moderate,2025-01-01,Slow Internet,Fixed Wireless,Closed,2024-01-01,1452,1,1
+988943,3033,North-East,Hougang,1.417484,103.634558,4G,Moderate,2025-01-01,No Signal,Fixed Wireless,Open,2024-01-01,519,3,0
+998628,927,West,Jurong West,1.292963,103.627793,4G,Moderate,2025-01-01,Call Drop,Fixed Wireless,Closed,2024-01-01,2251,4,1
+177597,4482,Central,Orchard,1.464974,103.883358,4G,Poor,2025-01-01,No Signal,Mobile,In Progress,2024-01-01,2358,0,0
+172255,4127,Central,River Valley,1.356808,104.017944,5G,Good,2025-01-01,Slow Internet,Mobile,Closed,2024-01-01,1129,3,0
+667256,3143,North,Yishun,1.234509,103.862007,4G,Good,2025-01-01,Call Drop,Fixed Wireless,Open,2024-01-01,2173,4,0
+755152,2858,North-East,Hougang,1.419674,103.921729,4G,Poor,2025-01-01,Slow Internet,Fixed Wireless,Closed,2024-01-01,596,3,0
+292180,2014,North-East,Hougang,1.257107,103.931216,5G,Moderate,2025-01-01,Slow Internet,Mobile,In Progress,2024-01-01,1352,2,1
+252324,3968,Central,Outram,1.238847,103.603879,5G,Moderate,2025-01-01,Call Drop,Fixed Wireless,In Progress,2024-01-01,1919,1,0
+140736,4325,North-East,Ang Mo Kio,1.397699,103.704859,4G,Poor,2025-01-01,Slow Internet,Fixed Wireless,Open,2024-01-01,2153,3,0
+791150,3484,Central,Queenstown,1.380702,103.801638,4G,Moderate,2025-01-01,Slow Internet,Mobile,Closed,2024-01-01,3215,4,1
+296544,753,East,Changi,1.35278,104.01254,5G,Moderate,2025-01-01,Slow Internet,Fixed Wireless,Closed,2024-01-01,1946,0,0
+396694,4542,East,Tampines,1.266371,104.011679,5G,Moderate,2025-01-01,Slow Internet,Fixed Wireless,In Progress,2024-01-01,1675,2,0
+481382,946,North,Yishun,1.451083,103.806417,5G,Good,2025-01-01,Call Drop,Mobile,Open,2024-01-01,78,3,0
+883077,2179,West,Jurong West,1.222738,104.043059,5G,Poor,2025-01-01,No Signal,Mobile,In Progress,2024-01-01,3281,0,0
+500010,121,West,Bukit Batok,1.393742,103.94957,4G,Poor,2025-01-01,No Signal,Fixed Wireless,Open,2024-01-01,3368,1,0
+919555,4235,North,Sembawang,1.384876,103.695437,4G,Moderate,2025-01-01,Call Drop,Fixed Wireless,In Progress,2024-01-01,2601,0,0
+244575,2112,East,Tampines,1.280854,103.720986,5G,Moderate,2025-01-01,Call Drop,Mobile,Closed,2024-01-01,1564,2,0
+199764,3986,Central,Bukit Merah,1.299556,103.946379,4G,Good,2025-01-01,No Signal,Mobile,Closed,2024-01-01,378,5,0
+543931,3501,North-East,Punggol,1.381534,103.910132,5G,Poor,2025-01-01,Call Drop,Fixed Wireless,Closed,2024-01-01,3319,5,1
+969460,4363,West,Jurong East,1.249381,103.855349,5G,Poor,2025-01-01,No Signal,Mobile,Closed,2024-01-01,3245,4,1
+910506,1401,North-East,Sengkang,1.203784,103.855086,4G,Moderate,2025-01-01,Call Drop,Mobile,Open,2024-01-01,3129,4,1
+457395,4134,West,Jurong East,1.38018,103.656512,4G,Moderate,2025-01-01,Slow Internet,Mobile,Open,2024-01-01,1346,0,0
+721458,3980,West,Jurong East,1.3641,103.637706,4G,Moderate,2025-01-01,No Signal,Fixed Wireless,Closed,2024-01-01,1228,0,1
+503923,1439,North,Woodlands,1.255764,103.930762,4G,Moderate,2025-01-01,Slow Internet,Fixed Wireless,Open,2024-01-01,550,0,0
+465543,2738,North-East,Ang Mo Kio,1.368247,103.76023,5G,Poor,2025-01-01,No Signal,Mobile,Open,2024-01-01,213,0,0
+513841,4612,East,Tampines,1.360265,103.6572,5G,Poor,2025-01-01,Slow Internet,Fixed Wireless,Open,2024-01-01,2804,5,0
+189876,401,Central,Bukit Merah,1.328127,103.762669,5G,Moderate,2025-01-01,No Signal,Fixed Wireless,Closed,2024-01-01,1810,4,0
+435510,1774,West,Jurong West,1.214967,103.849384,4G,Good,2025-01-01,No Signal,Fixed Wireless,Open,2024-01-01,1554,2,1
+362739,842,West,Jurong West,1.264488,104.027177,4G,Moderate,2025-01-01,No Signal,Mobile,Closed,2024-01-01,3454,0,0
+437935,1448,North,Sembawang,1.222143,103.734322,4G,Moderate,2025-01-01,Call Drop,Fixed Wireless,Open,2024-01-01,1311,0,0
+862945,1673,North,Woodlands,1.39151,103.609517,4G,Moderate,2025-01-01,Call Drop,Mobile,In Progress,2024-01-01,768,4,0
+241774,237,East,Bedok,1.430187,103.689188,5G,Poor,2025-01-01,Slow Internet,Mobile,Closed,2024-01-01,3386,4,0
+749983,3514,Central,River Valley,1.252915,104.024695,5G,Poor,2025-01-01,No Signal,Mobile,Closed,2024-01-01,1937,4,0
+579551,916,North-East,Sengkang,1.396732,103.837631,5G,Good,2025-01-01,Call Drop,Mobile,In Progress,2024-01-01,432,3,0
+129086,939,North,Yishun,1.301512,103.94034,5G,Poor,2025-01-01,Slow Internet,Fixed Wireless,Closed,2024-01-01,83,3,0
+939446,59,East,Pasir Ris,1.416493,103.809869,5G,Moderate,2025-01-01,Call Drop,Fixed Wireless,Open,2024-01-01,1162,4,0
+401173,1738,East,Pasir Ris,1.368775,104.025784,4G,Poor,2025-01-01,No Signal,Mobile,Closed,2024-01-01,2999,3,0
+198185,3243,Central,Orchard,1.468817,103.899543,4G,Moderate,2025-01-01,Call Drop,Mobile,Open,2024-01-01,1283,3,0
+580674,4197,Central,Bukit Merah,1.375377,103.73618,5G,Poor,2025-01-01,No Signal,Fixed Wireless,Open,2024-01-01,2602,1,1
+593377,770,North,Woodlands,1.395225,103.828488,5G,Poor,2025-01-01,Slow Internet,Fixed Wireless,Closed,2024-01-01,2475,5,1
+618993,2904,North,Sembawang,1.388307,103.889263,5G,Poor,2025-01-01,Call Drop,Mobile,Closed,2024-01-01,757,0,1
+153915,3048,North-East,Ang Mo Kio,1.389886,103.781137,5G,Poor,2025-01-01,Slow Internet,Fixed Wireless,In Progress,2024-01-01,2163,4,1
+631661,2514,North,Sembawang,1.413015,103.906803,5G,Good,2025-01-01,No Signal,Fixed Wireless,In Progress,2024-01-01,2147,4,0
+851943,3175,East,Pasir Ris,1.35275,103.60689,4G,Moderate,2025-01-01,Call Drop,Mobile,In Progress,2024-01-01,3261,3,0
+497797,3716,West,Jurong West,1.219009,103.759719,4G,Poor,2025-01-01,Slow Internet,Fixed Wireless,Open,2024-01-01,834,3,0
+646707,1619,East,Pasir Ris,1.373938,103.892826,4G,Poor,2025-01-01,Call Drop,Mobile,Open,2024-01-01,2502,5,0
+299176,1139,North,Sembawang,1.363813,103.675054,5G,Good,2025-01-01,Slow Internet,Fixed Wireless,Open,2024-01-01,3474,2,0
+582450,284,North-East,Sengkang,1.379142,103.976331,4G,Moderate,2025-01-01,Call Drop,Fixed Wireless,Closed,2024-01-01,1794,4,1
+409963,3894,North,Sembawang,1.43316,103.753427,5G,Good,2025-01-01,Call Drop,Fixed Wireless,Closed,2024-01-01,712,1,0
+903051,4279,East,Pasir Ris,1.409272,103.879872,4G,Poor,2025-01-01,Slow Internet,Fixed Wireless,In Progress,2024-01-01,3175,4,0
+778387,510,North,Woodlands,1.353579,103.990475,5G,Good,2025-01-01,Slow Internet,Fixed Wireless,Open,2024-01-01,2423,2,1
+865523,1778,West,Jurong West,1.437938,103.757584,4G,Moderate,2025-01-01,Slow Internet,Fixed Wireless,Closed,2024-01-01,1711,2,0
+468987,1832,West,Bukit Batok,1.297974,103.870491,4G,Good,2025-01-01,No Signal,Mobile,Closed,2024-01-01,2355,5,0
+372827,4061,Central,Bukit Merah,1.351726,103.741554,4G,Moderate,2025-01-01,Slow Internet,Fixed Wireless,In Progress,2024-01-01,3192,4,0
+362512,233,Central,Queenstown,1.310349,103.810007,4G,Good,2025-01-01,No Signal,Mobile,In Progress,2024-01-01,1469,5,0
+783725,824,West,Jurong West,1.245424,103.685471,5G,Good,2025-01-01,Slow Internet,Fixed Wireless,In Progress,2024-01-01,2892,3,0
+329171,3719,North,Yishun,1.27389,104.041002,4G,Moderate,2025-01-01,No Signal,Fixed Wireless,In Progress,2024-01-01,1126,3,0
+600585,2622,North,Yishun,1.461473,103.843249,4G,Moderate,2025-01-01,No Signal,Mobile,In Progress,2024-01-01,1398,3,1
+499489,2463,North-East,Ang Mo Kio,1.322976,103.861965,4G,Poor,2025-01-01,Call Drop,Fixed Wireless,In Progress,2024-01-01,1568,3,1
+375478,4040,West,Jurong East,1.363724,103.904859,4G,Good,2025-01-01,Call Drop,Mobile,Open,2024-01-01,1054,4,1
+928804,668,North,Sembawang,1.386346,103.890518,4G,Poor,2025-01-01,Call Drop,Fixed Wireless,In Progress,2024-01-01,61,4,0
+132125,392,East,Pasir Ris,1.31169,103.937572,5G,Good,2025-01-01,Slow Internet,Fixed Wireless,Closed,2024-01-01,1405,2,0
+910364,4977,North-East,Hougang,1.348171,103.958329,5G,Good,2025-01-01,Call Drop,Fixed Wireless,Closed,2024-01-01,1573,4,0
+210494,3884,North-East,Hougang,1.255409,103.685284,4G,Good,2025-01-01,Call Drop,Fixed Wireless,Open,2024-01-01,3174,1,0
+914506,4212,East,Changi,1.215724,103.718023,5G,Good,2025-01-01,Slow Internet,Mobile,Closed,2024-01-01,1415,0,0
+158453,2027,East,Changi,1.268079,103.820865,4G,Moderate,2025-01-01,Call Drop,Fixed Wireless,Open,2024-01-01,2838,0,1
+861269,1814,West,Clementi,1.20568,103.925278,4G,Moderate,2025-01-01,Call Drop,Mobile,Closed,2024-01-01,161,2,0
+848597,1964,Central,Outram,1.427096,104.048582,4G,Moderate,2025-01-01,Slow Internet,Mobile,Closed,2024-01-01,2871,5,0
+386629,1442,North,Yishun,1.465112,103.910998,5G,Good,2025-01-01,Call Drop,Fixed Wireless,In Progress,2024-01-01,2899,1,1
+816605,2363,North,Yishun,1.455582,103.926837,5G,Moderate,2025-01-01,Call Drop,Fixed Wireless,Closed,2024-01-01,3450,0,0
+280580,3816,East,Changi,1.345821,103.937326,5G,Poor,2025-01-01,Call Drop,Fixed Wireless,Open,2024-01-01,2546,2,1
+375375,2731,East,Changi,1.31458,103.921613,5G,Good,2025-01-01,Slow Internet,Mobile,Closed,2024-01-01,2870,0,0
+961811,4632,West,Jurong East,1.311059,103.665351,5G,Good,2025-01-01,No Signal,Fixed Wireless,In Progress,2024-01-01,2272,1,1
+943810,4543,Central,River Valley,1.277427,103.851828,4G,Poor,2025-01-01,Call Drop,Fixed Wireless,Open,2024-01-01,343,0,1
+885372,2957,North,Yishun,1.401754,103.694238,4G,Poor,2025-01-01,Slow Internet,Mobile,In Progress,2024-01-01,28,1,1
+210160,2988,West,Jurong East,1.398575,103.636008,5G,Good,2025-01-01,No Signal,Fixed Wireless,Open,2024-01-01,3581,2,1
+592134,4051,West,Jurong West,1.380715,103.999722,4G,Moderate,2025-01-01,Call Drop,Fixed Wireless,Closed,2024-01-01,1349,0,0
+946278,3809,West,Clementi,1.350967,103.826253,5G,Moderate,2025-01-01,Call Drop,Mobile,Open,2024-01-01,1356,4,0
+184433,799,North-East,Sengkang,1.298897,103.623821,4G,Good,2025-01-01,Slow Internet,Mobile,Open,2024-01-01,597,4,0
+715429,4596,West,Clementi,1.231506,103.895201,4G,Good,2025-01-01,Slow Internet,Mobile,In Progress,2024-01-01,2515,0,0
+789197,4728,North-East,Ang Mo Kio,1.273085,103.766721,5G,Poor,2025-01-01,No Signal,Mobile,Open,2024-01-01,3137,5,0
+733389,2189,East,Pasir Ris,1.21327,103.685978,4G,Good,2025-01-01,Slow Internet,Fixed Wireless,In Progress,2024-01-01,750,2,1
+401517,2060,North,Yishun,1.26804,104.01434,4G,Good,2025-01-01,No Signal,Mobile,In Progress,2024-01-01,1875,2,0
+494569,2411,East,Pasir Ris,1.42102,104.00482,5G,Poor,2025-01-01,Call Drop,Mobile,In Progress,2024-01-01,1209,0,0
+907784,3672,Central,Queenstown,1.359346,103.790216,5G,Poor,2025-01-01,Slow Internet,Mobile,Closed,2024-01-01,3317,2,0
+303299,1978,North-East,Hougang,1.418114,103.911795,5G,Moderate,2025-01-01,Call Drop,Mobile,In Progress,2024-01-01,1315,3,0
+570440,4410,West,Jurong West,1.218712,103.805386,4G,Poor,2025-01-01,No Signal,Mobile,Closed,2024-01-01,2747,1,0
+882533,3395,North,Yishun,1.224434,103.823888,4G,Moderate,2025-01-01,Slow Internet,Mobile,Open,2024-01-01,1585,1,0
+371731,3689,East,Pasir Ris,1.24815,103.707716,5G,Poor,2025-01-01,Slow Internet,Mobile,Closed,2024-01-01,2653,1,0
+589847,4865,Central,Queenstown,1.418257,103.774626,4G,Poor,2025-01-01,No Signal,Fixed Wireless,In Progress,2024-01-01,2443,5,0
+636343,3364,Central,Bukit Merah,1.266514,103.628464,4G,Poor,2025-01-01,No Signal,Fixed Wireless,Open,2024-01-01,2711,5,0
+737514,947,Central,Bukit Merah,1.204764,103.832653,4G,Moderate,2025-01-01,Slow Internet,Mobile,Closed,2024-01-01,1947,4,0
+496474,4812,North-East,Hougang,1.3828,103.961445,5G,Moderate,2025-01-01,Slow Internet,Mobile,Open,2024-01-01,55,4,1
+821565,4472,East,Tampines,1.401257,103.77053,4G,Moderate,2025-01-01,Slow Internet,Fixed Wireless,Open,2024-01-01,1664,0,0
+779363,105,North,Woodlands,1.31844,103.698223,5G,Poor,2025-01-01,Call Drop,Mobile,Closed,2024-01-01,2770,5,0
+317984,371,West,Clementi,1.220392,103.972412,4G,Good,2025-01-01,No Signal,Fixed Wireless,Closed,2024-01-01,2261,5,0
+521441,4894,West,Jurong East,1.328008,103.601848,4G,Good,2025-01-01,Slow Internet,Fixed Wireless,Open,2024-01-01,2691,4,1
+476826,3248,East,Tampines,1.246193,103.65096,5G,Poor,2025-01-01,No Signal,Mobile,Open,2024-01-01,2441,0,1
+265486,441,Central,River Valley,1.395731,103.651383,5G,Good,2025-01-01,Call Drop,Mobile,In Progress,2024-01-01,235,0,0
+604840,2108,East,Bedok,1.217061,103.869184,5G,Moderate,2025-01-01,No Signal,Mobile,Closed,2024-01-01,168,5,1
+684436,1544,North-East,Punggol,1.288629,103.650778,5G,Moderate,2025-01-01,Slow Internet,Fixed Wireless,In Progress,2024-01-01,2151,5,0
+195057,1130,West,Bukit Batok,1.237336,103.791755,4G,Good,2025-01-01,Call Drop,Fixed Wireless,Open,2024-01-01,1939,1,0
+374541,545,East,Changi,1.348647,103.97165,5G,Good,2025-01-01,No Signal,Mobile,Open,2024-01-01,591,0,0
+574768,3938,West,Bukit Batok,1.215417,103.649744,5G,Poor,2025-01-01,No Signal,Mobile,In Progress,2024-01-01,1616,0,0
+368602,2757,West,Jurong East,1.226936,103.62453,4G,Good,2025-01-01,Slow Internet,Mobile,Open,2024-01-01,3203,3,1
+393128,982,Central,Outram,1.330201,103.834146,4G,Moderate,2025-01-01,Slow Internet,Fixed Wireless,Closed,2024-01-01,1777,1,0
+390507,1781,East,Changi,1.27828,103.983825,4G,Good,2025-01-01,Slow Internet,Fixed Wireless,Open,2024-01-01,3185,2,0
+190410,3348,North,Yishun,1.358113,103.866108,5G,Moderate,2025-01-01,Slow Internet,Fixed Wireless,Closed,2024-01-01,3272,5,0
+619235,2493,East,Bedok,1.308338,103.984785,4G,Poor,2025-01-01,No Signal,Mobile,Open,2024-01-01,1202,0,0
+644719,3176,West,Bukit Batok,1.36987,103.766632,5G,Moderate,2025-01-01,No Signal,Mobile,In Progress,2024-01-01,1561,1,0
+992737,1730,West,Jurong East,1.356079,104.031091,4G,Good,2025-01-01,No Signal,Mobile,Open,2024-01-01,2463,5,0
+152335,4034,North,Woodlands,1.248772,103.818534,5G,Good,2025-01-01,No Signal,Mobile,Open,2024-01-01,329,3,0
+489962,2318,East,Bedok,1.255855,103.761199,5G,Poor,2025-01-01,Slow Internet,Mobile,Open,2024-01-01,1986,4,1
+373438,1850,East,Tampines,1.231159,103.960693,5G,Moderate,2025-01-01,No Signal,Mobile,Open,2024-01-01,18,3,0
+674699,4950,North,Yishun,1.262364,103.960861,4G,Good,2025-01-01,Slow Internet,Fixed Wireless,Open,2024-01-01,2015,2,1
+979725,4811,West,Bukit Batok,1.403866,103.902547,5G,Moderate,2025-01-01,Call Drop,Fixed Wireless,In Progress,2024-01-01,2260,3,0
+128876,3145,North-East,Sengkang,1.303204,103.726806,5G,Moderate,2025-01-01,Slow Internet,Fixed Wireless,Open,2024-01-01,2598,3,0
+414444,3149,North,Woodlands,1.28566,103.944837,5G,Moderate,2025-01-01,Slow Internet,Mobile,Closed,2024-01-01,1736,0,0
+790527,4641,North-East,Sengkang,1.40609,103.661426,4G,Moderate,2025-01-01,Call Drop,Mobile,Closed,2024-01-01,2768,2,0
+367531,4692,North,Woodlands,1.297153,103.843345,4G,Good,2025-01-01,Call Drop,Fixed Wireless,In Progress,2024-01-01,560,2,0
+383473,2652,North,Yishun,1.234145,103.97915,4G,Good,2025-01-01,Slow Internet,Mobile,In Progress,2024-01-01,1294,3,0
+150762,1726,Central,River Valley,1.42354,103.947059,4G,Poor,2025-01-01,Slow Internet,Fixed Wireless,Open,2024-01-01,1816,5,0
+119510,61,Central,Orchard,1.327091,103.670817,5G,Good,2025-01-01,No Signal,Mobile,Open,2024-01-01,2709,2,0
+934030,3433,North-East,Hougang,1.323019,103.917592,4G,Poor,2025-01-01,No Signal,Mobile,Open,2024-01-01,794,2,1
+536572,4367,North,Woodlands,1.34406,103.600108,5G,Moderate,2025-01-01,No Signal,Mobile,Open,2024-01-01,2169,0,0
+585654,2811,East,Bedok,1.433724,103.708607,5G,Poor,2025-01-01,Call Drop,Fixed Wireless,Open,2024-01-01,3473,2,0
+228938,1646,West,Bukit Batok,1.366559,103.60131,4G,Good,2025-01-01,Slow Internet,Fixed Wireless,Closed,2024-01-01,3048,4,0
+419889,2654,North-East,Hougang,1.321131,103.841961,5G,Good,2025-01-01,No Signal,Mobile,In Progress,2024-01-01,1343,0,0
+225555,4785,Central,Outram,1.414728,103.660973,4G,Good,2025-01-01,No Signal,Mobile,In Progress,2024-01-01,146,0,0
+812992,1410,East,Changi,1.266681,104.004826,5G,Good,2025-01-01,Call Drop,Fixed Wireless,In Progress,2024-01-01,1195,5,0
+554529,1307,North,Sembawang,1.449613,103.834784,5G,Poor,2025-01-01,Slow Internet,Mobile,Open,2024-01-01,361,4,0
+307193,3921,Central,Bukit Merah,1.20243,103.716015,5G,Poor,2025-01-01,No Signal,Fixed Wireless,Closed,2024-01-01,1403,2,0
+278901,1039,North,Yishun,1.210254,104.047567,4G,Good,2025-01-01,No Signal,Mobile,Closed,2024-01-01,1854,4,1
+361413,4839,East,Bedok,1.440232,103.604124,4G,Moderate,2025-01-01,Call Drop,Fixed Wireless,Closed,2024-01-01,1299,1,0
+972700,4391,East,Changi,1.395477,103.69542,4G,Moderate,2025-01-01,Call Drop,Mobile,Open,2024-01-01,1843,4,1
+770088,3815,North-East,Sengkang,1.386995,103.857354,4G,Good,2025-01-01,No Signal,Fixed Wireless,Closed,2024-01-01,1943,2,0
+899288,2923,Central,Bukit Merah,1.40313,104.010216,5G,Moderate,2025-01-01,Slow Internet,Mobile,In Progress,2024-01-01,3359,5,0
+265640,905,Central,Orchard,1.234097,104.025599,4G,Good,2025-01-01,Call Drop,Fixed Wireless,Closed,2024-01-01,1503,0,0
+690176,4508,West,Jurong East,1.459839,104.000599,5G,Poor,2025-01-01,Slow Internet,Mobile,In Progress,2024-01-01,381,5,0
+756225,2982,West,Clementi,1.310952,103.883149,4G,Poor,2025-01-01,No Signal,Fixed Wireless,In Progress,2024-01-01,3380,2,0
+380407,4109,North-East,Hougang,1.42082,103.75582,4G,Poor,2025-01-01,Slow Internet,Mobile,Closed,2024-01-01,1179,5,0
+109795,3053,North-East,Punggol,1.410623,103.947051,5G,Good,2025-01-01,Call Drop,Mobile,In Progress,2024-01-01,2817,0,0
+426754,2587,East,Changi,1.331329,103.82722,4G,Poor,2025-01-01,Call Drop,Mobile,Open,2024-01-01,2724,2,0
+620759,4015,East,Bedok,1.23659,103.83328,5G,Good,2025-01-01,No Signal,Mobile,Closed,2024-01-01,1284,2,0
+177271,296,East,Bedok,1.43065,103.951736,4G,Poor,2025-01-01,No Signal,Mobile,Open,2024-01-01,2291,2,0
+231436,3414,West,Bukit Batok,1.268899,103.986312,5G,Good,2025-01-01,Slow Internet,Fixed Wireless,Closed,2024-01-01,2255,0,0
+859112,3259,North-East,Hougang,1.29141,103.813046,4G,Moderate,2025-01-01,Call Drop,Fixed Wireless,Closed,2024-01-01,1240,1,1
+521655,1691,North-East,Hougang,1.422874,103.625201,4G,Poor,2025-01-01,Call Drop,Fixed Wireless,Open,2024-01-01,1911,3,1
+737233,1902,Central,Outram,1.444067,103.744298,5G,Good,2025-01-01,Call Drop,Fixed Wireless,Open,2024-01-01,140,0,0
+585077,568,Central,Orchard,1.401114,103.635844,4G,Moderate,2025-01-01,Slow Internet,Fixed Wireless,In Progress,2024-01-01,324,1,1
+938569,560,East,Changi,1.219368,103.896941,4G,Good,2025-01-01,No Signal,Mobile,In Progress,2024-01-01,37,0,0
+753668,4479,North,Woodlands,1.422706,103.985476,5G,Good,2025-01-01,Call Drop,Fixed Wireless,Open,2024-01-01,2315,4,1
+553400,257,Central,Bukit Merah,1.243393,104.040219,4G,Poor,2025-01-01,Call Drop,Mobile,Closed,2024-01-01,1025,0,0
+301123,3857,North-East,Hougang,1.380892,103.632391,5G,Poor,2025-01-01,Call Drop,Mobile,Closed,2024-01-01,963,0,0
+890944,4944,East,Bedok,1.271283,103.602429,5G,Good,2025-01-01,Slow Internet,Fixed Wireless,Closed,2024-01-01,737,0,0
+548400,4697,Central,River Valley,1.308721,103.69353,4G,Poor,2025-01-01,Slow Internet,Fixed Wireless,Open,2024-01-01,697,2,0
+300940,3811,Central,Outram,1.339993,103.758539,5G,Poor,2025-01-01,Call Drop,Fixed Wireless,In Progress,2024-01-01,472,2,1
+167381,383,North-East,Hougang,1.314704,103.657683,4G,Good,2025-01-01,Slow Internet,Fixed Wireless,Open,2024-01-01,1578,2,0
+964899,1360,Central,Outram,1.347005,103.675798,5G,Poor,2025-01-01,Slow Internet,Mobile,Open,2024-01-01,2709,1,0
+459267,3499,North-East,Ang Mo Kio,1.429392,103.816061,5G,Good,2025-01-01,No Signal,Mobile,Open,2024-01-01,458,4,0
+615689,2412,North,Sembawang,1.280476,103.790143,4G,Good,2025-01-01,No Signal,Mobile,In Progress,2024-01-01,1011,4,0
+421516,4712,Central,Outram,1.410045,103.978603,5G,Moderate,2025-01-01,Slow Internet,Mobile,In Progress,2024-01-01,1485,2,0
+961309,3566,West,Clementi,1.344876,103.725198,4G,Poor,2025-01-01,No Signal,Mobile,Closed,2024-01-01,2181,2,0
+897278,4119,East,Tampines,1.326641,103.826991,4G,Poor,2025-01-01,Call Drop,Fixed Wireless,In Progress,2024-01-01,656,1,0
+192416,2581,West,Clementi,1.282306,103.90956,4G,Poor,2025-01-01,No Signal,Mobile,Closed,2024-01-01,831,4,0
+296211,1075,North-East,Ang Mo Kio,1.349661,103.837217,5G,Poor,2025-01-01,Slow Internet,Mobile,Closed,2024-01-01,2231,1,0
+817278,2540,West,Jurong West,1.427596,103.834205,4G,Good,2025-01-01,No Signal,Mobile,Open,2024-01-01,988,1,0
+413760,2224,Central,Queenstown,1.391146,103.850841,4G,Good,2025-01-01,No Signal,Mobile,In Progress,2024-01-01,212,1,0
+104695,3339,North,Sembawang,1.43526,104.049507,5G,Poor,2025-01-01,No Signal,Fixed Wireless,Open,2024-01-01,3573,2,1
+467482,4240,Central,Bukit Merah,1.350506,103.990814,5G,Poor,2025-01-01,Call Drop,Fixed Wireless,In Progress,2024-01-01,1440,0,1
+516460,472,Central,Bukit Merah,1.203447,103.992198,4G,Poor,2025-01-01,Slow Internet,Fixed Wireless,Closed,2024-01-01,3504,3,0
+585260,2785,West,Clementi,1.436982,103.965917,5G,Poor,2025-01-01,No Signal,Fixed Wireless,In Progress,2024-01-01,2750,5,0
+445695,775,North-East,Hougang,1.335977,103.990186,4G,Poor,2025-01-01,Slow Internet,Mobile,Open,2024-01-01,2168,4,0
+373280,2820,East,Pasir Ris,1.268476,103.99768,4G,Good,2025-01-01,No Signal,Mobile,In Progress,2024-01-01,3319,1,0
+947883,4929,North-East,Hougang,1.412483,103.625372,4G,Moderate,2025-01-01,No Signal,Fixed Wireless,In Progress,2024-01-01,527,1,0
+831616,4504,North,Sembawang,1.428411,103.792378,5G,Poor,2025-01-01,No Signal,Mobile,Open,2024-01-01,2862,5,0
+913439,2516,West,Bukit Batok,1.42322,103.973845,4G,Good,2025-01-01,No Signal,Fixed Wireless,In Progress,2024-01-01,1773,3,1
+331749,2577,East,Tampines,1.410474,103.713664,5G,Poor,2025-01-01,Call Drop,Mobile,Closed,2024-01-01,1177,3,1
+684172,633,Central,Orchard,1.250931,103.828554,5G,Moderate,2025-01-01,Slow Internet,Mobile,Open,2024-01-01,2630,0,0
+929783,1593,West,Clementi,1.421573,103.616964,4G,Moderate,2025-01-01,No Signal,Fixed Wireless,Closed,2024-01-01,2627,2,1
+848979,97,North,Yishun,1.38138,103.777454,4G,Good,2025-01-01,No Signal,Mobile,Open,2024-01-01,2987,0,0
+674586,4300,East,Tampines,1.251844,103.977999,4G,Moderate,2025-01-01,No Signal,Fixed Wireless,Open,2024-01-01,2386,5,0
+565944,2554,North,Sembawang,1.27589,103.900609,5G,Moderate,2025-01-01,No Signal,Mobile,Open,2024-01-01,2670,1,1
+823380,1855,Central,Outram,1.439816,103.978272,5G,Poor,2025-01-01,No Signal,Fixed Wireless,Open,2024-01-01,1882,0,0
+139080,1763,West,Clementi,1.293768,103.906473,5G,Good,2025-01-01,No Signal,Fixed Wireless,Closed,2024-01-01,3100,2,0
+693453,2115,Central,Queenstown,1.426226,103.997252,4G,Moderate,2025-01-01,Slow Internet,Mobile,Open,2024-01-01,2966,2,0
+832943,4649,Central,Orchard,1.318341,103.718212,4G,Moderate,2025-01-01,No Signal,Mobile,Closed,2024-01-01,2608,0,0
+481050,3243,East,Tampines,1.419326,103.938584,4G,Good,2025-01-01,No Signal,Mobile,Open,2024-01-01,2088,2,1
+590576,4638,West,Jurong East,1.296529,103.724842,5G,Good,2025-01-01,Slow Internet,Fixed Wireless,Open,2024-01-01,1230,4,0
+203021,3272,West,Bukit Batok,1.342509,103.832933,5G,Moderate,2025-01-01,Call Drop,Mobile,Open,2024-01-01,1284,4,0
+488550,2788,North,Yishun,1.366024,103.817091,4G,Moderate,2025-01-01,Call Drop,Fixed Wireless,In Progress,2024-01-01,426,0,0
+493545,4355,Central,Orchard,1.360106,104.021197,4G,Poor,2025-01-01,Call Drop,Mobile,Closed,2024-01-01,719,3,0
+665764,2533,West,Jurong East,1.209057,103.85218,5G,Poor,2025-01-01,Call Drop,Mobile,Closed,2024-01-01,899,5,0
+223980,503,Central,Orchard,1.264009,103.801273,5G,Poor,2025-01-01,No Signal,Mobile,In Progress,2024-01-01,1093,1,0
+543697,4115,West,Jurong East,1.247901,103.649336,5G,Good,2025-01-01,Slow Internet,Fixed Wireless,Closed,2024-01-01,1071,2,0
+527195,776,North,Yishun,1.248504,104.031817,4G,Moderate,2025-01-01,Slow Internet,Fixed Wireless,In Progress,2024-01-01,2885,4,1
+101095,24,North,Yishun,1.363014,103.673769,5G,Poor,2025-01-01,Call Drop,Fixed Wireless,Closed,2024-01-01,1960,1,0
+744673,810,North-East,Ang Mo Kio,1.37884,103.671227,4G,Good,2025-01-01,Call Drop,Fixed Wireless,Closed,2024-01-01,1440,1,0
+662193,1362,Central,Orchard,1.253039,103.876231,5G,Good,2025-01-01,Call Drop,Mobile,Open,2024-01-01,1592,0,0
+454060,303,North,Woodlands,1.291462,103.81149,5G,Good,2025-01-01,No Signal,Fixed Wireless,Open,2024-01-01,761,2,0
+451814,685,North,Woodlands,1.339919,103.804976,5G,Good,2025-01-01,Call Drop,Fixed Wireless,In Progress,2024-01-01,1709,2,1
+915636,769,West,Jurong East,1.305831,103.718622,4G,Moderate,2025-01-01,Call Drop,Mobile,Open,2024-01-01,2786,3,1
+336502,481,Central,River Valley,1.210211,103.655373,4G,Moderate,2025-01-01,No Signal,Mobile,Open,2024-01-01,1892,3,0
+804666,4963,East,Changi,1.26459,103.786846,4G,Moderate,2025-01-01,No Signal,Mobile,In Progress,2024-01-01,1892,2,0
+338826,2016,Central,Orchard,1.457374,103.843444,4G,Moderate,2025-01-01,Slow Internet,Mobile,In Progress,2024-01-01,1885,3,1
+733976,1860,West,Clementi,1.225665,103.690211,5G,Poor,2025-01-01,Slow Internet,Fixed Wireless,Open,2024-01-01,702,0,0
+975837,3747,Central,Bukit Merah,1.235571,103.906107,4G,Poor,2025-01-01,Slow Internet,Fixed Wireless,Closed,2024-01-01,390,4,0
+454182,3132,East,Tampines,1.279853,103.823044,5G,Moderate,2025-01-01,Call Drop,Mobile,Open,2024-01-01,2538,2,0
+666967,428,East,Tampines,1.308614,103.768592,5G,Moderate,2025-01-01,Slow Internet,Fixed Wireless,In Progress,2024-01-01,3528,1,1
+791495,2416,North,Yishun,1.304504,103.89125,5G,Moderate,2025-01-01,Slow Internet,Fixed Wireless,In Progress,2024-01-01,1497,0,0
+172908,3574,North,Yishun,1.397606,103.772706,5G,Poor,2025-01-01,No Signal,Fixed Wireless,Closed,2024-01-01,3312,0,0
+680085,2595,North,Woodlands,1.429167,103.917726,4G,Poor,2025-01-01,No Signal,Fixed Wireless,In Progress,2024-01-01,3049,0,0
+960075,2753,West,Bukit Batok,1.467865,103.658658,4G,Poor,2025-01-01,Call Drop,Fixed Wireless,In Progress,2024-01-01,3535,2,0
+461998,1793,North,Yishun,1.383526,103.874063,4G,Good,2025-01-01,Slow Internet,Mobile,Open,2024-01-01,234,4,0
+216062,4512,Central,River Valley,1.210139,103.742202,4G,Poor,2025-01-01,No Signal,Fixed Wireless,In Progress,2024-01-01,756,0,0
+789622,1020,North-East,Ang Mo Kio,1.291045,103.718129,4G,Poor,2025-01-01,Call Drop,Mobile,Open,2024-01-01,444,5,1
+684808,4009,East,Pasir Ris,1.244258,103.771634,5G,Good,2025-01-01,Slow Internet,Fixed Wireless,Closed,2024-01-01,969,2,0
+229926,4762,North-East,Sengkang,1.362814,103.62571,4G,Moderate,2025-01-01,Call Drop,Fixed Wireless,Closed,2024-01-01,94,3,1
+632669,756,North,Sembawang,1.465114,104.004054,5G,Good,2025-01-01,Call Drop,Mobile,Closed,2024-01-01,669,4,0
+784765,3187,East,Tampines,1.269988,103.608517,5G,Poor,2025-01-01,Call Drop,Mobile,Open,2024-01-01,1912,0,0
+943214,1462,East,Tampines,1.254092,103.694953,4G,Poor,2025-01-01,Slow Internet,Mobile,In Progress,2024-01-01,1698,4,0
+524861,661,West,Bukit Batok,1.273983,103.741679,4G,Moderate,2025-01-01,Slow Internet,Mobile,In Progress,2024-01-01,3267,0,0
+216585,273,Central,Queenstown,1.449095,103.855812,5G,Good,2025-01-01,Slow Internet,Fixed Wireless,In Progress,2024-01-01,922,1,1
+700803,2723,North-East,Ang Mo Kio,1.340974,103.780694,5G,Moderate,2025-01-01,Slow Internet,Mobile,Closed,2024-01-01,1673,3,1
+150818,4512,East,Bedok,1.416365,103.784727,5G,Poor,2025-01-01,Slow Internet,Fixed Wireless,Open,2024-01-01,2899,4,0
+241554,473,North,Sembawang,1.414484,103.644536,5G,Poor,2025-01-01,Slow Internet,Fixed Wireless,In Progress,2024-01-01,11,0,0
+804537,1807,East,Pasir Ris,1.227611,103.934857,4G,Poor,2025-01-01,Call Drop,Mobile,Open,2024-01-01,1479,3,0
+680632,1056,Central,Outram,1.446142,103.893618,5G,Good,2025-01-01,Call Drop,Fixed Wireless,Open,2024-01-01,85,3,1
+589987,4271,North-East,Punggol,1.245835,104.034544,4G,Moderate,2025-01-01,Call Drop,Mobile,Open,2024-01-01,2575,0,0
+323009,794,East,Bedok,1.218677,103.749044,4G,Moderate,2025-01-01,Slow Internet,Fixed Wireless,In Progress,2024-01-01,1801,1,0
+497243,3337,North,Woodlands,1.399476,104.001834,5G,Poor,2025-01-01,No Signal,Mobile,In Progress,2024-01-01,3397,1,0
+607763,1245,West,Clementi,1.463541,103.839537,4G,Poor,2025-01-01,Slow Internet,Mobile,Closed,2024-01-01,3006,0,0
+329707,1422,East,Pasir Ris,1.304262,104.029479,5G,Poor,2025-01-01,Slow Internet,Mobile,Open,2024-01-01,1017,3,0
+558253,2576,West,Jurong West,1.41235,103.608127,5G,Moderate,2025-01-01,Call Drop,Fixed Wireless,In Progress,2024-01-01,1608,3,1
+455734,3445,Central,Queenstown,1.383373,104.043228,5G,Good,2025-01-01,Call Drop,Fixed Wireless,Closed,2024-01-01,428,2,1
+801793,393,West,Clementi,1.353125,103.852518,5G,Good,2025-01-01,Slow Internet,Mobile,In Progress,2024-01-01,1859,4,1
+645999,1661,North,Sembawang,1.389953,103.890185,5G,Moderate,2025-01-01,No Signal,Mobile,Closed,2024-01-01,453,2,1
+274898,3069,Central,Outram,1.253125,104.003044,5G,Poor,2025-01-01,Call Drop,Fixed Wireless,Closed,2024-01-01,1955,5,0
+571058,1250,North,Woodlands,1.33268,103.92489,4G,Poor,2025-01-01,Slow Internet,Mobile,Closed,2024-01-01,2742,2,0
+991712,4676,West,Bukit Batok,1.375734,103.689501,4G,Poor,2025-01-01,Call Drop,Fixed Wireless,Open,2024-01-01,1669,0,0
+280564,4568,North,Yishun,1.225587,103.603055,4G,Poor,2025-01-01,Call Drop,Mobile,Open,2024-01-01,1417,3,0
+536156,2940,Central,Orchard,1.298501,103.993026,4G,Moderate,2025-01-01,No Signal,Fixed Wireless,Closed,2024-01-01,1753,0,0
+250943,3851,West,Jurong East,1.38457,103.601279,4G,Moderate,2025-01-01,No Signal,Mobile,Closed,2024-01-01,740,1,0
+888326,3712,Central,Bukit Merah,1.246983,103.942342,4G,Good,2025-01-01,No Signal,Fixed Wireless,Closed,2024-01-01,1135,2,0
+114633,570,North-East,Ang Mo Kio,1.417162,103.673402,4G,Poor,2025-01-01,Call Drop,Mobile,Closed,2024-01-01,738,0,0
+301466,390,North,Yishun,1.201216,103.740974,4G,Good,2025-01-01,No Signal,Mobile,Closed,2024-01-01,2911,4,0
+445173,1251,West,Jurong West,1.391747,103.904804,5G,Moderate,2025-01-01,No Signal,Fixed Wireless,Closed,2024-01-01,2446,4,0
+394786,803,West,Jurong East,1.415407,104.014656,5G,Moderate,2025-01-01,Slow Internet,Fixed Wireless,Open,2024-01-01,3007,1,0
+178343,1152,Central,Bukit Merah,1.256747,103.82396,4G,Moderate,2025-01-01,Call Drop,Fixed Wireless,In Progress,2024-01-01,2494,1,0
+816079,3956,North-East,Ang Mo Kio,1.292468,103.648583,4G,Good,2025-01-01,Slow Internet,Mobile,Open,2024-01-01,2915,1,0
+767372,3719,Central,Bukit Merah,1.43586,103.74822,5G,Poor,2025-01-01,Call Drop,Mobile,Open,2024-01-01,761,1,0
+904371,3634,West,Jurong West,1.411825,103.641984,4G,Good,2025-01-01,Slow Internet,Mobile,Open,2024-01-01,2727,5,0
+912902,137,Central,Orchard,1.3387,103.708118,4G,Good,2025-01-01,Slow Internet,Fixed Wireless,In Progress,2024-01-01,1810,2,0
+816369,3738,East,Bedok,1.207876,103.872296,5G,Poor,2025-01-01,Call Drop,Mobile,Open,2024-01-01,474,1,1
+447608,4478,North,Yishun,1.292095,103.844593,4G,Moderate,2025-01-01,No Signal,Mobile,Open,2024-01-01,1359,3,0
+116116,1901,West,Jurong West,1.3529,103.77928,5G,Poor,2025-01-01,No Signal,Fixed Wireless,Open,2024-01-01,2104,1,1
+573818,2512,North-East,Ang Mo Kio,1.326295,104.035633,4G,Poor,2025-01-01,Slow Internet,Fixed Wireless,In Progress,2024-01-01,417,3,0
+967913,256,North,Woodlands,1.405894,103.97502,4G,Poor,2025-01-01,No Signal,Mobile,Open,2024-01-01,1477,2,0
+493807,4517,Central,River Valley,1.339623,103.943625,5G,Good,2025-01-01,No Signal,Fixed Wireless,In Progress,2024-01-01,2773,2,0
+790973,2767,North-East,Sengkang,1.345297,103.810969,5G,Moderate,2025-01-01,Call Drop,Mobile,In Progress,2024-01-01,2470,2,0
+376850,2737,West,Clementi,1.269644,103.821181,5G,Good,2025-01-01,No Signal,Fixed Wireless,In Progress,2024-01-01,2285,4,0
+471427,371,North,Yishun,1.412803,103.916847,5G,Poor,2025-01-01,No Signal,Fixed Wireless,In Progress,2024-01-01,1348,4,0
+332409,669,West,Jurong East,1.256508,103.601674,4G,Moderate,2025-01-01,Call Drop,Fixed Wireless,Closed,2024-01-01,3456,3,1
+293242,4924,North,Yishun,1.457916,103.999476,5G,Poor,2025-01-01,No Signal,Mobile,Open,2024-01-01,2003,5,0
+711781,635,East,Bedok,1.411496,103.720753,4G,Good,2025-01-01,No Signal,Fixed Wireless,Open,2024-01-01,1228,5,0
+810349,3053,Central,River Valley,1.321526,103.609961,4G,Poor,2025-01-01,Call Drop,Fixed Wireless,In Progress,2024-01-01,1780,4,0
+287435,2785,Central,Queenstown,1.35257,103.986402,5G,Good,2025-01-01,Slow Internet,Mobile,In Progress,2024-01-01,2903,0,0
+131159,1080,West,Jurong East,1.399515,103.689021,5G,Good,2025-01-01,No Signal,Mobile,Open,2024-01-01,1758,0,0
+161748,231,North,Woodlands,1.283389,103.875111,4G,Moderate,2025-01-01,Call Drop,Mobile,Closed,2024-01-01,2831,3,0
+548477,4826,North,Woodlands,1.341095,103.951879,4G,Poor,2025-01-01,No Signal,Fixed Wireless,Open,2024-01-01,76,3,1
+880634,4268,North-East,Ang Mo Kio,1.236919,103.943817,4G,Moderate,2025-01-01,Slow Internet,Fixed Wireless,Open,2024-01-01,3047,0,0
+276282,257,West,Jurong West,1.464058,104.04743,4G,Good,2025-01-01,Call Drop,Mobile,Open,2024-01-01,258,3,0
+291196,1659,East,Pasir Ris,1.397999,103.600185,4G,Moderate,2025-01-01,No Signal,Mobile,Open,2024-01-01,562,1,0
+443275,2429,East,Bedok,1.458098,104.015485,5G,Poor,2025-01-01,No Signal,Mobile,In Progress,2024-01-01,843,5,0
+642150,2074,West,Jurong West,1.331647,103.913941,4G,Good,2025-01-01,Call Drop,Mobile,Open,2024-01-01,654,4,0
+370628,2602,North,Woodlands,1.287452,103.661313,5G,Good,2025-01-01,Slow Internet,Fixed Wireless,Open,2024-01-01,1943,3,0
+632259,976,North,Yishun,1.416822,103.768143,5G,Good,2025-01-01,Call Drop,Mobile,Open,2024-01-01,362,5,0
+205935,3599,East,Changi,1.296288,103.729691,4G,Good,2025-01-01,No Signal,Mobile,In Progress,2024-01-01,1992,4,0
+172746,4743,North-East,Sengkang,1.22138,103.81952,4G,Poor,2025-01-01,Call Drop,Mobile,Open,2024-01-01,1525,5,0
+309137,1734,East,Pasir Ris,1.382955,103.677769,4G,Good,2025-01-01,Slow Internet,Fixed Wireless,In Progress,2024-01-01,2178,0,0
+569054,407,Central,Bukit Merah,1.409514,103.958894,4G,Poor,2025-01-01,Call Drop,Mobile,In Progress,2024-01-01,613,3,0
+633292,1787,West,Bukit Batok,1.45043,103.629831,4G,Moderate,2025-01-01,No Signal,Mobile,In Progress,2024-01-01,1817,4,0
+662667,1241,East,Changi,1.310165,103.909359,4G,Good,2025-01-01,Slow Internet,Fixed Wireless,Open,2024-01-01,3118,4,0
+291634,4558,East,Pasir Ris,1.456603,104.031247,4G,Good,2025-01-01,Call Drop,Fixed Wireless,Open,2024-01-01,3324,0,1
+224786,2612,North-East,Ang Mo Kio,1.42521,103.959893,4G,Moderate,2025-01-01,Call Drop,Fixed Wireless,In Progress,2024-01-01,245,1,0
+661133,4899,Central,Orchard,1.418424,103.960164,5G,Poor,2025-01-01,Call Drop,Mobile,In Progress,2024-01-01,89,2,0
+711340,2505,West,Clementi,1.344772,103.802117,4G,Poor,2025-01-01,No Signal,Fixed Wireless,Closed,2024-01-01,651,4,0
+260811,1817,North,Sembawang,1.321206,103.841726,4G,Moderate,2025-01-01,Slow Internet,Mobile,Closed,2024-01-01,1058,2,0
+845459,2291,North,Woodlands,1.349626,103.851478,5G,Good,2025-01-01,Call Drop,Mobile,In Progress,2024-01-01,209,5,0
+490659,1335,East,Pasir Ris,1.257828,103.627033,5G,Poor,2025-01-01,Slow Internet,Mobile,Open,2024-01-01,2715,2,0
+321516,2992,North-East,Ang Mo Kio,1.363678,103.751615,5G,Poor,2025-01-01,Slow Internet,Fixed Wireless,In Progress,2024-01-01,100,1,0
+854016,2956,East,Changi,1.203212,103.73192,5G,Good,2025-01-01,Slow Internet,Mobile,In Progress,2024-01-01,2759,3,0
+138665,4577,Central,River Valley,1.270911,103.826989,4G,Poor,2025-01-01,Slow Internet,Fixed Wireless,In Progress,2024-01-01,1447,4,1
+371609,560,North-East,Hougang,1.31518,104.000104,5G,Poor,2025-01-01,No Signal,Fixed Wireless,Open,2024-01-01,2011,4,1
+572919,917,North-East,Ang Mo Kio,1.389205,103.927002,5G,Poor,2025-01-01,No Signal,Mobile,Closed,2024-01-01,3259,2,0
+383071,1812,East,Changi,1.304182,104.041935,5G,Moderate,2025-01-01,No Signal,Mobile,Open,2024-01-01,724,3,0
+912146,460,East,Tampines,1.33628,103.667297,4G,Good,2025-01-01,Call Drop,Mobile,In Progress,2024-01-01,2898,1,0
+407674,3686,Central,River Valley,1.288443,103.694452,5G,Poor,2025-01-01,Call Drop,Fixed Wireless,Open,2024-01-01,2205,3,0
+310154,405,North-East,Hougang,1.413829,103.657232,5G,Good,2025-01-01,No Signal,Mobile,Open,2024-01-01,2526,2,0
+983717,2869,North-East,Punggol,1.291574,103.649978,5G,Moderate,2025-01-01,Call Drop,Fixed Wireless,Closed,2024-01-01,51,3,0
+260786,815,West,Jurong East,1.327374,103.823119,4G,Poor,2025-01-01,No Signal,Mobile,Closed,2024-01-01,260,0,0
+895903,4276,East,Changi,1.287342,103.610416,5G,Poor,2025-01-01,Slow Internet,Mobile,Closed,2024-01-01,3164,4,0
+411857,2422,North-East,Sengkang,1.385396,103.978611,5G,Moderate,2025-01-01,No Signal,Mobile,Closed,2024-01-01,2939,4,0
+420589,289,North,Sembawang,1.279459,103.638901,4G,Poor,2025-01-01,Call Drop,Mobile,Open,2024-01-01,2583,5,0
+746346,2877,East,Changi,1.305693,103.717951,5G,Poor,2025-01-01,Call Drop,Fixed Wireless,Closed,2024-01-01,3345,4,0
+861447,1950,West,Jurong East,1.411501,103.758536,4G,Moderate,2025-01-01,Slow Internet,Mobile,Open,2024-01-01,2753,3,0
+333725,3104,North,Sembawang,1.212118,104.014051,5G,Good,2025-01-01,Call Drop,Mobile,Open,2024-01-01,2135,3,0
+304222,1756,West,Bukit Batok,1.228286,103.804403,4G,Moderate,2025-01-01,Slow Internet,Fixed Wireless,Closed,2024-01-01,1531,5,0
+723431,3,West,Bukit Batok,1.322052,103.911331,5G,Poor,2025-01-01,Call Drop,Mobile,In Progress,2024-01-01,1137,4,1
+174442,2287,East,Bedok,1.289912,103.768105,4G,Moderate,2025-01-01,No Signal,Mobile,Closed,2024-01-01,1880,0,1
+927767,742,North-East,Hougang,1.216446,103.792978,5G,Moderate,2025-01-01,Slow Internet,Mobile,In Progress,2024-01-01,567,3,0
+633703,2894,Central,Bukit Merah,1.454403,103.837252,5G,Good,2025-01-01,Slow Internet,Mobile,Closed,2024-01-01,1786,3,0
+272109,3614,North,Yishun,1.385591,103.650212,5G,Moderate,2025-01-01,Slow Internet,Fixed Wireless,In Progress,2024-01-01,1383,5,1
+396508,480,Central,Bukit Merah,1.363046,103.930742,5G,Good,2025-01-01,Call Drop,Mobile,Open,2024-01-01,2072,0,0
+549622,4750,Central,Queenstown,1.24433,103.655559,5G,Poor,2025-01-01,No Signal,Fixed Wireless,In Progress,2024-01-01,3297,5,0
+412499,4136,East,Pasir Ris,1.216981,103.908964,4G,Moderate,2025-01-01,Call Drop,Fixed Wireless,Open,2024-01-01,482,5,1
+240466,1622,West,Bukit Batok,1.422852,104.044187,5G,Good,2025-01-01,Slow Internet,Mobile,In Progress,2024-01-01,3351,1,0
+847075,3298,West,Jurong East,1.374125,103.983168,5G,Moderate,2025-01-01,Call Drop,Fixed Wireless,In Progress,2024-01-01,734,2,0
+836664,4697,East,Tampines,1.378612,103.866361,4G,Moderate,2025-01-01,Slow Internet,Mobile,In Progress,2024-01-01,579,4,0
+177088,4708,West,Clementi,1.374258,103.909318,5G,Good,2025-01-01,Call Drop,Mobile,Open,2024-01-01,375,1,0
+284286,1614,North-East,Punggol,1.425645,103.909705,4G,Good,2025-01-01,Call Drop,Mobile,Open,2024-01-01,690,4,0
+757726,2892,North-East,Punggol,1.456977,103.955848,5G,Good,2025-01-01,Slow Internet,Fixed Wireless,Open,2024-01-01,2033,3,0
+546021,497,Central,Queenstown,1.308624,103.672719,4G,Poor,2025-01-01,No Signal,Fixed Wireless,Closed,2024-01-01,3216,0,0
+210573,1478,Central,Orchard,1.228019,103.965818,5G,Poor,2025-01-01,Call Drop,Fixed Wireless,In Progress,2024-01-01,3474,2,0
+920178,731,North-East,Punggol,1.303129,103.853935,5G,Moderate,2025-01-01,Call Drop,Fixed Wireless,Open,2024-01-01,710,1,0
+311474,3389,East,Pasir Ris,1.322653,103.923801,5G,Moderate,2025-01-01,No Signal,Fixed Wireless,Open,2024-01-01,2443,1,1
+211889,172,West,Jurong West,1.379226,103.820423,4G,Moderate,2025-01-01,Slow Internet,Fixed Wireless,Closed,2024-01-01,815,2,0
+461317,4695,Central,Orchard,1.356883,104.024903,5G,Poor,2025-01-01,Call Drop,Fixed Wireless,Closed,2024-01-01,1525,4,1
+593857,209,North,Woodlands,1.402954,103.790291,5G,Poor,2025-01-01,Call Drop,Fixed Wireless,In Progress,2024-01-01,1742,0,0
+893826,705,West,Jurong West,1.319101,103.93013,4G,Good,2025-01-01,Slow Internet,Mobile,In Progress,2024-01-01,639,3,0
+282631,623,East,Changi,1.232353,103.80299,4G,Poor,2025-01-01,Call Drop,Fixed Wireless,Closed,2024-01-01,119,5,0
+529865,1687,North,Yishun,1.236563,103.731082,4G,Good,2025-01-01,No Signal,Fixed Wireless,Open,2024-01-01,1656,4,0
+234411,3011,East,Tampines,1.211292,103.88075,5G,Moderate,2025-01-01,Call Drop,Mobile,In Progress,2024-01-01,3374,1,0
+651872,4301,Central,Orchard,1.394178,103.863247,5G,Poor,2025-01-01,No Signal,Mobile,Open,2024-01-01,1723,5,0
+163146,1719,North-East,Ang Mo Kio,1.287183,103.816573,5G,Moderate,2025-01-01,Slow Internet,Fixed Wireless,Open,2024-01-01,2417,4,0
+560221,2921,North,Yishun,1.217002,103.975361,4G,Good,2025-01-01,Slow Internet,Fixed Wireless,Closed,2024-01-01,553,3,0
+783850,1661,West,Clementi,1.451814,103.872228,4G,Good,2025-01-01,Slow Internet,Mobile,Closed,2024-01-01,2449,5,0
+739068,3179,Central,River Valley,1.294097,103.65943,5G,Poor,2025-01-01,Slow Internet,Mobile,Closed,2024-01-01,2538,0,0
+830841,911,North,Woodlands,1.415445,103.853407,5G,Poor,2025-01-01,No Signal,Mobile,In Progress,2024-01-01,872,5,0
+916445,4723,East,Tampines,1.261259,103.739874,4G,Good,2025-01-01,Call Drop,Fixed Wireless,In Progress,2024-01-01,521,3,0
+958547,3248,North,Sembawang,1.383208,103.856753,4G,Poor,2025-01-01,Call Drop,Fixed Wireless,Closed,2024-01-01,717,2,0
+893981,787,East,Bedok,1.301352,103.708713,5G,Good,2025-01-01,No Signal,Mobile,In Progress,2024-01-01,946,2,0
+688613,2216,North,Yishun,1.413269,103.885541,5G,Poor,2025-01-01,No Signal,Mobile,Closed,2024-01-01,1002,2,0
+635807,731,North,Sembawang,1.398941,103.814174,4G,Poor,2025-01-01,Call Drop,Fixed Wireless,In Progress,2024-01-01,1447,5,0
+198580,3308,North-East,Sengkang,1.290379,103.91297,4G,Poor,2025-01-01,Slow Internet,Fixed Wireless,Open,2024-01-01,3565,1,0
+291012,3816,West,Jurong West,1.308497,103.922639,4G,Good,2025-01-01,Call Drop,Fixed Wireless,In Progress,2024-01-01,3161,3,0
+620551,3558,North,Woodlands,1.268797,103.947517,4G,Poor,2025-01-01,Slow Internet,Mobile,Open,2024-01-01,1151,2,0
+189407,1530,West,Jurong East,1.278078,103.739394,4G,Poor,2025-01-01,Call Drop,Fixed Wireless,In Progress,2024-01-01,845,4,1
+705743,3320,North-East,Punggol,1.275024,104.048503,5G,Good,2025-01-01,Slow Internet,Mobile,Closed,2024-01-01,1656,1,1
+842403,2788,West,Jurong West,1.414708,104.036067,4G,Moderate,2025-01-01,No Signal,Mobile,In Progress,2024-01-01,501,0,0
+879680,149,North,Woodlands,1.428564,103.827325,4G,Moderate,2025-01-01,Slow Internet,Fixed Wireless,Closed,2024-01-01,528,2,0
+638207,4906,West,Jurong West,1.349921,103.644969,5G,Poor,2025-01-01,No Signal,Fixed Wireless,In Progress,2024-01-01,1964,2,0
+501679,1029,North,Sembawang,1.315756,103.682051,4G,Moderate,2025-01-01,Call Drop,Mobile,Closed,2024-01-01,1677,5,1
+470522,3712,Central,Outram,1.304353,103.695068,5G,Good,2025-01-01,Slow Internet,Fixed Wireless,Closed,2024-01-01,2669,2,0
+813304,1161,West,Bukit Batok,1.405671,103.626234,4G,Poor,2025-01-01,No Signal,Mobile,Open,2024-01-01,245,2,0
+960030,3639,East,Changi,1.254447,103.635209,5G,Good,2025-01-01,Call Drop,Fixed Wireless,Closed,2024-01-01,2823,1,0
+839026,4121,North,Yishun,1.313197,103.687297,5G,Poor,2025-01-01,Slow Internet,Mobile,Closed,2024-01-01,2957,4,0
+648390,4264,North-East,Punggol,1.432977,103.635935,5G,Poor,2025-01-01,Slow Internet,Fixed Wireless,In Progress,2024-01-01,2994,5,1
+870878,49,West,Clementi,1.248131,104.043901,4G,Good,2025-01-01,Call Drop,Fixed Wireless,In Progress,2024-01-01,3059,2,0
+926580,2229,East,Bedok,1.35661,103.923863,4G,Poor,2025-01-01,Slow Internet,Mobile,Open,2024-01-01,637,2,0
+753974,176,North-East,Punggol,1.306849,103.68116,4G,Poor,2025-01-01,No Signal,Mobile,Closed,2024-01-01,3504,5,0
+409091,3381,Central,Orchard,1.36109,103.639088,5G,Good,2025-01-01,No Signal,Mobile,Closed,2024-01-01,1670,4,1
+580001,16,West,Bukit Batok,1.238219,103.975356,4G,Good,2025-01-01,Call Drop,Fixed Wireless,In Progress,2024-01-01,1567,0,1
+370651,4667,Central,Orchard,1.36838,103.851418,5G,Moderate,2025-01-01,No Signal,Fixed Wireless,In Progress,2024-01-01,3498,0,0
+757749,304,Central,Orchard,1.244449,103.666903,5G,Moderate,2025-01-01,Slow Internet,Fixed Wireless,In Progress,2024-01-01,2893,5,0
+669503,2202,North-East,Ang Mo Kio,1.236373,103.667912,4G,Moderate,2025-01-01,Slow Internet,Fixed Wireless,In Progress,2024-01-01,1143,3,0
+864948,4827,East,Tampines,1.37905,103.75377,5G,Moderate,2025-01-01,No Signal,Fixed Wireless,Open,2024-01-01,131,3,0
+131346,3397,Central,Bukit Merah,1.338286,103.762064,5G,Good,2025-01-01,Slow Internet,Mobile,In Progress,2024-01-01,3003,5,0
+597926,3635,West,Clementi,1.221017,103.768136,5G,Poor,2025-01-01,Call Drop,Fixed Wireless,Closed,2024-01-01,328,4,0
+601775,1845,Central,River Valley,1.298098,103.825608,5G,Poor,2025-01-01,No Signal,Mobile,Closed,2024-01-01,3291,2,0
+676106,405,Central,Queenstown,1.366215,103.642771,5G,Moderate,2025-01-01,No Signal,Mobile,Closed,2024-01-01,1317,5,0
+608715,1823,North,Woodlands,1.458807,103.66387,5G,Poor,2025-01-01,No Signal,Mobile,Open,2024-01-01,521,4,0
+412809,4877,Central,River Valley,1.364806,104.022599,4G,Moderate,2025-01-01,No Signal,Fixed Wireless,Open,2024-01-01,3275,3,0
+507096,2850,West,Jurong East,1.221134,104.020036,4G,Good,2025-01-01,Call Drop,Mobile,Open,2024-01-01,370,2,0
+694140,1188,Central,Outram,1.293406,103.756586,5G,Moderate,2025-01-01,Slow Internet,Fixed Wireless,In Progress,2024-01-01,3460,5,0
+551090,1071,North-East,Punggol,1.390064,103.752076,5G,Moderate,2025-01-01,Slow Internet,Fixed Wireless,Open,2024-01-01,3164,0,0
+787537,4410,East,Tampines,1.42485,103.632522,4G,Good,2025-01-01,Slow Internet,Fixed Wireless,In Progress,2024-01-01,747,1,0
+452935,3771,East,Changi,1.284071,103.992309,4G,Moderate,2025-01-01,No Signal,Mobile,Closed,2024-01-01,1685,1,0
+758146,2234,Central,Queenstown,1.457286,103.782432,4G,Good,2025-01-01,Call Drop,Mobile,Open,2024-01-01,1553,1,1
+879331,2838,North,Sembawang,1.407135,103.896911,5G,Moderate,2025-01-01,Slow Internet,Mobile,Closed,2024-01-01,236,5,1
+555561,2424,West,Jurong West,1.250585,104.009257,5G,Poor,2025-01-01,No Signal,Fixed Wireless,Closed,2024-01-01,3132,0,0
+533714,634,East,Changi,1.241195,103.986635,4G,Good,2025-01-01,Call Drop,Mobile,In Progress,2024-01-01,1216,1,1
+301495,2599,East,Tampines,1.31423,103.72544,4G,Good,2025-01-01,No Signal,Mobile,In Progress,2024-01-01,3487,2,1
+705507,4269,Central,Outram,1.458274,103.979566,5G,Poor,2025-01-01,Slow Internet,Mobile,Open,2024-01-01,1622,1,0
+242290,1955,North,Sembawang,1.33057,103.825471,5G,Moderate,2025-01-01,Call Drop,Fixed Wireless,Closed,2024-01-01,3220,2,0
+390144,2124,West,Jurong East,1.26731,103.701199,4G,Moderate,2025-01-01,Call Drop,Fixed Wireless,Open,2024-01-01,2811,1,1
+618985,1060,West,Jurong East,1.270889,103.617664,5G,Good,2025-01-01,Slow Internet,Fixed Wireless,Open,2024-01-01,43,2,0
+923749,595,West,Bukit Batok,1.304747,103.671961,4G,Moderate,2025-01-01,Call Drop,Fixed Wireless,Closed,2024-01-01,1094,3,0
+953635,3577,West,Jurong East,1.446899,103.60929,4G,Moderate,2025-01-01,Slow Internet,Fixed Wireless,Closed,2024-01-01,174,2,0
+868013,1219,Central,Outram,1.306205,103.980948,4G,Moderate,2025-01-01,Call Drop,Mobile,In Progress,2024-01-01,746,0,1
+194835,1076,Central,Orchard,1.381411,104.010228,5G,Moderate,2025-01-01,Slow Internet,Fixed Wireless,Open,2024-01-01,3309,1,0
+299304,640,East,Pasir Ris,1.261136,103.816321,4G,Moderate,2025-01-01,No Signal,Mobile,In Progress,2024-01-01,3427,0,0
+460777,2098,West,Jurong East,1.410348,103.717285,4G,Moderate,2025-01-01,No Signal,Fixed Wireless,Closed,2024-01-01,3215,3,0
+838027,3974,North,Yishun,1.315712,103.926964,4G,Good,2025-01-01,No Signal,Mobile,In Progress,2024-01-01,125,5,0
+903032,3317,North-East,Sengkang,1.27165,103.909583,5G,Moderate,2025-01-01,Call Drop,Mobile,Open,2024-01-01,1896,3,0
+777090,4730,North-East,Hougang,1.407486,103.699741,5G,Poor,2025-01-01,Slow Internet,Fixed Wireless,Open,2024-01-01,3600,0,0
+821782,393,Central,Outram,1.462131,104.026365,5G,Poor,2025-01-01,Call Drop,Fixed Wireless,In Progress,2024-01-01,2527,5,0
+643344,3179,North,Sembawang,1.273267,103.683343,5G,Poor,2025-01-01,Call Drop,Mobile,Closed,2024-01-01,3367,5,1
+814618,1233,West,Clementi,1.444617,103.618563,5G,Good,2025-01-01,No Signal,Fixed Wireless,Closed,2024-01-01,2963,0,0
+979608,1364,North,Woodlands,1.339698,103.606733,4G,Good,2025-01-01,Slow Internet,Fixed Wireless,Closed,2024-01-01,2363,0,1
+487554,3393,West,Bukit Batok,1.411918,103.690004,5G,Moderate,2025-01-01,Slow Internet,Mobile,Open,2024-01-01,3273,2,0
+332131,1522,East,Tampines,1.344069,103.650898,5G,Moderate,2025-01-01,Call Drop,Fixed Wireless,Closed,2024-01-01,164,3,0
+225801,1252,East,Changi,1.375134,103.924699,4G,Moderate,2025-01-01,Slow Internet,Fixed Wireless,In Progress,2024-01-01,402,4,0
+109387,3088,East,Pasir Ris,1.298384,103.605456,4G,Poor,2025-01-01,No Signal,Mobile,Closed,2024-01-01,1301,4,0
+878639,1527,West,Jurong East,1.296797,103.653255,5G,Poor,2025-01-01,Call Drop,Fixed Wireless,Closed,2024-01-01,1641,4,0
+189460,3153,North-East,Ang Mo Kio,1.222877,103.880338,4G,Moderate,2025-01-01,Call Drop,Mobile,Closed,2024-01-01,2713,4,0
+774945,456,West,Jurong West,1.290712,103.669522,4G,Good,2025-01-01,No Signal,Mobile,Open,2024-01-01,773,3,1
+482605,3405,Central,Orchard,1.277794,103.945802,5G,Moderate,2025-01-01,No Signal,Mobile,Closed,2024-01-01,287,5,0
+367544,4440,West,Bukit Batok,1.349798,103.790294,5G,Moderate,2025-01-01,Call Drop,Fixed Wireless,Open,2024-01-01,2738,4,1
+972510,304,North-East,Sengkang,1.393603,103.637922,5G,Poor,2025-01-01,Slow Internet,Fixed Wireless,Open,2024-01-01,1977,4,0
+495340,1199,North-East,Ang Mo Kio,1.327864,103.785064,5G,Good,2025-01-01,Slow Internet,Mobile,Closed,2024-01-01,568,5,0
+195287,4887,North-East,Punggol,1.445211,103.643628,4G,Moderate,2025-01-01,No Signal,Fixed Wireless,Closed,2024-01-01,77,5,1
+518161,3744,North-East,Sengkang,1.346669,103.609215,4G,Good,2025-01-01,No Signal,Fixed Wireless,In Progress,2024-01-01,226,3,0
+255183,3492,Central,Bukit Merah,1.422271,103.646369,5G,Moderate,2025-01-01,Call Drop,Fixed Wireless,In Progress,2024-01-01,1494,1,0
+124815,4653,West,Clementi,1.382817,103.689513,5G,Good,2025-01-01,Call Drop,Fixed Wireless,Open,2024-01-01,3139,5,1
+354200,1135,East,Pasir Ris,1.450589,103.838618,5G,Moderate,2025-01-01,Call Drop,Fixed Wireless,Closed,2024-01-01,2492,4,0
+296945,1866,North,Woodlands,1.348494,103.821306,5G,Good,2025-01-01,No Signal,Fixed Wireless,In Progress,2024-01-01,3009,4,0
+963945,59,East,Bedok,1.458388,103.627196,4G,Poor,2025-01-01,Slow Internet,Mobile,Closed,2024-01-01,3029,2,0
+907605,913,North-East,Sengkang,1.435008,103.851204,5G,Poor,2025-01-01,Slow Internet,Mobile,Closed,2024-01-01,1126,0,0
+996366,4125,Central,Queenstown,1.444649,103.975761,5G,Good,2025-01-01,Slow Internet,Mobile,Open,2024-01-01,1212,3,0
+211186,614,North,Yishun,1.373844,103.943327,5G,Good,2025-01-01,Call Drop,Fixed Wireless,Open,2024-01-01,1479,5,0
+802858,3192,North,Yishun,1.201879,103.708057,4G,Moderate,2025-01-01,Slow Internet,Fixed Wireless,Closed,2024-01-01,986,3,0

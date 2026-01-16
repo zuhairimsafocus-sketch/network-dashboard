@@ -1,0 +1,1001 @@
+complaint_id,area_id,state,district,latitude,longitude,technology,coverage_status,last_updated,issue_type,network_type,status,reported_date,call_duration,signal_strength,dropped_call
+CMP-00000,AREA-0002,Sarawak,Miri,3.909955,113.623266,5G,Moderate,31/12/2025,No Connectivity,5G,In Progress,12/10/2025,3174,3,0
+CMP-00001,AREA-0021,Pahang,Temerloh,3.559106,103.391911,4G,Good,29/12/2025,Call Drop,4G,Resolved,8/9/2025,3507,4,1
+CMP-00002,AREA-0090,Johor,Batu Pahat,2.028487,103.360142,5G,Poor,27/12/2025,Poor Coverage,5G,Resolved,28/10/2025,860,2,0
+CMP-00003,AREA-0000,Kedah,Sungai Petani,5.301319,100.441777,4G,Moderate,17/12/2025,Slow Speed,Fiber,In Progress,23/11/2025,1294,4,0
+CMP-00004,AREA-0007,Sabah,Kota Kinabalu,5.982145,115.641092,4G,Good,17/12/2025,Call Drop,5G,Resolved,4/9/2025,1130,4,0
+CMP-00005,AREA-0030,Selangor,Gombak,3.17338,101.780272,4G,Moderate,28/12/2025,Poor Coverage,5G,Submitted,2/11/2025,1095,1,0
+CMP-00006,AREA-0001,Penang,Seberang Perai,5.473332,100.337098,4G,Good,2/1/2026,Service Outage,Fiber,Submitted,28/12/2025,3092,2,0
+CMP-00007,AREA-0005,Kedah,Alor Setar,5.750157,100.48824,5G,Poor,3/1/2026,No Connectivity,Fiber,Resolved,4/12/2025,1638,2,0
+CMP-00008,AREA-0001,Penang,Seberang Perai,5.200436,100.250582,4G,Good,2/1/2026,Call Drop,5G,Submitted,22/10/2025,2169,2,0
+CMP-00009,AREA-0003,Penang,George Town,5.423446,100.398351,Fiber,Good,4/1/2026,No Connectivity,Fiber,Resolved,27/12/2025,466,4,0
+CMP-00010,AREA-0030,Selangor,Gombak,2.819696,101.717885,4G,Moderate,28/12/2025,Poor Coverage,Fiber,In Progress,1/10/2025,1238,3,0
+CMP-00011,AREA-0001,Penang,Seberang Perai,5.498372,100.492284,4G,Good,2/1/2026,Call Drop,5G,In Progress,1/12/2025,330,2,0
+CMP-00012,AREA-0002,Sarawak,Miri,2.057913,112.873388,5G,Moderate,31/12/2025,Service Outage,5G,Submitted,30/12/2025,1482,5,1
+CMP-00013,AREA-0045,Perak,Taiping,4.777822,101.362279,Fiber,Moderate,11/1/2026,No Connectivity,Fiber,Resolved,30/12/2025,2135,4,1
+CMP-00014,AREA-0003,Penang,George Town,5.428327,100.315385,Fiber,Good,4/1/2026,No Connectivity,Fiber,Submitted,26/10/2025,3444,1,1
+CMP-00015,AREA-0021,Pahang,Temerloh,3.255719,103.120484,4G,Good,29/12/2025,Service Outage,Fiber,Submitted,19/10/2025,3171,3,1
+CMP-00016,AREA-0041,Perak,Ipoh,4.213681,100.934076,5G,Moderate,20/12/2025,Service Outage,Fiber,Resolved,11/12/2025,2919,5,0
+CMP-00017,AREA-0039,Selangor,Petaling,3.025502,101.882891,5G,Moderate,3/1/2026,No Connectivity,5G,Submitted,25/12/2025,130,5,0
+CMP-00018,AREA-0000,Kedah,Sungai Petani,5.554483,100.334572,4G,Moderate,17/12/2025,Call Drop,4G,In Progress,9/10/2025,1685,1,0
+CMP-00019,AREA-0090,Johor,Batu Pahat,2.295621,102.430992,5G,Poor,27/12/2025,Call Drop,4G,Resolved,9/9/2025,3380,3,0
+CMP-00020,AREA-0045,Perak,Taiping,4.19267,100.520043,Fiber,Moderate,11/1/2026,Call Drop,5G,Submitted,22/11/2025,769,4,0
+CMP-00021,AREA-0041,Perak,Ipoh,4.882769,101.230741,5G,Moderate,20/12/2025,Call Drop,Fiber,Resolved,9/9/2025,2391,0,1
+CMP-00022,AREA-0001,Penang,Seberang Perai,5.306813,100.398597,4G,Good,2/1/2026,Service Outage,5G,In Progress,27/11/2025,1515,3,0
+CMP-00023,AREA-0012,Sarawak,Kuching,4.932906,111.011651,4G,Good,5/1/2026,Call Drop,4G,In Progress,19/11/2025,3485,1,0
+CMP-00024,AREA-0013,Pahang,Kuantan,3.885587,103.718108,5G,Poor,22/12/2025,Poor Coverage,5G,In Progress,20/12/2025,2853,5,0
+CMP-00025,AREA-0013,Pahang,Kuantan,3.14309,103.582396,5G,Poor,22/12/2025,Service Outage,Fiber,Submitted,29/12/2025,2433,4,0
+CMP-00026,AREA-0003,Penang,George Town,5.255564,100.306022,Fiber,Good,4/1/2026,No Connectivity,4G,Submitted,4/9/2025,1215,3,0
+CMP-00027,AREA-0090,Johor,Batu Pahat,2.256764,102.137012,5G,Poor,27/12/2025,Call Drop,5G,Resolved,10/12/2025,955,0,0
+CMP-00028,AREA-0041,Perak,Ipoh,4.677044,101.074027,5G,Moderate,20/12/2025,Call Drop,5G,Submitted,10/12/2025,2324,0,1
+CMP-00029,AREA-0000,Kedah,Sungai Petani,5.980092,100.355091,4G,Moderate,17/12/2025,Slow Speed,Fiber,Resolved,8/12/2025,1184,2,0
+CMP-00030,AREA-0021,Pahang,Temerloh,3.454461,103.834192,4G,Good,29/12/2025,No Connectivity,5G,Resolved,17/9/2025,459,2,0
+CMP-00031,AREA-0003,Penang,George Town,5.302057,100.259988,Fiber,Good,4/1/2026,Call Drop,Fiber,In Progress,4/9/2025,3385,1,1
+CMP-00032,AREA-0012,Sarawak,Kuching,3.999669,110.629475,4G,Good,5/1/2026,Slow Speed,5G,Submitted,18/9/2025,21,3,1
+CMP-00033,AREA-0022,Sabah,Sandakan,4.412438,116.175872,4G,Good,5/1/2026,No Connectivity,4G,Submitted,16/9/2025,2300,3,1
+CMP-00034,AREA-0021,Pahang,Temerloh,3.189504,103.465814,4G,Good,29/12/2025,Slow Speed,5G,In Progress,27/9/2025,747,5,1
+CMP-00035,AREA-0007,Sabah,Kota Kinabalu,5.410125,116.0179,4G,Good,17/12/2025,Slow Speed,5G,Resolved,24/9/2025,2904,5,0
+CMP-00036,AREA-0004,Johor,Johor Bahru,2.295278,102.238867,Fiber,Moderate,12/1/2026,Call Drop,Fiber,Resolved,25/11/2025,474,5,0
+CMP-00037,AREA-0022,Sabah,Sandakan,5.195737,115.626035,4G,Good,5/1/2026,No Connectivity,5G,Resolved,22/11/2025,1082,2,0
+CMP-00038,AREA-0001,Penang,Seberang Perai,5.262524,100.463087,4G,Good,2/1/2026,Poor Coverage,5G,Resolved,12/11/2025,2558,3,0
+CMP-00039,AREA-0023,Selangor,Hulu Langat,3.041031,101.407504,4G,Good,26/12/2025,Service Outage,Fiber,Submitted,10/10/2025,2047,3,0
+CMP-00040,AREA-0004,Johor,Johor Bahru,1.500078,102.895095,Fiber,Moderate,12/1/2026,Service Outage,5G,In Progress,23/11/2025,3547,0,0
+CMP-00041,AREA-0045,Perak,Taiping,4.094029,101.070228,Fiber,Moderate,11/1/2026,Call Drop,Fiber,In Progress,25/12/2025,2747,2,0
+CMP-00042,AREA-0023,Selangor,Hulu Langat,3.014782,101.57239,4G,Good,26/12/2025,Poor Coverage,4G,In Progress,17/9/2025,975,4,0
+CMP-00043,AREA-0005,Kedah,Alor Setar,5.3847,100.458583,5G,Poor,3/1/2026,Poor Coverage,Fiber,Submitted,15/12/2025,1806,2,0
+CMP-00044,AREA-0041,Perak,Ipoh,4.488857,101.229705,5G,Moderate,20/12/2025,Poor Coverage,5G,In Progress,27/10/2025,189,4,0
+CMP-00045,AREA-0022,Sabah,Sandakan,5.609824,116.944003,4G,Good,5/1/2026,Poor Coverage,4G,Resolved,28/11/2025,3005,0,0
+CMP-00046,AREA-0013,Pahang,Kuantan,3.190269,103.157794,5G,Poor,22/12/2025,No Connectivity,Fiber,Submitted,29/11/2025,2734,1,0
+CMP-00047,AREA-0030,Selangor,Gombak,3.11919,101.590249,4G,Moderate,28/12/2025,Call Drop,Fiber,Submitted,10/10/2025,3005,3,1
+CMP-00048,AREA-0012,Sarawak,Kuching,3.687477,112.48917,4G,Good,5/1/2026,No Connectivity,Fiber,In Progress,18/11/2025,562,0,0
+CMP-00049,AREA-0012,Sarawak,Kuching,3.691932,113.514044,4G,Good,5/1/2026,Call Drop,Fiber,Submitted,28/12/2025,1899,3,0
+CMP-00050,AREA-0001,Penang,Seberang Perai,5.290423,100.212801,4G,Good,2/1/2026,Poor Coverage,5G,In Progress,2/9/2025,1267,5,0
+CMP-00051,AREA-0030,Selangor,Gombak,2.905759,101.47761,4G,Moderate,28/12/2025,Service Outage,Fiber,Resolved,11/12/2025,2879,1,1
+CMP-00052,AREA-0039,Selangor,Petaling,3.076748,101.710511,5G,Moderate,3/1/2026,Call Drop,5G,Resolved,15/12/2025,1528,1,0
+CMP-00053,AREA-0013,Pahang,Kuantan,3.709168,103.547042,5G,Poor,22/12/2025,Call Drop,5G,Resolved,12/9/2025,3202,0,0
+CMP-00054,AREA-0003,Penang,George Town,5.403388,100.37171,Fiber,Good,4/1/2026,Service Outage,5G,Submitted,30/12/2025,3556,1,0
+CMP-00055,AREA-0030,Selangor,Gombak,3.053686,101.846447,4G,Moderate,28/12/2025,Service Outage,Fiber,Resolved,27/12/2025,646,4,0
+CMP-00056,AREA-0005,Kedah,Alor Setar,5.535307,100.367018,5G,Poor,3/1/2026,No Connectivity,4G,Resolved,22/9/2025,2068,1,1
+CMP-00057,AREA-0021,Pahang,Temerloh,3.117619,103.551349,4G,Good,29/12/2025,Call Drop,Fiber,Submitted,20/10/2025,2888,3,0
+CMP-00058,AREA-0007,Sabah,Kota Kinabalu,5.302368,116.59716,4G,Good,17/12/2025,Poor Coverage,5G,Submitted,6/10/2025,2214,3,0
+CMP-00059,AREA-0022,Sabah,Sandakan,5.575342,116.568745,4G,Good,5/1/2026,Call Drop,5G,Resolved,16/11/2025,1297,3,1
+CMP-00060,AREA-0014,Johor,Kulai,1.854902,102.875653,4G,Good,11/1/2026,No Connectivity,4G,In Progress,26/10/2025,2435,3,1
+CMP-00061,AREA-0002,Sarawak,Miri,4.938479,113.141691,5G,Moderate,31/12/2025,Slow Speed,Fiber,Resolved,19/10/2025,600,4,0
+CMP-00062,AREA-0021,Pahang,Temerloh,3.016138,103.771163,4G,Good,29/12/2025,No Connectivity,4G,In Progress,7/12/2025,2363,2,1
+CMP-00063,AREA-0000,Kedah,Sungai Petani,5.451993,100.457874,4G,Moderate,17/12/2025,Service Outage,Fiber,Resolved,8/12/2025,2061,5,0
+CMP-00064,AREA-0004,Johor,Johor Bahru,2.431979,102.811978,Fiber,Moderate,12/1/2026,Service Outage,4G,Submitted,14/9/2025,241,0,0
+CMP-00065,AREA-0013,Pahang,Kuantan,3.509379,103.604369,5G,Poor,22/12/2025,Slow Speed,4G,Resolved,10/12/2025,2041,3,0
+CMP-00066,AREA-0007,Sabah,Kota Kinabalu,4.916142,116.879706,4G,Good,17/12/2025,Call Drop,Fiber,In Progress,5/10/2025,2824,1,0
+CMP-00067,AREA-0003,Penang,George Town,5.233732,100.247712,Fiber,Good,4/1/2026,Slow Speed,Fiber,In Progress,4/12/2025,3417,3,0
+CMP-00068,AREA-0030,Selangor,Gombak,3.154941,101.55273,4G,Moderate,28/12/2025,Poor Coverage,Fiber,Resolved,8/12/2025,2612,1,1
+CMP-00069,AREA-0090,Johor,Batu Pahat,1.724051,102.94853,5G,Poor,27/12/2025,Slow Speed,5G,Submitted,13/9/2025,2945,5,1
+CMP-00070,AREA-0045,Perak,Taiping,4.479983,100.947634,Fiber,Moderate,11/1/2026,Poor Coverage,5G,Resolved,20/10/2025,1363,5,0
+CMP-00071,AREA-0000,Kedah,Sungai Petani,5.766847,100.356671,4G,Moderate,17/12/2025,Service Outage,4G,Resolved,20/10/2025,2139,5,1
+CMP-00072,AREA-0045,Perak,Taiping,4.805567,101.317348,Fiber,Moderate,11/1/2026,Service Outage,Fiber,In Progress,19/12/2025,1390,1,0
+CMP-00073,AREA-0002,Sarawak,Miri,1.87457,110.425705,5G,Moderate,31/12/2025,No Connectivity,5G,Submitted,13/12/2025,3003,3,0
+CMP-00074,AREA-0002,Sarawak,Miri,2.871792,113.988994,5G,Moderate,31/12/2025,No Connectivity,Fiber,In Progress,3/9/2025,1478,5,0
+CMP-00075,AREA-0004,Johor,Johor Bahru,1.485112,103.126646,Fiber,Moderate,12/1/2026,No Connectivity,4G,Submitted,24/10/2025,3499,4,0
+CMP-00076,AREA-0005,Kedah,Alor Setar,5.821463,100.434634,5G,Poor,3/1/2026,No Connectivity,5G,In Progress,31/10/2025,2556,1,1
+CMP-00077,AREA-0005,Kedah,Alor Setar,5.91932,100.416583,5G,Poor,3/1/2026,Call Drop,5G,In Progress,26/11/2025,775,1,1
+CMP-00078,AREA-0005,Kedah,Alor Setar,5.736007,100.450381,5G,Poor,3/1/2026,Service Outage,5G,Submitted,20/11/2025,34,3,0
+CMP-00079,AREA-0012,Sarawak,Kuching,1.7098,112.374619,4G,Good,5/1/2026,Call Drop,5G,In Progress,26/9/2025,2253,1,0
+CMP-00080,AREA-0002,Sarawak,Miri,2.598697,113.879901,5G,Moderate,31/12/2025,Poor Coverage,4G,Resolved,27/9/2025,3152,1,0
+CMP-00081,AREA-0023,Selangor,Hulu Langat,3.290157,101.555432,4G,Good,26/12/2025,Poor Coverage,Fiber,In Progress,4/11/2025,1955,5,0
+CMP-00082,AREA-0039,Selangor,Petaling,2.999858,101.639467,5G,Moderate,3/1/2026,No Connectivity,Fiber,Submitted,15/12/2025,1585,3,1
+CMP-00083,AREA-0039,Selangor,Petaling,3.198455,101.586303,5G,Moderate,3/1/2026,Service Outage,5G,In Progress,15/11/2025,3459,5,0
+CMP-00084,AREA-0007,Sabah,Kota Kinabalu,4.609894,116.393797,4G,Good,17/12/2025,Poor Coverage,5G,In Progress,18/12/2025,3073,5,0
+CMP-00085,AREA-0003,Penang,George Town,5.469624,100.358833,Fiber,Good,4/1/2026,Slow Speed,4G,In Progress,23/12/2025,1021,3,0
+CMP-00086,AREA-0007,Sabah,Kota Kinabalu,4.985523,115.606345,4G,Good,17/12/2025,Call Drop,5G,Submitted,7/10/2025,3461,0,0
+CMP-00087,AREA-0013,Pahang,Kuantan,3.402521,103.619931,5G,Poor,22/12/2025,Service Outage,Fiber,Resolved,28/9/2025,2613,5,0
+CMP-00088,AREA-0022,Sabah,Sandakan,5.431849,115.796922,4G,Good,5/1/2026,Poor Coverage,4G,Resolved,8/11/2025,1129,4,0
+CMP-00089,AREA-0045,Perak,Taiping,4.892274,101.097328,Fiber,Moderate,11/1/2026,Service Outage,5G,Resolved,27/9/2025,1500,4,0
+CMP-00090,AREA-0012,Sarawak,Kuching,2.226161,110.614507,4G,Good,5/1/2026,Slow Speed,Fiber,Resolved,27/11/2025,702,1,0
+CMP-00091,AREA-0002,Sarawak,Miri,2.102556,112.877432,5G,Moderate,31/12/2025,Poor Coverage,4G,In Progress,14/11/2025,2449,4,1
+CMP-00092,AREA-0045,Perak,Taiping,4.853951,101.303203,Fiber,Moderate,11/1/2026,Call Drop,Fiber,Submitted,24/9/2025,2777,1,0
+CMP-00093,AREA-0007,Sabah,Kota Kinabalu,5.786181,116.340962,4G,Good,17/12/2025,Poor Coverage,4G,In Progress,30/9/2025,1579,0,0
+CMP-00094,AREA-0090,Johor,Batu Pahat,1.203703,103.269036,5G,Poor,27/12/2025,Service Outage,Fiber,Submitted,22/10/2025,161,3,1
+CMP-00095,AREA-0012,Sarawak,Kuching,3.953992,113.14141,4G,Good,5/1/2026,Slow Speed,4G,Submitted,21/11/2025,201,3,0
+CMP-00096,AREA-0000,Kedah,Sungai Petani,5.109601,100.355624,4G,Moderate,17/12/2025,Slow Speed,4G,Resolved,12/11/2025,1981,3,1
+CMP-00097,AREA-0013,Pahang,Kuantan,3.378233,103.227143,5G,Poor,22/12/2025,Call Drop,4G,Submitted,10/11/2025,995,4,0
+CMP-00098,AREA-0022,Sabah,Sandakan,4.55403,116.042531,4G,Good,5/1/2026,Service Outage,5G,In Progress,19/9/2025,2317,0,0
+CMP-00099,AREA-0005,Kedah,Alor Setar,6.048283,100.388904,5G,Poor,3/1/2026,Poor Coverage,4G,Submitted,19/9/2025,815,4,0
+CMP-00100,AREA-0001,Penang,Seberang Perai,5.253097,100.42061,4G,Good,2/1/2026,Service Outage,5G,Submitted,11/9/2025,3342,4,0
+CMP-00101,AREA-0012,Sarawak,Kuching,3.882884,110.99429,4G,Good,5/1/2026,No Connectivity,Fiber,Submitted,15/12/2025,455,0,0
+CMP-00102,AREA-0045,Perak,Taiping,4.196967,101.401747,Fiber,Moderate,11/1/2026,Poor Coverage,4G,In Progress,24/10/2025,3533,0,0
+CMP-00103,AREA-0013,Pahang,Kuantan,3.70103,102.714319,5G,Poor,22/12/2025,Poor Coverage,Fiber,Submitted,13/11/2025,1275,0,0
+CMP-00104,AREA-0041,Perak,Ipoh,4.846525,100.603403,5G,Moderate,20/12/2025,Service Outage,5G,Submitted,12/9/2025,1016,0,0
+CMP-00105,AREA-0021,Pahang,Temerloh,3.238291,103.771736,4G,Good,29/12/2025,Poor Coverage,Fiber,In Progress,13/11/2025,2343,3,0
+CMP-00106,AREA-0030,Selangor,Gombak,2.915266,101.639859,4G,Moderate,28/12/2025,No Connectivity,4G,Submitted,20/9/2025,2767,2,1
+CMP-00107,AREA-0045,Perak,Taiping,4.032799,101.233481,Fiber,Moderate,11/1/2026,No Connectivity,4G,In Progress,5/9/2025,337,2,1
+CMP-00108,AREA-0021,Pahang,Temerloh,3.755401,102.983747,4G,Good,29/12/2025,No Connectivity,4G,Resolved,26/10/2025,878,0,1
+CMP-00109,AREA-0021,Pahang,Temerloh,3.099598,102.80868,4G,Good,29/12/2025,Call Drop,4G,Submitted,22/9/2025,1076,2,0
+CMP-00110,AREA-0030,Selangor,Gombak,3.067612,101.672313,4G,Moderate,28/12/2025,Poor Coverage,5G,In Progress,7/9/2025,791,2,0
+CMP-00111,AREA-0090,Johor,Batu Pahat,1.914056,103.502553,5G,Poor,27/12/2025,Service Outage,5G,Submitted,22/10/2025,2264,0,0
+CMP-00112,AREA-0004,Johor,Johor Bahru,1.787688,102.933151,Fiber,Moderate,12/1/2026,Poor Coverage,Fiber,Submitted,29/9/2025,763,2,0
+CMP-00113,AREA-0007,Sabah,Kota Kinabalu,5.310564,116.521302,4G,Good,17/12/2025,No Connectivity,5G,Submitted,21/11/2025,2235,4,0
+CMP-00114,AREA-0039,Selangor,Petaling,2.878892,101.837945,5G,Moderate,3/1/2026,Call Drop,4G,Submitted,26/10/2025,379,1,0
+CMP-00115,AREA-0023,Selangor,Hulu Langat,2.905059,101.59938,4G,Good,26/12/2025,Poor Coverage,4G,Submitted,11/9/2025,492,1,0
+CMP-00116,AREA-0013,Pahang,Kuantan,3.823061,103.333109,5G,Poor,22/12/2025,Poor Coverage,Fiber,In Progress,6/9/2025,3112,0,0
+CMP-00117,AREA-0001,Penang,Seberang Perai,5.302532,100.372544,4G,Good,2/1/2026,Service Outage,Fiber,In Progress,12/11/2025,1180,3,0
+CMP-00118,AREA-0090,Johor,Batu Pahat,2.084261,102.5137,5G,Poor,27/12/2025,No Connectivity,Fiber,Submitted,3/10/2025,2062,0,0
+CMP-00119,AREA-0001,Penang,Seberang Perai,5.252585,100.245358,4G,Good,2/1/2026,Slow Speed,5G,Resolved,17/9/2025,64,3,0
+CMP-00120,AREA-0007,Sabah,Kota Kinabalu,4.730186,115.604424,4G,Good,17/12/2025,Service Outage,4G,Resolved,1/9/2025,2568,1,1
+CMP-00121,AREA-0041,Perak,Ipoh,4.811603,100.622561,5G,Moderate,20/12/2025,Poor Coverage,4G,Resolved,2/11/2025,1367,0,0
+CMP-00122,AREA-0002,Sarawak,Miri,4.786625,113.834398,5G,Moderate,31/12/2025,Call Drop,5G,Resolved,10/11/2025,1152,5,0
+CMP-00123,AREA-0013,Pahang,Kuantan,3.599242,103.770554,5G,Poor,22/12/2025,Slow Speed,4G,Submitted,15/9/2025,2027,4,0
+CMP-00124,AREA-0005,Kedah,Alor Setar,5.986728,100.442618,5G,Poor,3/1/2026,Poor Coverage,4G,Submitted,2/10/2025,2695,2,0
+CMP-00125,AREA-0002,Sarawak,Miri,4.680921,111.77018,5G,Moderate,31/12/2025,No Connectivity,Fiber,Submitted,29/11/2025,1495,3,0
+CMP-00126,AREA-0003,Penang,George Town,5.439068,100.265884,Fiber,Good,4/1/2026,Call Drop,Fiber,In Progress,10/12/2025,3134,5,0
+CMP-00127,AREA-0022,Sabah,Sandakan,5.300405,115.724515,4G,Good,5/1/2026,Slow Speed,Fiber,Submitted,1/11/2025,1162,2,0
+CMP-00128,AREA-0002,Sarawak,Miri,2.691673,113.25657,5G,Moderate,31/12/2025,Service Outage,4G,In Progress,19/10/2025,1522,2,0
+CMP-00129,AREA-0045,Perak,Taiping,4.268362,101.420786,Fiber,Moderate,11/1/2026,Call Drop,Fiber,Submitted,11/9/2025,2640,0,0
+CMP-00130,AREA-0000,Kedah,Sungai Petani,5.609452,100.409194,4G,Moderate,17/12/2025,Call Drop,Fiber,Resolved,22/12/2025,391,2,0
+CMP-00131,AREA-0005,Kedah,Alor Setar,5.416313,100.42256,5G,Poor,3/1/2026,No Connectivity,4G,In Progress,18/11/2025,1698,4,1
+CMP-00132,AREA-0002,Sarawak,Miri,1.75692,113.414201,5G,Moderate,31/12/2025,Slow Speed,5G,Submitted,8/12/2025,418,5,0
+CMP-00133,AREA-0005,Kedah,Alor Setar,5.850459,100.456391,5G,Poor,3/1/2026,Service Outage,Fiber,In Progress,30/12/2025,2336,2,0
+CMP-00134,AREA-0041,Perak,Ipoh,4.377075,100.791665,5G,Moderate,20/12/2025,Call Drop,Fiber,In Progress,22/12/2025,378,0,1
+CMP-00135,AREA-0012,Sarawak,Kuching,1.935399,110.368349,4G,Good,5/1/2026,No Connectivity,4G,Submitted,4/12/2025,1796,4,0
+CMP-00136,AREA-0000,Kedah,Sungai Petani,5.430274,100.409903,4G,Moderate,17/12/2025,Slow Speed,4G,Submitted,27/9/2025,3561,1,0
+CMP-00137,AREA-0090,Johor,Batu Pahat,1.452246,103.506183,5G,Poor,27/12/2025,No Connectivity,5G,Submitted,30/10/2025,2278,5,0
+CMP-00138,AREA-0030,Selangor,Gombak,2.945888,101.625914,4G,Moderate,28/12/2025,Poor Coverage,Fiber,Submitted,26/10/2025,3065,2,0
+CMP-00139,AREA-0090,Johor,Batu Pahat,1.823687,103.689819,5G,Poor,27/12/2025,Service Outage,4G,Submitted,30/9/2025,2088,0,1
+CMP-00140,AREA-0004,Johor,Johor Bahru,1.339205,102.539023,Fiber,Moderate,12/1/2026,Service Outage,4G,Resolved,11/10/2025,3099,1,0
+CMP-00141,AREA-0039,Selangor,Petaling,2.864459,101.818931,5G,Moderate,3/1/2026,Poor Coverage,5G,Submitted,17/11/2025,2182,1,1
+CMP-00142,AREA-0005,Kedah,Alor Setar,6.138175,100.403144,5G,Poor,3/1/2026,No Connectivity,Fiber,Submitted,9/11/2025,200,3,0
+CMP-00143,AREA-0045,Perak,Taiping,4.214804,100.540068,Fiber,Moderate,11/1/2026,No Connectivity,Fiber,Resolved,4/11/2025,1863,4,0
+CMP-00144,AREA-0002,Sarawak,Miri,3.441048,112.03019,5G,Moderate,31/12/2025,Slow Speed,Fiber,Resolved,27/9/2025,779,2,0
+CMP-00145,AREA-0005,Kedah,Alor Setar,5.700489,100.364331,5G,Poor,3/1/2026,Slow Speed,4G,Resolved,28/9/2025,2977,0,0
+CMP-00146,AREA-0022,Sabah,Sandakan,5.724253,116.866373,4G,Good,5/1/2026,Call Drop,4G,Resolved,19/9/2025,3104,3,0
+CMP-00147,AREA-0001,Penang,Seberang Perai,5.294376,100.371653,4G,Good,2/1/2026,Call Drop,4G,Resolved,19/12/2025,3119,4,1
+CMP-00148,AREA-0012,Sarawak,Kuching,3.371839,112.056803,4G,Good,5/1/2026,Poor Coverage,5G,Submitted,10/11/2025,502,3,0
+CMP-00149,AREA-0041,Perak,Ipoh,4.481425,100.588461,5G,Moderate,20/12/2025,No Connectivity,4G,In Progress,18/10/2025,2454,5,1
+CMP-00150,AREA-0021,Pahang,Temerloh,3.165319,103.386852,4G,Good,29/12/2025,Service Outage,4G,Submitted,14/10/2025,1751,4,0
+CMP-00151,AREA-0039,Selangor,Petaling,3.162707,101.500489,5G,Moderate,3/1/2026,Slow Speed,4G,Submitted,30/11/2025,804,4,1
+CMP-00152,AREA-0002,Sarawak,Miri,4.489705,112.058219,5G,Moderate,31/12/2025,Slow Speed,5G,Submitted,11/9/2025,2146,2,0
+CMP-00153,AREA-0012,Sarawak,Kuching,2.669103,113.931742,4G,Good,5/1/2026,Poor Coverage,5G,Submitted,27/9/2025,2731,4,0
+CMP-00154,AREA-0002,Sarawak,Miri,3.502068,109.91389,5G,Moderate,31/12/2025,No Connectivity,4G,In Progress,28/12/2025,1895,3,1
+CMP-00155,AREA-0012,Sarawak,Kuching,4.844588,110.565498,4G,Good,5/1/2026,Service Outage,4G,In Progress,20/10/2025,2773,4,0
+CMP-00156,AREA-0002,Sarawak,Miri,2.209472,109.651957,5G,Moderate,31/12/2025,Poor Coverage,5G,Resolved,5/11/2025,1570,2,0
+CMP-00157,AREA-0014,Johor,Kulai,1.59848,103.894441,4G,Good,11/1/2026,Slow Speed,4G,In Progress,20/11/2025,960,2,0
+CMP-00158,AREA-0013,Pahang,Kuantan,3.338463,103.705696,5G,Poor,22/12/2025,Call Drop,Fiber,Resolved,15/9/2025,2660,5,0
+CMP-00159,AREA-0023,Selangor,Hulu Langat,2.996994,101.676248,4G,Good,26/12/2025,Slow Speed,Fiber,Resolved,7/9/2025,1485,3,1
+CMP-00160,AREA-0007,Sabah,Kota Kinabalu,5.916906,116.157933,4G,Good,17/12/2025,Call Drop,Fiber,In Progress,25/10/2025,2690,1,0
+CMP-00161,AREA-0004,Johor,Johor Bahru,2.189465,103.269294,Fiber,Moderate,12/1/2026,Poor Coverage,5G,In Progress,4/12/2025,1028,1,0
+CMP-00162,AREA-0023,Selangor,Hulu Langat,3.082371,101.592595,4G,Good,26/12/2025,Poor Coverage,4G,In Progress,2/10/2025,3289,4,0
+CMP-00163,AREA-0045,Perak,Taiping,4.307778,100.683513,Fiber,Moderate,11/1/2026,Poor Coverage,4G,In Progress,17/9/2025,502,5,0
+CMP-00164,AREA-0045,Perak,Taiping,4.09339,100.874647,Fiber,Moderate,11/1/2026,Call Drop,5G,Resolved,23/11/2025,2814,0,0
+CMP-00165,AREA-0014,Johor,Kulai,1.863411,102.897102,4G,Good,11/1/2026,Service Outage,5G,Submitted,2/9/2025,397,4,0
+CMP-00166,AREA-0039,Selangor,Petaling,3.136872,101.519196,5G,Moderate,3/1/2026,Call Drop,5G,In Progress,2/9/2025,870,5,0
+CMP-00167,AREA-0012,Sarawak,Kuching,1.533227,109.950451,4G,Good,5/1/2026,Slow Speed,5G,Resolved,7/10/2025,2842,3,0
+CMP-00168,AREA-0002,Sarawak,Miri,2.768283,110.976015,5G,Moderate,31/12/2025,Service Outage,Fiber,In Progress,5/11/2025,392,3,0
+CMP-00169,AREA-0023,Selangor,Hulu Langat,2.851865,101.788289,4G,Good,26/12/2025,Service Outage,5G,Submitted,2/9/2025,206,3,0
+CMP-00170,AREA-0002,Sarawak,Miri,1.674176,112.016656,5G,Moderate,31/12/2025,No Connectivity,4G,In Progress,1/12/2025,1038,3,0
+CMP-00171,AREA-0021,Pahang,Temerloh,3.832384,103.688982,4G,Good,29/12/2025,Poor Coverage,5G,In Progress,15/10/2025,1881,3,0
+CMP-00172,AREA-0014,Johor,Kulai,2.006546,102.403736,4G,Good,11/1/2026,Service Outage,4G,In Progress,13/12/2025,2939,5,0
+CMP-00173,AREA-0090,Johor,Batu Pahat,1.519819,103.222045,5G,Poor,27/12/2025,Call Drop,5G,In Progress,16/9/2025,1484,5,0
+CMP-00174,AREA-0041,Perak,Ipoh,4.432269,100.513488,5G,Moderate,20/12/2025,Call Drop,5G,Resolved,11/10/2025,863,2,0
+CMP-00175,AREA-0000,Kedah,Sungai Petani,5.959616,100.33553,4G,Moderate,17/12/2025,Call Drop,4G,Submitted,30/10/2025,2790,1,0
+CMP-00176,AREA-0030,Selangor,Gombak,3.064955,101.524144,4G,Moderate,28/12/2025,Service Outage,4G,In Progress,18/12/2025,3312,3,0
+CMP-00177,AREA-0014,Johor,Kulai,2.034609,102.006358,4G,Good,11/1/2026,Service Outage,Fiber,Resolved,20/12/2025,563,0,0
+CMP-00178,AREA-0021,Pahang,Temerloh,3.336578,103.546819,4G,Good,29/12/2025,No Connectivity,Fiber,Resolved,23/10/2025,1020,5,0
+CMP-00179,AREA-0039,Selangor,Petaling,3.020506,101.54408,5G,Moderate,3/1/2026,Poor Coverage,4G,Submitted,5/10/2025,95,0,0
+CMP-00180,AREA-0003,Penang,George Town,5.374707,100.439022,Fiber,Good,4/1/2026,Call Drop,4G,In Progress,8/11/2025,1923,0,0
+CMP-00181,AREA-0001,Penang,Seberang Perai,5.321694,100.278922,4G,Good,2/1/2026,Call Drop,5G,Resolved,14/12/2025,1757,0,0
+CMP-00182,AREA-0001,Penang,Seberang Perai,5.248398,100.294622,4G,Good,2/1/2026,Service Outage,Fiber,In Progress,1/9/2025,2532,2,1
+CMP-00183,AREA-0045,Perak,Taiping,4.783962,100.604244,Fiber,Moderate,11/1/2026,Slow Speed,Fiber,Submitted,14/9/2025,3478,5,0
+CMP-00184,AREA-0022,Sabah,Sandakan,5.869389,115.938176,4G,Good,5/1/2026,Slow Speed,4G,Resolved,14/9/2025,2278,0,0
+CMP-00185,AREA-0004,Johor,Johor Bahru,2.204432,102.729406,Fiber,Moderate,12/1/2026,Service Outage,5G,Submitted,1/11/2025,2796,3,0
+CMP-00186,AREA-0045,Perak,Taiping,4.606965,100.805531,Fiber,Moderate,11/1/2026,No Connectivity,4G,Resolved,16/11/2025,1678,4,0
+CMP-00187,AREA-0000,Kedah,Sungai Petani,5.159455,100.410237,4G,Moderate,17/12/2025,Slow Speed,4G,Resolved,23/12/2025,3242,0,0
+CMP-00188,AREA-0045,Perak,Taiping,4.614385,101.412897,Fiber,Moderate,11/1/2026,Call Drop,Fiber,Resolved,27/10/2025,540,2,1
+CMP-00189,AREA-0001,Penang,Seberang Perai,5.332454,100.445512,4G,Good,2/1/2026,Call Drop,5G,In Progress,30/9/2025,1059,5,0
+CMP-00190,AREA-0001,Penang,Seberang Perai,5.298167,100.433155,4G,Good,2/1/2026,Poor Coverage,5G,In Progress,11/10/2025,2572,2,0
+CMP-00191,AREA-0045,Perak,Taiping,4.907133,101.253612,Fiber,Moderate,11/1/2026,Service Outage,5G,In Progress,27/10/2025,1183,0,0
+CMP-00192,AREA-0007,Sabah,Kota Kinabalu,5.2961,115.829637,4G,Good,17/12/2025,No Connectivity,5G,Resolved,30/12/2025,1722,5,0
+CMP-00193,AREA-0014,Johor,Kulai,2.478215,102.282579,4G,Good,11/1/2026,Service Outage,4G,Resolved,2/12/2025,3314,4,0
+CMP-00194,AREA-0022,Sabah,Sandakan,4.357214,116.102753,4G,Good,5/1/2026,Service Outage,5G,Resolved,25/9/2025,3157,0,0
+CMP-00195,AREA-0005,Kedah,Alor Setar,5.720354,100.460581,5G,Poor,3/1/2026,Poor Coverage,Fiber,In Progress,29/11/2025,1819,2,0
+CMP-00196,AREA-0002,Sarawak,Miri,4.297083,111.458278,5G,Moderate,31/12/2025,No Connectivity,4G,Resolved,22/11/2025,2625,1,0
+CMP-00197,AREA-0003,Penang,George Town,5.372425,100.375702,Fiber,Good,4/1/2026,Call Drop,5G,Resolved,27/10/2025,2729,3,0
+CMP-00198,AREA-0021,Pahang,Temerloh,3.193323,103.368741,4G,Good,29/12/2025,No Connectivity,4G,Submitted,27/10/2025,2604,2,0
+CMP-00199,AREA-0045,Perak,Taiping,4.420639,100.628999,Fiber,Moderate,11/1/2026,Slow Speed,4G,In Progress,29/10/2025,1597,5,0
+CMP-00200,AREA-0030,Selangor,Gombak,2.987277,101.882928,4G,Moderate,28/12/2025,Service Outage,4G,Resolved,19/11/2025,3060,0,0
+CMP-00201,AREA-0013,Pahang,Kuantan,3.79701,103.598163,5G,Poor,22/12/2025,Slow Speed,4G,Submitted,17/10/2025,2693,3,0
+CMP-00202,AREA-0003,Penang,George Town,5.275562,100.297067,Fiber,Good,4/1/2026,No Connectivity,4G,Resolved,5/9/2025,795,0,0
+CMP-00203,AREA-0039,Selangor,Petaling,3.164715,101.434343,5G,Moderate,3/1/2026,Service Outage,5G,In Progress,10/11/2025,1051,5,0
+CMP-00204,AREA-0090,Johor,Batu Pahat,1.403946,102.199303,5G,Poor,27/12/2025,Slow Speed,4G,In Progress,7/12/2025,1643,0,0
+CMP-00205,AREA-0022,Sabah,Sandakan,5.755465,116.611918,4G,Good,5/1/2026,No Connectivity,4G,Submitted,30/11/2025,1363,1,1
+CMP-00206,AREA-0013,Pahang,Kuantan,3.714603,102.957597,5G,Poor,22/12/2025,Service Outage,Fiber,Resolved,16/10/2025,1981,3,0
+CMP-00207,AREA-0001,Penang,Seberang Perai,5.358693,100.477041,4G,Good,2/1/2026,Call Drop,Fiber,Submitted,12/9/2025,1354,3,0
+CMP-00208,AREA-0022,Sabah,Sandakan,4.287168,115.711398,4G,Good,5/1/2026,Service Outage,5G,In Progress,12/12/2025,1663,5,0
+CMP-00209,AREA-0023,Selangor,Hulu Langat,2.934488,101.407456,4G,Good,26/12/2025,No Connectivity,4G,In Progress,23/11/2025,1529,1,0
+CMP-00210,AREA-0039,Selangor,Petaling,2.807921,101.674566,5G,Moderate,3/1/2026,No Connectivity,5G,Submitted,25/10/2025,2038,2,0
+CMP-00211,AREA-0014,Johor,Kulai,1.642806,103.320791,4G,Good,11/1/2026,Slow Speed,5G,Submitted,25/11/2025,3419,0,0
+CMP-00212,AREA-0039,Selangor,Petaling,2.982656,101.510096,5G,Moderate,3/1/2026,Poor Coverage,4G,In Progress,7/10/2025,1496,4,1
+CMP-00213,AREA-0041,Perak,Ipoh,4.936002,100.969445,5G,Moderate,20/12/2025,No Connectivity,4G,In Progress,11/11/2025,3302,0,0
+CMP-00214,AREA-0003,Penang,George Town,5.223741,100.346724,Fiber,Good,4/1/2026,Poor Coverage,4G,In Progress,13/12/2025,2237,0,0
+CMP-00215,AREA-0002,Sarawak,Miri,2.01967,112.294927,5G,Moderate,31/12/2025,Poor Coverage,5G,In Progress,7/9/2025,3296,2,0
+CMP-00216,AREA-0005,Kedah,Alor Setar,5.458885,100.310201,5G,Poor,3/1/2026,No Connectivity,4G,Resolved,16/10/2025,1408,0,1
+CMP-00217,AREA-0039,Selangor,Petaling,2.881642,101.660093,5G,Moderate,3/1/2026,Call Drop,Fiber,Resolved,7/9/2025,1400,1,0
+CMP-00218,AREA-0039,Selangor,Petaling,2.919412,101.867086,5G,Moderate,3/1/2026,Call Drop,4G,Resolved,1/12/2025,1306,1,1
+CMP-00219,AREA-0014,Johor,Kulai,2.142658,103.174675,4G,Good,11/1/2026,Call Drop,Fiber,In Progress,23/9/2025,2680,3,0
+CMP-00220,AREA-0003,Penang,George Town,5.354729,100.309074,Fiber,Good,4/1/2026,No Connectivity,4G,Resolved,29/9/2025,2675,5,1
+CMP-00221,AREA-0013,Pahang,Kuantan,3.900605,103.942624,5G,Poor,22/12/2025,Service Outage,Fiber,In Progress,29/9/2025,972,4,0
+CMP-00222,AREA-0014,Johor,Kulai,1.510006,102.260525,4G,Good,11/1/2026,No Connectivity,Fiber,In Progress,2/11/2025,1768,0,1
+CMP-00223,AREA-0045,Perak,Taiping,4.767352,101.130663,Fiber,Moderate,11/1/2026,Service Outage,5G,Submitted,30/12/2025,1282,0,0
+CMP-00224,AREA-0022,Sabah,Sandakan,5.932402,116.857635,4G,Good,5/1/2026,Slow Speed,5G,Submitted,3/11/2025,3430,2,1
+CMP-00225,AREA-0014,Johor,Kulai,1.260121,103.368991,4G,Good,11/1/2026,No Connectivity,4G,Resolved,10/12/2025,709,5,0
+CMP-00226,AREA-0000,Kedah,Sungai Petani,6.018508,100.408946,4G,Moderate,17/12/2025,Poor Coverage,4G,Submitted,20/9/2025,1479,1,0
+CMP-00227,AREA-0021,Pahang,Temerloh,3.229308,103.20578,4G,Good,29/12/2025,Call Drop,4G,Submitted,12/11/2025,1434,4,0
+CMP-00228,AREA-0030,Selangor,Gombak,3.241273,101.620879,4G,Moderate,28/12/2025,Slow Speed,5G,Resolved,29/12/2025,648,3,0
+CMP-00229,AREA-0012,Sarawak,Kuching,2.53252,110.835559,4G,Good,5/1/2026,Poor Coverage,Fiber,Submitted,17/9/2025,317,1,0
+CMP-00230,AREA-0090,Johor,Batu Pahat,1.518422,102.632113,5G,Poor,27/12/2025,Call Drop,4G,Resolved,8/10/2025,3296,5,0
+CMP-00231,AREA-0045,Perak,Taiping,4.423796,101.28948,Fiber,Moderate,11/1/2026,Service Outage,Fiber,Submitted,7/11/2025,1257,3,0
+CMP-00232,AREA-0030,Selangor,Gombak,3.160817,101.657053,4G,Moderate,28/12/2025,Call Drop,5G,Resolved,15/10/2025,683,2,0
+CMP-00233,AREA-0000,Kedah,Sungai Petani,6.282518,100.300287,4G,Moderate,17/12/2025,Poor Coverage,5G,Submitted,8/9/2025,663,2,1
+CMP-00234,AREA-0023,Selangor,Hulu Langat,3.018983,101.768087,4G,Good,26/12/2025,Call Drop,4G,Submitted,29/12/2025,1998,0,0
+CMP-00235,AREA-0030,Selangor,Gombak,3.290272,101.486828,4G,Moderate,28/12/2025,No Connectivity,Fiber,In Progress,25/12/2025,3445,5,1
+CMP-00236,AREA-0041,Perak,Ipoh,4.230635,100.512359,5G,Moderate,20/12/2025,Service Outage,Fiber,In Progress,14/12/2025,1631,4,0
+CMP-00237,AREA-0000,Kedah,Sungai Petani,6.399153,100.412396,4G,Moderate,17/12/2025,No Connectivity,Fiber,Submitted,4/12/2025,1495,3,0
+CMP-00238,AREA-0005,Kedah,Alor Setar,5.454293,100.425785,5G,Poor,3/1/2026,No Connectivity,4G,Submitted,11/9/2025,3304,1,0
+CMP-00239,AREA-0005,Kedah,Alor Setar,6.415622,100.342431,5G,Poor,3/1/2026,Slow Speed,4G,Submitted,14/9/2025,1136,5,0
+CMP-00240,AREA-0007,Sabah,Kota Kinabalu,4.069633,116.322263,4G,Good,17/12/2025,Poor Coverage,Fiber,Submitted,27/12/2025,1853,5,0
+CMP-00241,AREA-0007,Sabah,Kota Kinabalu,4.02431,116.264624,4G,Good,17/12/2025,Service Outage,5G,Resolved,16/12/2025,1520,2,0
+CMP-00242,AREA-0023,Selangor,Hulu Langat,3.098871,101.799156,4G,Good,26/12/2025,Service Outage,4G,Submitted,19/12/2025,2489,0,0
+CMP-00243,AREA-0013,Pahang,Kuantan,3.838293,103.586894,5G,Poor,22/12/2025,Poor Coverage,4G,In Progress,9/9/2025,563,0,0
+CMP-00244,AREA-0000,Kedah,Sungai Petani,5.787201,100.394408,4G,Moderate,17/12/2025,Call Drop,4G,Resolved,6/10/2025,1291,3,1
+CMP-00245,AREA-0002,Sarawak,Miri,2.21693,111.998795,5G,Moderate,31/12/2025,Call Drop,4G,In Progress,27/9/2025,3581,2,1
+CMP-00246,AREA-0039,Selangor,Petaling,3.077935,101.694521,5G,Moderate,3/1/2026,Call Drop,5G,Submitted,5/12/2025,3457,5,0
+CMP-00247,AREA-0003,Penang,George Town,5.407619,100.369825,Fiber,Good,4/1/2026,Slow Speed,Fiber,In Progress,7/10/2025,3458,4,0
+CMP-00248,AREA-0022,Sabah,Sandakan,4.180202,116.823491,4G,Good,5/1/2026,No Connectivity,4G,In Progress,27/9/2025,3184,2,0
+CMP-00249,AREA-0090,Johor,Batu Pahat,1.618118,103.981111,5G,Poor,27/12/2025,No Connectivity,5G,Resolved,25/11/2025,1636,3,0
+CMP-00250,AREA-0003,Penang,George Town,5.424558,100.2668,Fiber,Good,4/1/2026,Call Drop,4G,Resolved,22/12/2025,2999,3,0
+CMP-00251,AREA-0021,Pahang,Temerloh,3.12284,103.159141,4G,Good,29/12/2025,Service Outage,5G,Submitted,12/10/2025,3152,2,0
+CMP-00252,AREA-0021,Pahang,Temerloh,3.098965,102.51856,4G,Good,29/12/2025,Slow Speed,5G,Resolved,21/11/2025,698,3,0
+CMP-00253,AREA-0003,Penang,George Town,5.315369,100.393118,Fiber,Good,4/1/2026,Service Outage,Fiber,In Progress,27/11/2025,2160,2,1
+CMP-00254,AREA-0021,Pahang,Temerloh,3.260304,103.980572,4G,Good,29/12/2025,Service Outage,4G,In Progress,6/12/2025,1,1,0
+CMP-00255,AREA-0007,Sabah,Kota Kinabalu,5.560125,116.853601,4G,Good,17/12/2025,Poor Coverage,5G,Submitted,25/9/2025,641,2,0
+CMP-00256,AREA-0045,Perak,Taiping,4.737136,100.575047,Fiber,Moderate,11/1/2026,Poor Coverage,4G,Submitted,8/10/2025,2267,2,0
+CMP-00257,AREA-0023,Selangor,Hulu Langat,3.212651,101.869357,4G,Good,26/12/2025,Poor Coverage,4G,Resolved,27/11/2025,1589,3,0
+CMP-00258,AREA-0001,Penang,Seberang Perai,5.410568,100.244967,4G,Good,2/1/2026,No Connectivity,5G,Submitted,5/12/2025,854,3,0
+CMP-00259,AREA-0004,Johor,Johor Bahru,1.92894,102.593481,Fiber,Moderate,12/1/2026,Call Drop,Fiber,Resolved,19/11/2025,1759,0,1
+CMP-00260,AREA-0030,Selangor,Gombak,3.023397,101.645082,4G,Moderate,28/12/2025,Service Outage,5G,Resolved,8/10/2025,3296,0,0
+CMP-00261,AREA-0090,Johor,Batu Pahat,2.24086,102.157993,5G,Poor,27/12/2025,Slow Speed,4G,Submitted,24/11/2025,2432,1,1
+CMP-00262,AREA-0090,Johor,Batu Pahat,1.417805,102.865324,5G,Poor,27/12/2025,No Connectivity,5G,Resolved,3/9/2025,3474,0,0
+CMP-00263,AREA-0014,Johor,Kulai,2.467895,103.67861,4G,Good,11/1/2026,Service Outage,Fiber,In Progress,11/9/2025,1661,2,0
+CMP-00264,AREA-0003,Penang,George Town,5.298334,100.353387,Fiber,Good,4/1/2026,No Connectivity,Fiber,Submitted,3/10/2025,1153,3,0
+CMP-00265,AREA-0003,Penang,George Town,5.217755,100.372111,Fiber,Good,4/1/2026,No Connectivity,5G,Submitted,22/10/2025,1076,0,0
+CMP-00266,AREA-0039,Selangor,Petaling,3.136043,101.510157,5G,Moderate,3/1/2026,Poor Coverage,Fiber,Resolved,20/11/2025,1707,0,1
+CMP-00267,AREA-0022,Sabah,Sandakan,5.590984,116.549037,4G,Good,5/1/2026,Service Outage,4G,Submitted,2/9/2025,2777,1,1
+CMP-00268,AREA-0002,Sarawak,Miri,3.065406,111.051183,5G,Moderate,31/12/2025,Slow Speed,5G,Submitted,7/10/2025,1695,5,0
+CMP-00269,AREA-0001,Penang,Seberang Perai,5.218911,100.435838,4G,Good,2/1/2026,Call Drop,5G,Submitted,23/9/2025,1733,1,0
+CMP-00270,AREA-0022,Sabah,Sandakan,5.047133,116.724433,4G,Good,5/1/2026,Slow Speed,4G,Submitted,8/11/2025,1439,2,0
+CMP-00271,AREA-0007,Sabah,Kota Kinabalu,5.616,116.217415,4G,Good,17/12/2025,Poor Coverage,4G,Submitted,3/10/2025,2294,3,1
+CMP-00272,AREA-0045,Perak,Taiping,4.116736,101.454495,Fiber,Moderate,11/1/2026,No Connectivity,Fiber,In Progress,30/12/2025,835,1,0
+CMP-00273,AREA-0003,Penang,George Town,5.486516,100.326456,Fiber,Good,4/1/2026,Slow Speed,4G,In Progress,25/10/2025,3510,0,0
+CMP-00274,AREA-0013,Pahang,Kuantan,3.481158,103.845917,5G,Poor,22/12/2025,Service Outage,5G,Resolved,24/9/2025,202,3,0
+CMP-00275,AREA-0003,Penang,George Town,5.392075,100.267388,Fiber,Good,4/1/2026,Poor Coverage,4G,Submitted,1/9/2025,3255,3,0
+CMP-00276,AREA-0000,Kedah,Sungai Petani,5.595596,100.348101,4G,Moderate,17/12/2025,Call Drop,4G,Submitted,5/12/2025,122,0,0
+CMP-00277,AREA-0001,Penang,Seberang Perai,5.479151,100.328549,4G,Good,2/1/2026,No Connectivity,4G,Submitted,19/10/2025,400,1,0
+CMP-00278,AREA-0007,Sabah,Kota Kinabalu,4.224825,116.465777,4G,Good,17/12/2025,Poor Coverage,Fiber,In Progress,11/12/2025,766,0,1
+CMP-00279,AREA-0012,Sarawak,Kuching,4.30415,110.618572,4G,Good,5/1/2026,Slow Speed,Fiber,Resolved,2/11/2025,293,5,0
+CMP-00280,AREA-0001,Penang,Seberang Perai,5.417757,100.232738,4G,Good,2/1/2026,Call Drop,Fiber,In Progress,19/10/2025,2327,3,0
+CMP-00281,AREA-0022,Sabah,Sandakan,4.723551,116.518796,4G,Good,5/1/2026,Slow Speed,4G,Submitted,18/10/2025,2931,4,1
+CMP-00282,AREA-0041,Perak,Ipoh,4.396764,101.081555,5G,Moderate,20/12/2025,Slow Speed,Fiber,In Progress,31/10/2025,197,4,0
+CMP-00283,AREA-0021,Pahang,Temerloh,3.930433,103.470627,4G,Good,29/12/2025,Slow Speed,5G,Resolved,16/10/2025,3029,2,1
+CMP-00284,AREA-0002,Sarawak,Miri,4.54098,112.93141,5G,Moderate,31/12/2025,No Connectivity,4G,Resolved,23/9/2025,1930,0,0
+CMP-00285,AREA-0005,Kedah,Alor Setar,5.904518,100.458855,5G,Poor,3/1/2026,No Connectivity,Fiber,Resolved,1/11/2025,3582,0,0
+CMP-00286,AREA-0002,Sarawak,Miri,4.781566,111.909779,5G,Moderate,31/12/2025,Slow Speed,Fiber,In Progress,27/11/2025,2799,2,1
+CMP-00287,AREA-0045,Perak,Taiping,4.443283,100.631506,Fiber,Moderate,11/1/2026,Poor Coverage,Fiber,Submitted,21/12/2025,2191,2,0
+CMP-00288,AREA-0001,Penang,Seberang Perai,5.486153,100.245466,4G,Good,2/1/2026,Slow Speed,4G,In Progress,13/10/2025,608,2,0
+CMP-00289,AREA-0004,Johor,Johor Bahru,2.102637,103.378612,Fiber,Moderate,12/1/2026,Service Outage,Fiber,Submitted,8/12/2025,3272,3,0
+CMP-00290,AREA-0001,Penang,Seberang Perai,5.230584,100.437556,4G,Good,2/1/2026,Poor Coverage,5G,In Progress,31/10/2025,1147,5,0
+CMP-00291,AREA-0039,Selangor,Petaling,3.099432,101.663758,5G,Moderate,3/1/2026,Slow Speed,5G,Submitted,15/10/2025,186,0,0
+CMP-00292,AREA-0013,Pahang,Kuantan,3.609986,103.255799,5G,Poor,22/12/2025,Service Outage,4G,In Progress,17/11/2025,3397,3,0
+CMP-00293,AREA-0003,Penang,George Town,5.452727,100.490092,Fiber,Good,4/1/2026,Poor Coverage,4G,Resolved,5/9/2025,2511,2,1
+CMP-00294,AREA-0045,Perak,Taiping,4.628937,100.630793,Fiber,Moderate,11/1/2026,No Connectivity,5G,Submitted,28/12/2025,3420,0,0
+CMP-00295,AREA-0007,Sabah,Kota Kinabalu,4.438872,116.106855,4G,Good,17/12/2025,No Connectivity,4G,Submitted,20/11/2025,1794,3,0
+CMP-00296,AREA-0001,Penang,Seberang Perai,5.367154,100.274421,4G,Good,2/1/2026,No Connectivity,Fiber,In Progress,16/12/2025,659,5,0
+CMP-00297,AREA-0030,Selangor,Gombak,2.912277,101.655295,4G,Moderate,28/12/2025,Service Outage,4G,Submitted,1/11/2025,2811,3,0
+CMP-00298,AREA-0022,Sabah,Sandakan,5.971609,115.948186,4G,Good,5/1/2026,No Connectivity,4G,Resolved,23/10/2025,3002,5,0
+CMP-00299,AREA-0001,Penang,Seberang Perai,5.473777,100.480588,4G,Good,2/1/2026,Service Outage,4G,Resolved,15/10/2025,1955,2,1
+CMP-00300,AREA-0022,Sabah,Sandakan,5.004438,115.628936,4G,Good,5/1/2026,Service Outage,Fiber,In Progress,24/10/2025,2450,5,0
+CMP-00301,AREA-0000,Kedah,Sungai Petani,6.335545,100.451626,4G,Moderate,17/12/2025,Call Drop,4G,Submitted,18/11/2025,1369,0,0
+CMP-00302,AREA-0021,Pahang,Temerloh,3.208426,102.743006,4G,Good,29/12/2025,Poor Coverage,Fiber,Resolved,2/12/2025,1986,2,0
+CMP-00303,AREA-0030,Selangor,Gombak,2.896597,101.82581,4G,Moderate,28/12/2025,Call Drop,Fiber,Resolved,20/12/2025,1534,0,0
+CMP-00304,AREA-0041,Perak,Ipoh,4.917674,101.115297,5G,Moderate,20/12/2025,Slow Speed,Fiber,Submitted,11/11/2025,146,4,0
+CMP-00305,AREA-0039,Selangor,Petaling,3.101612,101.483441,5G,Moderate,3/1/2026,Poor Coverage,Fiber,In Progress,16/10/2025,3219,1,0
+CMP-00306,AREA-0023,Selangor,Hulu Langat,2.875545,101.806349,4G,Good,26/12/2025,Service Outage,4G,In Progress,26/10/2025,2911,5,1
+CMP-00307,AREA-0041,Perak,Ipoh,4.855092,100.946717,5G,Moderate,20/12/2025,Slow Speed,5G,Resolved,5/9/2025,1734,1,0
+CMP-00308,AREA-0030,Selangor,Gombak,2.916598,101.657855,4G,Moderate,28/12/2025,Slow Speed,Fiber,Resolved,6/9/2025,1843,1,0
+CMP-00309,AREA-0003,Penang,George Town,5.26271,100.229524,Fiber,Good,4/1/2026,Slow Speed,Fiber,In Progress,18/12/2025,488,5,0
+CMP-00310,AREA-0090,Johor,Batu Pahat,1.652548,102.43514,5G,Poor,27/12/2025,No Connectivity,5G,In Progress,5/9/2025,2976,2,0
+CMP-00311,AREA-0030,Selangor,Gombak,3.025045,101.650556,4G,Moderate,28/12/2025,No Connectivity,5G,Submitted,9/11/2025,1959,4,0
+CMP-00312,AREA-0013,Pahang,Kuantan,3.678626,102.774478,5G,Poor,22/12/2025,No Connectivity,Fiber,In Progress,26/10/2025,1663,0,0
+CMP-00313,AREA-0000,Kedah,Sungai Petani,5.610172,100.452576,4G,Moderate,17/12/2025,No Connectivity,Fiber,Submitted,14/12/2025,2598,3,0
+CMP-00314,AREA-0045,Perak,Taiping,4.14955,100.815588,Fiber,Moderate,11/1/2026,No Connectivity,5G,In Progress,12/12/2025,2385,0,0
+CMP-00315,AREA-0039,Selangor,Petaling,3.072802,101.851959,5G,Moderate,3/1/2026,Poor Coverage,5G,Resolved,16/9/2025,2919,3,0
+CMP-00316,AREA-0014,Johor,Kulai,2.043891,102.119868,4G,Good,11/1/2026,Slow Speed,Fiber,In Progress,11/12/2025,640,0,0
+CMP-00317,AREA-0022,Sabah,Sandakan,4.892966,115.763741,4G,Good,5/1/2026,Slow Speed,Fiber,Resolved,3/11/2025,1802,5,1
+CMP-00318,AREA-0007,Sabah,Kota Kinabalu,4.113825,116.548231,4G,Good,17/12/2025,Slow Speed,5G,Submitted,5/9/2025,2520,4,1
+CMP-00319,AREA-0021,Pahang,Temerloh,3.643126,103.879117,4G,Good,29/12/2025,Slow Speed,5G,Submitted,29/10/2025,1969,3,0
+CMP-00320,AREA-0002,Sarawak,Miri,4.750417,111.847685,5G,Moderate,31/12/2025,Call Drop,Fiber,In Progress,20/11/2025,2198,2,1
+CMP-00321,AREA-0021,Pahang,Temerloh,3.72413,103.363351,4G,Good,29/12/2025,Poor Coverage,5G,Resolved,23/10/2025,1438,0,0
+CMP-00322,AREA-0023,Selangor,Hulu Langat,3.036101,101.750806,4G,Good,26/12/2025,Service Outage,Fiber,Resolved,2/9/2025,3369,0,0
+CMP-00323,AREA-0007,Sabah,Kota Kinabalu,5.238523,115.920268,4G,Good,17/12/2025,Service Outage,Fiber,Resolved,4/9/2025,1634,3,0
+CMP-00324,AREA-0002,Sarawak,Miri,1.904274,111.536372,5G,Moderate,31/12/2025,Call Drop,5G,In Progress,6/12/2025,262,2,0
+CMP-00325,AREA-0000,Kedah,Sungai Petani,6.464543,100.457586,4G,Moderate,17/12/2025,Slow Speed,5G,Resolved,22/9/2025,1787,2,0
+CMP-00326,AREA-0030,Selangor,Gombak,2.875686,101.466649,4G,Moderate,28/12/2025,Poor Coverage,Fiber,In Progress,4/10/2025,2191,5,1
+CMP-00327,AREA-0012,Sarawak,Kuching,4.487382,113.548958,4G,Good,5/1/2026,No Connectivity,4G,Submitted,23/11/2025,2393,5,0
+CMP-00328,AREA-0000,Kedah,Sungai Petani,5.129221,100.425856,4G,Moderate,17/12/2025,Poor Coverage,Fiber,Submitted,3/11/2025,623,5,0
+CMP-00329,AREA-0005,Kedah,Alor Setar,5.590365,100.445105,5G,Poor,3/1/2026,Poor Coverage,Fiber,In Progress,5/12/2025,1016,5,0
+CMP-00330,AREA-0002,Sarawak,Miri,2.834334,112.156444,5G,Moderate,31/12/2025,Service Outage,4G,Resolved,4/10/2025,880,5,1
+CMP-00331,AREA-0023,Selangor,Hulu Langat,3.267073,101.477673,4G,Good,26/12/2025,Call Drop,5G,Resolved,14/10/2025,2049,5,0
+CMP-00332,AREA-0090,Johor,Batu Pahat,1.818457,102.405994,5G,Poor,27/12/2025,Slow Speed,5G,In Progress,15/10/2025,2944,4,0
+CMP-00333,AREA-0014,Johor,Kulai,2.108366,103.325201,4G,Good,11/1/2026,No Connectivity,4G,Submitted,30/10/2025,1327,2,0
+CMP-00334,AREA-0002,Sarawak,Miri,3.274183,112.841625,5G,Moderate,31/12/2025,No Connectivity,Fiber,Submitted,10/9/2025,2301,5,0
+CMP-00335,AREA-0045,Perak,Taiping,4.968725,100.54806,Fiber,Moderate,11/1/2026,Poor Coverage,5G,In Progress,16/12/2025,452,2,1
+CMP-00336,AREA-0003,Penang,George Town,5.370846,100.323116,Fiber,Good,4/1/2026,Call Drop,Fiber,Submitted,21/9/2025,3108,2,1
+CMP-00337,AREA-0039,Selangor,Petaling,2.849051,101.664253,5G,Moderate,3/1/2026,Call Drop,Fiber,Resolved,7/9/2025,1183,1,0
+CMP-00338,AREA-0021,Pahang,Temerloh,3.255119,103.804464,4G,Good,29/12/2025,Poor Coverage,5G,Submitted,1/9/2025,3062,4,1
+CMP-00339,AREA-0007,Sabah,Kota Kinabalu,5.392235,115.756065,4G,Good,17/12/2025,Service Outage,5G,Submitted,10/10/2025,2056,5,0
+CMP-00340,AREA-0012,Sarawak,Kuching,2.446951,112.462696,4G,Good,5/1/2026,Service Outage,5G,Resolved,28/11/2025,3304,0,1
+CMP-00341,AREA-0003,Penang,George Town,5.248963,100.220842,Fiber,Good,4/1/2026,No Connectivity,Fiber,Resolved,29/12/2025,3170,3,0
+CMP-00342,AREA-0021,Pahang,Temerloh,3.062947,103.731358,4G,Good,29/12/2025,Call Drop,Fiber,In Progress,12/12/2025,1682,0,0
+CMP-00343,AREA-0014,Johor,Kulai,2.471194,103.982503,4G,Good,11/1/2026,No Connectivity,4G,Submitted,12/10/2025,2863,4,0
+CMP-00344,AREA-0045,Perak,Taiping,4.666698,101.054712,Fiber,Moderate,11/1/2026,Poor Coverage,Fiber,Resolved,25/10/2025,2255,3,0
+CMP-00345,AREA-0013,Pahang,Kuantan,3.08702,102.797624,5G,Poor,22/12/2025,Slow Speed,Fiber,Submitted,8/11/2025,1154,4,0
+CMP-00346,AREA-0001,Penang,Seberang Perai,5.25619,100.490426,4G,Good,2/1/2026,Poor Coverage,Fiber,In Progress,10/11/2025,403,2,0
+CMP-00347,AREA-0005,Kedah,Alor Setar,5.09695,100.373694,5G,Poor,3/1/2026,Slow Speed,Fiber,Submitted,18/9/2025,2199,3,0
+CMP-00348,AREA-0030,Selangor,Gombak,2.915355,101.680609,4G,Moderate,28/12/2025,No Connectivity,5G,In Progress,13/9/2025,2101,2,0
+CMP-00349,AREA-0039,Selangor,Petaling,3.09591,101.594187,5G,Moderate,3/1/2026,No Connectivity,5G,Resolved,26/11/2025,3191,0,0
+CMP-00350,AREA-0002,Sarawak,Miri,4.973297,113.361695,5G,Moderate,31/12/2025,Service Outage,Fiber,In Progress,27/12/2025,1696,0,0
+CMP-00351,AREA-0023,Selangor,Hulu Langat,3.114452,101.665092,4G,Good,26/12/2025,Slow Speed,Fiber,In Progress,8/10/2025,627,3,1
+CMP-00352,AREA-0003,Penang,George Town,5.219471,100.404778,Fiber,Good,4/1/2026,Slow Speed,4G,Submitted,17/10/2025,586,3,0
+CMP-00353,AREA-0013,Pahang,Kuantan,3.72287,103.510715,5G,Poor,22/12/2025,Slow Speed,4G,Resolved,28/11/2025,1648,5,0
+CMP-00354,AREA-0023,Selangor,Hulu Langat,2.960627,101.700253,4G,Good,26/12/2025,Poor Coverage,Fiber,Resolved,16/9/2025,1443,4,0
+CMP-00355,AREA-0045,Perak,Taiping,4.577652,100.76174,Fiber,Moderate,11/1/2026,Slow Speed,4G,In Progress,16/11/2025,1445,5,1
+CMP-00356,AREA-0039,Selangor,Petaling,2.912533,101.790065,5G,Moderate,3/1/2026,Slow Speed,Fiber,Resolved,9/12/2025,103,4,0
+CMP-00357,AREA-0007,Sabah,Kota Kinabalu,5.868892,116.084352,4G,Good,17/12/2025,No Connectivity,5G,Submitted,20/10/2025,253,5,0
+CMP-00358,AREA-0007,Sabah,Kota Kinabalu,4.249143,116.677694,4G,Good,17/12/2025,No Connectivity,5G,Resolved,12/11/2025,3298,2,1
+CMP-00359,AREA-0023,Selangor,Hulu Langat,2.96703,101.416679,4G,Good,26/12/2025,Poor Coverage,Fiber,In Progress,30/10/2025,3183,3,1
+CMP-00360,AREA-0005,Kedah,Alor Setar,5.796602,100.337111,5G,Poor,3/1/2026,Service Outage,5G,Resolved,28/11/2025,2557,0,0
+CMP-00361,AREA-0002,Sarawak,Miri,3.68104,113.175167,5G,Moderate,31/12/2025,No Connectivity,5G,Resolved,2/11/2025,1496,4,0
+CMP-00362,AREA-0007,Sabah,Kota Kinabalu,5.878753,116.305772,4G,Good,17/12/2025,Poor Coverage,5G,Resolved,8/9/2025,98,4,0
+CMP-00363,AREA-0012,Sarawak,Kuching,2.412354,112.24982,4G,Good,5/1/2026,Poor Coverage,5G,Resolved,21/9/2025,2200,0,1
+CMP-00364,AREA-0023,Selangor,Hulu Langat,2.862446,101.653615,4G,Good,26/12/2025,Service Outage,4G,Submitted,18/12/2025,1884,5,0
+CMP-00365,AREA-0013,Pahang,Kuantan,3.72003,103.951397,5G,Poor,22/12/2025,Slow Speed,4G,Resolved,11/9/2025,2961,4,0
+CMP-00366,AREA-0022,Sabah,Sandakan,4.899675,116.38648,4G,Good,5/1/2026,Slow Speed,5G,In Progress,6/10/2025,1919,2,1
+CMP-00367,AREA-0007,Sabah,Kota Kinabalu,4.306411,116.664655,4G,Good,17/12/2025,Poor Coverage,5G,Resolved,11/10/2025,877,3,0
+CMP-00368,AREA-0039,Selangor,Petaling,3.024887,101.850863,5G,Moderate,3/1/2026,Call Drop,Fiber,Resolved,1/10/2025,337,0,0
+CMP-00369,AREA-0003,Penang,George Town,5.415855,100.2506,Fiber,Good,4/1/2026,Slow Speed,Fiber,Submitted,21/10/2025,2869,3,0
+CMP-00370,AREA-0013,Pahang,Kuantan,3.516548,103.304848,5G,Poor,22/12/2025,Call Drop,Fiber,Resolved,4/11/2025,3234,4,0
+CMP-00371,AREA-0005,Kedah,Alor Setar,5.565861,100.442283,5G,Poor,3/1/2026,No Connectivity,Fiber,In Progress,17/12/2025,956,4,0
+CMP-00372,AREA-0013,Pahang,Kuantan,3.517689,102.692257,5G,Poor,22/12/2025,Call Drop,Fiber,Submitted,19/9/2025,1704,0,0
+CMP-00373,AREA-0030,Selangor,Gombak,3.184767,101.586637,4G,Moderate,28/12/2025,Service Outage,4G,Resolved,28/12/2025,160,2,0
+CMP-00374,AREA-0022,Sabah,Sandakan,5.83621,116.286124,4G,Good,5/1/2026,Poor Coverage,4G,Submitted,20/9/2025,1603,1,0
+CMP-00375,AREA-0001,Penang,Seberang Perai,5.292568,100.45327,4G,Good,2/1/2026,Slow Speed,Fiber,In Progress,29/9/2025,2848,0,1
+CMP-00376,AREA-0001,Penang,Seberang Perai,5.465936,100.445024,4G,Good,2/1/2026,Call Drop,4G,In Progress,13/11/2025,397,1,0
+CMP-00377,AREA-0014,Johor,Kulai,1.459258,103.552955,4G,Good,11/1/2026,Call Drop,4G,In Progress,19/9/2025,1300,5,1
+CMP-00378,AREA-0039,Selangor,Petaling,3.030348,101.415705,5G,Moderate,3/1/2026,Service Outage,Fiber,Submitted,25/10/2025,815,1,0
+CMP-00379,AREA-0021,Pahang,Temerloh,3.185163,102.51123,4G,Good,29/12/2025,Service Outage,4G,Submitted,17/12/2025,1527,2,1
+CMP-00380,AREA-0000,Kedah,Sungai Petani,6.433165,100.473386,4G,Moderate,17/12/2025,Service Outage,4G,Submitted,21/10/2025,1919,5,0
+CMP-00381,AREA-0039,Selangor,Petaling,3.20939,101.858103,5G,Moderate,3/1/2026,Poor Coverage,5G,Submitted,27/9/2025,1415,1,0
+CMP-00382,AREA-0045,Perak,Taiping,4.059958,101.34525,Fiber,Moderate,11/1/2026,Poor Coverage,5G,Submitted,6/11/2025,1158,5,0
+CMP-00383,AREA-0021,Pahang,Temerloh,3.459795,103.641385,4G,Good,29/12/2025,No Connectivity,4G,In Progress,24/11/2025,1218,1,1
+CMP-00384,AREA-0030,Selangor,Gombak,2.970933,101.426986,4G,Moderate,28/12/2025,No Connectivity,5G,Submitted,23/9/2025,400,2,0
+CMP-00385,AREA-0014,Johor,Kulai,1.660928,102.858809,4G,Good,11/1/2026,Service Outage,5G,Submitted,25/11/2025,639,1,0
+CMP-00386,AREA-0004,Johor,Johor Bahru,1.832292,102.615251,Fiber,Moderate,12/1/2026,Service Outage,5G,Submitted,30/11/2025,3104,1,0
+CMP-00387,AREA-0005,Kedah,Alor Setar,5.683884,100.476809,5G,Poor,3/1/2026,Call Drop,5G,In Progress,2/11/2025,2735,1,1
+CMP-00388,AREA-0001,Penang,Seberang Perai,5.222368,100.439066,4G,Good,2/1/2026,No Connectivity,5G,Resolved,2/11/2025,459,0,0
+CMP-00389,AREA-0001,Penang,Seberang Perai,5.203393,100.291655,4G,Good,2/1/2026,Poor Coverage,Fiber,Submitted,2/12/2025,954,0,0
+CMP-00390,AREA-0007,Sabah,Kota Kinabalu,4.659299,116.553162,4G,Good,17/12/2025,Slow Speed,Fiber,Resolved,12/11/2025,469,0,0
+CMP-00391,AREA-0001,Penang,Seberang Perai,5.221038,100.262434,4G,Good,2/1/2026,Poor Coverage,5G,In Progress,16/11/2025,3446,2,1
+CMP-00392,AREA-0022,Sabah,Sandakan,4.682308,116.845942,4G,Good,5/1/2026,No Connectivity,Fiber,Resolved,19/10/2025,1045,5,0
+CMP-00393,AREA-0013,Pahang,Kuantan,3.754244,102.984766,5G,Poor,22/12/2025,Slow Speed,5G,In Progress,11/10/2025,2797,4,0
+CMP-00394,AREA-0012,Sarawak,Kuching,3.26344,111.713453,4G,Good,5/1/2026,No Connectivity,Fiber,In Progress,25/10/2025,1693,1,0
+CMP-00395,AREA-0001,Penang,Seberang Perai,5.451997,100.483427,4G,Good,2/1/2026,Service Outage,Fiber,Submitted,27/9/2025,2085,1,0
+CMP-00396,AREA-0022,Sabah,Sandakan,5.194366,115.901898,4G,Good,5/1/2026,Call Drop,Fiber,Submitted,24/12/2025,2277,2,0
+CMP-00397,AREA-0000,Kedah,Sungai Petani,5.379468,100.318902,4G,Moderate,17/12/2025,Service Outage,Fiber,Submitted,3/11/2025,3436,1,0
+CMP-00398,AREA-0002,Sarawak,Miri,3.210413,110.821786,5G,Moderate,31/12/2025,Call Drop,5G,In Progress,19/10/2025,562,0,0
+CMP-00399,AREA-0001,Penang,Seberang Perai,5.367894,100.481218,4G,Good,2/1/2026,Poor Coverage,Fiber,In Progress,8/12/2025,2485,4,0
+CMP-00400,AREA-0041,Perak,Ipoh,4.587285,100.694088,5G,Moderate,20/12/2025,Service Outage,Fiber,Resolved,26/11/2025,1799,3,0
+CMP-00401,AREA-0090,Johor,Batu Pahat,1.241998,103.684653,5G,Poor,27/12/2025,No Connectivity,5G,In Progress,14/10/2025,3354,1,0
+CMP-00402,AREA-0005,Kedah,Alor Setar,5.883696,100.485926,5G,Poor,3/1/2026,No Connectivity,4G,In Progress,26/12/2025,2074,0,0
+CMP-00403,AREA-0003,Penang,George Town,5.217684,100.428381,Fiber,Good,4/1/2026,No Connectivity,5G,Submitted,13/9/2025,225,3,0
+CMP-00404,AREA-0000,Kedah,Sungai Petani,5.027944,100.405849,4G,Moderate,17/12/2025,Slow Speed,5G,Resolved,9/12/2025,3348,4,0
+CMP-00405,AREA-0014,Johor,Kulai,1.557226,103.97946,4G,Good,11/1/2026,No Connectivity,4G,Resolved,7/10/2025,797,3,0
+CMP-00406,AREA-0005,Kedah,Alor Setar,5.280551,100.425448,5G,Poor,3/1/2026,Service Outage,Fiber,Submitted,8/10/2025,2331,0,0
+CMP-00407,AREA-0013,Pahang,Kuantan,3.587425,103.854214,5G,Poor,22/12/2025,No Connectivity,4G,In Progress,11/11/2025,2926,5,0
+CMP-00408,AREA-0000,Kedah,Sungai Petani,5.530338,100.453601,4G,Moderate,17/12/2025,Poor Coverage,5G,Submitted,31/10/2025,959,5,0
+CMP-00409,AREA-0090,Johor,Batu Pahat,2.176112,102.607251,5G,Poor,27/12/2025,No Connectivity,5G,Resolved,20/11/2025,1504,3,0
+CMP-00410,AREA-0004,Johor,Johor Bahru,1.333798,102.063492,Fiber,Moderate,12/1/2026,Poor Coverage,4G,In Progress,18/11/2025,452,2,1
+CMP-00411,AREA-0005,Kedah,Alor Setar,6.293624,100.442794,5G,Poor,3/1/2026,Call Drop,4G,Resolved,26/10/2025,3067,3,0
+CMP-00412,AREA-0022,Sabah,Sandakan,5.261355,116.345142,4G,Good,5/1/2026,Service Outage,5G,Resolved,21/11/2025,815,1,0
+CMP-00413,AREA-0013,Pahang,Kuantan,3.093158,103.767844,5G,Poor,22/12/2025,Poor Coverage,5G,Submitted,8/10/2025,658,1,0
+CMP-00414,AREA-0007,Sabah,Kota Kinabalu,5.494061,116.080419,4G,Good,17/12/2025,No Connectivity,Fiber,Submitted,22/12/2025,3587,5,0
+CMP-00415,AREA-0002,Sarawak,Miri,4.203125,109.727946,5G,Moderate,31/12/2025,Poor Coverage,5G,Resolved,11/11/2025,546,2,0
+CMP-00416,AREA-0003,Penang,George Town,5.384449,100.253251,Fiber,Good,4/1/2026,Call Drop,5G,Resolved,24/10/2025,1215,0,0
+CMP-00417,AREA-0012,Sarawak,Kuching,1.997653,113.948245,4G,Good,5/1/2026,Call Drop,4G,Submitted,13/12/2025,3120,1,0
+CMP-00418,AREA-0045,Perak,Taiping,4.922725,101.26536,Fiber,Moderate,11/1/2026,Poor Coverage,Fiber,Submitted,25/11/2025,3583,5,0
+CMP-00419,AREA-0012,Sarawak,Kuching,2.963637,113.063911,4G,Good,5/1/2026,Poor Coverage,5G,In Progress,6/12/2025,16,4,0
+CMP-00420,AREA-0001,Penang,Seberang Perai,5.442542,100.305722,4G,Good,2/1/2026,Service Outage,Fiber,Resolved,21/12/2025,3243,5,0
+CMP-00421,AREA-0001,Penang,Seberang Perai,5.29732,100.452214,4G,Good,2/1/2026,Poor Coverage,Fiber,Submitted,1/11/2025,1243,1,1
+CMP-00422,AREA-0045,Perak,Taiping,4.050598,101.413309,Fiber,Moderate,11/1/2026,Service Outage,5G,In Progress,21/12/2025,2205,1,0
+CMP-00423,AREA-0005,Kedah,Alor Setar,5.597062,100.42652,5G,Poor,3/1/2026,Call Drop,Fiber,In Progress,28/12/2025,2524,5,1
+CMP-00424,AREA-0022,Sabah,Sandakan,5.053364,116.431952,4G,Good,5/1/2026,Service Outage,Fiber,Resolved,7/12/2025,1069,0,0
+CMP-00425,AREA-0041,Perak,Ipoh,4.519921,100.588572,5G,Moderate,20/12/2025,Service Outage,4G,In Progress,18/11/2025,3444,3,0
+CMP-00426,AREA-0001,Penang,Seberang Perai,5.470113,100.246958,4G,Good,2/1/2026,Slow Speed,4G,In Progress,28/11/2025,2565,1,0
+CMP-00427,AREA-0005,Kedah,Alor Setar,5.379509,100.31322,5G,Poor,3/1/2026,Service Outage,5G,In Progress,30/9/2025,2146,5,0
+CMP-00428,AREA-0013,Pahang,Kuantan,3.681979,102.877316,5G,Poor,22/12/2025,Poor Coverage,Fiber,In Progress,25/11/2025,1768,5,1
+CMP-00429,AREA-0014,Johor,Kulai,2.228381,102.947515,4G,Good,11/1/2026,Call Drop,Fiber,In Progress,17/12/2025,1060,2,0
+CMP-00430,AREA-0005,Kedah,Alor Setar,6.276171,100.412146,5G,Poor,3/1/2026,Call Drop,Fiber,Resolved,12/10/2025,2327,3,1
+CMP-00431,AREA-0012,Sarawak,Kuching,2.949125,109.826048,4G,Good,5/1/2026,Slow Speed,5G,In Progress,4/11/2025,3420,4,0
+CMP-00432,AREA-0003,Penang,George Town,5.454446,100.348294,Fiber,Good,4/1/2026,No Connectivity,Fiber,Submitted,30/10/2025,2544,0,1
+CMP-00433,AREA-0090,Johor,Batu Pahat,1.385819,103.575524,5G,Poor,27/12/2025,Poor Coverage,5G,In Progress,26/9/2025,301,4,0
+CMP-00434,AREA-0022,Sabah,Sandakan,4.276531,116.230408,4G,Good,5/1/2026,Service Outage,Fiber,Resolved,7/10/2025,180,3,0
+CMP-00435,AREA-0007,Sabah,Kota Kinabalu,4.289344,116.691056,4G,Good,17/12/2025,Poor Coverage,5G,Submitted,2/11/2025,606,3,0
+CMP-00436,AREA-0002,Sarawak,Miri,3.222275,110.554736,5G,Moderate,31/12/2025,No Connectivity,4G,In Progress,1/9/2025,3170,3,0
+CMP-00437,AREA-0022,Sabah,Sandakan,4.544397,116.0229,4G,Good,5/1/2026,No Connectivity,Fiber,Submitted,23/10/2025,699,4,0
+CMP-00438,AREA-0022,Sabah,Sandakan,4.314779,116.277938,4G,Good,5/1/2026,Service Outage,5G,Submitted,15/11/2025,992,3,0
+CMP-00439,AREA-0013,Pahang,Kuantan,3.91995,103.925853,5G,Poor,22/12/2025,Call Drop,4G,In Progress,22/11/2025,1139,5,1
+CMP-00440,AREA-0021,Pahang,Temerloh,3.43259,103.539346,4G,Good,29/12/2025,Call Drop,4G,Submitted,30/9/2025,190,4,0
+CMP-00441,AREA-0013,Pahang,Kuantan,3.398319,103.280061,5G,Poor,22/12/2025,Service Outage,Fiber,Submitted,23/11/2025,2300,3,0
+CMP-00442,AREA-0001,Penang,Seberang Perai,5.448404,100.353993,4G,Good,2/1/2026,Slow Speed,5G,Resolved,15/11/2025,980,5,0
+CMP-00443,AREA-0041,Perak,Ipoh,4.973142,101.22479,5G,Moderate,20/12/2025,Slow Speed,5G,Resolved,7/10/2025,2975,2,0
+CMP-00444,AREA-0000,Kedah,Sungai Petani,6.287371,100.415286,4G,Moderate,17/12/2025,Call Drop,5G,Resolved,31/10/2025,2006,3,0
+CMP-00445,AREA-0021,Pahang,Temerloh,3.956689,103.057293,4G,Good,29/12/2025,Call Drop,4G,Submitted,25/9/2025,1184,4,0
+CMP-00446,AREA-0001,Penang,Seberang Perai,5.411952,100.266355,4G,Good,2/1/2026,No Connectivity,5G,Submitted,9/10/2025,3327,1,0
+CMP-00447,AREA-0013,Pahang,Kuantan,3.809181,103.213161,5G,Poor,22/12/2025,Call Drop,5G,Submitted,2/11/2025,3394,3,0
+CMP-00448,AREA-0002,Sarawak,Miri,3.371538,111.493124,5G,Moderate,31/12/2025,Call Drop,4G,Resolved,16/9/2025,127,1,0
+CMP-00449,AREA-0041,Perak,Ipoh,4.445049,100.54902,5G,Moderate,20/12/2025,Call Drop,Fiber,In Progress,27/10/2025,2065,5,0
+CMP-00450,AREA-0030,Selangor,Gombak,3.049479,101.40056,4G,Moderate,28/12/2025,Call Drop,Fiber,In Progress,26/12/2025,1816,2,0
+CMP-00451,AREA-0023,Selangor,Hulu Langat,3.220151,101.455934,4G,Good,26/12/2025,Slow Speed,4G,In Progress,14/11/2025,1758,0,0
+CMP-00452,AREA-0002,Sarawak,Miri,3.416724,110.916982,5G,Moderate,31/12/2025,Call Drop,4G,Submitted,25/9/2025,2613,2,0
+CMP-00453,AREA-0041,Perak,Ipoh,4.444807,101.222737,5G,Moderate,20/12/2025,Slow Speed,Fiber,In Progress,10/12/2025,569,3,0
+CMP-00454,AREA-0090,Johor,Batu Pahat,1.674302,103.098395,5G,Poor,27/12/2025,No Connectivity,5G,Submitted,14/11/2025,1346,1,0
+CMP-00455,AREA-0041,Perak,Ipoh,4.701678,100.957244,5G,Moderate,20/12/2025,Slow Speed,Fiber,In Progress,8/9/2025,1895,1,1
+CMP-00456,AREA-0004,Johor,Johor Bahru,1.52939,103.952549,Fiber,Moderate,12/1/2026,Poor Coverage,5G,Resolved,3/10/2025,2733,4,0
+CMP-00457,AREA-0045,Perak,Taiping,4.624903,101.234025,Fiber,Moderate,11/1/2026,Poor Coverage,5G,Resolved,10/10/2025,625,1,1
+CMP-00458,AREA-0039,Selangor,Petaling,2.982787,101.824271,5G,Moderate,3/1/2026,No Connectivity,Fiber,Resolved,13/12/2025,3359,4,0
+CMP-00459,AREA-0002,Sarawak,Miri,2.629456,112.269307,5G,Moderate,31/12/2025,Call Drop,Fiber,Resolved,20/9/2025,2901,5,0
+CMP-00460,AREA-0005,Kedah,Alor Setar,6.118215,100.406138,5G,Poor,3/1/2026,Slow Speed,4G,Resolved,1/10/2025,1686,0,0
+CMP-00461,AREA-0045,Perak,Taiping,4.093976,100.596685,Fiber,Moderate,11/1/2026,Service Outage,Fiber,Resolved,13/10/2025,3009,3,1
+CMP-00462,AREA-0000,Kedah,Sungai Petani,5.545152,100.394083,4G,Moderate,17/12/2025,No Connectivity,4G,Submitted,28/11/2025,154,4,0
+CMP-00463,AREA-0004,Johor,Johor Bahru,1.262743,103.955066,Fiber,Moderate,12/1/2026,Call Drop,5G,In Progress,2/12/2025,2537,0,1
+CMP-00464,AREA-0045,Perak,Taiping,4.138174,100.739629,Fiber,Moderate,11/1/2026,Poor Coverage,5G,In Progress,18/10/2025,1409,1,1
+CMP-00465,AREA-0014,Johor,Kulai,2.113018,102.984693,4G,Good,11/1/2026,Poor Coverage,Fiber,Submitted,8/12/2025,784,1,0
+CMP-00466,AREA-0000,Kedah,Sungai Petani,6.315991,100.392196,4G,Moderate,17/12/2025,Slow Speed,5G,Submitted,29/10/2025,3175,0,0
+CMP-00467,AREA-0012,Sarawak,Kuching,3.250796,112.704372,4G,Good,5/1/2026,Service Outage,5G,Resolved,8/10/2025,3464,1,0
+CMP-00468,AREA-0021,Pahang,Temerloh,3.50672,103.845263,4G,Good,29/12/2025,Service Outage,5G,Resolved,27/10/2025,245,5,0
+CMP-00469,AREA-0002,Sarawak,Miri,1.638837,113.189564,5G,Moderate,31/12/2025,Poor Coverage,4G,In Progress,18/10/2025,3247,5,1
+CMP-00470,AREA-0090,Johor,Batu Pahat,1.600924,102.146402,5G,Poor,27/12/2025,No Connectivity,4G,Submitted,1/12/2025,3110,0,1
+CMP-00471,AREA-0001,Penang,Seberang Perai,5.414354,100.403411,4G,Good,2/1/2026,Service Outage,Fiber,In Progress,4/9/2025,1500,4,0
+CMP-00472,AREA-0012,Sarawak,Kuching,4.738052,111.618983,4G,Good,5/1/2026,Slow Speed,Fiber,Resolved,16/12/2025,1705,4,0
+CMP-00473,AREA-0002,Sarawak,Miri,3.208578,113.524163,5G,Moderate,31/12/2025,No Connectivity,5G,Submitted,27/12/2025,2806,0,0
+CMP-00474,AREA-0005,Kedah,Alor Setar,5.699722,100.361054,5G,Poor,3/1/2026,Slow Speed,Fiber,Resolved,20/12/2025,537,4,0
+CMP-00475,AREA-0023,Selangor,Hulu Langat,3.158616,101.450055,4G,Good,26/12/2025,No Connectivity,5G,Resolved,30/10/2025,1890,4,1
+CMP-00476,AREA-0003,Penang,George Town,5.453486,100.438018,Fiber,Good,4/1/2026,Call Drop,5G,Resolved,28/11/2025,1841,5,0
+CMP-00477,AREA-0013,Pahang,Kuantan,3.138414,103.966293,5G,Poor,22/12/2025,No Connectivity,4G,In Progress,22/12/2025,920,4,0
+CMP-00478,AREA-0012,Sarawak,Kuching,1.764862,110.836012,4G,Good,5/1/2026,Call Drop,Fiber,In Progress,6/9/2025,2455,2,0
+CMP-00479,AREA-0041,Perak,Ipoh,4.51412,101.478939,5G,Moderate,20/12/2025,Call Drop,5G,Resolved,23/12/2025,524,3,0
+CMP-00480,AREA-0014,Johor,Kulai,2.423759,103.5275,4G,Good,11/1/2026,Poor Coverage,Fiber,Submitted,15/12/2025,2875,1,0
+CMP-00481,AREA-0014,Johor,Kulai,2.228875,102.362487,4G,Good,11/1/2026,Slow Speed,4G,Submitted,9/11/2025,1529,2,0
+CMP-00482,AREA-0003,Penang,George Town,5.375051,100.403259,Fiber,Good,4/1/2026,Slow Speed,4G,Submitted,30/9/2025,2950,4,0
+CMP-00483,AREA-0013,Pahang,Kuantan,3.372175,103.353575,5G,Poor,22/12/2025,Call Drop,5G,Submitted,22/12/2025,35,5,0
+CMP-00484,AREA-0004,Johor,Johor Bahru,2.015185,103.875198,Fiber,Moderate,12/1/2026,Service Outage,4G,In Progress,23/10/2025,684,0,1
+CMP-00485,AREA-0000,Kedah,Sungai Petani,5.164165,100.467196,4G,Moderate,17/12/2025,No Connectivity,5G,Submitted,28/11/2025,19,4,0
+CMP-00486,AREA-0014,Johor,Kulai,1.576139,102.47395,4G,Good,11/1/2026,Call Drop,5G,Resolved,29/10/2025,2368,5,0
+CMP-00487,AREA-0022,Sabah,Sandakan,5.811731,116.412007,4G,Good,5/1/2026,No Connectivity,Fiber,In Progress,15/12/2025,2559,3,0
+CMP-00488,AREA-0002,Sarawak,Miri,3.233744,111.592481,5G,Moderate,31/12/2025,Service Outage,Fiber,In Progress,21/10/2025,399,4,0
+CMP-00489,AREA-0007,Sabah,Kota Kinabalu,4.838445,116.600464,4G,Good,17/12/2025,Slow Speed,Fiber,Resolved,3/12/2025,2701,0,0
+CMP-00490,AREA-0022,Sabah,Sandakan,5.990212,115.902965,4G,Good,5/1/2026,Poor Coverage,Fiber,Resolved,27/9/2025,971,5,0
+CMP-00491,AREA-0013,Pahang,Kuantan,3.171466,103.002151,5G,Poor,22/12/2025,Call Drop,Fiber,Submitted,28/12/2025,1906,5,0
+CMP-00492,AREA-0022,Sabah,Sandakan,4.550042,115.893512,4G,Good,5/1/2026,No Connectivity,4G,Resolved,12/10/2025,2518,5,0
+CMP-00493,AREA-0022,Sabah,Sandakan,4.611604,116.602916,4G,Good,5/1/2026,Service Outage,Fiber,In Progress,1/9/2025,1166,3,0
+CMP-00494,AREA-0002,Sarawak,Miri,3.416428,110.216956,5G,Moderate,31/12/2025,Poor Coverage,Fiber,Submitted,28/10/2025,1115,4,0
+CMP-00495,AREA-0021,Pahang,Temerloh,3.518084,102.999243,4G,Good,29/12/2025,Service Outage,4G,Resolved,18/10/2025,3425,3,1
+CMP-00496,AREA-0023,Selangor,Hulu Langat,3.220627,101.890962,4G,Good,26/12/2025,No Connectivity,4G,In Progress,19/11/2025,833,1,0
+CMP-00497,AREA-0007,Sabah,Kota Kinabalu,4.10956,115.628177,4G,Good,17/12/2025,No Connectivity,5G,In Progress,1/12/2025,1823,1,0
+CMP-00498,AREA-0001,Penang,Seberang Perai,5.360806,100.423804,4G,Good,2/1/2026,Service Outage,Fiber,Resolved,21/11/2025,2774,4,0
+CMP-00499,AREA-0023,Selangor,Hulu Langat,2.984494,101.50641,4G,Good,26/12/2025,Call Drop,Fiber,Submitted,10/12/2025,1982,3,0
+CMP-00500,AREA-0012,Sarawak,Kuching,3.795963,112.89856,4G,Good,5/1/2026,Call Drop,Fiber,In Progress,12/12/2025,853,0,0
+CMP-00501,AREA-0012,Sarawak,Kuching,2.378362,113.527141,4G,Good,5/1/2026,No Connectivity,4G,Submitted,5/11/2025,50,5,0
+CMP-00502,AREA-0022,Sabah,Sandakan,5.649825,115.744348,4G,Good,5/1/2026,Slow Speed,5G,In Progress,16/10/2025,574,5,1
+CMP-00503,AREA-0039,Selangor,Petaling,3.036634,101.742834,5G,Moderate,3/1/2026,Poor Coverage,4G,In Progress,24/9/2025,3261,4,0
+CMP-00504,AREA-0002,Sarawak,Miri,3.710744,112.241043,5G,Moderate,31/12/2025,Call Drop,4G,In Progress,9/10/2025,1148,1,0
+CMP-00505,AREA-0012,Sarawak,Kuching,1.567966,112.346268,4G,Good,5/1/2026,Poor Coverage,Fiber,In Progress,18/10/2025,2197,1,0
+CMP-00506,AREA-0013,Pahang,Kuantan,3.175355,102.734197,5G,Poor,22/12/2025,Service Outage,5G,Resolved,9/12/2025,2361,5,0
+CMP-00507,AREA-0003,Penang,George Town,5.212784,100.245449,Fiber,Good,4/1/2026,Call Drop,Fiber,Resolved,18/11/2025,2617,4,0
+CMP-00508,AREA-0014,Johor,Kulai,1.558608,103.529606,4G,Good,11/1/2026,Service Outage,Fiber,In Progress,16/9/2025,3413,3,0
+CMP-00509,AREA-0003,Penang,George Town,5.29855,100.324943,Fiber,Good,4/1/2026,Slow Speed,4G,In Progress,10/10/2025,2352,1,0
+CMP-00510,AREA-0005,Kedah,Alor Setar,5.931119,100.440865,5G,Poor,3/1/2026,Service Outage,Fiber,In Progress,18/12/2025,1715,3,1
+CMP-00511,AREA-0045,Perak,Taiping,4.051312,101.462845,Fiber,Moderate,11/1/2026,Slow Speed,4G,In Progress,19/12/2025,681,1,0
+CMP-00512,AREA-0012,Sarawak,Kuching,4.409662,111.584653,4G,Good,5/1/2026,Call Drop,Fiber,Resolved,18/9/2025,837,1,0
+CMP-00513,AREA-0004,Johor,Johor Bahru,2.046234,102.925809,Fiber,Moderate,12/1/2026,Slow Speed,4G,Resolved,23/12/2025,1077,2,0
+CMP-00514,AREA-0000,Kedah,Sungai Petani,5.728251,100.44176,4G,Moderate,17/12/2025,No Connectivity,5G,In Progress,7/9/2025,3050,1,0
+CMP-00515,AREA-0000,Kedah,Sungai Petani,5.758107,100.315044,4G,Moderate,17/12/2025,Call Drop,5G,Submitted,23/9/2025,2491,0,0
+CMP-00516,AREA-0001,Penang,Seberang Perai,5.385665,100.381844,4G,Good,2/1/2026,Slow Speed,5G,In Progress,11/9/2025,2660,4,0
+CMP-00517,AREA-0007,Sabah,Kota Kinabalu,5.529169,116.132838,4G,Good,17/12/2025,No Connectivity,Fiber,In Progress,28/12/2025,3040,4,0
+CMP-00518,AREA-0012,Sarawak,Kuching,4.778529,113.636456,4G,Good,5/1/2026,No Connectivity,5G,Resolved,14/10/2025,2311,3,1
+CMP-00519,AREA-0039,Selangor,Petaling,3.297562,101.408487,5G,Moderate,3/1/2026,Poor Coverage,Fiber,In Progress,9/9/2025,3124,1,0
+CMP-00520,AREA-0004,Johor,Johor Bahru,1.708838,103.992534,Fiber,Moderate,12/1/2026,No Connectivity,Fiber,In Progress,22/12/2025,1595,0,0
+CMP-00521,AREA-0001,Penang,Seberang Perai,5.435928,100.470662,4G,Good,2/1/2026,No Connectivity,Fiber,Submitted,7/11/2025,3051,3,1
+CMP-00522,AREA-0001,Penang,Seberang Perai,5.368948,100.282222,4G,Good,2/1/2026,Service Outage,4G,Submitted,14/10/2025,4,2,0
+CMP-00523,AREA-0007,Sabah,Kota Kinabalu,5.020667,116.581629,4G,Good,17/12/2025,Slow Speed,Fiber,Resolved,13/10/2025,1126,3,0
+CMP-00524,AREA-0005,Kedah,Alor Setar,6.239108,100.35017,5G,Poor,3/1/2026,Slow Speed,4G,In Progress,17/11/2025,1219,3,0
+CMP-00525,AREA-0021,Pahang,Temerloh,3.941909,103.225596,4G,Good,29/12/2025,Service Outage,4G,In Progress,20/12/2025,773,1,0
+CMP-00526,AREA-0004,Johor,Johor Bahru,1.2368,103.574832,Fiber,Moderate,12/1/2026,Poor Coverage,Fiber,In Progress,3/10/2025,876,2,0
+CMP-00527,AREA-0000,Kedah,Sungai Petani,5.154344,100.462402,4G,Moderate,17/12/2025,Poor Coverage,5G,In Progress,4/12/2025,991,3,1
+CMP-00528,AREA-0022,Sabah,Sandakan,4.705873,115.557944,4G,Good,5/1/2026,Slow Speed,4G,In Progress,7/12/2025,2931,0,0
+CMP-00529,AREA-0003,Penang,George Town,5.408378,100.382796,Fiber,Good,4/1/2026,No Connectivity,5G,In Progress,8/9/2025,3421,0,0
+CMP-00530,AREA-0000,Kedah,Sungai Petani,5.606479,100.468306,4G,Moderate,17/12/2025,Service Outage,Fiber,In Progress,3/9/2025,46,4,0
+CMP-00531,AREA-0007,Sabah,Kota Kinabalu,5.718366,116.76148,4G,Good,17/12/2025,Poor Coverage,Fiber,Submitted,13/9/2025,2914,2,0
+CMP-00532,AREA-0001,Penang,Seberang Perai,5.44852,100.238473,4G,Good,2/1/2026,Call Drop,Fiber,Submitted,19/10/2025,2870,2,0
+CMP-00533,AREA-0023,Selangor,Hulu Langat,2.831764,101.636066,4G,Good,26/12/2025,Call Drop,Fiber,Resolved,8/12/2025,2983,4,0
+CMP-00534,AREA-0013,Pahang,Kuantan,3.041329,102.982873,5G,Poor,22/12/2025,No Connectivity,4G,Submitted,21/11/2025,2703,3,1
+CMP-00535,AREA-0045,Perak,Taiping,4.832014,100.710806,Fiber,Moderate,11/1/2026,Slow Speed,4G,Resolved,25/10/2025,268,2,0
+CMP-00536,AREA-0005,Kedah,Alor Setar,5.534373,100.406848,5G,Poor,3/1/2026,Service Outage,4G,Submitted,12/12/2025,369,0,0
+CMP-00537,AREA-0001,Penang,Seberang Perai,5.372243,100.267626,4G,Good,2/1/2026,No Connectivity,5G,Submitted,5/12/2025,635,0,0
+CMP-00538,AREA-0005,Kedah,Alor Setar,6.442646,100.453849,5G,Poor,3/1/2026,Poor Coverage,5G,In Progress,31/10/2025,1129,1,0
+CMP-00539,AREA-0000,Kedah,Sungai Petani,5.32585,100.335813,4G,Moderate,17/12/2025,Call Drop,Fiber,Submitted,11/10/2025,1693,2,0
+CMP-00540,AREA-0012,Sarawak,Kuching,4.673816,113.439585,4G,Good,5/1/2026,Call Drop,Fiber,In Progress,27/11/2025,1682,3,0
+CMP-00541,AREA-0041,Perak,Ipoh,4.649248,101.083015,5G,Moderate,20/12/2025,No Connectivity,Fiber,Resolved,6/11/2025,656,4,0
+CMP-00542,AREA-0022,Sabah,Sandakan,4.232342,115.682303,4G,Good,5/1/2026,No Connectivity,4G,In Progress,23/10/2025,119,4,0
+CMP-00543,AREA-0007,Sabah,Kota Kinabalu,4.857351,116.829822,4G,Good,17/12/2025,Poor Coverage,Fiber,Submitted,6/11/2025,830,3,0
+CMP-00544,AREA-0021,Pahang,Temerloh,3.961684,103.986953,4G,Good,29/12/2025,Service Outage,Fiber,Resolved,25/10/2025,1810,5,0
+CMP-00545,AREA-0041,Perak,Ipoh,4.573477,101.002823,5G,Moderate,20/12/2025,Slow Speed,4G,Submitted,9/11/2025,1081,1,1
+CMP-00546,AREA-0012,Sarawak,Kuching,4.714967,111.358233,4G,Good,5/1/2026,Slow Speed,Fiber,Submitted,10/11/2025,1974,4,0
+CMP-00547,AREA-0000,Kedah,Sungai Petani,6.359679,100.332106,4G,Moderate,17/12/2025,Slow Speed,4G,In Progress,16/9/2025,1369,2,0
+CMP-00548,AREA-0090,Johor,Batu Pahat,1.283088,102.455579,5G,Poor,27/12/2025,Slow Speed,5G,In Progress,22/10/2025,740,1,0
+CMP-00549,AREA-0001,Penang,Seberang Perai,5.4923,100.374401,4G,Good,2/1/2026,No Connectivity,5G,In Progress,3/9/2025,3545,2,1
+CMP-00550,AREA-0014,Johor,Kulai,2.048012,102.336505,4G,Good,11/1/2026,Slow Speed,Fiber,In Progress,5/10/2025,116,0,1
+CMP-00551,AREA-0000,Kedah,Sungai Petani,6.119403,100.460006,4G,Moderate,17/12/2025,Slow Speed,5G,Resolved,27/11/2025,1853,1,0
+CMP-00552,AREA-0045,Perak,Taiping,4.125213,100.615029,Fiber,Moderate,11/1/2026,Service Outage,5G,Submitted,18/9/2025,2838,4,1
+CMP-00553,AREA-0003,Penang,George Town,5.412963,100.215238,Fiber,Good,4/1/2026,Call Drop,5G,Submitted,6/10/2025,1150,1,0
+CMP-00554,AREA-0041,Perak,Ipoh,4.827901,100.850129,5G,Moderate,20/12/2025,Service Outage,5G,In Progress,4/11/2025,3464,1,0
+CMP-00555,AREA-0012,Sarawak,Kuching,3.898827,111.645429,4G,Good,5/1/2026,Service Outage,4G,Submitted,2/9/2025,1931,1,0
+CMP-00556,AREA-0039,Selangor,Petaling,2.91921,101.790298,5G,Moderate,3/1/2026,Service Outage,Fiber,Submitted,7/11/2025,1012,5,0
+CMP-00557,AREA-0022,Sabah,Sandakan,4.540354,116.021676,4G,Good,5/1/2026,Poor Coverage,Fiber,In Progress,9/11/2025,1664,1,0
+CMP-00558,AREA-0001,Penang,Seberang Perai,5.219135,100.337927,4G,Good,2/1/2026,Poor Coverage,4G,Submitted,5/11/2025,1081,2,1
+CMP-00559,AREA-0021,Pahang,Temerloh,3.056284,103.027029,4G,Good,29/12/2025,Slow Speed,Fiber,Resolved,31/10/2025,633,0,0
+CMP-00560,AREA-0013,Pahang,Kuantan,3.629916,103.871743,5G,Poor,22/12/2025,No Connectivity,4G,Submitted,24/10/2025,512,3,0
+CMP-00561,AREA-0003,Penang,George Town,5.214707,100.326464,Fiber,Good,4/1/2026,Slow Speed,Fiber,Submitted,26/9/2025,2849,1,0
+CMP-00562,AREA-0022,Sabah,Sandakan,4.937306,115.579348,4G,Good,5/1/2026,Slow Speed,5G,In Progress,31/12/2025,1119,4,0
+CMP-00563,AREA-0001,Penang,Seberang Perai,5.377616,100.267603,4G,Good,2/1/2026,Service Outage,4G,In Progress,24/12/2025,1141,1,0
+CMP-00564,AREA-0004,Johor,Johor Bahru,1.430545,102.527811,Fiber,Moderate,12/1/2026,Poor Coverage,4G,Resolved,25/10/2025,559,4,0
+CMP-00565,AREA-0013,Pahang,Kuantan,3.635523,103.649562,5G,Poor,22/12/2025,No Connectivity,5G,In Progress,5/9/2025,487,2,0
+CMP-00566,AREA-0041,Perak,Ipoh,4.989723,100.52055,5G,Moderate,20/12/2025,Poor Coverage,4G,Submitted,16/12/2025,3308,4,1
+CMP-00567,AREA-0003,Penang,George Town,5.295611,100.28475,Fiber,Good,4/1/2026,Call Drop,5G,In Progress,23/9/2025,896,3,0
+CMP-00568,AREA-0007,Sabah,Kota Kinabalu,5.482937,116.829658,4G,Good,17/12/2025,Poor Coverage,Fiber,In Progress,17/11/2025,3343,0,0
+CMP-00569,AREA-0001,Penang,Seberang Perai,5.212913,100.20568,4G,Good,2/1/2026,Poor Coverage,4G,Resolved,19/10/2025,1212,4,0
+CMP-00570,AREA-0005,Kedah,Alor Setar,5.849099,100.366369,5G,Poor,3/1/2026,No Connectivity,5G,Submitted,28/12/2025,703,4,0
+CMP-00571,AREA-0001,Penang,Seberang Perai,5.280448,100.21288,4G,Good,2/1/2026,Slow Speed,4G,In Progress,10/10/2025,1470,0,0
+CMP-00572,AREA-0005,Kedah,Alor Setar,5.727402,100.460802,5G,Poor,3/1/2026,Call Drop,5G,Submitted,1/12/2025,580,3,0
+CMP-00573,AREA-0012,Sarawak,Kuching,2.393003,111.52387,4G,Good,5/1/2026,Poor Coverage,5G,Submitted,4/12/2025,2837,1,1
+CMP-00574,AREA-0002,Sarawak,Miri,2.372317,110.39059,5G,Moderate,31/12/2025,No Connectivity,Fiber,Submitted,6/11/2025,2908,4,0
+CMP-00575,AREA-0005,Kedah,Alor Setar,5.671637,100.40686,5G,Poor,3/1/2026,Call Drop,5G,In Progress,24/12/2025,2294,0,1
+CMP-00576,AREA-0012,Sarawak,Kuching,2.910913,110.860168,4G,Good,5/1/2026,Service Outage,4G,Submitted,21/11/2025,3147,2,1
+CMP-00577,AREA-0022,Sabah,Sandakan,4.413695,115.551915,4G,Good,5/1/2026,No Connectivity,4G,Submitted,24/11/2025,153,0,0
+CMP-00578,AREA-0041,Perak,Ipoh,4.228634,101.039919,5G,Moderate,20/12/2025,Slow Speed,5G,In Progress,9/11/2025,1679,2,1
+CMP-00579,AREA-0039,Selangor,Petaling,3.172333,101.68179,5G,Moderate,3/1/2026,No Connectivity,5G,Submitted,7/10/2025,3506,3,0
+CMP-00580,AREA-0045,Perak,Taiping,4.529366,100.835984,Fiber,Moderate,11/1/2026,Slow Speed,4G,In Progress,30/10/2025,996,1,1
+CMP-00581,AREA-0013,Pahang,Kuantan,3.668909,102.930395,5G,Poor,22/12/2025,Slow Speed,Fiber,In Progress,4/12/2025,3157,0,0
+CMP-00582,AREA-0003,Penang,George Town,5.257468,100.464577,Fiber,Good,4/1/2026,Service Outage,Fiber,Submitted,10/11/2025,2744,5,1
+CMP-00583,AREA-0014,Johor,Kulai,2.352915,102.203724,4G,Good,11/1/2026,Slow Speed,4G,Resolved,26/12/2025,3356,4,1
+CMP-00584,AREA-0002,Sarawak,Miri,2.884868,112.330617,5G,Moderate,31/12/2025,Call Drop,4G,Submitted,24/9/2025,1243,3,1
+CMP-00585,AREA-0013,Pahang,Kuantan,3.167147,102.568943,5G,Poor,22/12/2025,Call Drop,5G,Submitted,27/11/2025,1092,0,0
+CMP-00586,AREA-0014,Johor,Kulai,2.27031,102.341923,4G,Good,11/1/2026,Poor Coverage,5G,In Progress,14/11/2025,3118,4,0
+CMP-00587,AREA-0012,Sarawak,Kuching,1.831082,111.089809,4G,Good,5/1/2026,Poor Coverage,4G,Submitted,20/11/2025,1008,0,0
+CMP-00588,AREA-0030,Selangor,Gombak,2.978884,101.855063,4G,Moderate,28/12/2025,Service Outage,Fiber,Resolved,18/9/2025,2141,2,0
+CMP-00589,AREA-0041,Perak,Ipoh,4.148043,100.51931,5G,Moderate,20/12/2025,Poor Coverage,Fiber,Resolved,23/11/2025,1773,0,0
+CMP-00590,AREA-0013,Pahang,Kuantan,3.104324,102.893906,5G,Poor,22/12/2025,Call Drop,Fiber,Submitted,26/10/2025,957,5,0
+CMP-00591,AREA-0090,Johor,Batu Pahat,1.841321,102.283598,5G,Poor,27/12/2025,Service Outage,5G,Resolved,12/10/2025,3059,0,0
+CMP-00592,AREA-0023,Selangor,Hulu Langat,3.223433,101.637934,4G,Good,26/12/2025,Slow Speed,5G,Submitted,17/9/2025,452,0,1
+CMP-00593,AREA-0090,Johor,Batu Pahat,2.21844,103.355504,5G,Poor,27/12/2025,Call Drop,5G,In Progress,30/9/2025,1227,5,0
+CMP-00594,AREA-0003,Penang,George Town,5.364332,100.469782,Fiber,Good,4/1/2026,Call Drop,4G,Submitted,21/10/2025,2959,3,1
+CMP-00595,AREA-0030,Selangor,Gombak,3.148357,101.67574,4G,Moderate,28/12/2025,No Connectivity,4G,Resolved,26/9/2025,2265,0,0
+CMP-00596,AREA-0001,Penang,Seberang Perai,5.318183,100.361945,4G,Good,2/1/2026,Slow Speed,Fiber,Submitted,13/12/2025,2521,5,1
+CMP-00597,AREA-0022,Sabah,Sandakan,5.698333,116.04983,4G,Good,5/1/2026,Poor Coverage,Fiber,In Progress,22/12/2025,2479,4,1
+CMP-00598,AREA-0003,Penang,George Town,5.311554,100.326024,Fiber,Good,4/1/2026,Slow Speed,5G,Submitted,19/11/2025,2388,2,0
+CMP-00599,AREA-0013,Pahang,Kuantan,3.755475,103.647191,5G,Poor,22/12/2025,Poor Coverage,4G,Submitted,16/10/2025,550,2,0
+CMP-00600,AREA-0013,Pahang,Kuantan,3.961316,103.521574,5G,Poor,22/12/2025,Service Outage,5G,Resolved,18/12/2025,1635,0,0
+CMP-00601,AREA-0030,Selangor,Gombak,3.107553,101.567877,4G,Moderate,28/12/2025,Poor Coverage,5G,Submitted,5/9/2025,1312,3,0
+CMP-00602,AREA-0023,Selangor,Hulu Langat,2.821164,101.475191,4G,Good,26/12/2025,Service Outage,5G,Submitted,27/10/2025,3325,3,0
+CMP-00603,AREA-0002,Sarawak,Miri,3.549451,113.423609,5G,Moderate,31/12/2025,No Connectivity,5G,Resolved,17/9/2025,1757,4,0
+CMP-00604,AREA-0001,Penang,Seberang Perai,5.32086,100.324079,4G,Good,2/1/2026,Poor Coverage,Fiber,Resolved,14/10/2025,356,0,0
+CMP-00605,AREA-0045,Perak,Taiping,4.793711,100.990626,Fiber,Moderate,11/1/2026,Service Outage,Fiber,Submitted,6/11/2025,2070,2,0
+CMP-00606,AREA-0023,Selangor,Hulu Langat,3.180835,101.695615,4G,Good,26/12/2025,No Connectivity,4G,In Progress,6/10/2025,1785,3,0
+CMP-00607,AREA-0039,Selangor,Petaling,2.864435,101.803718,5G,Moderate,3/1/2026,Service Outage,5G,In Progress,28/12/2025,2569,0,0
+CMP-00608,AREA-0090,Johor,Batu Pahat,1.256793,103.031501,5G,Poor,27/12/2025,Call Drop,5G,In Progress,18/11/2025,1781,3,0
+CMP-00609,AREA-0012,Sarawak,Kuching,4.201261,113.339753,4G,Good,5/1/2026,No Connectivity,5G,Resolved,16/9/2025,3171,5,1
+CMP-00610,AREA-0045,Perak,Taiping,4.702348,101.348591,Fiber,Moderate,11/1/2026,Call Drop,5G,Resolved,18/9/2025,2849,3,0
+CMP-00611,AREA-0000,Kedah,Sungai Petani,5.7919,100.346002,4G,Moderate,17/12/2025,Poor Coverage,4G,Resolved,17/9/2025,3251,2,1
+CMP-00612,AREA-0000,Kedah,Sungai Petani,5.156759,100.337686,4G,Moderate,17/12/2025,Poor Coverage,5G,Submitted,14/9/2025,3294,1,0
+CMP-00613,AREA-0041,Perak,Ipoh,4.588037,100.80315,5G,Moderate,20/12/2025,Call Drop,4G,In Progress,4/11/2025,2809,4,0
+CMP-00614,AREA-0003,Penang,George Town,5.380975,100.46586,Fiber,Good,4/1/2026,Slow Speed,5G,In Progress,13/9/2025,2489,4,0
+CMP-00615,AREA-0014,Johor,Kulai,2.212783,102.203373,4G,Good,11/1/2026,Call Drop,4G,Submitted,31/10/2025,1631,2,0
+CMP-00616,AREA-0023,Selangor,Hulu Langat,3.062316,101.691364,4G,Good,26/12/2025,Service Outage,5G,Resolved,21/11/2025,2816,3,0
+CMP-00617,AREA-0000,Kedah,Sungai Petani,5.780311,100.495169,4G,Moderate,17/12/2025,Service Outage,5G,Resolved,12/12/2025,1015,0,0
+CMP-00618,AREA-0013,Pahang,Kuantan,3.571077,102.732139,5G,Poor,22/12/2025,Call Drop,Fiber,Resolved,18/11/2025,1348,3,0
+CMP-00619,AREA-0014,Johor,Kulai,2.052987,102.299244,4G,Good,11/1/2026,Slow Speed,5G,Submitted,2/9/2025,515,2,0
+CMP-00620,AREA-0007,Sabah,Kota Kinabalu,5.210853,116.206001,4G,Good,17/12/2025,Service Outage,Fiber,Resolved,19/9/2025,3087,4,0
+CMP-00621,AREA-0022,Sabah,Sandakan,4.431034,115.997993,4G,Good,5/1/2026,Poor Coverage,Fiber,In Progress,11/10/2025,2839,3,0
+CMP-00622,AREA-0045,Perak,Taiping,4.238681,101.073735,Fiber,Moderate,11/1/2026,Service Outage,5G,Resolved,13/9/2025,335,4,0
+CMP-00623,AREA-0030,Selangor,Gombak,3.291116,101.599776,4G,Moderate,28/12/2025,Slow Speed,5G,Resolved,11/12/2025,1782,0,0
+CMP-00624,AREA-0022,Sabah,Sandakan,4.842768,116.529457,4G,Good,5/1/2026,Service Outage,5G,Submitted,9/10/2025,2305,4,0
+CMP-00625,AREA-0013,Pahang,Kuantan,3.441615,103.075695,5G,Poor,22/12/2025,No Connectivity,5G,Submitted,14/9/2025,496,4,0
+CMP-00626,AREA-0030,Selangor,Gombak,2.87711,101.777569,4G,Moderate,28/12/2025,Slow Speed,5G,Resolved,14/11/2025,895,1,1
+CMP-00627,AREA-0005,Kedah,Alor Setar,5.165411,100.325746,5G,Poor,3/1/2026,Call Drop,4G,In Progress,18/12/2025,2207,1,0
+CMP-00628,AREA-0023,Selangor,Hulu Langat,3.110988,101.576539,4G,Good,26/12/2025,Call Drop,5G,Submitted,3/11/2025,3546,5,0
+CMP-00629,AREA-0001,Penang,Seberang Perai,5.363729,100.202156,4G,Good,2/1/2026,Poor Coverage,5G,Resolved,12/11/2025,851,1,1
+CMP-00630,AREA-0013,Pahang,Kuantan,3.951185,103.096424,5G,Poor,22/12/2025,Service Outage,4G,Submitted,9/12/2025,1687,4,0
+CMP-00631,AREA-0007,Sabah,Kota Kinabalu,4.047148,116.061301,4G,Good,17/12/2025,Poor Coverage,5G,In Progress,17/12/2025,1931,2,0
+CMP-00632,AREA-0041,Perak,Ipoh,4.475244,101.253316,5G,Moderate,20/12/2025,Slow Speed,Fiber,In Progress,15/11/2025,2737,4,0
+CMP-00633,AREA-0090,Johor,Batu Pahat,2.447018,102.817354,5G,Poor,27/12/2025,Slow Speed,Fiber,Submitted,25/9/2025,2427,2,0
+CMP-00634,AREA-0004,Johor,Johor Bahru,1.428566,103.298167,Fiber,Moderate,12/1/2026,Poor Coverage,4G,Submitted,10/10/2025,1568,2,0
+CMP-00635,AREA-0000,Kedah,Sungai Petani,5.166454,100.432065,4G,Moderate,17/12/2025,Poor Coverage,5G,Submitted,17/12/2025,956,1,0
+CMP-00636,AREA-0021,Pahang,Temerloh,3.855916,103.075728,4G,Good,29/12/2025,No Connectivity,5G,Submitted,10/9/2025,2738,3,0
+CMP-00637,AREA-0000,Kedah,Sungai Petani,5.326612,100.49691,4G,Moderate,17/12/2025,Slow Speed,Fiber,In Progress,25/12/2025,3498,0,0
+CMP-00638,AREA-0090,Johor,Batu Pahat,1.506041,103.587184,5G,Poor,27/12/2025,Poor Coverage,4G,In Progress,5/11/2025,1636,1,1
+CMP-00639,AREA-0041,Perak,Ipoh,4.581782,100.682766,5G,Moderate,20/12/2025,No Connectivity,Fiber,In Progress,24/10/2025,1291,1,1
+CMP-00640,AREA-0007,Sabah,Kota Kinabalu,5.330212,116.625213,4G,Good,17/12/2025,Call Drop,4G,Resolved,4/10/2025,1440,3,0
+CMP-00641,AREA-0030,Selangor,Gombak,2.906752,101.761658,4G,Moderate,28/12/2025,Service Outage,5G,Resolved,10/11/2025,1191,0,0
+CMP-00642,AREA-0000,Kedah,Sungai Petani,5.919278,100.392396,4G,Moderate,17/12/2025,Poor Coverage,5G,Submitted,26/10/2025,1066,4,0
+CMP-00643,AREA-0001,Penang,Seberang Perai,5.414603,100.379642,4G,Good,2/1/2026,No Connectivity,4G,Submitted,24/9/2025,284,5,0
+CMP-00644,AREA-0041,Perak,Ipoh,4.379953,100.527777,5G,Moderate,20/12/2025,Slow Speed,5G,In Progress,3/9/2025,2444,5,0
+CMP-00645,AREA-0002,Sarawak,Miri,3.952737,110.082789,5G,Moderate,31/12/2025,Poor Coverage,4G,In Progress,27/11/2025,11,4,0
+CMP-00646,AREA-0022,Sabah,Sandakan,5.065621,115.920706,4G,Good,5/1/2026,Call Drop,Fiber,Submitted,11/9/2025,1630,1,1
+CMP-00647,AREA-0022,Sabah,Sandakan,5.723358,116.279755,4G,Good,5/1/2026,Service Outage,4G,Submitted,8/10/2025,3373,0,0
+CMP-00648,AREA-0041,Perak,Ipoh,4.604086,101.051899,5G,Moderate,20/12/2025,Service Outage,5G,In Progress,8/12/2025,3324,1,0
+CMP-00649,AREA-0007,Sabah,Kota Kinabalu,5.120974,116.003847,4G,Good,17/12/2025,Poor Coverage,5G,In Progress,9/10/2025,2546,2,0
+CMP-00650,AREA-0001,Penang,Seberang Perai,5.236638,100.32355,4G,Good,2/1/2026,Poor Coverage,4G,Resolved,11/10/2025,753,1,0
+CMP-00651,AREA-0004,Johor,Johor Bahru,1.979824,103.186687,Fiber,Moderate,12/1/2026,Poor Coverage,Fiber,In Progress,3/11/2025,2082,1,1
+CMP-00652,AREA-0013,Pahang,Kuantan,3.776753,102.761156,5G,Poor,22/12/2025,No Connectivity,4G,In Progress,6/10/2025,2774,4,0
+CMP-00653,AREA-0000,Kedah,Sungai Petani,5.121189,100.411823,4G,Moderate,17/12/2025,Slow Speed,5G,Submitted,7/10/2025,2896,4,0
+CMP-00654,AREA-0030,Selangor,Gombak,3.173543,101.633044,4G,Moderate,28/12/2025,Slow Speed,4G,Submitted,6/10/2025,89,4,0
+CMP-00655,AREA-0021,Pahang,Temerloh,3.874936,103.04439,4G,Good,29/12/2025,Poor Coverage,4G,Submitted,4/10/2025,775,5,0
+CMP-00656,AREA-0007,Sabah,Kota Kinabalu,5.117962,116.374918,4G,Good,17/12/2025,Call Drop,4G,Submitted,19/12/2025,2652,2,0
+CMP-00657,AREA-0045,Perak,Taiping,4.014108,100.512543,Fiber,Moderate,11/1/2026,Call Drop,5G,Submitted,13/12/2025,3017,4,0
+CMP-00658,AREA-0000,Kedah,Sungai Petani,5.620579,100.382331,4G,Moderate,17/12/2025,No Connectivity,Fiber,In Progress,21/12/2025,1625,0,0
+CMP-00659,AREA-0021,Pahang,Temerloh,3.251835,103.77551,4G,Good,29/12/2025,Slow Speed,4G,In Progress,14/9/2025,3069,5,0
+CMP-00660,AREA-0002,Sarawak,Miri,4.28551,112.231407,5G,Moderate,31/12/2025,Poor Coverage,4G,Resolved,9/12/2025,417,3,0
+CMP-00661,AREA-0001,Penang,Seberang Perai,5.347261,100.354263,4G,Good,2/1/2026,Service Outage,4G,Submitted,2/10/2025,114,0,0
+CMP-00662,AREA-0022,Sabah,Sandakan,5.152936,116.060563,4G,Good,5/1/2026,Slow Speed,5G,In Progress,4/12/2025,616,0,0
+CMP-00663,AREA-0007,Sabah,Kota Kinabalu,4.585169,116.822441,4G,Good,17/12/2025,Call Drop,Fiber,Submitted,15/11/2025,3267,4,0
+CMP-00664,AREA-0045,Perak,Taiping,4.171642,100.826143,Fiber,Moderate,11/1/2026,Slow Speed,5G,Submitted,5/12/2025,825,3,0
+CMP-00665,AREA-0012,Sarawak,Kuching,4.255754,112.667957,4G,Good,5/1/2026,No Connectivity,5G,Submitted,26/12/2025,3572,3,1
+CMP-00666,AREA-0000,Kedah,Sungai Petani,5.875291,100.460326,4G,Moderate,17/12/2025,No Connectivity,5G,Resolved,30/12/2025,1649,5,1
+CMP-00667,AREA-0002,Sarawak,Miri,4.980352,110.024987,5G,Moderate,31/12/2025,Slow Speed,5G,In Progress,4/9/2025,1516,3,1
+CMP-00668,AREA-0007,Sabah,Kota Kinabalu,5.383084,116.011198,4G,Good,17/12/2025,No Connectivity,Fiber,Resolved,14/9/2025,3146,2,0
+CMP-00669,AREA-0013,Pahang,Kuantan,3.15072,103.90325,5G,Poor,22/12/2025,Call Drop,Fiber,In Progress,13/11/2025,412,4,0
+CMP-00670,AREA-0045,Perak,Taiping,4.317608,101.179144,Fiber,Moderate,11/1/2026,Slow Speed,5G,In Progress,25/9/2025,3447,3,0
+CMP-00671,AREA-0004,Johor,Johor Bahru,2.350207,102.184215,Fiber,Moderate,12/1/2026,Service Outage,5G,Submitted,30/12/2025,3491,5,0
+CMP-00672,AREA-0090,Johor,Batu Pahat,2.495231,103.366344,5G,Poor,27/12/2025,Slow Speed,5G,Submitted,23/10/2025,728,2,1
+CMP-00673,AREA-0002,Sarawak,Miri,2.632114,111.962695,5G,Moderate,31/12/2025,Poor Coverage,5G,In Progress,8/12/2025,3348,1,0
+CMP-00674,AREA-0039,Selangor,Petaling,3.218544,101.690415,5G,Moderate,3/1/2026,Service Outage,4G,Resolved,6/10/2025,3068,1,0
+CMP-00675,AREA-0090,Johor,Batu Pahat,1.697985,103.614746,5G,Poor,27/12/2025,Call Drop,Fiber,Submitted,11/10/2025,2808,2,0
+CMP-00676,AREA-0001,Penang,Seberang Perai,5.390256,100.422471,4G,Good,2/1/2026,Call Drop,5G,Resolved,9/12/2025,675,5,0
+CMP-00677,AREA-0090,Johor,Batu Pahat,1.762013,102.894431,5G,Poor,27/12/2025,Slow Speed,Fiber,Resolved,8/9/2025,3465,2,0
+CMP-00678,AREA-0014,Johor,Kulai,2.099199,103.660682,4G,Good,11/1/2026,No Connectivity,5G,In Progress,1/12/2025,1892,4,0
+CMP-00679,AREA-0003,Penang,George Town,5.269904,100.404283,Fiber,Good,4/1/2026,Call Drop,4G,Resolved,10/10/2025,2504,4,0
+CMP-00680,AREA-0090,Johor,Batu Pahat,2.441823,102.299933,5G,Poor,27/12/2025,No Connectivity,Fiber,In Progress,3/9/2025,2967,1,0
+CMP-00681,AREA-0041,Perak,Ipoh,4.548118,101.49219,5G,Moderate,20/12/2025,Service Outage,4G,In Progress,21/9/2025,2239,3,0
+CMP-00682,AREA-0012,Sarawak,Kuching,2.707738,113.602136,4G,Good,5/1/2026,Slow Speed,5G,Resolved,1/11/2025,2786,5,0
+CMP-00683,AREA-0021,Pahang,Temerloh,3.766419,103.764122,4G,Good,29/12/2025,Service Outage,5G,Resolved,23/11/2025,1122,1,1
+CMP-00684,AREA-0041,Perak,Ipoh,4.962438,100.712941,5G,Moderate,20/12/2025,Service Outage,Fiber,Submitted,25/11/2025,1571,3,1
+CMP-00685,AREA-0003,Penang,George Town,5.276002,100.361043,Fiber,Good,4/1/2026,No Connectivity,Fiber,Resolved,30/9/2025,977,3,0
+CMP-00686,AREA-0045,Perak,Taiping,4.167705,100.705158,Fiber,Moderate,11/1/2026,Slow Speed,Fiber,In Progress,11/11/2025,1008,4,0
+CMP-00687,AREA-0030,Selangor,Gombak,3.075992,101.574321,4G,Moderate,28/12/2025,Call Drop,5G,Submitted,18/11/2025,2143,0,0
+CMP-00688,AREA-0000,Kedah,Sungai Petani,6.085078,100.367851,4G,Moderate,17/12/2025,Poor Coverage,Fiber,Submitted,8/11/2025,1687,0,0
+CMP-00689,AREA-0001,Penang,Seberang Perai,5.418458,100.495914,4G,Good,2/1/2026,Poor Coverage,Fiber,Submitted,8/12/2025,2710,2,0
+CMP-00690,AREA-0030,Selangor,Gombak,2.972783,101.663012,4G,Moderate,28/12/2025,Call Drop,5G,Resolved,26/12/2025,3261,4,1
+CMP-00691,AREA-0021,Pahang,Temerloh,3.011636,103.330617,4G,Good,29/12/2025,Slow Speed,4G,Submitted,21/9/2025,36,3,0
+CMP-00692,AREA-0045,Perak,Taiping,4.647365,100.805964,Fiber,Moderate,11/1/2026,Poor Coverage,5G,Resolved,18/9/2025,3440,5,1
+CMP-00693,AREA-0001,Penang,Seberang Perai,5.224537,100.41004,4G,Good,2/1/2026,No Connectivity,5G,Resolved,6/11/2025,1548,0,0
+CMP-00694,AREA-0030,Selangor,Gombak,3.255216,101.453502,4G,Moderate,28/12/2025,Service Outage,5G,In Progress,11/10/2025,2326,3,0
+CMP-00695,AREA-0007,Sabah,Kota Kinabalu,5.56736,116.92883,4G,Good,17/12/2025,Call Drop,4G,Resolved,27/10/2025,2264,0,0
+CMP-00696,AREA-0090,Johor,Batu Pahat,1.97723,102.756974,5G,Poor,27/12/2025,Call Drop,Fiber,Resolved,24/9/2025,2914,0,1
+CMP-00697,AREA-0041,Perak,Ipoh,4.090489,101.071634,5G,Moderate,20/12/2025,Service Outage,5G,Submitted,31/10/2025,872,0,0
+CMP-00698,AREA-0002,Sarawak,Miri,3.24816,113.290359,5G,Moderate,31/12/2025,Service Outage,Fiber,Submitted,6/9/2025,1821,5,0
+CMP-00699,AREA-0001,Penang,Seberang Perai,5.399795,100.30713,4G,Good,2/1/2026,No Connectivity,4G,In Progress,17/9/2025,1296,4,0
+CMP-00700,AREA-0005,Kedah,Alor Setar,5.906039,100.488119,5G,Poor,3/1/2026,Poor Coverage,4G,Submitted,12/12/2025,2109,5,0
+CMP-00701,AREA-0002,Sarawak,Miri,4.78249,110.600244,5G,Moderate,31/12/2025,Service Outage,5G,Submitted,18/10/2025,595,1,0
+CMP-00702,AREA-0030,Selangor,Gombak,3.250924,101.574405,4G,Moderate,28/12/2025,No Connectivity,Fiber,In Progress,28/10/2025,1903,3,0
+CMP-00703,AREA-0090,Johor,Batu Pahat,1.287968,103.693016,5G,Poor,27/12/2025,Call Drop,Fiber,In Progress,28/11/2025,728,4,0
+CMP-00704,AREA-0000,Kedah,Sungai Petani,5.183256,100.32369,4G,Moderate,17/12/2025,No Connectivity,5G,Resolved,17/12/2025,1365,4,0
+CMP-00705,AREA-0003,Penang,George Town,5.334736,100.321623,Fiber,Good,4/1/2026,Service Outage,Fiber,Submitted,10/10/2025,396,4,0
+CMP-00706,AREA-0045,Perak,Taiping,4.729504,101.470232,Fiber,Moderate,11/1/2026,No Connectivity,5G,Submitted,28/11/2025,698,4,0
+CMP-00707,AREA-0001,Penang,Seberang Perai,5.487919,100.313758,4G,Good,2/1/2026,No Connectivity,5G,In Progress,12/9/2025,3090,5,0
+CMP-00708,AREA-0030,Selangor,Gombak,3.273946,101.556531,4G,Moderate,28/12/2025,Call Drop,4G,In Progress,18/11/2025,2224,4,0
+CMP-00709,AREA-0041,Perak,Ipoh,4.088511,101.331368,5G,Moderate,20/12/2025,Service Outage,4G,Resolved,7/9/2025,1635,2,0
+CMP-00710,AREA-0045,Perak,Taiping,4.871565,100.622609,Fiber,Moderate,11/1/2026,Slow Speed,5G,In Progress,10/12/2025,395,3,0
+CMP-00711,AREA-0022,Sabah,Sandakan,4.14138,115.700033,4G,Good,5/1/2026,No Connectivity,Fiber,In Progress,20/9/2025,2492,4,1
+CMP-00712,AREA-0004,Johor,Johor Bahru,2.052294,103.256188,Fiber,Moderate,12/1/2026,Call Drop,5G,Submitted,11/10/2025,3304,3,0
+CMP-00713,AREA-0041,Perak,Ipoh,4.125817,100.623383,5G,Moderate,20/12/2025,Poor Coverage,4G,In Progress,27/12/2025,75,2,0
+CMP-00714,AREA-0005,Kedah,Alor Setar,5.467632,100.427329,5G,Poor,3/1/2026,Call Drop,4G,In Progress,31/10/2025,264,2,0
+CMP-00715,AREA-0004,Johor,Johor Bahru,2.158023,102.898133,Fiber,Moderate,12/1/2026,Service Outage,4G,In Progress,10/11/2025,2502,3,0
+CMP-00716,AREA-0007,Sabah,Kota Kinabalu,5.583837,116.763734,4G,Good,17/12/2025,Poor Coverage,5G,In Progress,27/9/2025,1819,0,0
+CMP-00717,AREA-0013,Pahang,Kuantan,3.241859,103.773682,5G,Poor,22/12/2025,Call Drop,4G,In Progress,12/10/2025,717,1,0
+CMP-00718,AREA-0000,Kedah,Sungai Petani,5.824954,100.375201,4G,Moderate,17/12/2025,No Connectivity,4G,In Progress,17/10/2025,2782,0,0
+CMP-00719,AREA-0005,Kedah,Alor Setar,5.531662,100.431494,5G,Poor,3/1/2026,Poor Coverage,4G,Submitted,11/12/2025,3455,0,0
+CMP-00720,AREA-0023,Selangor,Hulu Langat,2.873684,101.47938,4G,Good,26/12/2025,No Connectivity,4G,Submitted,15/11/2025,850,5,0
+CMP-00721,AREA-0045,Perak,Taiping,4.609375,101.110338,Fiber,Moderate,11/1/2026,Slow Speed,Fiber,Submitted,26/10/2025,3577,0,0
+CMP-00722,AREA-0004,Johor,Johor Bahru,1.311315,103.115679,Fiber,Moderate,12/1/2026,Call Drop,4G,Resolved,2/10/2025,1390,4,0
+CMP-00723,AREA-0007,Sabah,Kota Kinabalu,4.361961,116.984092,4G,Good,17/12/2025,No Connectivity,4G,Submitted,7/9/2025,143,5,0
+CMP-00724,AREA-0012,Sarawak,Kuching,2.526529,111.012774,4G,Good,5/1/2026,Call Drop,Fiber,In Progress,6/9/2025,884,5,0
+CMP-00725,AREA-0002,Sarawak,Miri,3.630951,109.879646,5G,Moderate,31/12/2025,No Connectivity,4G,Resolved,14/12/2025,3140,2,0
+CMP-00726,AREA-0021,Pahang,Temerloh,3.869912,103.065668,4G,Good,29/12/2025,Slow Speed,5G,Submitted,12/9/2025,3170,0,1
+CMP-00727,AREA-0022,Sabah,Sandakan,4.185277,116.054016,4G,Good,5/1/2026,Service Outage,5G,Submitted,22/11/2025,395,2,0
+CMP-00728,AREA-0022,Sabah,Sandakan,5.462752,116.521756,4G,Good,5/1/2026,Poor Coverage,5G,Submitted,6/12/2025,3096,3,0
+CMP-00729,AREA-0013,Pahang,Kuantan,3.154896,102.745357,5G,Poor,22/12/2025,Service Outage,Fiber,Submitted,6/11/2025,2995,1,0
+CMP-00730,AREA-0090,Johor,Batu Pahat,1.238203,103.794718,5G,Poor,27/12/2025,Poor Coverage,4G,In Progress,30/9/2025,2938,5,0
+CMP-00731,AREA-0003,Penang,George Town,5.218794,100.219431,Fiber,Good,4/1/2026,Service Outage,Fiber,In Progress,25/11/2025,1492,3,0
+CMP-00732,AREA-0021,Pahang,Temerloh,3.124177,102.784449,4G,Good,29/12/2025,No Connectivity,5G,Resolved,18/9/2025,3555,3,0
+CMP-00733,AREA-0001,Penang,Seberang Perai,5.293104,100.366548,4G,Good,2/1/2026,Service Outage,4G,Submitted,29/9/2025,3222,4,0
+CMP-00734,AREA-0014,Johor,Kulai,1.552605,102.608579,4G,Good,11/1/2026,Call Drop,Fiber,In Progress,12/10/2025,1167,1,0
+CMP-00735,AREA-0021,Pahang,Temerloh,3.503674,103.310495,4G,Good,29/12/2025,Slow Speed,Fiber,Resolved,26/10/2025,2616,3,0
+CMP-00736,AREA-0001,Penang,Seberang Perai,5.32246,100.303105,4G,Good,2/1/2026,Poor Coverage,5G,Resolved,10/11/2025,1062,3,0
+CMP-00737,AREA-0022,Sabah,Sandakan,4.600668,116.467377,4G,Good,5/1/2026,Service Outage,Fiber,Submitted,24/12/2025,2156,1,0
+CMP-00738,AREA-0003,Penang,George Town,5.492073,100.231732,Fiber,Good,4/1/2026,No Connectivity,5G,Submitted,27/9/2025,1065,1,1
+CMP-00739,AREA-0012,Sarawak,Kuching,3.145563,110.676039,4G,Good,5/1/2026,No Connectivity,Fiber,Submitted,19/12/2025,1209,3,0
+CMP-00740,AREA-0045,Perak,Taiping,4.948509,100.684187,Fiber,Moderate,11/1/2026,Slow Speed,4G,Resolved,4/12/2025,2982,1,0
+CMP-00741,AREA-0045,Perak,Taiping,4.68902,101.099033,Fiber,Moderate,11/1/2026,Slow Speed,5G,In Progress,4/10/2025,2445,3,1
+CMP-00742,AREA-0007,Sabah,Kota Kinabalu,5.935942,115.970442,4G,Good,17/12/2025,Call Drop,Fiber,Resolved,24/10/2025,3294,3,0
+CMP-00743,AREA-0013,Pahang,Kuantan,3.758778,102.571254,5G,Poor,22/12/2025,No Connectivity,4G,In Progress,23/9/2025,633,4,0
+CMP-00744,AREA-0022,Sabah,Sandakan,5.06292,115.942105,4G,Good,5/1/2026,Service Outage,5G,In Progress,13/12/2025,1156,0,0
+CMP-00745,AREA-0039,Selangor,Petaling,2.819882,101.407394,5G,Moderate,3/1/2026,Slow Speed,4G,Submitted,5/12/2025,3234,3,1
+CMP-00746,AREA-0039,Selangor,Petaling,2.963998,101.457653,5G,Moderate,3/1/2026,No Connectivity,5G,Resolved,18/12/2025,1238,2,0
+CMP-00747,AREA-0041,Perak,Ipoh,4.724395,100.907664,5G,Moderate,20/12/2025,Call Drop,5G,Submitted,1/11/2025,732,5,0
+CMP-00748,AREA-0007,Sabah,Kota Kinabalu,4.756959,116.65625,4G,Good,17/12/2025,No Connectivity,4G,Resolved,21/12/2025,234,0,0
+CMP-00749,AREA-0000,Kedah,Sungai Petani,5.816815,100.310707,4G,Moderate,17/12/2025,Service Outage,5G,Submitted,2/10/2025,2705,0,1
+CMP-00750,AREA-0004,Johor,Johor Bahru,2.370598,102.477694,Fiber,Moderate,12/1/2026,Call Drop,4G,Resolved,19/11/2025,750,0,0
+CMP-00751,AREA-0023,Selangor,Hulu Langat,2.852052,101.80281,4G,Good,26/12/2025,Call Drop,5G,Submitted,7/9/2025,2635,4,0
+CMP-00752,AREA-0022,Sabah,Sandakan,5.280683,115.525859,4G,Good,5/1/2026,No Connectivity,5G,Submitted,8/11/2025,3080,3,0
+CMP-00753,AREA-0003,Penang,George Town,5.356841,100.423274,Fiber,Good,4/1/2026,Call Drop,5G,In Progress,30/9/2025,3145,4,0
+CMP-00754,AREA-0002,Sarawak,Miri,3.874042,111.16174,5G,Moderate,31/12/2025,Poor Coverage,Fiber,Resolved,30/12/2025,953,3,0
+CMP-00755,AREA-0039,Selangor,Petaling,3.039414,101.863337,5G,Moderate,3/1/2026,Poor Coverage,4G,Resolved,9/9/2025,2539,4,1
+CMP-00756,AREA-0000,Kedah,Sungai Petani,6.201076,100.307154,4G,Moderate,17/12/2025,Service Outage,4G,In Progress,7/10/2025,2960,4,0
+CMP-00757,AREA-0022,Sabah,Sandakan,4.499787,115.631185,4G,Good,5/1/2026,Service Outage,Fiber,Resolved,3/10/2025,3324,5,0
+CMP-00758,AREA-0039,Selangor,Petaling,3.173063,101.650645,5G,Moderate,3/1/2026,Service Outage,5G,In Progress,30/10/2025,3301,2,0
+CMP-00759,AREA-0004,Johor,Johor Bahru,1.79144,103.801791,Fiber,Moderate,12/1/2026,Slow Speed,4G,In Progress,5/10/2025,1542,4,1
+CMP-00760,AREA-0039,Selangor,Petaling,2.998884,101.700493,5G,Moderate,3/1/2026,No Connectivity,5G,Submitted,30/11/2025,1197,5,0
+CMP-00761,AREA-0001,Penang,Seberang Perai,5.297063,100.496971,4G,Good,2/1/2026,No Connectivity,Fiber,Resolved,11/12/2025,1676,1,0
+CMP-00762,AREA-0023,Selangor,Hulu Langat,2.903978,101.437312,4G,Good,26/12/2025,No Connectivity,5G,In Progress,15/9/2025,1191,2,1
+CMP-00763,AREA-0000,Kedah,Sungai Petani,5.204596,100.369404,4G,Moderate,17/12/2025,Call Drop,4G,Submitted,4/11/2025,2217,4,1
+CMP-00764,AREA-0023,Selangor,Hulu Langat,3.049621,101.543324,4G,Good,26/12/2025,Slow Speed,Fiber,Submitted,15/11/2025,1416,0,1
+CMP-00765,AREA-0003,Penang,George Town,5.346002,100.213252,Fiber,Good,4/1/2026,Call Drop,4G,In Progress,5/10/2025,2993,1,1
+CMP-00766,AREA-0005,Kedah,Alor Setar,5.086888,100.358297,5G,Poor,3/1/2026,No Connectivity,Fiber,Submitted,29/10/2025,2842,1,0
+CMP-00767,AREA-0013,Pahang,Kuantan,3.065927,102.777423,5G,Poor,22/12/2025,No Connectivity,Fiber,In Progress,15/9/2025,2681,5,0
+CMP-00768,AREA-0002,Sarawak,Miri,3.27913,111.836101,5G,Moderate,31/12/2025,Slow Speed,5G,Resolved,25/9/2025,1217,1,0
+CMP-00769,AREA-0000,Kedah,Sungai Petani,5.448274,100.394043,4G,Moderate,17/12/2025,Slow Speed,4G,Resolved,16/12/2025,1540,2,1
+CMP-00770,AREA-0012,Sarawak,Kuching,4.744276,111.284989,4G,Good,5/1/2026,No Connectivity,5G,Resolved,27/11/2025,2076,4,0
+CMP-00771,AREA-0007,Sabah,Kota Kinabalu,4.030027,116.747576,4G,Good,17/12/2025,Slow Speed,5G,Submitted,9/12/2025,3236,4,0
+CMP-00772,AREA-0005,Kedah,Alor Setar,5.332232,100.456314,5G,Poor,3/1/2026,Service Outage,5G,Submitted,11/11/2025,1445,0,0
+CMP-00773,AREA-0003,Penang,George Town,5.422107,100.32838,Fiber,Good,4/1/2026,Poor Coverage,Fiber,In Progress,11/10/2025,2386,5,0
+CMP-00774,AREA-0012,Sarawak,Kuching,2.18997,110.155559,4G,Good,5/1/2026,No Connectivity,Fiber,In Progress,14/11/2025,1519,0,0
+CMP-00775,AREA-0012,Sarawak,Kuching,1.63505,112.393277,4G,Good,5/1/2026,Poor Coverage,5G,In Progress,4/10/2025,1388,1,1
+CMP-00776,AREA-0013,Pahang,Kuantan,3.512227,103.995708,5G,Poor,22/12/2025,Slow Speed,5G,Submitted,5/10/2025,1856,0,1
+CMP-00777,AREA-0030,Selangor,Gombak,3.235747,101.741548,4G,Moderate,28/12/2025,No Connectivity,4G,Submitted,27/12/2025,1365,2,0
+CMP-00778,AREA-0022,Sabah,Sandakan,4.280364,115.798812,4G,Good,5/1/2026,Poor Coverage,Fiber,Resolved,15/11/2025,499,4,0
+CMP-00779,AREA-0001,Penang,Seberang Perai,5.428506,100.36339,4G,Good,2/1/2026,Poor Coverage,4G,In Progress,23/11/2025,1680,1,0
+CMP-00780,AREA-0005,Kedah,Alor Setar,6.174309,100.304782,5G,Poor,3/1/2026,Call Drop,4G,In Progress,17/11/2025,510,0,0
+CMP-00781,AREA-0001,Penang,Seberang Perai,5.415822,100.375708,4G,Good,2/1/2026,Poor Coverage,5G,Submitted,16/11/2025,3398,5,1
+CMP-00782,AREA-0004,Johor,Johor Bahru,1.296733,103.404865,Fiber,Moderate,12/1/2026,Service Outage,5G,Submitted,4/10/2025,216,2,0
+CMP-00783,AREA-0022,Sabah,Sandakan,5.13203,116.459259,4G,Good,5/1/2026,Service Outage,4G,In Progress,16/12/2025,1324,2,0
+CMP-00784,AREA-0004,Johor,Johor Bahru,1.90077,103.394399,Fiber,Moderate,12/1/2026,No Connectivity,Fiber,Submitted,24/11/2025,1155,0,1
+CMP-00785,AREA-0012,Sarawak,Kuching,4.451202,113.288795,4G,Good,5/1/2026,Call Drop,Fiber,Resolved,22/9/2025,1827,4,0
+CMP-00786,AREA-0013,Pahang,Kuantan,3.584102,103.005582,5G,Poor,22/12/2025,Call Drop,4G,Resolved,27/10/2025,3141,0,0
+CMP-00787,AREA-0005,Kedah,Alor Setar,5.289861,100.347816,5G,Poor,3/1/2026,Call Drop,Fiber,In Progress,9/11/2025,3323,1,0
+CMP-00788,AREA-0013,Pahang,Kuantan,3.224164,103.295374,5G,Poor,22/12/2025,Service Outage,5G,Submitted,25/10/2025,3486,0,0
+CMP-00789,AREA-0013,Pahang,Kuantan,3.835578,103.238666,5G,Poor,22/12/2025,Poor Coverage,4G,Submitted,3/11/2025,1810,2,0
+CMP-00790,AREA-0013,Pahang,Kuantan,3.261394,102.812246,5G,Poor,22/12/2025,No Connectivity,4G,Resolved,21/11/2025,2492,0,0
+CMP-00791,AREA-0023,Selangor,Hulu Langat,2.925835,101.857065,4G,Good,26/12/2025,Service Outage,4G,Submitted,16/9/2025,2923,4,0
+CMP-00792,AREA-0005,Kedah,Alor Setar,5.44464,100.353094,5G,Poor,3/1/2026,Slow Speed,5G,In Progress,7/12/2025,1205,5,1
+CMP-00793,AREA-0022,Sabah,Sandakan,4.570446,116.612303,4G,Good,5/1/2026,Service Outage,Fiber,Resolved,6/11/2025,2214,3,0
+CMP-00794,AREA-0000,Kedah,Sungai Petani,5.114658,100.350651,4G,Moderate,17/12/2025,Slow Speed,Fiber,Resolved,20/12/2025,90,0,0
+CMP-00795,AREA-0004,Johor,Johor Bahru,2.371721,103.672984,Fiber,Moderate,12/1/2026,No Connectivity,5G,In Progress,27/9/2025,713,4,0
+CMP-00796,AREA-0021,Pahang,Temerloh,3.443787,102.669161,4G,Good,29/12/2025,Service Outage,Fiber,Submitted,27/9/2025,1881,4,0
+CMP-00797,AREA-0013,Pahang,Kuantan,3.063152,103.116822,5G,Poor,22/12/2025,No Connectivity,4G,In Progress,19/12/2025,38,5,0
+CMP-00798,AREA-0030,Selangor,Gombak,2.926652,101.696857,4G,Moderate,28/12/2025,No Connectivity,Fiber,Submitted,3/10/2025,3197,2,0
+CMP-00799,AREA-0014,Johor,Kulai,1.936698,102.562359,4G,Good,11/1/2026,Service Outage,Fiber,Resolved,30/11/2025,3522,4,0
+CMP-00800,AREA-0012,Sarawak,Kuching,1.999916,112.201,4G,Good,5/1/2026,Poor Coverage,Fiber,Submitted,9/10/2025,172,4,1
+CMP-00801,AREA-0005,Kedah,Alor Setar,5.456993,100.431919,5G,Poor,3/1/2026,Slow Speed,5G,Submitted,26/10/2025,652,4,0
+CMP-00802,AREA-0014,Johor,Kulai,2.064934,103.270343,4G,Good,11/1/2026,Service Outage,4G,Resolved,31/10/2025,753,4,0
+CMP-00803,AREA-0003,Penang,George Town,5.258638,100.380438,Fiber,Good,4/1/2026,Service Outage,5G,In Progress,14/12/2025,1243,1,1
+CMP-00804,AREA-0013,Pahang,Kuantan,3.807289,103.349245,5G,Poor,22/12/2025,Service Outage,Fiber,Resolved,11/10/2025,1081,1,0
+CMP-00805,AREA-0041,Perak,Ipoh,4.349248,101.341695,5G,Moderate,20/12/2025,Service Outage,5G,Resolved,18/10/2025,1683,2,0
+CMP-00806,AREA-0004,Johor,Johor Bahru,2.222651,103.00727,Fiber,Moderate,12/1/2026,No Connectivity,Fiber,Resolved,22/11/2025,2523,0,0
+CMP-00807,AREA-0007,Sabah,Kota Kinabalu,4.202804,116.426141,4G,Good,17/12/2025,No Connectivity,Fiber,Resolved,6/10/2025,455,4,0
+CMP-00808,AREA-0045,Perak,Taiping,4.255939,101.481823,Fiber,Moderate,11/1/2026,No Connectivity,5G,In Progress,20/11/2025,828,5,0
+CMP-00809,AREA-0041,Perak,Ipoh,4.996964,101.334121,5G,Moderate,20/12/2025,Call Drop,5G,In Progress,20/12/2025,894,0,0
+CMP-00810,AREA-0007,Sabah,Kota Kinabalu,5.976044,115.793266,4G,Good,17/12/2025,Poor Coverage,4G,Submitted,29/12/2025,1384,5,0
+CMP-00811,AREA-0013,Pahang,Kuantan,3.783423,103.501644,5G,Poor,22/12/2025,Service Outage,4G,Resolved,15/11/2025,1958,0,0
+CMP-00812,AREA-0012,Sarawak,Kuching,3.535379,111.208905,4G,Good,5/1/2026,Service Outage,Fiber,Submitted,9/9/2025,3072,2,0
+CMP-00813,AREA-0041,Perak,Ipoh,4.172067,100.620747,5G,Moderate,20/12/2025,Call Drop,Fiber,Resolved,19/10/2025,2434,4,0
+CMP-00814,AREA-0002,Sarawak,Miri,4.505654,112.315269,5G,Moderate,31/12/2025,Service Outage,4G,Submitted,1/9/2025,1996,4,0
+CMP-00815,AREA-0012,Sarawak,Kuching,3.944711,110.689,4G,Good,5/1/2026,Service Outage,Fiber,In Progress,18/11/2025,2395,3,0
+CMP-00816,AREA-0021,Pahang,Temerloh,3.748633,103.38115,4G,Good,29/12/2025,Poor Coverage,Fiber,Submitted,10/11/2025,189,5,0
+CMP-00817,AREA-0003,Penang,George Town,5.370254,100.251757,Fiber,Good,4/1/2026,Slow Speed,4G,Submitted,4/12/2025,504,0,1
+CMP-00818,AREA-0030,Selangor,Gombak,3.084591,101.788849,4G,Moderate,28/12/2025,Poor Coverage,5G,In Progress,3/9/2025,1214,0,0
+CMP-00819,AREA-0014,Johor,Kulai,1.375134,102.164901,4G,Good,11/1/2026,Service Outage,4G,Resolved,13/10/2025,1531,1,0
+CMP-00820,AREA-0023,Selangor,Hulu Langat,3.153233,101.458008,4G,Good,26/12/2025,No Connectivity,4G,Resolved,1/9/2025,3440,3,0
+CMP-00821,AREA-0013,Pahang,Kuantan,3.171487,103.154262,5G,Poor,22/12/2025,Call Drop,4G,Resolved,5/10/2025,3480,1,0
+CMP-00822,AREA-0000,Kedah,Sungai Petani,5.056085,100.352565,4G,Moderate,17/12/2025,Slow Speed,4G,In Progress,30/11/2025,823,1,1
+CMP-00823,AREA-0001,Penang,Seberang Perai,5.366273,100.469084,4G,Good,2/1/2026,Poor Coverage,5G,In Progress,7/12/2025,928,1,1
+CMP-00824,AREA-0001,Penang,Seberang Perai,5.3856,100.358313,4G,Good,2/1/2026,Call Drop,Fiber,Resolved,8/11/2025,933,5,0
+CMP-00825,AREA-0005,Kedah,Alor Setar,5.687015,100.306352,5G,Poor,3/1/2026,Call Drop,Fiber,In Progress,8/11/2025,1140,5,0
+CMP-00826,AREA-0001,Penang,Seberang Perai,5.399131,100.330461,4G,Good,2/1/2026,Poor Coverage,5G,Resolved,29/11/2025,133,2,0
+CMP-00827,AREA-0007,Sabah,Kota Kinabalu,4.937283,116.279512,4G,Good,17/12/2025,Call Drop,Fiber,Resolved,13/10/2025,2105,2,1
+CMP-00828,AREA-0021,Pahang,Temerloh,3.736806,103.161249,4G,Good,29/12/2025,Poor Coverage,5G,Submitted,28/12/2025,684,1,0
+CMP-00829,AREA-0022,Sabah,Sandakan,4.81828,115.640306,4G,Good,5/1/2026,Poor Coverage,5G,Submitted,31/10/2025,2719,3,0
+CMP-00830,AREA-0021,Pahang,Temerloh,3.995822,103.707617,4G,Good,29/12/2025,No Connectivity,Fiber,Resolved,5/9/2025,2220,0,0
+CMP-00831,AREA-0007,Sabah,Kota Kinabalu,5.427739,116.691003,4G,Good,17/12/2025,Service Outage,5G,Submitted,27/12/2025,1852,5,0
+CMP-00832,AREA-0000,Kedah,Sungai Petani,5.256522,100.393552,4G,Moderate,17/12/2025,No Connectivity,5G,In Progress,26/10/2025,814,3,0
+CMP-00833,AREA-0005,Kedah,Alor Setar,5.417187,100.434021,5G,Poor,3/1/2026,Service Outage,Fiber,Resolved,10/12/2025,1172,4,0
+CMP-00834,AREA-0013,Pahang,Kuantan,3.405612,102.580747,5G,Poor,22/12/2025,Slow Speed,4G,Submitted,10/10/2025,79,5,0
+CMP-00835,AREA-0004,Johor,Johor Bahru,1.941589,103.803164,Fiber,Moderate,12/1/2026,Poor Coverage,Fiber,Resolved,21/10/2025,2933,5,0
+CMP-00836,AREA-0022,Sabah,Sandakan,5.488784,116.175055,4G,Good,5/1/2026,No Connectivity,5G,In Progress,5/12/2025,3284,2,0
+CMP-00837,AREA-0012,Sarawak,Kuching,2.49333,110.912894,4G,Good,5/1/2026,Poor Coverage,4G,In Progress,24/9/2025,202,0,0
+CMP-00838,AREA-0000,Kedah,Sungai Petani,5.847694,100.449963,4G,Moderate,17/12/2025,Call Drop,4G,Submitted,10/10/2025,2811,0,0
+CMP-00839,AREA-0002,Sarawak,Miri,2.095,109.807365,5G,Moderate,31/12/2025,Service Outage,5G,In Progress,14/9/2025,1252,4,0
+CMP-00840,AREA-0041,Perak,Ipoh,4.819174,101.223857,5G,Moderate,20/12/2025,No Connectivity,5G,Resolved,24/12/2025,1699,4,0
+CMP-00841,AREA-0030,Selangor,Gombak,3.146307,101.719826,4G,Moderate,28/12/2025,Poor Coverage,4G,Submitted,24/11/2025,1250,5,0
+CMP-00842,AREA-0039,Selangor,Petaling,3.124282,101.80937,5G,Moderate,3/1/2026,Service Outage,5G,Submitted,8/10/2025,1682,1,0
+CMP-00843,AREA-0012,Sarawak,Kuching,4.855829,112.554002,4G,Good,5/1/2026,Service Outage,5G,Submitted,31/12/2025,1555,2,0
+CMP-00844,AREA-0001,Penang,Seberang Perai,5.385323,100.447005,4G,Good,2/1/2026,Poor Coverage,Fiber,Resolved,5/9/2025,3512,2,0
+CMP-00845,AREA-0022,Sabah,Sandakan,4.219291,116.332947,4G,Good,5/1/2026,Slow Speed,Fiber,Resolved,19/11/2025,3473,5,0
+CMP-00846,AREA-0030,Selangor,Gombak,3.058561,101.559583,4G,Moderate,28/12/2025,No Connectivity,5G,Submitted,12/9/2025,2094,3,1
+CMP-00847,AREA-0014,Johor,Kulai,1.259337,103.454709,4G,Good,11/1/2026,No Connectivity,Fiber,Resolved,20/11/2025,1256,1,0
+CMP-00848,AREA-0013,Pahang,Kuantan,3.700972,103.284503,5G,Poor,22/12/2025,Service Outage,5G,Resolved,27/12/2025,3376,5,1
+CMP-00849,AREA-0039,Selangor,Petaling,3.165072,101.662952,5G,Moderate,3/1/2026,No Connectivity,5G,Resolved,12/12/2025,1549,1,0
+CMP-00850,AREA-0041,Perak,Ipoh,4.005409,100.819982,5G,Moderate,20/12/2025,Service Outage,5G,Submitted,18/10/2025,1166,1,0
+CMP-00851,AREA-0014,Johor,Kulai,2.210032,103.6836,4G,Good,11/1/2026,Slow Speed,Fiber,Resolved,12/10/2025,3486,1,0
+CMP-00852,AREA-0003,Penang,George Town,5.411389,100.322763,Fiber,Good,4/1/2026,Poor Coverage,Fiber,In Progress,28/11/2025,3584,5,0
+CMP-00853,AREA-0013,Pahang,Kuantan,3.479476,103.166687,5G,Poor,22/12/2025,Slow Speed,Fiber,Submitted,21/9/2025,1396,2,0
+CMP-00854,AREA-0030,Selangor,Gombak,2.986037,101.505354,4G,Moderate,28/12/2025,Slow Speed,4G,In Progress,21/12/2025,3330,2,0
+CMP-00855,AREA-0090,Johor,Batu Pahat,1.973704,102.506836,5G,Poor,27/12/2025,Poor Coverage,Fiber,In Progress,17/11/2025,2703,1,0
+CMP-00856,AREA-0003,Penang,George Town,5.315904,100.402026,Fiber,Good,4/1/2026,Poor Coverage,5G,In Progress,2/12/2025,470,3,0
+CMP-00857,AREA-0007,Sabah,Kota Kinabalu,4.032335,116.975751,4G,Good,17/12/2025,Service Outage,5G,Resolved,4/11/2025,3018,0,0
+CMP-00858,AREA-0012,Sarawak,Kuching,2.267721,109.835318,4G,Good,5/1/2026,Call Drop,4G,Resolved,4/10/2025,1035,5,0
+CMP-00859,AREA-0022,Sabah,Sandakan,5.098829,115.887128,4G,Good,5/1/2026,Service Outage,5G,In Progress,14/10/2025,1353,0,0
+CMP-00860,AREA-0003,Penang,George Town,5.305797,100.301991,Fiber,Good,4/1/2026,Service Outage,5G,Submitted,19/12/2025,2783,3,0
+CMP-00861,AREA-0013,Pahang,Kuantan,3.876641,103.054104,5G,Poor,22/12/2025,Service Outage,5G,Resolved,16/11/2025,2831,5,0
+CMP-00862,AREA-0001,Penang,Seberang Perai,5.368577,100.49673,4G,Good,2/1/2026,Service Outage,Fiber,Resolved,18/11/2025,967,1,0
+CMP-00863,AREA-0030,Selangor,Gombak,2.952196,101.827646,4G,Moderate,28/12/2025,Poor Coverage,5G,Submitted,23/9/2025,357,2,0
+CMP-00864,AREA-0012,Sarawak,Kuching,2.32454,112.011327,4G,Good,5/1/2026,Slow Speed,5G,In Progress,1/9/2025,3019,0,0
+CMP-00865,AREA-0005,Kedah,Alor Setar,5.893009,100.341062,5G,Poor,3/1/2026,No Connectivity,5G,Resolved,2/10/2025,3479,4,1
+CMP-00866,AREA-0007,Sabah,Kota Kinabalu,5.951751,116.588879,4G,Good,17/12/2025,Call Drop,5G,Submitted,26/10/2025,667,4,1
+CMP-00867,AREA-0012,Sarawak,Kuching,2.867281,109.961346,4G,Good,5/1/2026,No Connectivity,Fiber,Submitted,19/12/2025,372,3,0
+CMP-00868,AREA-0002,Sarawak,Miri,2.240342,112.700272,5G,Moderate,31/12/2025,Slow Speed,Fiber,In Progress,3/12/2025,1031,1,0
+CMP-00869,AREA-0002,Sarawak,Miri,3.123555,113.046111,5G,Moderate,31/12/2025,Poor Coverage,Fiber,In Progress,30/12/2025,1145,0,0
+CMP-00870,AREA-0007,Sabah,Kota Kinabalu,5.490985,116.346963,4G,Good,17/12/2025,Service Outage,5G,In Progress,18/10/2025,1371,1,0
+CMP-00871,AREA-0045,Perak,Taiping,4.370282,100.668508,Fiber,Moderate,11/1/2026,Call Drop,4G,Submitted,25/10/2025,2723,0,0
+CMP-00872,AREA-0022,Sabah,Sandakan,4.052255,116.441009,4G,Good,5/1/2026,Slow Speed,5G,In Progress,19/10/2025,89,3,0
+CMP-00873,AREA-0001,Penang,Seberang Perai,5.423288,100.227982,4G,Good,2/1/2026,Service Outage,5G,Submitted,3/10/2025,2745,3,1
+CMP-00874,AREA-0007,Sabah,Kota Kinabalu,5.724218,116.4906,4G,Good,17/12/2025,Slow Speed,4G,Submitted,29/11/2025,3387,4,0
+CMP-00875,AREA-0030,Selangor,Gombak,2.959514,101.451848,4G,Moderate,28/12/2025,Call Drop,4G,Resolved,26/11/2025,3249,1,0
+CMP-00876,AREA-0030,Selangor,Gombak,3.287872,101.662069,4G,Moderate,28/12/2025,Call Drop,5G,Resolved,16/12/2025,539,5,0
+CMP-00877,AREA-0013,Pahang,Kuantan,3.189222,103.789019,5G,Poor,22/12/2025,No Connectivity,Fiber,Resolved,15/11/2025,2779,4,0
+CMP-00878,AREA-0003,Penang,George Town,5.216382,100.21855,Fiber,Good,4/1/2026,Service Outage,4G,Resolved,21/10/2025,868,1,0
+CMP-00879,AREA-0039,Selangor,Petaling,3.152563,101.530586,5G,Moderate,3/1/2026,Poor Coverage,Fiber,In Progress,28/11/2025,40,4,0
+CMP-00880,AREA-0090,Johor,Batu Pahat,1.767724,103.477296,5G,Poor,27/12/2025,Service Outage,5G,In Progress,28/12/2025,739,5,0
+CMP-00881,AREA-0005,Kedah,Alor Setar,5.534568,100.401765,5G,Poor,3/1/2026,Poor Coverage,Fiber,In Progress,25/10/2025,1946,2,0
+CMP-00882,AREA-0023,Selangor,Hulu Langat,3.043302,101.479047,4G,Good,26/12/2025,Service Outage,4G,Resolved,9/9/2025,2549,2,1
+CMP-00883,AREA-0021,Pahang,Temerloh,3.775864,103.46727,4G,Good,29/12/2025,Service Outage,Fiber,Submitted,5/10/2025,3006,2,0
+CMP-00884,AREA-0022,Sabah,Sandakan,5.748431,115.861026,4G,Good,5/1/2026,Call Drop,Fiber,Resolved,19/12/2025,3216,2,0
+CMP-00885,AREA-0012,Sarawak,Kuching,2.646347,113.882774,4G,Good,5/1/2026,Call Drop,Fiber,Submitted,12/10/2025,1224,0,0
+CMP-00886,AREA-0021,Pahang,Temerloh,3.944721,102.650996,4G,Good,29/12/2025,Poor Coverage,5G,In Progress,23/12/2025,928,2,1
+CMP-00887,AREA-0045,Perak,Taiping,4.794084,100.695799,Fiber,Moderate,11/1/2026,Poor Coverage,Fiber,In Progress,12/9/2025,2036,5,0
+CMP-00888,AREA-0090,Johor,Batu Pahat,1.832184,102.860671,5G,Poor,27/12/2025,Service Outage,4G,In Progress,20/12/2025,2508,3,0
+CMP-00889,AREA-0045,Perak,Taiping,4.579925,101.184021,Fiber,Moderate,11/1/2026,No Connectivity,4G,In Progress,11/11/2025,2779,3,1
+CMP-00890,AREA-0012,Sarawak,Kuching,3.641333,112.294162,4G,Good,5/1/2026,Poor Coverage,4G,In Progress,16/10/2025,2799,0,1
+CMP-00891,AREA-0013,Pahang,Kuantan,3.31891,103.746735,5G,Poor,22/12/2025,Service Outage,Fiber,Submitted,4/11/2025,924,2,0
+CMP-00892,AREA-0022,Sabah,Sandakan,5.124047,116.094135,4G,Good,5/1/2026,Poor Coverage,5G,Submitted,17/9/2025,2956,2,1
+CMP-00893,AREA-0023,Selangor,Hulu Langat,2.815154,101.517775,4G,Good,26/12/2025,Service Outage,5G,Submitted,21/9/2025,1581,2,0
+CMP-00894,AREA-0013,Pahang,Kuantan,3.240209,102.666026,5G,Poor,22/12/2025,No Connectivity,4G,Submitted,3/9/2025,3324,4,0
+CMP-00895,AREA-0000,Kedah,Sungai Petani,5.851664,100.443681,4G,Moderate,17/12/2025,Call Drop,Fiber,Resolved,25/12/2025,389,1,0
+CMP-00896,AREA-0013,Pahang,Kuantan,3.078136,102.688146,5G,Poor,22/12/2025,Slow Speed,4G,In Progress,17/10/2025,1617,4,0
+CMP-00897,AREA-0003,Penang,George Town,5.477898,100.246463,Fiber,Good,4/1/2026,Call Drop,Fiber,Resolved,24/10/2025,2930,1,0
+CMP-00898,AREA-0041,Perak,Ipoh,4.748529,101.204691,5G,Moderate,20/12/2025,Poor Coverage,5G,In Progress,9/11/2025,255,2,0
+CMP-00899,AREA-0039,Selangor,Petaling,3.275465,101.442417,5G,Moderate,3/1/2026,Slow Speed,4G,Submitted,28/10/2025,708,2,0
+CMP-00900,AREA-0022,Sabah,Sandakan,4.117911,115.975104,4G,Good,5/1/2026,Poor Coverage,Fiber,In Progress,14/11/2025,1838,4,0
+CMP-00901,AREA-0002,Sarawak,Miri,3.138113,112.820435,5G,Moderate,31/12/2025,Slow Speed,4G,Submitted,2/12/2025,1944,4,0
+CMP-00902,AREA-0004,Johor,Johor Bahru,1.714845,103.939872,Fiber,Moderate,12/1/2026,No Connectivity,Fiber,In Progress,13/11/2025,2497,1,0
+CMP-00903,AREA-0012,Sarawak,Kuching,3.970943,113.14458,4G,Good,5/1/2026,Poor Coverage,4G,In Progress,30/9/2025,9,3,0
+CMP-00904,AREA-0022,Sabah,Sandakan,4.868456,116.103622,4G,Good,5/1/2026,Call Drop,Fiber,Submitted,21/9/2025,2871,1,0
+CMP-00905,AREA-0023,Selangor,Hulu Langat,3.081397,101.557763,4G,Good,26/12/2025,Poor Coverage,5G,In Progress,2/12/2025,797,4,0
+CMP-00906,AREA-0039,Selangor,Petaling,2.952149,101.804482,5G,Moderate,3/1/2026,Slow Speed,4G,Submitted,18/9/2025,3313,5,0
+CMP-00907,AREA-0002,Sarawak,Miri,2.370883,113.459416,5G,Moderate,31/12/2025,Call Drop,Fiber,Resolved,15/10/2025,3322,4,1
+CMP-00908,AREA-0013,Pahang,Kuantan,3.70527,102.963523,5G,Poor,22/12/2025,Service Outage,Fiber,Submitted,7/10/2025,876,5,0
+CMP-00909,AREA-0001,Penang,Seberang Perai,5.232133,100.399049,4G,Good,2/1/2026,Slow Speed,4G,Resolved,1/12/2025,1028,0,0
+CMP-00910,AREA-0039,Selangor,Petaling,3.063483,101.610428,5G,Moderate,3/1/2026,Service Outage,5G,Submitted,28/11/2025,3190,4,0
+CMP-00911,AREA-0000,Kedah,Sungai Petani,6.351569,100.479377,4G,Moderate,17/12/2025,No Connectivity,5G,Submitted,24/9/2025,1015,0,0
+CMP-00912,AREA-0045,Perak,Taiping,4.680559,101.488437,Fiber,Moderate,11/1/2026,Call Drop,Fiber,Submitted,25/10/2025,1824,3,0
+CMP-00913,AREA-0001,Penang,Seberang Perai,5.484381,100.470802,4G,Good,2/1/2026,Slow Speed,Fiber,Resolved,16/10/2025,373,1,1
+CMP-00914,AREA-0003,Penang,George Town,5.416657,100.368803,Fiber,Good,4/1/2026,Service Outage,5G,Submitted,26/9/2025,3136,5,0
+CMP-00915,AREA-0000,Kedah,Sungai Petani,6.229215,100.360347,4G,Moderate,17/12/2025,Poor Coverage,5G,Submitted,31/10/2025,2193,1,0
+CMP-00916,AREA-0002,Sarawak,Miri,1.614411,112.494308,5G,Moderate,31/12/2025,Call Drop,5G,Submitted,29/10/2025,223,0,0
+CMP-00917,AREA-0045,Perak,Taiping,4.387985,101.214203,Fiber,Moderate,11/1/2026,No Connectivity,5G,In Progress,16/10/2025,1262,5,0
+CMP-00918,AREA-0001,Penang,Seberang Perai,5.395179,100.473589,4G,Good,2/1/2026,Slow Speed,Fiber,Resolved,20/11/2025,2224,1,0
+CMP-00919,AREA-0000,Kedah,Sungai Petani,5.510278,100.440163,4G,Moderate,17/12/2025,Poor Coverage,5G,Resolved,19/12/2025,1802,4,0
+CMP-00920,AREA-0041,Perak,Ipoh,4.416999,100.59317,5G,Moderate,20/12/2025,No Connectivity,5G,Resolved,31/10/2025,852,2,0
+CMP-00921,AREA-0021,Pahang,Temerloh,3.040389,103.552908,4G,Good,29/12/2025,Service Outage,5G,In Progress,25/10/2025,3353,0,0
+CMP-00922,AREA-0001,Penang,Seberang Perai,5.339663,100.497802,4G,Good,2/1/2026,Service Outage,4G,In Progress,27/12/2025,62,1,0
+CMP-00923,AREA-0001,Penang,Seberang Perai,5.314216,100.456557,4G,Good,2/1/2026,Call Drop,Fiber,Resolved,6/9/2025,1240,0,1
+CMP-00924,AREA-0005,Kedah,Alor Setar,5.625952,100.435293,5G,Poor,3/1/2026,Service Outage,Fiber,In Progress,4/9/2025,2874,0,0
+CMP-00925,AREA-0045,Perak,Taiping,4.119923,101.150907,Fiber,Moderate,11/1/2026,No Connectivity,4G,Submitted,12/9/2025,2842,5,0
+CMP-00926,AREA-0001,Penang,Seberang Perai,5.421412,100.204859,4G,Good,2/1/2026,Slow Speed,Fiber,In Progress,21/11/2025,688,5,0
+CMP-00927,AREA-0023,Selangor,Hulu Langat,2.881636,101.763817,4G,Good,26/12/2025,No Connectivity,5G,Submitted,1/12/2025,1484,2,0
+CMP-00928,AREA-0002,Sarawak,Miri,4.424884,113.316984,5G,Moderate,31/12/2025,Service Outage,4G,In Progress,14/12/2025,1633,4,1
+CMP-00929,AREA-0021,Pahang,Temerloh,3.461959,102.738042,4G,Good,29/12/2025,Slow Speed,4G,Resolved,20/10/2025,2152,0,0
+CMP-00930,AREA-0004,Johor,Johor Bahru,1.660459,102.371657,Fiber,Moderate,12/1/2026,Slow Speed,4G,Resolved,4/9/2025,3170,1,0
+CMP-00931,AREA-0003,Penang,George Town,5.250451,100.342414,Fiber,Good,4/1/2026,Service Outage,Fiber,Submitted,15/10/2025,510,3,1
+CMP-00932,AREA-0005,Kedah,Alor Setar,5.791768,100.336233,5G,Poor,3/1/2026,Service Outage,5G,Submitted,5/10/2025,384,0,0
+CMP-00933,AREA-0002,Sarawak,Miri,3.977803,110.572376,5G,Moderate,31/12/2025,Poor Coverage,4G,Submitted,27/11/2025,404,0,1
+CMP-00934,AREA-0001,Penang,Seberang Perai,5.435803,100.466643,4G,Good,2/1/2026,Call Drop,Fiber,Submitted,12/10/2025,2870,2,0
+CMP-00935,AREA-0022,Sabah,Sandakan,4.433105,116.473536,4G,Good,5/1/2026,No Connectivity,5G,Submitted,13/10/2025,517,4,0
+CMP-00936,AREA-0045,Perak,Taiping,4.952186,101.260952,Fiber,Moderate,11/1/2026,Slow Speed,4G,Submitted,10/12/2025,475,3,0
+CMP-00937,AREA-0012,Sarawak,Kuching,3.44737,111.814905,4G,Good,5/1/2026,Service Outage,5G,Resolved,26/11/2025,2000,5,0
+CMP-00938,AREA-0090,Johor,Batu Pahat,1.259456,103.83786,5G,Poor,27/12/2025,Poor Coverage,5G,Submitted,30/9/2025,2756,5,1
+CMP-00939,AREA-0001,Penang,Seberang Perai,5.208105,100.451791,4G,Good,2/1/2026,Service Outage,Fiber,In Progress,17/12/2025,1668,1,0
+CMP-00940,AREA-0041,Perak,Ipoh,4.314073,101.255066,5G,Moderate,20/12/2025,No Connectivity,Fiber,Resolved,6/12/2025,1893,3,0
+CMP-00941,AREA-0013,Pahang,Kuantan,3.303488,103.36395,5G,Poor,22/12/2025,Slow Speed,5G,Resolved,28/11/2025,2818,5,0
+CMP-00942,AREA-0090,Johor,Batu Pahat,1.874643,102.797928,5G,Poor,27/12/2025,Poor Coverage,Fiber,Resolved,14/11/2025,1460,1,0
+CMP-00943,AREA-0007,Sabah,Kota Kinabalu,4.77935,116.492736,4G,Good,17/12/2025,No Connectivity,4G,In Progress,3/9/2025,3094,4,0
+CMP-00944,AREA-0014,Johor,Kulai,1.850226,103.202688,4G,Good,11/1/2026,Service Outage,4G,Submitted,5/12/2025,3044,1,1
+CMP-00945,AREA-0000,Kedah,Sungai Petani,5.18886,100.322789,4G,Moderate,17/12/2025,No Connectivity,5G,Resolved,19/12/2025,2724,5,0
+CMP-00946,AREA-0013,Pahang,Kuantan,3.932912,103.050201,5G,Poor,22/12/2025,Slow Speed,4G,Resolved,16/11/2025,713,2,0
+CMP-00947,AREA-0021,Pahang,Temerloh,3.967533,103.592804,4G,Good,29/12/2025,Slow Speed,4G,In Progress,11/10/2025,3529,2,0
+CMP-00948,AREA-0004,Johor,Johor Bahru,1.734186,103.558928,Fiber,Moderate,12/1/2026,No Connectivity,4G,In Progress,30/9/2025,82,2,0
+CMP-00949,AREA-0000,Kedah,Sungai Petani,5.57378,100.386889,4G,Moderate,17/12/2025,Poor Coverage,5G,In Progress,11/12/2025,1168,5,0
+CMP-00950,AREA-0041,Perak,Ipoh,4.075685,100.658581,5G,Moderate,20/12/2025,No Connectivity,Fiber,Resolved,19/10/2025,3156,2,0
+CMP-00951,AREA-0003,Penang,George Town,5.441526,100.404996,Fiber,Good,4/1/2026,Poor Coverage,Fiber,Submitted,27/11/2025,3149,3,1
+CMP-00952,AREA-0023,Selangor,Hulu Langat,3.249771,101.827433,4G,Good,26/12/2025,Service Outage,4G,In Progress,14/10/2025,2504,4,0
+CMP-00953,AREA-0045,Perak,Taiping,4.488167,100.813814,Fiber,Moderate,11/1/2026,No Connectivity,5G,Submitted,25/11/2025,1901,1,0
+CMP-00954,AREA-0001,Penang,Seberang Perai,5.396076,100.466178,4G,Good,2/1/2026,No Connectivity,Fiber,Submitted,24/11/2025,2048,1,0
+CMP-00955,AREA-0045,Perak,Taiping,4.222548,101.401536,Fiber,Moderate,11/1/2026,Slow Speed,5G,In Progress,13/9/2025,50,5,1
+CMP-00956,AREA-0041,Perak,Ipoh,4.321366,101.022295,5G,Moderate,20/12/2025,Call Drop,Fiber,In Progress,27/12/2025,684,2,0
+CMP-00957,AREA-0013,Pahang,Kuantan,3.320144,102.796351,5G,Poor,22/12/2025,No Connectivity,5G,In Progress,5/12/2025,716,2,0
+CMP-00958,AREA-0090,Johor,Batu Pahat,2.209678,103.783663,5G,Poor,27/12/2025,Service Outage,5G,Submitted,25/12/2025,1469,0,0
+CMP-00959,AREA-0021,Pahang,Temerloh,3.954799,103.563545,4G,Good,29/12/2025,Call Drop,5G,Submitted,2/12/2025,448,4,0
+CMP-00960,AREA-0005,Kedah,Alor Setar,5.596994,100.418037,5G,Poor,3/1/2026,No Connectivity,Fiber,Submitted,25/12/2025,880,3,0
+CMP-00961,AREA-0023,Selangor,Hulu Langat,3.054957,101.853276,4G,Good,26/12/2025,No Connectivity,Fiber,Resolved,23/12/2025,487,1,0
+CMP-00962,AREA-0002,Sarawak,Miri,3.564321,109.834545,5G,Moderate,31/12/2025,No Connectivity,4G,Resolved,9/9/2025,1823,0,0
+CMP-00963,AREA-0041,Perak,Ipoh,4.253688,101.023726,5G,Moderate,20/12/2025,Service Outage,Fiber,Resolved,14/10/2025,2081,0,0
+CMP-00964,AREA-0090,Johor,Batu Pahat,1.547433,102.356644,5G,Poor,27/12/2025,Service Outage,4G,Resolved,5/9/2025,3419,5,1
+CMP-00965,AREA-0003,Penang,George Town,5.458781,100.244338,Fiber,Good,4/1/2026,Call Drop,Fiber,Submitted,14/11/2025,2142,1,1
+CMP-00966,AREA-0021,Pahang,Temerloh,3.855736,102.85395,4G,Good,29/12/2025,Slow Speed,Fiber,In Progress,19/11/2025,3143,5,0
+CMP-00967,AREA-0012,Sarawak,Kuching,1.932164,110.026976,4G,Good,5/1/2026,Service Outage,Fiber,Submitted,9/10/2025,1574,3,0
+CMP-00968,AREA-0021,Pahang,Temerloh,3.447508,103.313349,4G,Good,29/12/2025,Poor Coverage,5G,Resolved,17/12/2025,2201,0,0
+CMP-00969,AREA-0022,Sabah,Sandakan,4.065508,116.281008,4G,Good,5/1/2026,Poor Coverage,Fiber,In Progress,26/11/2025,249,0,0
+CMP-00970,AREA-0001,Penang,Seberang Perai,5.371175,100.344711,4G,Good,2/1/2026,Call Drop,4G,Resolved,11/12/2025,673,4,0
+CMP-00971,AREA-0000,Kedah,Sungai Petani,5.815443,100.499922,4G,Moderate,17/12/2025,Poor Coverage,5G,Resolved,3/11/2025,437,3,0
+CMP-00972,AREA-0013,Pahang,Kuantan,3.873186,103.837137,5G,Poor,22/12/2025,Call Drop,4G,In Progress,18/11/2025,2165,0,0
+CMP-00973,AREA-0000,Kedah,Sungai Petani,5.679291,100.432725,4G,Moderate,17/12/2025,Call Drop,Fiber,Resolved,4/9/2025,770,3,1
+CMP-00974,AREA-0013,Pahang,Kuantan,3.917325,103.044246,5G,Poor,22/12/2025,Call Drop,5G,Resolved,10/12/2025,3377,1,0
+CMP-00975,AREA-0003,Penang,George Town,5.277482,100.499033,Fiber,Good,4/1/2026,Service Outage,4G,In Progress,28/9/2025,267,2,0
+CMP-00976,AREA-0012,Sarawak,Kuching,3.028845,112.369129,4G,Good,5/1/2026,Slow Speed,4G,Resolved,29/9/2025,1984,0,0
+CMP-00977,AREA-0005,Kedah,Alor Setar,6.001031,100.31733,5G,Poor,3/1/2026,Service Outage,Fiber,Submitted,23/10/2025,1077,4,0
+CMP-00978,AREA-0002,Sarawak,Miri,2.177073,109.798091,5G,Moderate,31/12/2025,Slow Speed,4G,Resolved,12/10/2025,235,1,0
+CMP-00979,AREA-0021,Pahang,Temerloh,3.452067,103.37752,4G,Good,29/12/2025,Service Outage,5G,Resolved,30/10/2025,388,3,0
+CMP-00980,AREA-0004,Johor,Johor Bahru,2.124047,103.595905,Fiber,Moderate,12/1/2026,Poor Coverage,4G,Resolved,1/12/2025,3037,5,0
+CMP-00981,AREA-0090,Johor,Batu Pahat,1.570729,103.282125,5G,Poor,27/12/2025,Call Drop,5G,In Progress,26/12/2025,762,1,0
+CMP-00982,AREA-0002,Sarawak,Miri,2.571314,110.344677,5G,Moderate,31/12/2025,Poor Coverage,5G,Submitted,25/10/2025,1848,0,0
+CMP-00983,AREA-0002,Sarawak,Miri,1.54157,112.031905,5G,Moderate,31/12/2025,No Connectivity,4G,Submitted,23/11/2025,2448,3,0
+CMP-00984,AREA-0007,Sabah,Kota Kinabalu,5.373821,115.695045,4G,Good,17/12/2025,Call Drop,5G,Resolved,27/12/2025,623,2,1
+CMP-00985,AREA-0041,Perak,Ipoh,4.856798,100.75993,5G,Moderate,20/12/2025,Poor Coverage,4G,Resolved,10/9/2025,2814,1,1
+CMP-00986,AREA-0041,Perak,Ipoh,4.766149,101.216747,5G,Moderate,20/12/2025,Call Drop,5G,Resolved,24/10/2025,3374,0,1
+CMP-00987,AREA-0005,Kedah,Alor Setar,6.233643,100.393458,5G,Poor,3/1/2026,Slow Speed,Fiber,Resolved,24/11/2025,2966,4,0
+CMP-00988,AREA-0021,Pahang,Temerloh,3.697541,102.932636,4G,Good,29/12/2025,No Connectivity,5G,In Progress,2/10/2025,3278,5,0
+CMP-00989,AREA-0000,Kedah,Sungai Petani,5.058778,100.494077,4G,Moderate,17/12/2025,Call Drop,5G,In Progress,18/12/2025,1252,3,1
+CMP-00990,AREA-0045,Perak,Taiping,4.824485,100.67607,Fiber,Moderate,11/1/2026,Call Drop,Fiber,In Progress,23/10/2025,2900,1,0
+CMP-00991,AREA-0001,Penang,Seberang Perai,5.330655,100.375841,4G,Good,2/1/2026,Poor Coverage,4G,In Progress,15/10/2025,577,1,0
+CMP-00992,AREA-0013,Pahang,Kuantan,3.824237,102.819274,5G,Poor,22/12/2025,No Connectivity,5G,Resolved,16/10/2025,2122,2,0
+CMP-00993,AREA-0003,Penang,George Town,5.452439,100.245891,Fiber,Good,4/1/2026,Service Outage,4G,Resolved,13/11/2025,434,2,0
+CMP-00994,AREA-0021,Pahang,Temerloh,3.788199,102.864933,4G,Good,29/12/2025,Call Drop,Fiber,Submitted,31/12/2025,2150,4,1
+CMP-00995,AREA-0022,Sabah,Sandakan,4.12048,116.588477,4G,Good,5/1/2026,No Connectivity,Fiber,In Progress,27/10/2025,3493,5,0
+CMP-00996,AREA-0014,Johor,Kulai,1.592044,103.53896,4G,Good,11/1/2026,No Connectivity,Fiber,Submitted,14/12/2025,763,4,0
+CMP-00997,AREA-0041,Perak,Ipoh,4.824465,101.080134,5G,Moderate,20/12/2025,Poor Coverage,4G,Resolved,3/12/2025,2785,0,0
+CMP-00998,AREA-0023,Selangor,Hulu Langat,3.047283,101.465257,4G,Good,26/12/2025,Call Drop,4G,Submitted,23/9/2025,2853,0,0
+CMP-00999,AREA-0000,Kedah,Sungai Petani,6.457384,100.482074,4G,Moderate,17/12/2025,Service Outage,Fiber,In Progress,22/11/2025,1329,4,1

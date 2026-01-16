@@ -1,0 +1,42 @@
+"complaint_id","state","district","latitude","longitude","issue_type","network_type","technology","coverage_status","status"
+CMP-00197,Penang,George Town,5.372425,100.375702,Call Drop,"5G",Fiber,Good,Resolved
+CMP-00736,Penang,Seberang Perai,5.32246,100.303105,Poor Coverage,"5G","4G",Poor,Resolved
+CMP-00736,Penang,Seberang Perai,5.32246,100.303105,Poor Coverage,"5G",Fiber,Poor,Resolved
+CMP-00856,Penang,George Town,5.315904,100.402026,Poor Coverage,"5G",Fiber,Poor,In Progress
+CMP-00970,Penang,Seberang Perai,5.371175,100.344711,Call Drop,"4G","4G",Good,Resolved
+CMP-00951,Penang,George Town,5.441526,100.404996,Poor Coverage,Fiber,"4G",Good,Submitted
+CMP-00432,Penang,George Town,5.454446,100.348294,No Connectivity,Fiber,"5G",Good,Submitted
+CMP-00676,Penang,Seberang Perai,5.390256,100.422471,Call Drop,"5G","4G",Good,Resolved
+CMP-00181,Penang,Seberang Perai,5.321694,100.278922,Call Drop,"5G","5G",Good,Resolved
+CMP-00250,Penang,George Town,5.424558,100.2668,Call Drop,"4G","5G",Moderate,Resolved
+CMP-00420,Penang,Seberang Perai,5.442542,100.305722,Service Outage,Fiber,Fiber,Good,Resolved
+CMP-00054,Penang,George Town,5.403388,100.37171,Service Outage,"5G","5G",Moderate,Submitted
+CMP-00529,Penang,George Town,5.408378,100.382796,No Connectivity,"5G","5G",Moderate,In Progress
+CMP-00764,Selangor,Hulu Langat,3.049621,101.543324,Slow Speed,Fiber,"4G",Moderate,Submitted
+CMP-00571,Penang,Seberang Perai,5.280448,100.21288,Slow Speed,"4G","5G",Moderate,In Progress
+CMP-00936,Perak,Taiping,4.952186,101.260952,Slow Speed,"4G","5G",Good,Submitted
+CMP-00569,Penang,Seberang Perai,5.212913,100.20568,Poor Coverage,"4G",Fiber,Poor,Resolved
+CMP-00258,Penang,Seberang Perai,5.410568,100.244967,No Connectivity,"5G",Fiber,Moderate,Submitted
+CMP-00280,Penang,Seberang Perai,5.417757,100.232738,Call Drop,Fiber,Fiber,Moderate,In Progress
+CMP-00214,Penang,George Town,5.223741,100.346724,Poor Coverage,"4G","4G",Moderate,In Progress
+CMP-00941,Pahang,Kuantan,3.303488,103.36395,Slow Speed,"5G","4G",Moderate,Resolved
+CMP-00582,Penang,George Town,5.257468,100.464577,Service Outage,Fiber,"4G",Poor,Submitted
+CMP-00309,Penang,George Town,5.26271,100.229524,Slow Speed,Fiber,Fiber,Good,In Progress
+CMP-00341,Penang,George Town,5.248963,100.220842,No Connectivity,Fiber,Fiber,Good,Resolved
+CMP-00522,Penang,Seberang Perai,5.368948,100.282222,Service Outage,"4G","5G",Good,Submitted
+CMP-00897,Penang,George Town,5.477898,100.246463,Call Drop,Fiber,Fiber,Good,Resolved
+CMP-00873,Penang,Seberang Perai,5.423288,100.227982,Service Outage,"5G","4G",Good,Submitted
+CMP-00131,Kedah,Alor Setar,5.416313,100.42256,No Connectivity,"4G","5G",Poor,In Progress
+CMP-00273,Penang,George Town,5.486516,100.326456,Slow Speed,"4G","4G",Poor,In Progress
+CMP-00117,Penang,Seberang Perai,5.302532,100.372544,Service Outage,Fiber,"5G",Poor,In Progress
+CMP-00753,Penang,George Town,5.356841,100.423274,Call Drop,"5G","4G",Poor,In Progress
+CMP-00442,Penang,Seberang Perai,5.448404,100.353993,Slow Speed,"5G",Fiber,Moderate,Resolved
+CMP-00803,Penang,George Town,5.258638,100.380438,Service Outage,"5G","5G",Poor,In Progress
+CMP-00549,Penang,Seberang Perai,5.4923,100.374401,No Connectivity,"5G","5G",Poor,In Progress
+CMP-00549,Penang,Seberang Perai,5.4923,100.374401,No Connectivity,"5G","4G",Poor,In Progress
+CMP-00643,Penang,Seberang Perai,5.414603,100.379642,No Connectivity,"4G","5G",Poor,Submitted
+CMP-00781,Penang,Seberang Perai,5.415822,100.375708,Poor Coverage,"5G","5G",Poor,Submitted
+CMP-00182,Penang,Seberang Perai,5.248398,100.294622,Service Outage,Fiber,"5G",Poor,In Progress
+CMP-00532,Penang,Seberang Perai,5.44852,100.238473,Call Drop,Fiber,"4G",Moderate,Submitted
+CMP-00389,Penang,Seberang Perai,5.203393,100.291655,Poor Coverage,Fiber,Fiber,Moderate,Submitted
+CMP-00549,Penang,Seberang Perai,5.4923,100.374401,No Connectivity,"5G",Fiber,Poor,In Progress
